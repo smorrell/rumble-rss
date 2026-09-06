@@ -1,17 +1,24 @@
 @echo off
 echo ===================================================
-echo  Installing Dependencies (FFmpeg, yt-dlp, GitPython)
+echo  Installing Dependencies (Python, FFmpeg, yt-dlp, GitPython)
 echo ===================================================
 echo.
 
-echo [1/3] Installing FFmpeg via winget...
+echo [1/4] Installing FFmpeg via winget...
 winget install --id=Gyan.FFmpeg -e
 if %errorlevel% neq 0 (
     echo Winget installation failed or FFmpeg is already installed.
 )
 
 echo.
-echo [2/3] Checking for Python pip...
+echo [2/4] Checking for Python updates via winget...
+winget upgrade --id=Python.Python.3.9 -e --accept-source-agreements --accept-package-agreements
+if %errorlevel% neq 0 (
+    echo Python is already up to date, or no Python update was found.
+)
+
+echo.
+echo [3/4] Checking for Python pip...
 python -m pip --version >nul 2>&1
 if %errorlevel% neq 0 (
     echo Error: Python or pip is not installed or not in PATH!
@@ -21,7 +28,7 @@ if %errorlevel% neq 0 (
 )
 
 echo.
-echo [3/3] Installing Python libraries (yt-dlp, gitpython)...
+echo [4/4] Installing Python libraries (yt-dlp, gitpython)...
 python -m pip install --user yt-dlp gitpython
 if %errorlevel% neq 0 (
     echo Error: Python libraries could not be installed.
