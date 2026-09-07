@@ -28,8 +28,8 @@ if %errorlevel% neq 0 (
 )
 
 echo.
-echo [4/4] Installing Python libraries (yt-dlp, gitpython)...
-python -m pip install --user yt-dlp gitpython
+echo [4/4] Installing Python libraries (yt-dlp, gitpython, curl-cffi)...
+python -m pip install --user "yt-dlp[default,curl-cffi]" gitpython
 if %errorlevel% neq 0 (
     echo Error: Python libraries could not be installed.
     echo Try running this file from a normal user account, or install Python for your user.
