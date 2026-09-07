@@ -3,6 +3,7 @@ import re
 import xml.etree.ElementTree as ET
 from datetime import datetime
 from email.utils import formatdate
+import importlib.util
 import sys
 from urllib.parse import urljoin
 from urllib.request import Request, urlopen
@@ -14,10 +15,7 @@ except ImportError:
     print("Required packages are missing. Please run installation.bat first.")
     sys.exit(1)
 
-try:
-    import curl_cffi  # noqa: F401
-except ImportError:
-    curl_cffi = None
+curl_cffi = importlib.util.find_spec("curl_cffi")
 
 # --- CONFIGURATION ---
 RUMBLE_CHANNEL_URL = "https://rumble.com/c/AnnCoulter"
