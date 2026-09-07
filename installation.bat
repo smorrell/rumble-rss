@@ -12,7 +12,7 @@ if %errorlevel% neq 0 (
 
 echo.
 echo [2/4] Checking for Python updates via winget...
-winget upgrade --id=Python.Python.3.9 -e --accept-source-agreements --accept-package-agreements
+winget upgrade --id=Python.Python.3.14.7 -e --accept-source-agreements --accept-package-agreements
 if %errorlevel% neq 0 (
     echo Python is already up to date, or no Python update was found.
 )
