@@ -12,7 +12,7 @@ except ImportError:
     sys.exit(1)
 
 # --- CONFIGURATION ---
-RUMBLE_CHANNEL_URL = "https://rumble.com/c/YourChannelName"
+RUMBLE_CHANNEL_URL = "https://rumble.com/c/AnnCoulter"
 REPO_PATH = r".\your-local-github-repo"  # Adjust this to your local cloned repo path
 AUDIO_DIR = os.path.join(REPO_PATH, "mp3s")
 RSS_FEED_PATH = os.path.join(REPO_PATH, "feed.xml")
