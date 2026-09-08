@@ -80,7 +80,10 @@ def download_and_convert():
         ],
         "outtmpl": os.path.join(AUDIO_DIR, "%(id)s.%(ext)s"),
         "download_archive": os.path.join(REPO_PATH, "downloaded_videos.txt"),
-        "http_headers": {"User-Agent": "Mozilla/5.0"},
+        "http_headers": {
+            "Referer": "https://rumble.com/",
+            "Origin": "https://rumble.com",
+        },
     }
     if curl_cffi:
         ydl_opts["impersonate"] = ImpersonateTarget(client="firefox")
