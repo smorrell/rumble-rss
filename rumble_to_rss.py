@@ -81,7 +81,9 @@ def download_and_convert():
                 "preferredquality": "192",
             }
         ],
-        "outtmpl": os.path.join(AUDIO_DIR, "%(title)s.%(ext)s"),
+        "outtmpl": os.path.join(
+            AUDIO_DIR, "%(upload_date>%Y-%m-%d)s - %(title)s.%(ext)s"
+        ),
         "download_archive": os.path.join(AUDIO_DIR, "downloaded_videos.txt"),
         "dateafter": f"now-{MAX_VIDEO_AGE_DAYS}days",
         "http_headers": {
