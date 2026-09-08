@@ -21,8 +21,8 @@ curl_cffi = importlib.util.find_spec("curl_cffi")
 # --- CONFIGURATION ---
 RUMBLE_CHANNEL_URL = "https://rumble.com/c/AnnCoulter"
 MAX_VIDEO_AGE_DAYS = 7
-MAX_DOWNLOADS_PER_RUN = 2
-REPO_PATH = r".\your-local-github-repo"  # Adjust this to your local cloned repo path
+MAX_DOWNLOADS_PER_RUN = 1
+REPO_PATH = r"."  # Adjust this to your local cloned repo path
 AUDIO_DIR = os.path.join(REPO_PATH, "mp3s")
 RSS_FEED_PATH = os.path.join(REPO_PATH, "feed.xml")
 METADATA_PATH = os.path.join(REPO_PATH, "video_metadata.json")
@@ -82,7 +82,7 @@ def download_and_convert():
             }
         ],
         "outtmpl": os.path.join(AUDIO_DIR, "%(id)s.%(ext)s"),
-        "download_archive": os.path.join(REPO_PATH, "downloaded_videos.txt"),
+        "download_archive": os.path.join(AUDIO_DIR, "downloaded_videos.txt"),
         "dateafter": f"now-{MAX_VIDEO_AGE_DAYS}days",
         "http_headers": {
             "Referer": "https://rumble.com/",

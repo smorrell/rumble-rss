@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0" xmlns_itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>My Rumble Podcast</title>
+    <link>https://rumble.com/</link>
+    <description>Audio mirrors of my favorite Rumble channel.</description>
+    <item>
+      <title>Episode v7cf8ss</title>
+      <description />
+      <pubDate>Tue, 08 Sep 2026 00:49:58 -0000</pubDate>
+      <guid isPermaLink="false">v7cf8ss</guid>
+      <enclosure url="http://10.0.0.182:3000/mp3s/v7cf8ss.mp3" length="35136044" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>Episode v7cuwnw</title>
+      <description />
+      <pubDate>Tue, 08 Sep 2026 00:49:58 -0000</pubDate>
+      <guid isPermaLink="false">v7cuwnw</guid>
+      <enclosure url="http://10.0.0.182:3000/mp3s/v7cuwnw.mp3" length="70656812" type="audio/mpeg" />
+    </item>
+  </channel>
+</rss>

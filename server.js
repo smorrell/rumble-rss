@@ -6,6 +6,7 @@ const path = require("path");
 const HOST = "0.0.0.0";
 const PORT = Number(process.env.PORT) || 3000;
 const repoPath = path.join(__dirname, "your-local-github-repo");
+const repoPath = __dirname;
 const feedPath = path.join(repoPath, "feed.xml");
 const networkAddresses = Object.values(os.networkInterfaces())
   .flat()
