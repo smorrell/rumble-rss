@@ -25,7 +25,7 @@ MAX_DOWNLOADS_PER_RUN = 1
 REPO_PATH = r"."  # Adjust this to your local cloned repo path
 AUDIO_DIR = os.path.join(REPO_PATH, "mp3s")
 RSS_FEED_PATH = os.path.join(REPO_PATH, "feed.xml")
-METADATA_PATH = os.path.join(REPO_PATH, "video_metadata.json")
+METADATA_PATH = os.path.join(AUDIO_DIR, "video_metadata.json")
 BASE_URL = "http://10.0.0.182:3000/"
 
 # Podcast Meta
@@ -81,7 +81,7 @@ def download_and_convert():
                 "preferredquality": "192",
             }
         ],
-        "outtmpl": os.path.join(AUDIO_DIR, "%(id)s.%(ext)s"),
+        "outtmpl": os.path.join(AUDIO_DIR, "%(title)s.%(ext)s"),
         "download_archive": os.path.join(AUDIO_DIR, "downloaded_videos.txt"),
         "dateafter": f"now-{MAX_VIDEO_AGE_DAYS}days",
         "http_headers": {
@@ -116,10 +116,13 @@ def download_and_convert():
 
         for entry in entries:
             if entry and entry.get("id"):
+                prepared_name = os.path.basename(ydl.prepare_filename(entry))
+                output_name = f"{os.path.splitext(prepared_name)[0]}.mp3"
                 metadata[entry["id"]] = {
                     "title": entry.get("title"),
                     "description": entry.get("description"),
                     "upload_date": entry.get("upload_date"),
+                    "filename": output_name,
                 }
 
         with open(METADATA_PATH, "w", encoding="utf-8") as metadata_file:
@@ -152,14 +155,22 @@ def update_rss_feed(downloaded_entries):
         if not file_name.endswith(".mp3"):
             continue
 
-        video_id = os.path.splitext(file_name)[0]
         file_path = os.path.join(AUDIO_DIR, file_name)
         file_size = os.path.getsize(file_path)
 
         entry_meta = next(
-            (item for item in downloaded_entries if item and item.get("id") == video_id),
+            (item for item in metadata.values() if item.get("filename") == file_name),
             None,
-        ) or metadata.get(video_id)
+        )
+
+        video_id = next(
+            (
+                video_id
+                for video_id, item in metadata.items()
+                if item.get("filename") == file_name
+            ),
+            os.path.splitext(file_name)[0],
+        )
 
         title = (
             entry_meta.get("title", f"Episode {video_id}")
