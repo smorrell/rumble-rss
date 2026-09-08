@@ -11,6 +11,7 @@ from urllib.request import Request, urlopen
 try:
     from git import Repo
     import yt_dlp
+    from yt_dlp.networking.impersonate import ImpersonateTarget
 except ImportError:
     print("Required packages are missing. Please run installation.bat first.")
     sys.exit(1)
@@ -82,7 +83,7 @@ def download_and_convert():
         "http_headers": {"User-Agent": "Mozilla/5.0"},
     }
     if curl_cffi:
-        ydl_opts["impersonate"] = "firefox"
+        ydl_opts["impersonate"] = ImpersonateTarget(client="firefox")
     else:
         print(
             "Warning: curl-cffi is not installed; Rumble may reject requests with HTTP 403. "
