@@ -1,5 +1,6 @@
 import os
 import re
+import json
 import xml.etree.ElementTree as ET
 from datetime import datetime
 from email.utils import formatdate
@@ -24,7 +25,8 @@ MAX_DOWNLOADS_PER_RUN = 2
 REPO_PATH = r".\your-local-github-repo"  # Adjust this to your local cloned repo path
 AUDIO_DIR = os.path.join(REPO_PATH, "mp3s")
 RSS_FEED_PATH = os.path.join(REPO_PATH, "feed.xml")
-BASE_URL = "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/"
+METADATA_PATH = os.path.join(REPO_PATH, "video_metadata.json")
+BASE_URL = "http://10.0.0.182:3000/"
 
 # Podcast Meta
 PODCAST_TITLE = "My Rumble Podcast"
@@ -106,6 +108,23 @@ def download_and_convert():
                     entries.append(info)
             except Exception as error:
                 print(f"Error fetching video {video_url}: {error}")
+
+        metadata = {}
+        if os.path.exists(METADATA_PATH):
+            with open(METADATA_PATH, encoding="utf-8") as metadata_file:
+                metadata = json.load(metadata_file)
+
+        for entry in entries:
+            if entry and entry.get("id"):
+                metadata[entry["id"]] = {
+                    "title": entry.get("title"),
+                    "description": entry.get("description"),
+                    "upload_date": entry.get("upload_date"),
+                }
+
+        with open(METADATA_PATH, "w", encoding="utf-8") as metadata_file:
+            json.dump(metadata, metadata_file, ensure_ascii=False, indent=2)
+
         return entries
 
 def update_rss_feed(downloaded_entries):
@@ -124,6 +143,11 @@ def update_rss_feed(downloaded_entries):
     if not os.path.exists(AUDIO_DIR):
         return
 
+    metadata = {}
+    if os.path.exists(METADATA_PATH):
+        with open(METADATA_PATH, encoding="utf-8") as metadata_file:
+            metadata = json.load(metadata_file)
+
     for file_name in os.listdir(AUDIO_DIR):
         if not file_name.endswith(".mp3"):
             continue
@@ -135,7 +159,7 @@ def update_rss_feed(downloaded_entries):
         entry_meta = next(
             (item for item in downloaded_entries if item and item.get("id") == video_id),
             None,
-        )
+        ) or metadata.get(video_id)
 
         title = (
             entry_meta.get("title", f"Episode {video_id}")

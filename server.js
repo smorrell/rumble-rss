@@ -1,33 +1,33 @@
 const http = require("http");
 const fs = require("fs");
+const os = require("os");
 const path = require("path");
 
-const HOST = "127.0.0.1";
+const HOST = "0.0.0.0";
 const PORT = Number(process.env.PORT) || 3000;
-const feedPath = path.join(__dirname, "your-local-github-repo", "feed.xml");
+const repoPath = path.join(__dirname, "your-local-github-repo");
+const feedPath = path.join(repoPath, "feed.xml");
+const networkAddresses = Object.values(os.networkInterfaces())
+  .flat()
+  .filter((details) => details.family === "IPv4" && !details.internal)
+  .map((details) => details.address);
 
-const server = http.createServer((request, response) => {
-  if (request.method !== "GET" && request.method !== "HEAD") {
-    response.writeHead(405, { Allow: "GET, HEAD" });
-    response.end("Method Not Allowed\n");
-    return;
-  }
+function sendError(response, statusCode, message) {
+  response.writeHead(statusCode, {
+    "Content-Type": "text/plain; charset=utf-8",
+  });
+  response.end(`${message}\n`);
+}
 
-  if (request.url !== "/" && request.url !== "/feed.xml") {
-    response.writeHead(404, { "Content-Type": "text/plain; charset=utf-8" });
-    response.end("Not Found\n");
-    return;
-  }
-
-  fs.stat(feedPath, (error, stats) => {
+function serveFile(request, response, filePath, contentType, missingMessage) {
+  fs.stat(filePath, (error, stats) => {
     if (error || !stats.isFile()) {
-      response.writeHead(404, { "Content-Type": "text/plain; charset=utf-8" });
-      response.end("feed.xml not found. Run the RSS pipeline first.\n");
+      sendError(response, 404, missingMessage);
       return;
     }
 
     response.writeHead(200, {
-      "Content-Type": "application/rss+xml; charset=utf-8",
+      "Content-Type": contentType,
       "Content-Length": stats.size,
       "Cache-Control": "no-cache",
     });
@@ -37,12 +37,60 @@ const server = http.createServer((request, response) => {
       return;
     }
 
-    fs.createReadStream(feedPath).pipe(response);
+    fs.createReadStream(filePath).pipe(response);
   });
+}
+
+const server = http.createServer((request, response) => {
+  if (request.method !== "GET" && request.method !== "HEAD") {
+    response.writeHead(405, { Allow: "GET, HEAD" });
+    response.end("Method Not Allowed\n");
+    return;
+  }
+
+  const requestPath = new URL(request.url, `http://${request.headers.host}`)
+    .pathname;
+
+  if (requestPath === "/" || requestPath === "/feed.xml") {
+    serveFile(
+      request,
+      response,
+      feedPath,
+      "application/rss+xml; charset=utf-8",
+      "feed.xml not found. Run the RSS pipeline first.",
+    );
+    return;
+  }
+
+  if (requestPath.startsWith("/mp3s/")) {
+    const fileName = decodeURIComponent(requestPath.slice("/mp3s/".length));
+    if (
+      !fileName ||
+      path.basename(fileName) !== fileName ||
+      !fileName.endsWith(".mp3")
+    ) {
+      sendError(response, 404, "Audio file not found.");
+      return;
+    }
+
+    serveFile(
+      request,
+      response,
+      path.join(repoPath, "mp3s", fileName),
+      "audio/mpeg",
+      "Audio file not found.",
+    );
+    return;
+  }
+
+  sendError(response, 404, "Not Found");
 });
 
 server.listen(PORT, HOST, () => {
-  console.log(`Serving feed.xml at http://${HOST}:${PORT}/feed.xml`);
+  const feedUrls = (networkAddresses.length ? networkAddresses : ["localhost"])
+    .map((address) => `http://${address}:${PORT}/feed.xml`)
+    .join(", ");
+  console.log(`Feed URL(s): ${feedUrls}`);
 });
 
 server.on("error", (error) => {
