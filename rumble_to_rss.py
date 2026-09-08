@@ -9,7 +9,6 @@ from urllib.parse import urljoin
 from urllib.request import Request, urlopen
 
 try:
-    from git import Repo
     import yt_dlp
     from yt_dlp.networking.impersonate import ImpersonateTarget
 except ImportError:
@@ -174,26 +173,6 @@ def update_rss_feed(downloaded_entries):
     ET.indent(tree, space="  ", level=0)
     tree.write(RSS_FEED_PATH, encoding="utf-8", xml_declaration=True)
 
-def push_to_github():
-    """Commits and pushes the new files to the remote GitHub repository."""
-    print("Pushing updates to GitHub...")
-    try:
-        repo = Repo(REPO_PATH)
-        repo.git.add(A=True)
-
-        if repo.is_dirty(index=True):
-            repo.index.commit(
-                f"Automated Update: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
-            )
-            origin = repo.remote(name="origin")
-            origin.push()
-            print("Successfully pushed to GitHub!")
-        else:
-            print("No new changes to commit.")
-    except Exception as e:
-        print(f"Git operation failed: {e}")
-
 if __name__ == "__main__":
     entries = download_and_convert()
     update_rss_feed(entries)
-    push_to_github()
