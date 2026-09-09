@@ -106,34 +106,48 @@ def download_and_convert():
     print("Checking Rumble for new videos...")
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         entries = []
-        for channel_url in RUMBLE_CHANNEL_URLS:
-            video_urls = discover_channel_videos(channel_url)
-            for video_url in video_urls[:MAX_DOWNLOADS_PER_RUN]:
-                try:
-                    info = ydl.extract_info(video_url, download=True)
-                    if info:
-                        entries.append(info)
-                except Exception as error:
-                    print(f"Error fetching video {video_url}: {error}")
-
         metadata = {}
         if os.path.exists(METADATA_PATH):
             with open(METADATA_PATH, encoding="utf-8") as metadata_file:
                 metadata = json.load(metadata_file)
 
-        for entry in entries:
-            if entry and entry.get("id"):
-                prepared_name = os.path.basename(ydl.prepare_filename(entry))
-                output_name = f"{os.path.splitext(prepared_name)[0]}.mp3"
-                metadata[entry["id"]] = {
-                    "title": entry.get("title"),
-                    "description": entry.get("description"),
-                    "upload_date": entry.get("upload_date"),
-                    "filename": output_name,
-                }
+        for channel_url in RUMBLE_CHANNEL_URLS:
+            video_urls = discover_channel_videos(channel_url)
+            channel_downloads = 0
+            for video_url in video_urls:
+                if channel_downloads >= MAX_DOWNLOADS_PER_RUN:
+                    break
+                try:
+                    info = ydl.extract_info(video_url, download=False)
+                    duration = info.get("duration") if info else None
+                    if duration is None or duration >= 3600:
+                        print(f"Skipping video {video_url}: duration is not less than 1 hour.")
+                        continue
 
-        with open(METADATA_PATH, "w", encoding="utf-8") as metadata_file:
-            json.dump(metadata, metadata_file, ensure_ascii=False, indent=2)
+                    info = ydl.extract_info(video_url, download=True)
+                    if info:
+                        entries.append(info)
+                        channel_downloads += 1
+                        if info.get("id"):
+                            prepared_name = os.path.basename(ydl.prepare_filename(info))
+                            output_name = f"{os.path.splitext(prepared_name)[0]}.mp3"
+                            metadata[info["id"]] = {
+                                "title": info.get("title"),
+                                "description": info.get("description"),
+                                "upload_date": info.get("upload_date"),
+                                "filename": output_name,
+                            }
+                            with open(
+                                METADATA_PATH, "w", encoding="utf-8"
+                            ) as metadata_file:
+                                json.dump(
+                                    metadata,
+                                    metadata_file,
+                                    ensure_ascii=False,
+                                    indent=2,
+                                )
+                except Exception as error:
+                    print(f"Error fetching video {video_url}: {error}")
 
         return entries
 
