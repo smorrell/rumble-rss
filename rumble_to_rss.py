@@ -45,7 +45,7 @@ def discover_channel_videos(channel_url):
     )
     video_urls = []
 
-    for page_number in range(1, 101):
+    for page_number in range(1, 2):
         page_url = f"{channel_url}?page={page_number}"
         try:
             request = Request(page_url, headers={"User-Agent": "Mozilla/5.0"})
