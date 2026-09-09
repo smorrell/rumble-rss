@@ -29,6 +29,13 @@ AUDIO_DIR = os.path.join(REPO_PATH, "mp3s")
 METADATA_PATH = os.path.join(AUDIO_DIR, "video_metadata.json")
 
 
+def sanitize_mp3_filename(filename):
+    """Replace non-ASCII-alphanumeric characters in an MP3 basename with hyphens."""
+    basename = os.path.splitext(os.path.basename(filename))[0]
+    sanitized_basename = re.sub(r"[^A-Za-z0-9]", "-", basename)
+    return f"{sanitized_basename}.mp3"
+
+
 def remove_expired_downloads(metadata):
     """Remove MP3s and metadata entries for videos older than the retention period."""
     cutoff_date = datetime.now().date() - timedelta(days=RETENTION_DAYS)
@@ -161,7 +168,17 @@ def download_and_convert():
                         channel_downloads += 1
                         if info.get("id"):
                             prepared_name = os.path.basename(ydl.prepare_filename(info))
-                            output_name = f"{os.path.splitext(prepared_name)[0]}.mp3"
+                            source_name = f"{os.path.splitext(prepared_name)[0]}.mp3"
+                            output_name = sanitize_mp3_filename(source_name)
+                            if source_name != output_name:
+                                source_path = os.path.join(AUDIO_DIR, source_name)
+                                output_path = os.path.join(AUDIO_DIR, output_name)
+                                if os.path.exists(output_path):
+                                    output_name = sanitize_mp3_filename(
+                                        f"{os.path.splitext(source_name)[0]}-{info['id']}.mp3"
+                                    )
+                                    output_path = os.path.join(AUDIO_DIR, output_name)
+                                os.rename(source_path, output_path)
                             metadata[info["id"]] = {
                                 "title": info.get("title"),
                                 "description": info.get("description"),

@@ -13,6 +13,16 @@ const networkAddresses = Object.values(os.networkInterfaces())
   .filter((details) => details.family === "IPv4" && !details.internal)
   .map((details) => details.address);
 
+function logRequest(request, response, startTime) {
+  const duration = Date.now() - startTime;
+  const requestPath = new URL(request.url, `http://${request.headers.host}`)
+    .pathname;
+  console.log(
+    `${new Date().toISOString()} ${request.method} ${requestPath} ` +
+      `${response.statusCode} ${duration}ms`,
+  );
+}
+
 function sendError(response, statusCode, message) {
   response.writeHead(statusCode, {
     "Content-Type": "text/plain; charset=utf-8",
@@ -23,6 +33,7 @@ function sendError(response, statusCode, message) {
 function serveFile(request, response, filePath, contentType, missingMessage) {
   fs.stat(filePath, (error, stats) => {
     if (error || !stats.isFile()) {
+      console.warn(`File not found: ${filePath}`);
       sendError(response, 404, missingMessage);
       return;
     }
@@ -80,6 +91,10 @@ function buildFeed(request) {
             ) || path.parse(fileName).name;
           const entry = metadata[videoId] || {};
           const audioUrl = `${baseUrl}/mp3s/${encodeURIComponent(fileName)}`;
+          console.log(
+            `Adding feed item: id=${videoId}, title=${entry.title || `Episode ${videoId}`}, ` +
+              `file=${fileName}, size=${fileSize} bytes`,
+          );
 
           return `
     <item>
@@ -92,6 +107,10 @@ function buildFeed(request) {
         })
         .join("")
     : "";
+
+  console.log(
+    `Built RSS feed with ${items ? items.split("<item>").length - 1 : 0} item(s).`,
+  );
 
   return `<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
@@ -114,12 +133,17 @@ function serveFeed(request, response) {
     });
     response.end(request.method === "HEAD" ? undefined : feed);
   } catch (error) {
+    console.error(`Feed generation failed: ${error.message}`);
     sendError(response, 500, `Unable to build feed: ${error.message}`);
   }
 }
 
 const server = http.createServer((request, response) => {
+  const startTime = Date.now();
+  response.on("finish", () => logRequest(request, response, startTime));
+
   if (request.method !== "GET" && request.method !== "HEAD") {
+    console.warn(`Rejected HTTP method: ${request.method}`);
     response.writeHead(405, { Allow: "GET, HEAD" });
     response.end("Method Not Allowed\n");
     return;
@@ -162,6 +186,7 @@ server.listen(PORT, HOST, () => {
     .map((address) => `http://${address}:${PORT}/feed.xml`)
     .join(", ");
   console.log(`Feed URL(s): ${feedUrls}`);
+  console.log(`Rumble RSS server listening on ${HOST}:${PORT}`);
 });
 
 server.on("error", (error) => {
