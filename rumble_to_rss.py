@@ -1,7 +1,6 @@
 import os
 import re
 import json
-import hashlib
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
 from email.utils import formatdate
@@ -255,13 +254,11 @@ def update_rss_feed(downloaded_entries):
             pub_date = formatdate()
 
         audio_url = f"{BASE_URL}mp3s/{file_name}"
-        file_guid = hashlib.sha256(file_name.encode("utf-8")).hexdigest()
-
         item = ET.SubElement(channel, "item")
         ET.SubElement(item, "title").text = title
         ET.SubElement(item, "description").text = description
         ET.SubElement(item, "pubDate").text = pub_date
-        ET.SubElement(item, "guid", isPermaLink="false").text = file_guid
+        ET.SubElement(item, "guid", isPermaLink="false").text = video_id
 
         ET.SubElement(
             item, "enclosure", url=audio_url, length=str(file_size), type="audio/mpeg"
