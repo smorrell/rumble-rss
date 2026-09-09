@@ -20,7 +20,10 @@ except ImportError:
 curl_cffi = importlib.util.find_spec("curl_cffi")
 
 # --- CONFIGURATION ---
-RUMBLE_CHANNEL_URL = "https://rumble.com/c/AnnCoulter"
+RUMBLE_CHANNEL_URLS = [
+    "https://rumble.com/c/AnnCoulter",
+    "https://rumble.com/c/nickjfuentes"
+]
 MAX_VIDEO_AGE_DAYS = 7
 MAX_DOWNLOADS_PER_RUN = 1
 REPO_PATH = r"."  # Adjust this to your local cloned repo path
@@ -103,14 +106,15 @@ def download_and_convert():
     print("Checking Rumble for new videos...")
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         entries = []
-        video_urls = discover_channel_videos(RUMBLE_CHANNEL_URL)
-        for video_url in video_urls[:MAX_DOWNLOADS_PER_RUN]:
-            try:
-                info = ydl.extract_info(video_url, download=True)
-                if info:
-                    entries.append(info)
-            except Exception as error:
-                print(f"Error fetching video {video_url}: {error}")
+        for channel_url in RUMBLE_CHANNEL_URLS:
+            video_urls = discover_channel_videos(channel_url)
+            for video_url in video_urls[:MAX_DOWNLOADS_PER_RUN]:
+                try:
+                    info = ydl.extract_info(video_url, download=True)
+                    if info:
+                        entries.append(info)
+                except Exception as error:
+                    print(f"Error fetching video {video_url}: {error}")
 
         metadata = {}
         if os.path.exists(METADATA_PATH):
