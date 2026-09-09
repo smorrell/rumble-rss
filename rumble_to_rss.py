@@ -1,9 +1,7 @@
 import os
 import re
 import json
-import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
-from email.utils import formatdate
 import importlib.util
 import sys
 from urllib.parse import urljoin
@@ -28,14 +26,7 @@ RETENTION_DAYS = 14
 MAX_DOWNLOADS_PER_RUN = 1
 REPO_PATH = r"."  # Adjust this to your local cloned repo path
 AUDIO_DIR = os.path.join(REPO_PATH, "mp3s")
-RSS_FEED_PATH = os.path.join(REPO_PATH, "feed.xml")
 METADATA_PATH = os.path.join(AUDIO_DIR, "video_metadata.json")
-BASE_URL = "http://10.0.0.182:3000/"
-
-# Podcast Meta
-PODCAST_TITLE = "My Rumble Podcast"
-PODCAST_LINK = "https://rumble.com/"
-PODCAST_DESC = "Audio mirrors of my favorite Rumble channel."
 
 
 def remove_expired_downloads(metadata):
@@ -191,83 +182,5 @@ def download_and_convert():
 
         return entries
 
-def update_rss_feed(downloaded_entries):
-    """Generates or updates the RSS feed XML file."""
-    print("Updating RSS feed...")
-
-    rss = ET.Element(
-        "rss", version="2.0", xmlns_itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
-    )
-    channel = ET.SubElement(rss, "channel")
-
-    ET.SubElement(channel, "title").text = PODCAST_TITLE
-    ET.SubElement(channel, "link").text = PODCAST_LINK
-    ET.SubElement(channel, "description").text = PODCAST_DESC
-
-    if not os.path.exists(AUDIO_DIR):
-        return
-
-    metadata = {}
-    if os.path.exists(METADATA_PATH):
-        with open(METADATA_PATH, encoding="utf-8") as metadata_file:
-            metadata = json.load(metadata_file)
-
-    for file_name in os.listdir(AUDIO_DIR):
-        if not file_name.endswith(".mp3"):
-            continue
-
-        file_path = os.path.join(AUDIO_DIR, file_name)
-        file_size = os.path.getsize(file_path)
-
-        entry_meta = next(
-            (item for item in metadata.values() if item.get("filename") == file_name),
-            None,
-        )
-
-        video_id = next(
-            (
-                video_id
-                for video_id, item in metadata.items()
-                if item.get("filename") == file_name
-            ),
-            os.path.splitext(file_name)[0],
-        )
-
-        title = (
-            entry_meta.get("title", f"Episode {video_id}")
-            if entry_meta
-            else f"Episode {video_id}"
-        )
-        description = (
-            entry_meta.get("description", "No description available.")
-            if entry_meta
-            else ""
-        )
-
-        if entry_meta and entry_meta.get("upload_date"):
-            try:
-                date_obj = datetime.strptime(entry_meta["upload_date"], "%Y%m%d")
-                pub_date = formatdate(float(date_obj.timestamp()))
-            except ValueError:
-                pub_date = formatdate()
-        else:
-            pub_date = formatdate()
-
-        audio_url = f"{BASE_URL}mp3s/{file_name}"
-        item = ET.SubElement(channel, "item")
-        ET.SubElement(item, "title").text = title
-        ET.SubElement(item, "description").text = description
-        ET.SubElement(item, "pubDate").text = pub_date
-        ET.SubElement(item, "guid", isPermaLink="false").text = video_id
-
-        ET.SubElement(
-            item, "enclosure", url=audio_url, length=str(file_size), type="audio/mpeg"
-        )
-
-    tree = ET.ElementTree(rss)
-    ET.indent(tree, space="  ", level=0)
-    tree.write(RSS_FEED_PATH, encoding="utf-8", xml_declaration=True)
-
 if __name__ == "__main__":
-    entries = download_and_convert()
-    update_rss_feed(entries)
+    download_and_convert()

@@ -6,7 +6,8 @@ const path = require("path");
 const HOST = "0.0.0.0";
 const PORT = Number(process.env.PORT) || 3000;
 const repoPath = __dirname;
-const feedPath = path.join(repoPath, "feed.xml");
+const audioDir = path.join(repoPath, "mp3s");
+const metadataPath = path.join(audioDir, "video_metadata.json");
 const networkAddresses = Object.values(os.networkInterfaces())
   .flat()
   .filter((details) => details.family === "IPv4" && !details.internal)
@@ -41,6 +42,82 @@ function serveFile(request, response, filePath, contentType, missingMessage) {
   });
 }
 
+function escapeXml(value) {
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&apos;");
+}
+
+function formatPublishedDate(uploadDate) {
+  if (!/^\d{8}$/.test(uploadDate || "")) {
+    return new Date().toUTCString();
+  }
+
+  const year = Number(uploadDate.slice(0, 4));
+  const month = Number(uploadDate.slice(4, 6)) - 1;
+  const day = Number(uploadDate.slice(6, 8));
+  return new Date(Date.UTC(year, month, day)).toUTCString();
+}
+
+function buildFeed(request) {
+  const metadata = fs.existsSync(metadataPath)
+    ? JSON.parse(fs.readFileSync(metadataPath, "utf8"))
+    : {};
+  const baseUrl = `http://${request.headers.host || "localhost"}`;
+  const items = fs.existsSync(audioDir)
+    ? fs
+        .readdirSync(audioDir)
+        .filter((fileName) => fileName.endsWith(".mp3"))
+        .map((fileName) => {
+          const filePath = path.join(audioDir, fileName);
+          const fileSize = fs.statSync(filePath).size;
+          const videoId =
+            Object.keys(metadata).find(
+              (id) => metadata[id].filename === fileName,
+            ) || path.parse(fileName).name;
+          const entry = metadata[videoId] || {};
+          const audioUrl = `${baseUrl}/mp3s/${encodeURIComponent(fileName)}`;
+
+          return `
+    <item>
+      <title>${escapeXml(entry.title || `Episode ${videoId}`)}</title>
+      <description>${escapeXml(entry.description || "")}</description>
+      <pubDate>${formatPublishedDate(entry.upload_date)}</pubDate>
+      <guid isPermaLink="false">${escapeXml(videoId)}</guid>
+      <enclosure url="${escapeXml(audioUrl)}" length="${fileSize}" type="audio/mpeg" />
+    </item>`;
+        })
+        .join("")
+    : "";
+
+  return `<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>My Rumble Podcast</title>
+    <link>https://rumble.com/</link>
+    <description>Audio mirrors of my favorite Rumble channel.</description>${items}
+  </channel>
+</rss>
+`;
+}
+
+function serveFeed(request, response) {
+  try {
+    const feed = buildFeed(request);
+    response.writeHead(200, {
+      "Content-Type": "application/rss+xml; charset=utf-8",
+      "Content-Length": Buffer.byteLength(feed),
+      "Cache-Control": "no-cache",
+    });
+    response.end(request.method === "HEAD" ? undefined : feed);
+  } catch (error) {
+    sendError(response, 500, `Unable to build feed: ${error.message}`);
+  }
+}
+
 const server = http.createServer((request, response) => {
   if (request.method !== "GET" && request.method !== "HEAD") {
     response.writeHead(405, { Allow: "GET, HEAD" });
@@ -52,13 +129,7 @@ const server = http.createServer((request, response) => {
     .pathname;
 
   if (requestPath === "/" || requestPath === "/feed.xml") {
-    serveFile(
-      request,
-      response,
-      feedPath,
-      "application/rss+xml; charset=utf-8",
-      "feed.xml not found. Run the RSS pipeline first.",
-    );
+    serveFeed(request, response);
     return;
   }
 
