@@ -3,7 +3,7 @@ import re
 import json
 import hashlib
 import xml.etree.ElementTree as ET
-from datetime import datetime
+from datetime import datetime, timedelta
 from email.utils import formatdate
 import importlib.util
 import sys
@@ -25,6 +25,7 @@ RUMBLE_CHANNEL_URLS = [
     "https://rumble.com/c/nickjfuentes"
 ]
 MAX_VIDEO_AGE_DAYS = 7
+RETENTION_DAYS = 14
 MAX_DOWNLOADS_PER_RUN = 1
 REPO_PATH = r"."  # Adjust this to your local cloned repo path
 AUDIO_DIR = os.path.join(REPO_PATH, "mp3s")
@@ -36,6 +37,41 @@ BASE_URL = "http://10.0.0.182:3000/"
 PODCAST_TITLE = "My Rumble Podcast"
 PODCAST_LINK = "https://rumble.com/"
 PODCAST_DESC = "Audio mirrors of my favorite Rumble channel."
+
+
+def remove_expired_downloads(metadata):
+    """Remove MP3s and metadata entries for videos older than the retention period."""
+    cutoff_date = datetime.now().date() - timedelta(days=RETENTION_DAYS)
+    expired_ids = []
+
+    for video_id, item in metadata.items():
+        upload_date = item.get("upload_date")
+        if not upload_date:
+            continue
+
+        try:
+            video_date = datetime.strptime(upload_date, "%Y%m%d").date()
+        except ValueError:
+            print(f"Skipping cleanup for {video_id}: invalid upload date {upload_date}.")
+            continue
+
+        if video_date < cutoff_date:
+            filename = item.get("filename")
+            if filename:
+                file_path = os.path.join(AUDIO_DIR, os.path.basename(filename))
+                if os.path.exists(file_path):
+                    os.remove(file_path)
+                    print(f"Removed expired MP3: {filename}")
+            expired_ids.append(video_id)
+
+    for video_id in expired_ids:
+        del metadata[video_id]
+
+    if expired_ids:
+        with open(METADATA_PATH, "w", encoding="utf-8") as metadata_file:
+            json.dump(metadata, metadata_file, ensure_ascii=False, indent=2)
+        entry_label = "entry" if len(expired_ids) == 1 else "entries"
+        print(f"Removed {len(expired_ids)} expired video metadata {entry_label}.")
 
 
 def discover_channel_videos(channel_url):
@@ -88,7 +124,6 @@ def download_and_convert():
         "outtmpl": os.path.join(
             AUDIO_DIR, "%(upload_date>%Y-%m-%d)s - %(title)s.%(ext)s"
         ),
-        "download_archive": os.path.join(AUDIO_DIR, "downloaded_videos.txt"),
         "dateafter": f"now-{MAX_VIDEO_AGE_DAYS}days",
         "http_headers": {
             "Referer": "https://rumble.com/",
@@ -110,6 +145,7 @@ def download_and_convert():
         if os.path.exists(METADATA_PATH):
             with open(METADATA_PATH, encoding="utf-8") as metadata_file:
                 metadata = json.load(metadata_file)
+        remove_expired_downloads(metadata)
 
         for channel_url in RUMBLE_CHANNEL_URLS:
             video_urls = discover_channel_videos(channel_url)
@@ -118,7 +154,12 @@ def download_and_convert():
                 if channel_downloads >= MAX_DOWNLOADS_PER_RUN:
                     break
                 try:
+                    print(f"Video URL: {video_url}")
                     info = ydl.extract_info(video_url, download=False)
+                    if info and info.get("id") in metadata:
+                        print(f"Skipping already downloaded video {video_url}.")
+                        continue
+
                     duration = info.get("duration") if info else None
                     if duration is None or duration >= 3600:
                         print(f"Skipping video {video_url}: duration is not less than 1 hour.")
