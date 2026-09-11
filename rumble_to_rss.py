@@ -21,9 +21,8 @@ RUMBLE_CHANNEL_URLS = [
     "https://rumble.com/c/AnnCoulter",
     "https://rumble.com/c/nickjfuentes"
 ]
-MAX_VIDEO_AGE_DAYS = 7
-RETENTION_DAYS = 14
-MAX_DOWNLOADS_PER_RUN = 1
+MAX_VIDEO_AGE_DAYS = 14
+MAX_DOWNLOADS_PER_RUN = 7   
 REPO_PATH = r"."  # Adjust this to your local cloned repo path
 AUDIO_DIR = os.path.join(REPO_PATH, "mp3s")
 METADATA_PATH = os.path.join(AUDIO_DIR, "video_metadata.json")
@@ -38,7 +37,7 @@ def sanitize_mp3_filename(filename):
 
 def remove_expired_downloads(metadata):
     """Remove MP3s and metadata entries for videos older than the retention period."""
-    cutoff_date = datetime.now().date() - timedelta(days=RETENTION_DAYS)
+    cutoff_date = datetime.now().date() - timedelta(days=MAX_VIDEO_AGE_DAYS)
     expired_ids = []
 
     for video_id, item in metadata.items():
