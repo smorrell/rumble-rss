@@ -8,6 +8,7 @@ const PORT = Number(process.env.PORT) || 3000;
 const repoPath = __dirname;
 const audioDir = path.join(repoPath, "mp3s");
 const metadataPath = path.join(audioDir, "video_metadata.json");
+const scottAdamsFeedPath = path.join(repoPath, "ScottAdams.xml");
 const networkAddresses = Object.values(os.networkInterfaces())
   .flat()
   .filter((details) => details.family === "IPv4" && !details.internal)
@@ -157,6 +158,17 @@ const server = http.createServer((request, response) => {
     return;
   }
 
+  if (requestPath === "/ScottAdams.xml") {
+    serveFile(
+      request,
+      response,
+      scottAdamsFeedPath,
+      "application/rss+xml; charset=utf-8",
+      "Scott Adams feed not found.",
+    );
+    return;
+  }
+
   if (requestPath.startsWith("/mp3s/")) {
     const fileName = decodeURIComponent(requestPath.slice("/mp3s/".length));
     if (
@@ -183,7 +195,10 @@ const server = http.createServer((request, response) => {
 
 server.listen(PORT, HOST, () => {
   const feedUrls = (networkAddresses.length ? networkAddresses : ["localhost"])
-    .map((address) => `http://${address}:${PORT}/feed.xml`)
+    .flatMap((address) => [
+      `http://${address}:${PORT}/feed.xml`,
+      `http://${address}:${PORT}/ScottAdams.xml`,
+    ])
     .join(", ");
   console.log(`Feed URL(s): ${feedUrls}`);
   console.log(`Rumble RSS server listening on ${HOST}:${PORT}`);
