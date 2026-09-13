@@ -8,6 +8,7 @@ import xml.etree.ElementTree as ET
 FEED_URL = "https://anchor.fm/s/128d072c/podcast/rss"
 OUTPUT_PATH = Path(__file__).with_name("ScottAdams.xml")
 MAX_EPISODES = 10
+FEED_TITLE = "Classic Real Coffee with Scott Adams"
 
 
 def subtract_years(value, years):
@@ -44,6 +45,7 @@ def main():
     channel = root.find("channel")
     if channel is None:
         raise ValueError("The downloaded feed does not contain an RSS channel.")
+    channel.find("title").text = FEED_TITLE
 
     selected_items = []
     for item in channel.findall("item"):
