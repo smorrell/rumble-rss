@@ -21,7 +21,7 @@ RUMBLE_CHANNEL_URLS = [
     "https://rumble.com/c/AnnCoulter",
     "https://rumble.com/c/nickjfuentes"
 ]
-MAX_VIDEO_AGE_DAYS = 14
+MAX_VIDEO_AGE_DAYS = 5
 MAX_DOWNLOADS_PER_RUN = 7   
 REPO_PATH = r"."  # Adjust this to your local cloned repo path
 AUDIO_DIR = os.path.join(REPO_PATH, "mp3s")
@@ -68,6 +68,21 @@ def remove_expired_downloads(metadata):
             json.dump(metadata, metadata_file, ensure_ascii=False, indent=2)
         entry_label = "entry" if len(expired_ids) == 1 else "entries"
         print(f"Removed {len(expired_ids)} expired video metadata {entry_label}.")
+
+
+def is_recent_video(info):
+    """Return whether yt-dlp metadata contains a video within the retention window."""
+    upload_date = info.get("upload_date") if info else None
+    if not upload_date:
+        return False
+
+    try:
+        video_date = datetime.strptime(upload_date, "%Y%m%d").date()
+    except ValueError:
+        return False
+
+    cutoff_date = datetime.now().date() - timedelta(days=MAX_VIDEO_AGE_DAYS)
+    return video_date >= cutoff_date
 
 
 def discover_channel_videos(channel_url):
@@ -156,8 +171,16 @@ def download_and_convert():
                         print(f"Skipping already downloaded video {video_url}.")
                         continue
 
+                    if not is_recent_video(info):
+                        upload_date = info.get("upload_date") if info else None
+                        print(
+                            f"Skipping old or undated video {video_url} "
+                            f"(upload_date: {upload_date or 'unknown'})."
+                        )
+                        continue
+
                     duration = info.get("duration") if info else None
-                    if duration is None or duration >= 3600:
+                    if duration is None or duration >= (3600 * 1.5):
                         print(f"Skipping video {video_url}: duration is not less than 1 hour.")
                         continue
 
