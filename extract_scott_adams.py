@@ -7,6 +7,7 @@ import xml.etree.ElementTree as ET
 
 FEED_URL = "https://anchor.fm/s/128d072c/podcast/rss"
 OUTPUT_PATH = Path(__file__).with_name("ScottAdams.xml")
+MAX_EPISODES = 10
 
 
 def subtract_years(value, years):
@@ -48,7 +49,14 @@ def main():
     for item in channel.findall("item"):
         published = episode_date(item)
         if published is not None and oldest_date <= published <= newest_date:
-            selected_items.append(item)
+            selected_items.append((published, item))
+
+    selected_items = [
+        item
+        for _, item in sorted(selected_items, key=lambda entry: entry[0], reverse=True)[
+            :MAX_EPISODES
+        ]
+    ]
 
     for item in channel.findall("item"):
         channel.remove(item)
