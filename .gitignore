@@ -1,6 +1,5 @@
 /__pycache__
 *.mp3
-*.xml
 *.json
 *.part
 *.aac
