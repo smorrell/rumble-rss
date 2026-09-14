@@ -7,7 +7,7 @@ X-WR-CALNAME:Swailers Schedule
 X-WR-TIMEZONE:America/Toronto
 BEGIN:VEVENT
 UID:truenorth-16937@smorrell
-DTSTAMP:20260914T152157Z
+DTSTAMP:20260914T152537Z
 DTSTART;TZID=America/Toronto:20260915T083000
 DTEND;TZID=America/Toronto:20260915T093000
 SUMMARY:Dark Dutchmen at Swailers
@@ -19,7 +19,7 @@ URL:https://www.truenorthhockey.com/Schedule/GetTeamScheduleGrid?divteamID=
 END:VEVENT
 BEGIN:VEVENT
 UID:truenorth-17139@smorrell
-DTSTAMP:20260914T152157Z
+DTSTAMP:20260914T152537Z
 DTSTART;TZID=America/Toronto:20260922T074500
 DTEND;TZID=America/Toronto:20260922T084500
 SUMMARY:Swailers at Pucker Ups
@@ -31,7 +31,7 @@ URL:https://www.truenorthhockey.com/Schedule/GetTeamScheduleGrid?divteamID=
 END:VEVENT
 BEGIN:VEVENT
 UID:truenorth-17166@smorrell
-DTSTAMP:20260914T152157Z
+DTSTAMP:20260914T152537Z
 DTSTART;TZID=America/Toronto:20260929T104500
 DTEND;TZID=America/Toronto:20260929T114500
 SUMMARY:Swailers at Maple Dawgs
@@ -43,7 +43,7 @@ URL:https://www.truenorthhockey.com/Schedule/GetTeamScheduleGrid?divteamID=
 END:VEVENT
 BEGIN:VEVENT
 UID:truenorth-17167@smorrell
-DTSTAMP:20260914T152157Z
+DTSTAMP:20260914T152537Z
 DTSTART;TZID=America/Toronto:20261006T073000
 DTEND;TZID=America/Toronto:20261006T083000
 SUMMARY:Bolton Choirboys at Swailers
@@ -55,7 +55,7 @@ URL:https://www.truenorthhockey.com/Schedule/GetTeamScheduleGrid?divteamID=
 END:VEVENT
 BEGIN:VEVENT
 UID:truenorth-17192@smorrell
-DTSTAMP:20260914T152157Z
+DTSTAMP:20260914T152537Z
 DTSTART;TZID=America/Toronto:20261013T094500
 DTEND;TZID=America/Toronto:20261013T104500
 SUMMARY:Jets (HOTAS) at Swailers
@@ -67,7 +67,7 @@ URL:https://www.truenorthhockey.com/Schedule/GetTeamScheduleGrid?divteamID=
 END:VEVENT
 BEGIN:VEVENT
 UID:truenorth-17202@smorrell
-DTSTAMP:20260914T152157Z
+DTSTAMP:20260914T152537Z
 DTSTART;TZID=America/Toronto:20261020T084500
 DTEND;TZID=America/Toronto:20261020T094500
 SUMMARY:Angry Captains at Swailers
@@ -79,7 +79,7 @@ URL:https://www.truenorthhockey.com/Schedule/GetTeamScheduleGrid?divteamID=
 END:VEVENT
 BEGIN:VEVENT
 UID:truenorth-17224@smorrell
-DTSTAMP:20260914T152157Z
+DTSTAMP:20260914T152537Z
 DTSTART;TZID=America/Toronto:20261027T103000
 DTEND;TZID=America/Toronto:20261027T113000
 SUMMARY:Swailers at Happy Hour
