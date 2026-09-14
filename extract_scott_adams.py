@@ -1,6 +1,7 @@
 from datetime import date
 from email.utils import parsedate_to_datetime
 from pathlib import Path
+import calendar
 from urllib.request import Request, urlopen
 import xml.etree.ElementTree as ET
 
@@ -9,8 +10,8 @@ FEED_URL = "https://anchor.fm/s/128d072c/podcast/rss"
 OUTPUT_PATH = Path(__file__).with_name("ScottAdams.xml")
 MAX_EPISODES = 10
 FEED_TITLE = "Classic Real Coffee with Scott Adams"
-EPISODE_OFFSET_YEARS = 2
-EPISODE_WINDOW_YEARS = 1
+EPISODE_OFFSET_YEARS = 3
+EPISODE_WINDOW_MONTHS = 1
 
 
 def subtract_years(value, years):
@@ -29,6 +30,15 @@ def add_years(value, years):
         return value.replace(year=value.year + years, day=28)
 
 
+def subtract_months(value, months):
+    """Subtract calendar months while handling shorter target months."""
+    month_index = value.year * 12 + value.month - 1 - months
+    year, month_index = divmod(month_index, 12)
+    month = month_index + 1
+    day = min(value.day, calendar.monthrange(year, month)[1])
+    return value.replace(year=year, month=month, day=day)
+
+
 def episode_date(item):
     pub_date = item.findtext("pubDate")
     if not pub_date:
@@ -43,7 +53,7 @@ def episode_date(item):
 def main():
     today = date.today()
     newest_date = subtract_years(today, EPISODE_OFFSET_YEARS)
-    oldest_date = subtract_years(newest_date, EPISODE_WINDOW_YEARS)
+    oldest_date = subtract_months(newest_date, EPISODE_WINDOW_MONTHS)
 
     request = Request(
         FEED_URL,
