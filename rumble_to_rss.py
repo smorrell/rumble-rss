@@ -1,11 +1,13 @@
 import os
 import re
 import json
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
+from email.utils import format_datetime
 import importlib.util
 import sys
-from urllib.parse import urljoin
+from urllib.parse import quote, urljoin
 from urllib.request import Request, urlopen
+import xml.etree.ElementTree as ET
 
 try:
     import yt_dlp
@@ -26,6 +28,8 @@ MAX_DOWNLOADS_PER_RUN = 7
 REPO_PATH = r"."  # Adjust this to your local cloned repo path
 AUDIO_DIR = os.path.join(REPO_PATH, "mp3s")
 METADATA_PATH = os.path.join(AUDIO_DIR, "video_metadata.json")
+ANN_COULTER_FEED_PATH = os.path.join(REPO_PATH, "AnnCoulter.xml")
+ANN_COULTER_CHANNEL_URL = "https://rumble.com/c/AnnCoulter"
 
 
 def sanitize_mp3_filename(filename):
@@ -83,6 +87,51 @@ def is_recent_video(info):
 
     cutoff_date = datetime.now().date() - timedelta(days=MAX_VIDEO_AGE_DAYS)
     return video_date >= cutoff_date
+
+
+def write_ann_coulter_feed(metadata):
+    """Write an RSS feed containing downloaded Ann Coulter episodes."""
+    rss = ET.Element("rss", version="2.0")
+    channel = ET.SubElement(rss, "channel")
+    ET.SubElement(channel, "title").text = "Ann Coulter"
+    ET.SubElement(channel, "link").text = ANN_COULTER_CHANNEL_URL
+    ET.SubElement(channel, "description").text = "Downloaded Ann Coulter episodes."
+    items_container = channel
+    items = []
+    ann_entries = [
+        (video_id, item)
+        for video_id, item in metadata.items()
+        if item.get("channel_url") == ANN_COULTER_CHANNEL_URL
+    ]
+    ann_entries.sort(key=lambda entry: entry[1].get("upload_date") or "", reverse=True)
+
+    for video_id, item in ann_entries:
+        upload_date = item.get("upload_date")
+        try:
+            published = datetime.strptime(upload_date, "%Y%m%d").replace(
+                tzinfo=timezone.utc
+            )
+        except (TypeError, ValueError):
+            continue
+
+        rss_item = ET.SubElement(items_container, "item")
+        ET.SubElement(rss_item, "title").text = item.get("title") or f"Episode {video_id}"
+        ET.SubElement(rss_item, "description").text = item.get("description") or ""
+        ET.SubElement(rss_item, "pubDate").text = format_datetime(published, usegmt=True)
+        ET.SubElement(rss_item, "guid", isPermaLink="false").text = video_id
+        filename = item.get("filename")
+        if filename:
+            ET.SubElement(
+                rss_item,
+                "enclosure",
+                url=f"/mp3s/{quote(os.path.basename(filename))}",
+                type="audio/mpeg",
+            )
+
+    tree = ET.ElementTree(rss)
+    ET.indent(tree, space="  ")
+    tree.write(ANN_COULTER_FEED_PATH, encoding="utf-8", xml_declaration=True)
+    print(f"Wrote {len(ann_entries)} Ann Coulter episode(s) to {ANN_COULTER_FEED_PATH}.")
 
 
 def discover_channel_videos(channel_url):
@@ -168,6 +217,15 @@ def download_and_convert():
                     print(f"Video URL: {video_url}")
                     info = ydl.extract_info(video_url, download=False)
                     if info and info.get("id") in metadata:
+                        if metadata[info["id"]].get("channel_url") != channel_url:
+                            metadata[info["id"]]["channel_url"] = channel_url
+                            with open(METADATA_PATH, "w", encoding="utf-8") as metadata_file:
+                                json.dump(
+                                    metadata,
+                                    metadata_file,
+                                    ensure_ascii=False,
+                                    indent=2,
+                                )
                         print(f"Skipping already downloaded video {video_url}.")
                         continue
 
@@ -206,6 +264,7 @@ def download_and_convert():
                                 "description": info.get("description"),
                                 "upload_date": info.get("upload_date"),
                                 "filename": output_name,
+                                "channel_url": channel_url,
                             }
                             with open(
                                 METADATA_PATH, "w", encoding="utf-8"
@@ -219,6 +278,7 @@ def download_and_convert():
                 except Exception as error:
                     print(f"Error fetching video {video_url}: {error}")
 
+        write_ann_coulter_feed(metadata)
         return entries
 
 if __name__ == "__main__":
