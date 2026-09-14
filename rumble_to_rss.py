@@ -188,7 +188,7 @@ def download_and_convert():
             {
                 "key": "FFmpegExtractAudio",
                 "preferredcodec": "mp3",
-                "preferredquality": "192",
+                "preferredquality": "16",
             }
         ],
         "outtmpl": os.path.join(
