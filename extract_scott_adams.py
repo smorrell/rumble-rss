@@ -9,6 +9,8 @@ FEED_URL = "https://anchor.fm/s/128d072c/podcast/rss"
 OUTPUT_PATH = Path(__file__).with_name("ScottAdams.xml")
 MAX_EPISODES = 10
 FEED_TITLE = "Classic Real Coffee with Scott Adams"
+EPISODE_OFFSET_YEARS = 2
+EPISODE_WINDOW_YEARS = 1
 
 
 def subtract_years(value, years):
@@ -32,8 +34,8 @@ def episode_date(item):
 
 def main():
     today = date.today()
-    newest_date = subtract_years(today, 2)
-    oldest_date = subtract_years(today, 3)
+    newest_date = subtract_years(today, EPISODE_OFFSET_YEARS)
+    oldest_date = subtract_years(newest_date, EPISODE_WINDOW_YEARS)
 
     request = Request(
         FEED_URL,
