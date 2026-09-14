@@ -13,8 +13,8 @@ if %errorlevel% neq 0 (
     exit /b
 )
 
-rem python rumble_to_rss.py
-rem python extract_scott_adams.py
+python rumble_to_rss.py
+python extract_scott_adams.py
 
 echo.
 echo Pipeline execution complete.
