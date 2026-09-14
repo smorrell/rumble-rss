@@ -21,6 +21,14 @@ def subtract_years(value, years):
         return value.replace(year=value.year - years, day=28)
 
 
+def add_years(value, years):
+    """Add calendar years while handling February 29."""
+    try:
+        return value.replace(year=value.year + years)
+    except ValueError:
+        return value.replace(year=value.year + years, day=28)
+
+
 def episode_date(item):
     pub_date = item.findtext("pubDate")
     if not pub_date:
@@ -56,15 +64,18 @@ def main():
             selected_items.append((published, item))
 
     selected_items = [
-        item
-        for _, item in sorted(selected_items, key=lambda entry: entry[0], reverse=True)[
-            :MAX_EPISODES
-        ]
+        (published, item)
+        for published, item in sorted(
+            selected_items, key=lambda entry: entry[0], reverse=True
+        )[:MAX_EPISODES]
     ]
 
     for item in channel.findall("item"):
         channel.remove(item)
-    for item in selected_items:
+    for published, item in selected_items:
+        item.find("pubDate").text = add_years(
+            published, EPISODE_OFFSET_YEARS
+        ).strftime("%a, %d %b %Y 00:00:00 GMT")
         channel.append(item)
 
     tree = ET.ElementTree(root)
