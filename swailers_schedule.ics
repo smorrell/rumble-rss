@@ -7,10 +7,10 @@ X-WR-CALNAME:Swailers Schedule
 X-WR-TIMEZONE:America/Toronto
 BEGIN:VEVENT
 UID:truenorth-16937@smorrell
-DTSTAMP:20260914T152537Z
+DTSTAMP:20260914T153016Z
 DTSTART;TZID=America/Toronto:20260915T083000
 DTEND;TZID=America/Toronto:20260915T093000
-SUMMARY:Dark Dutchmen at Swailers
+SUMMARY:Blue Rink: Dark Dutchmen at Swailers
 LOCATION:Blue Rink
 DESCRIPTION:Dark Dutchmen at Swailers\\nSource: https://www.truenorthhockey
  .com/Schedule/GetTeamScheduleGrid?divteamID=1301
@@ -19,10 +19,10 @@ URL:https://www.truenorthhockey.com/Schedule/GetTeamScheduleGrid?divteamID=
 END:VEVENT
 BEGIN:VEVENT
 UID:truenorth-17139@smorrell
-DTSTAMP:20260914T152537Z
+DTSTAMP:20260914T153016Z
 DTSTART;TZID=America/Toronto:20260922T074500
 DTEND;TZID=America/Toronto:20260922T084500
-SUMMARY:Swailers at Pucker Ups
+SUMMARY:Tire World - Gold: Swailers at Pucker Ups
 LOCATION:Tire World - Gold
 DESCRIPTION:Swailers at Pucker Ups\\nSource: https://www.truenorthhockey.co
  m/Schedule/GetTeamScheduleGrid?divteamID=1301
@@ -31,10 +31,10 @@ URL:https://www.truenorthhockey.com/Schedule/GetTeamScheduleGrid?divteamID=
 END:VEVENT
 BEGIN:VEVENT
 UID:truenorth-17166@smorrell
-DTSTAMP:20260914T152537Z
+DTSTAMP:20260914T153016Z
 DTSTART;TZID=America/Toronto:20260929T104500
 DTEND;TZID=America/Toronto:20260929T114500
-SUMMARY:Swailers at Maple Dawgs
+SUMMARY:Red Rink: Swailers at Maple Dawgs
 LOCATION:Red Rink
 DESCRIPTION:Swailers at Maple Dawgs\\nSource: https://www.truenorthhockey.c
  om/Schedule/GetTeamScheduleGrid?divteamID=1301
@@ -43,10 +43,10 @@ URL:https://www.truenorthhockey.com/Schedule/GetTeamScheduleGrid?divteamID=
 END:VEVENT
 BEGIN:VEVENT
 UID:truenorth-17167@smorrell
-DTSTAMP:20260914T152537Z
+DTSTAMP:20260914T153016Z
 DTSTART;TZID=America/Toronto:20261006T073000
 DTEND;TZID=America/Toronto:20261006T083000
-SUMMARY:Bolton Choirboys at Swailers
+SUMMARY:Spectator: Bolton Choirboys at Swailers
 LOCATION:Spectator
 DESCRIPTION:Bolton Choirboys at Swailers\\nSource: https://www.truenorthhoc
  key.com/Schedule/GetTeamScheduleGrid?divteamID=1301
@@ -55,10 +55,10 @@ URL:https://www.truenorthhockey.com/Schedule/GetTeamScheduleGrid?divteamID=
 END:VEVENT
 BEGIN:VEVENT
 UID:truenorth-17192@smorrell
-DTSTAMP:20260914T152537Z
+DTSTAMP:20260914T153016Z
 DTSTART;TZID=America/Toronto:20261013T094500
 DTEND;TZID=America/Toronto:20261013T104500
-SUMMARY:Jets (HOTAS) at Swailers
+SUMMARY:Tire World - Gold: Jets (HOTAS) at Swailers
 LOCATION:Tire World - Gold
 DESCRIPTION:Jets (HOTAS) at Swailers\\nSource: https://www.truenorthhockey.
  com/Schedule/GetTeamScheduleGrid?divteamID=1301
@@ -67,10 +67,10 @@ URL:https://www.truenorthhockey.com/Schedule/GetTeamScheduleGrid?divteamID=
 END:VEVENT
 BEGIN:VEVENT
 UID:truenorth-17202@smorrell
-DTSTAMP:20260914T152537Z
+DTSTAMP:20260914T153016Z
 DTSTART;TZID=America/Toronto:20261020T084500
 DTEND;TZID=America/Toronto:20261020T094500
-SUMMARY:Angry Captains at Swailers
+SUMMARY:Red Rink: Angry Captains at Swailers
 LOCATION:Red Rink
 DESCRIPTION:Angry Captains at Swailers\\nSource: https://www.truenorthhocke
  y.com/Schedule/GetTeamScheduleGrid?divteamID=1301
@@ -79,10 +79,10 @@ URL:https://www.truenorthhockey.com/Schedule/GetTeamScheduleGrid?divteamID=
 END:VEVENT
 BEGIN:VEVENT
 UID:truenorth-17224@smorrell
-DTSTAMP:20260914T152537Z
+DTSTAMP:20260914T153016Z
 DTSTART;TZID=America/Toronto:20261027T103000
 DTEND;TZID=America/Toronto:20261027T113000
-SUMMARY:Swailers at Happy Hour
+SUMMARY:Spectator: Swailers at Happy Hour
 LOCATION:Spectator
 DESCRIPTION:Swailers at Happy Hour\\nSource: https://www.truenorthhockey.co
  m/Schedule/GetTeamScheduleGrid?divteamID=1301

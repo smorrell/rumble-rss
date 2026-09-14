@@ -90,8 +90,8 @@ def create_calendar(games, output_path, source_url, time_zone):
         end = start + timedelta(hours=1)
         home = game["homeTeamName"].strip()
         away = game["awayTeamName"].strip()
-        title = f"{away} at {home}"
         location = game["rinkName"].strip()
+        title = f"{location}: {away} at {home}"
         description = f"{away} at {home}\\nSource: {source_url}"
         lines.extend(
             [
