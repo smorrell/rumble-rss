@@ -1,77 +1,31 @@
 """Create an iCalendar file from the True North Hockey team schedule."""
 
 import argparse
-import html
 import json
-import re
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
-from urllib.parse import parse_qsl, urlencode, urljoin, urlparse, urlunparse
 from urllib.request import Request, urlopen
 
-DEFAULT_PAGE_URL = (
-    "https://www.truenorthhockey.com/Stats/StatsTeamStats?divteamID=1301"
+DEFAULT_ENDPOINT = (
+    "https://www.truenorthhockey.com/Schedule/GetTeamScheduleGrid?divteamID=1301"
 )
 DEFAULT_OUTPUT = "swailers_schedule.ics"
 DEFAULT_TIME_ZONE = "America/Toronto"
 
 
-def fetch(url, referer=None):
+def fetch(url):
     headers = {"User-Agent": "Mozilla/5.0 (schedule calendar generator)"}
-    if referer:
-        headers["Referer"] = referer
-        headers["X-Requested-With"] = "XMLHttpRequest"
+    headers["X-Requested-With"] = "XMLHttpRequest"
     request = Request(url, headers=headers)
     with urlopen(request, timeout=30) as response:
         return response.read().decode("utf-8", errors="replace")
-
-
-def set_query_parameter(url, name, value):
-    parsed = urlparse(url)
-    query = dict(parse_qsl(parsed.query, keep_blank_values=True))
-    query[name] = str(value)
-    return urlunparse(parsed._replace(query=urlencode(query)))
-
-
-def find_schedule_endpoint(page_url, page_html):
-    schedule_match = re.search(
-        r'<div\b[^>]*\bid=["\']Schedule["\'][^>]*>(?P<body>.*?)'
-        r'<span\b[^>]*\bid=["\']RosterAnchor["\']',
-        page_html,
-        re.IGNORECASE | re.DOTALL,
-    )
-    if not schedule_match:
-        raise ValueError('The page does not contain div id="Schedule".')
-
-    script_match = re.search(
-        r"<script\b[^>]*>(?P<script>.*?)</script>",
-        schedule_match.group("body"),
-        re.IGNORECASE | re.DOTALL,
-    )
-    if not script_match:
-        raise ValueError('The page does not contain a script inside div id="Schedule".')
-
-    script = script_match.group("script")
-    match = re.search(r"url\s*:\s*['\"]([^'\"]*GetTeamScheduleGrid[^'\"]*)", script)
-    if not match:
-        raise ValueError("Could not find the schedule data endpoint inside div id=\"Schedule\".")
-
-    endpoint = urljoin(page_url, html.unescape(match.group(1)))
-    team_match = re.search(r"[?&]divteamID=(\d+)", page_url, re.IGNORECASE)
-    if team_match:
-        endpoint = set_query_parameter(endpoint, "divteamID", team_match.group(1))
-    return endpoint
 
 
 def month_number(month_text):
     return datetime.strptime(month_text, "%b").month
 
 
-def season_start_year(page_html, schedule_dates):
-    season_match = re.search(r"(?:Winter|Fall|Spring|Summer)\s+(\d{4})/(\d{2,4})", page_html)
-    if season_match:
-        return int(season_match.group(1))
-
+def season_start_year(schedule_dates):
     today = date.today()
     earliest_month = min(
         month_number(item["gameDate"].strip().split()[0])
@@ -164,19 +118,17 @@ def create_calendar(games, output_path, source_url, time_zone):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--url", default=DEFAULT_PAGE_URL, help="Team schedule page URL")
+    parser.add_argument("--url", default=DEFAULT_ENDPOINT, help="Schedule JSON endpoint")
     parser.add_argument("--output", default=DEFAULT_OUTPUT, help="Output .ics path")
     parser.add_argument("--time-zone", default=DEFAULT_TIME_ZONE, help="TZID for game times")
     args = parser.parse_args()
 
-    page_html = fetch(args.url)
-    endpoint = find_schedule_endpoint(args.url, page_html)
-    payload = json.loads(fetch(endpoint, referer=args.url))
+    payload = json.loads(fetch(args.url))
     games = payload.get("dt", {}).get("it", [])
     if not games:
         raise ValueError("The schedule endpoint returned no games.")
 
-    start_year = season_start_year(page_html, games)
+    start_year = season_start_year(games)
     for game in games:
         game["start"] = parse_game_datetime(game, start_year)
 
