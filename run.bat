@@ -13,9 +13,13 @@ if %errorlevel% neq 0 (
     exit /b
 )
 
-python rumble_to_rss.py
-python extract_scott_adams.py
+rem python rumble_to_rss.py
+rem python extract_scott_adams.py
 
 echo.
 echo Pipeline execution complete.
-pause
+
+
+git add .
+git commit -m "Update Rumble to RSS pipeline and Scott Adams extraction"
+git push -f

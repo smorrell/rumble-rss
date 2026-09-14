@@ -93,7 +93,7 @@ def write_ann_coulter_feed(metadata):
     """Write an RSS feed containing downloaded Ann Coulter episodes."""
     rss = ET.Element("rss", version="2.0")
     channel = ET.SubElement(rss, "channel")
-    ET.SubElement(channel, "title").text = "Ann Coulter"
+    ET.SubElement(channel, "title").text = "Ann and Nick"
     ET.SubElement(channel, "link").text = ANN_COULTER_CHANNEL_URL
     ET.SubElement(channel, "description").text = "Downloaded Ann Coulter episodes."
     items_container = channel
