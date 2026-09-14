@@ -30,6 +30,11 @@ AUDIO_DIR = os.path.join(REPO_PATH, "mp3s")
 METADATA_PATH = os.path.join(AUDIO_DIR, "video_metadata.json")
 ANN_COULTER_FEED_PATH = os.path.join(REPO_PATH, "AnnCoulter.xml")
 ANN_COULTER_CHANNEL_URL = "https://rumble.com/c/AnnCoulter"
+PODCAST_COVER_URL = (
+    "https://raw.githubusercontent.com/smorrell/rumble-rss/master/podcast_cover.jpg"
+)
+ITUNES_NAMESPACE = "http://www.itunes.com/dtds/podcast-1.0.dtd"
+ET.register_namespace("itunes", ITUNES_NAMESPACE)
 
 
 def sanitize_mp3_filename(filename):
@@ -96,6 +101,11 @@ def write_ann_coulter_feed(metadata):
     ET.SubElement(channel, "title").text = "Ann and Nick"
     ET.SubElement(channel, "link").text = ANN_COULTER_CHANNEL_URL
     ET.SubElement(channel, "description").text = "Downloaded Ann Coulter episodes."
+    ET.SubElement(
+        channel,
+        f"{{{ITUNES_NAMESPACE}}}image",
+        href=PODCAST_COVER_URL,
+    )
     items_container = channel
     items = []
     ann_entries = [
