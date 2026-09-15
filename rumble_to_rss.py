@@ -30,6 +30,7 @@ AUDIO_DIR = os.path.join(REPO_PATH, "mp3s")
 METADATA_PATH = os.path.join(AUDIO_DIR, "video_metadata.json")
 ANN_COULTER_FEED_PATH = os.path.join(REPO_PATH, "AnnCoulter.xml")
 ANN_COULTER_CHANNEL_URL = "https://rumble.com/c/AnnCoulter"
+FEED_BASE_URL = os.environ.get("FEED_BASE_URL", "http://localhost:3000").rstrip("/")
 PODCAST_COVER_URL = (
     "https://raw.githubusercontent.com/smorrell/rumble-rss/master/podcast_cover.jpg"
 )
@@ -134,7 +135,7 @@ def write_ann_coulter_feed(metadata):
             ET.SubElement(
                 rss_item,
                 "enclosure",
-                url=f"/mp3s/{quote(os.path.basename(filename))}",
+                url=f"{FEED_BASE_URL}/mp3s/{quote(os.path.basename(filename))}",
                 type="audio/mpeg",
             )
 

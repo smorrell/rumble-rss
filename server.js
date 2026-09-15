@@ -15,7 +15,7 @@ function logRequest(request, response, startTime) {
     `http://${request.headers.host || "localhost"}`,
   ).pathname;
   const duration = Date.now() - startTime;
-  const contentLength = response.getHeader("Content-Length") || 0;
+  const contentLength = response.getHeader("Content-Length") || "-";
   console.log(
     `${new Date().toISOString()} ${request.method} ${requestPath} ` +
       `${response.statusCode} ${contentLength} bytes ${duration}ms`,
