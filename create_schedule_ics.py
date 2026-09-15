@@ -39,8 +39,10 @@ def parse_game_datetime(game, start_year):
     month = month_number(month_name)
     day = int(day_text)
     year = start_year + (1 if month < 7 else 0)
-    game_time = datetime.strptime(game["gameTime"].strip(), "%H:%M").time()
-    return datetime(year, month, day, game_time.hour, game_time.minute)
+    game_time = datetime.strptime(game["gameTime"].strip(), "%H:%M")
+    return datetime(year, month, day, game_time.hour, game_time.minute) + timedelta(
+        hours=12
+    )
 
 
 def ics_escape(value):
