@@ -25,7 +25,7 @@ RUMBLE_CHANNEL_URLS = [
 ]
 MAX_VIDEO_AGE_DAYS = 5
 MAX_DOWNLOADS_PER_RUN = 7   
-REPO_PATH = r"."  # Adjust this to your local cloned repo path
+REPO_PATH = os.path.dirname(os.path.abspath(__file__))
 AUDIO_DIR = os.path.join(REPO_PATH, "mp3s")
 METADATA_PATH = os.path.join(AUDIO_DIR, "video_metadata.json")
 ANN_COULTER_FEED_PATH = os.path.join(REPO_PATH, "AnnCoulter.xml")
@@ -107,11 +107,11 @@ def write_ann_coulter_feed(metadata):
         href=PODCAST_COVER_URL,
     )
     items_container = channel
-    items = []
+    feed_channels = set(RUMBLE_CHANNEL_URLS)
     ann_entries = [
         (video_id, item)
         for video_id, item in metadata.items()
-        if item.get("channel_url") == ANN_COULTER_CHANNEL_URL
+        if item.get("channel_url") in feed_channels
     ]
     ann_entries.sort(key=lambda entry: entry[1].get("upload_date") or "", reverse=True)
 
@@ -141,7 +141,7 @@ def write_ann_coulter_feed(metadata):
     tree = ET.ElementTree(rss)
     ET.indent(tree, space="  ")
     tree.write(ANN_COULTER_FEED_PATH, encoding="utf-8", xml_declaration=True)
-    print(f"Wrote {len(ann_entries)} Ann Coulter episode(s) to {ANN_COULTER_FEED_PATH}.")
+    print(f"Wrote {len(ann_entries)} Ann and Nick episode(s) to {ANN_COULTER_FEED_PATH}.")
 
 
 def discover_channel_videos(channel_url):
