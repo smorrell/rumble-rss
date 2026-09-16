@@ -30,9 +30,9 @@ AUDIO_DIR = os.path.join(REPO_PATH, "mp3s")
 METADATA_PATH = os.path.join(AUDIO_DIR, "video_metadata.json")
 ANN_COULTER_FEED_PATH = os.path.join(REPO_PATH, "Rumble.xml")
 ANN_COULTER_CHANNEL_URL = "https://rumble.com/c/AnnCoulter"
-#https://github.com/smorrell/rumble-rss/raw/refs/heads/master/mp3s/2026-09-14---Maybe-the-Jews-are-right---.mp3
+# Example raw asset URL: https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/filename.mp3
 FEED_BASE_URL = os.environ.get(
-    "FEED_BASE_URL", "https://github.com/smorrell/rumble-rss/raw/refs/heads/master"
+    "FEED_BASE_URL", "https://raw.githubusercontent.com/smorrell/rumble-rss/master"
 ).rstrip("/")
 PODCAST_COVER_URL = (
     "https://raw.githubusercontent.com/smorrell/rumble-rss/master/podcast_cover.jpg"
@@ -42,9 +42,10 @@ ET.register_namespace("itunes", ITUNES_NAMESPACE)
 
 
 def sanitize_mp3_filename(filename):
-    """Replace non-ASCII-alphanumeric characters in an MP3 basename with hyphens."""
+    """Replace non-ASCII-alphanumeric characters in an MP3 basename with single hyphens."""
     basename = os.path.splitext(os.path.basename(filename))[0]
     sanitized_basename = re.sub(r"[^A-Za-z0-9]", "-", basename)
+    sanitized_basename = re.sub(r"-+", "-", sanitized_basename).strip("-")
     return f"{sanitized_basename}.mp3"
 
 
