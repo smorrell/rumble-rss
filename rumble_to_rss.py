@@ -28,7 +28,7 @@ MAX_DOWNLOADS_PER_RUN = 7
 REPO_PATH = os.path.dirname(os.path.abspath(__file__))
 AUDIO_DIR = os.path.join(REPO_PATH, "mp3s")
 METADATA_PATH = os.path.join(AUDIO_DIR, "video_metadata.json")
-ANN_COULTER_FEED_PATH = os.path.join(REPO_PATH, "AnnCoulter.xml")
+ANN_COULTER_FEED_PATH = os.path.join(REPO_PATH, "Rumble.xml")
 ANN_COULTER_CHANNEL_URL = "https://rumble.com/c/AnnCoulter"
 FEED_BASE_URL = os.environ.get(
     "FEED_BASE_URL", "https://github.com/smorrell/rumble-rss/blob/master"
