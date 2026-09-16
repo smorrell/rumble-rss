@@ -30,8 +30,9 @@ AUDIO_DIR = os.path.join(REPO_PATH, "mp3s")
 METADATA_PATH = os.path.join(AUDIO_DIR, "video_metadata.json")
 ANN_COULTER_FEED_PATH = os.path.join(REPO_PATH, "Rumble.xml")
 ANN_COULTER_CHANNEL_URL = "https://rumble.com/c/AnnCoulter"
+#https://github.com/smorrell/rumble-rss/raw/refs/heads/master/mp3s/2026-09-14---Maybe-the-Jews-are-right---.mp3
 FEED_BASE_URL = os.environ.get(
-    "FEED_BASE_URL", "https://github.com/smorrell/rumble-rss/blob/master"
+    "FEED_BASE_URL", "https://github.com/smorrell/rumble-rss/raw/refs/heads/master"
 ).rstrip("/")
 PODCAST_COVER_URL = (
     "https://raw.githubusercontent.com/smorrell/rumble-rss/master/podcast_cover.jpg"
