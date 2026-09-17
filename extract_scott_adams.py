@@ -50,6 +50,14 @@ def episode_date(item):
         return None
 
 
+def normalize_title(title):
+    if not title:
+        return title
+    if title.lower().startswith("classic "):
+        return title
+    return f"Classic {title}"
+
+
 def main():
     today = date.today()
     newest_date = subtract_years(today, EPISODE_OFFSET_YEARS)
@@ -86,6 +94,9 @@ def main():
         item.find("pubDate").text = add_years(
             published, EPISODE_OFFSET_YEARS
         ).strftime("%a, %d %b %Y 00:00:00 GMT")
+        title = item.find("title")
+        if title is not None and title.text:
+            title.text = normalize_title(title.text)
         channel.append(item)
 
     tree = ET.ElementTree(root)
