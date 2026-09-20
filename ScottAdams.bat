@@ -3,7 +3,7 @@ setlocal
 cd /d "%~dp0"
 
 echo Extracting Scott Adams episodes...
-python extract_scott_adams.py
+python ScottAdams.py
 
 if errorlevel 1 (
     echo.

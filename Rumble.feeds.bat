@@ -14,7 +14,7 @@ if %errorlevel% neq 0 (
 )
 
 python rumble_to_rss.py
-python extract_scott_adams.py
+python ScottAdams.py
 
 echo.
 echo Pipeline execution complete.
