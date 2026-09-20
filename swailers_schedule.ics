@@ -7,7 +7,7 @@ X-WR-CALNAME:Swailers Schedule
 X-WR-TIMEZONE:America/Toronto
 BEGIN:VEVENT
 UID:truenorth-16937@smorrell
-DTSTAMP:20260915T211202Z
+DTSTAMP:20260920T221217Z
 DTSTART;TZID=America/Toronto:20260915T203000
 DTEND;TZID=America/Toronto:20260915T213000
 SUMMARY:Blue Rink: Dark Dutchmen at Swailers
@@ -19,7 +19,7 @@ URL:https://www.truenorthhockey.com/Schedule/GetTeamScheduleGrid?divteamID=
 END:VEVENT
 BEGIN:VEVENT
 UID:truenorth-17139@smorrell
-DTSTAMP:20260915T211202Z
+DTSTAMP:20260920T221217Z
 DTSTART;TZID=America/Toronto:20260922T194500
 DTEND;TZID=America/Toronto:20260922T204500
 SUMMARY:Tire World - Gold: Swailers at Pucker Ups
@@ -31,7 +31,7 @@ URL:https://www.truenorthhockey.com/Schedule/GetTeamScheduleGrid?divteamID=
 END:VEVENT
 BEGIN:VEVENT
 UID:truenorth-17166@smorrell
-DTSTAMP:20260915T211202Z
+DTSTAMP:20260920T221217Z
 DTSTART;TZID=America/Toronto:20260929T224500
 DTEND;TZID=America/Toronto:20260929T234500
 SUMMARY:Red Rink: Swailers at Maple Dawgs
@@ -43,7 +43,7 @@ URL:https://www.truenorthhockey.com/Schedule/GetTeamScheduleGrid?divteamID=
 END:VEVENT
 BEGIN:VEVENT
 UID:truenorth-17167@smorrell
-DTSTAMP:20260915T211202Z
+DTSTAMP:20260920T221217Z
 DTSTART;TZID=America/Toronto:20261006T193000
 DTEND;TZID=America/Toronto:20261006T203000
 SUMMARY:Spectator: Bolton Choirboys at Swailers
@@ -55,7 +55,7 @@ URL:https://www.truenorthhockey.com/Schedule/GetTeamScheduleGrid?divteamID=
 END:VEVENT
 BEGIN:VEVENT
 UID:truenorth-17192@smorrell
-DTSTAMP:20260915T211202Z
+DTSTAMP:20260920T221217Z
 DTSTART;TZID=America/Toronto:20261013T214500
 DTEND;TZID=America/Toronto:20261013T224500
 SUMMARY:Tire World - Gold: Jets (HOTAS) at Swailers
@@ -67,7 +67,7 @@ URL:https://www.truenorthhockey.com/Schedule/GetTeamScheduleGrid?divteamID=
 END:VEVENT
 BEGIN:VEVENT
 UID:truenorth-17202@smorrell
-DTSTAMP:20260915T211202Z
+DTSTAMP:20260920T221217Z
 DTSTART;TZID=America/Toronto:20261020T204500
 DTEND;TZID=America/Toronto:20261020T214500
 SUMMARY:Red Rink: Angry Captains at Swailers
@@ -79,7 +79,7 @@ URL:https://www.truenorthhockey.com/Schedule/GetTeamScheduleGrid?divteamID=
 END:VEVENT
 BEGIN:VEVENT
 UID:truenorth-17224@smorrell
-DTSTAMP:20260915T211202Z
+DTSTAMP:20260920T221217Z
 DTSTART;TZID=America/Toronto:20261027T223000
 DTEND;TZID=America/Toronto:20261027T233000
 SUMMARY:Spectator: Swailers at Happy Hour
