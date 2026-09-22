@@ -123,9 +123,13 @@ def write_ann_coulter_feed(metadata):
     for video_id, item in ann_entries:
         upload_date = item.get("upload_date")
         try:
-            published = datetime.strptime(upload_date, "%Y%m%d").replace(
-                tzinfo=timezone.utc
-            )
+            timestamp = item.get("timestamp")
+            if timestamp is not None:
+                published = datetime.fromtimestamp(timestamp, tz=timezone.utc)
+            else:
+                published = datetime.strptime(upload_date, "%Y%m%d").replace(
+                    tzinfo=timezone.utc
+                )
         except (TypeError, ValueError):
             continue
 
@@ -278,6 +282,7 @@ def download_and_convert():
                                 "title": info.get("title"),
                                 "description": info.get("description"),
                                 "upload_date": info.get("upload_date"),
+                                "timestamp": info.get("timestamp"),
                                 "filename": output_name,
                                 "channel_url": channel_url,
                             }
