@@ -105,7 +105,6 @@ def write_ann_coulter_feed(metadata):
     channel = ET.SubElement(rss, "channel")
     ET.SubElement(channel, "title").text = "Ann and Nick"
     ET.SubElement(channel, "link").text = ANN_COULTER_CHANNEL_URL
-    ET.SubElement(channel, "description").text = "Downloaded Ann Coulter episodes."
     ET.SubElement(
         channel,
         f"{{{ITUNES_NAMESPACE}}}image",
@@ -135,7 +134,6 @@ def write_ann_coulter_feed(metadata):
 
         rss_item = ET.SubElement(items_container, "item")
         ET.SubElement(rss_item, "title").text = item.get("title") or f"Episode {video_id}"
-        ET.SubElement(rss_item, "description").text = item.get("description") or ""
         ET.SubElement(rss_item, "pubDate").text = format_datetime(published, usegmt=True)
         ET.SubElement(rss_item, "guid", isPermaLink="false").text = video_id
         filename = item.get("filename")

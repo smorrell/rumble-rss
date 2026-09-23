@@ -12,6 +12,7 @@ MAX_EPISODES = 10
 FEED_TITLE = "Classic Real Coffee with Scott Adams"
 EPISODE_OFFSET_YEARS = 4
 EPISODE_WINDOW_MONTHS = 1
+ITUNES_NAMESPACE = "http://www.itunes.com/dtds/podcast-1.0.dtd"
 
 
 def subtract_years(value, years):
@@ -74,6 +75,12 @@ def main():
     if channel is None:
         raise ValueError("The downloaded feed does not contain an RSS channel.")
     channel.find("title").text = FEED_TITLE
+    channel_description = channel.find("description")
+    if channel_description is not None:
+        channel.remove(channel_description)
+    channel_summary = channel.find(f"{{{ITUNES_NAMESPACE}}}summary")
+    if channel_summary is not None:
+        channel.remove(channel_summary)
 
     selected_items = []
     for item in channel.findall("item"):
@@ -97,6 +104,12 @@ def main():
         title = item.find("title")
         if title is not None and title.text:
             title.text = normalize_title(title.text)
+        item_description = item.find("description")
+        if item_description is not None:
+            item.remove(item_description)
+        item_summary = item.find(f"{{{ITUNES_NAMESPACE}}}summary")
+        if item_summary is not None:
+            item.remove(item_summary)
         channel.append(item)
 
     tree = ET.ElementTree(root)
