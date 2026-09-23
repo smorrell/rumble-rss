@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
-<rss xmlns:ns0="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
   <channel>
     <title>Ann and Nick</title>
     <link>https://rumble.com/c/AnnCoulter</link>
-    <ns0:image href="https://raw.githubusercontent.com/smorrell/rumble-rss/master/podcast_cover.jpg" />
+    <itunes:image href="https://raw.githubusercontent.com/smorrell/rumble-rss/master/podcast_cover.jpg" />
     <item>
       <title>Trump BANS CNN from the White House</title>
       <pubDate>Tue, 22 Sep 2026 00:00:00 GMT</pubDate>
