@@ -22,6 +22,20 @@
     </ns1:category>
     <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/3012323/3012323-1578935161711-71f93031bbe53.jpg" />
     <item>
+      <title>Classic Episode 1876 Scott Adams: I Give You My 11 Point Fentanyl Plan</title>
+      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1876-Scott-Adams-I-Give-You-My-11-Point-Fentanyl-Plan-e1oa9cf</link>
+      <guid isPermaLink="false">d9b4b7d8-bcac-4db1-8cd1-4670d8fb87dd</guid>
+      <dc:creator>Scott Adams</dc:creator>
+      <pubDate>Thu, 24 Sep 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://traffic.megaphone.fm/APO7508758996.mp3" length="61441253" type="audio/mpeg" />
+      <ns1:explicit>false</ns1:explicit>
+      <ns1:duration>01:04:00</ns1:duration>
+      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1664035544824-282e101c7d325.jpg" />
+      <ns1:season>46</ns1:season>
+      <ns1:episode>1876</ns1:episode>
+      <ns1:episodeType>full</ns1:episodeType>
+    </item>
+    <item>
       <title>Classic Episode 1875 Scott Adams: I Literally Just Woke Up. Lower Your Expectations</title>
       <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1875-Scott-Adams-I-Literally-Just-Woke-Up--Lower-Your-Expectations-e1o91er</link>
       <guid isPermaLink="false">ef62acfc-efb9-43ba-81f6-a4f881e4eb18</guid>
@@ -145,20 +159,6 @@
       <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1663260300998-e50512b840042.jpg" />
       <ns1:season>46</ns1:season>
       <ns1:episode>1867</ns1:episode>
-      <ns1:episodeType>full</ns1:episodeType>
-    </item>
-    <item>
-      <title>Classic Episode 1866 Scott Adams: Election Gullibles vs Election Deniers, Everyone is Acting A Fool Lately</title>
-      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1866-Scott-Adams-Election-Gullibles-vs-Election-Deniers--Everyone-is-Acting-A-Fool-Lately-e1nr8t0</link>
-      <guid isPermaLink="false">0eecbb95-53f3-4ece-9059-6415c3306696</guid>
-      <dc:creator>Scott Adams</dc:creator>
-      <pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/APO6694117471.mp3" length="58317426" type="audio/mpeg" />
-      <ns1:explicit>false</ns1:explicit>
-      <ns1:duration>01:00:44</ns1:duration>
-      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1663171585297-71b8b03bc3a22.jpg" />
-      <ns1:season>46</ns1:season>
-      <ns1:episode>1866</ns1:episode>
       <ns1:episodeType>full</ns1:episodeType>
     </item>
   </channel>
