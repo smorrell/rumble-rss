@@ -1,6 +1,7 @@
 import os
 import re
 import json
+import shutil
 from datetime import datetime, timedelta, timezone
 from email.utils import format_datetime
 import importlib.util
@@ -23,6 +24,11 @@ RUMBLE_CHANNEL_URLS = [
     "https://rumble.com/c/AnnCoulter",
     "https://rumble.com/c/nickjfuentes"
 ]
+YOUTUBE_CHANNEL_URLS = [
+    "https://www.youtube.com/@angrymortgage/videos",    
+    "https://www.youtube.com/@TheBrancaShow/videos",
+]
+FEED_CHANNEL_URLS = YOUTUBE_CHANNEL_URLS + RUMBLE_CHANNEL_URLS
 MAX_VIDEO_AGE_DAYS = 5
 MAX_DOWNLOADS_PER_RUN = 7   
 REPO_PATH = os.path.dirname(os.path.abspath(__file__))
@@ -111,7 +117,7 @@ def write_ann_coulter_feed(metadata):
         href=PODCAST_COVER_URL,
     )
     items_container = channel
-    feed_channels = set(RUMBLE_CHANNEL_URLS)
+    feed_channels = set(FEED_CHANNEL_URLS)
     ann_entries = [
         (video_id, item)
         for video_id, item in metadata.items()
@@ -151,8 +157,16 @@ def write_ann_coulter_feed(metadata):
     print(f"Wrote {len(ann_entries)} Ann and Nick episode(s) to {ANN_COULTER_FEED_PATH}.")
 
 
-def discover_channel_videos(channel_url):
-    """Find video URLs from Rumble's current channel page markup."""
+def discover_channel_videos(channel_url, ydl):
+    """Find video URLs from a Rumble or YouTube channel."""
+    if "youtube.com/" in channel_url or "youtu.be/" in channel_url:
+        channel_info = ydl.extract_info(channel_url, download=False)
+        return [
+            entry.get("webpage_url") or entry.get("url")
+            for entry in channel_info.get("entries", [])
+            if entry and (entry.get("webpage_url") or entry.get("url"))
+        ]
+
     video_pattern = re.compile(
         r"(?:https://rumble\.com)?(/v(?!ideos)[\w.-]+\.html)", re.IGNORECASE
     )
@@ -207,6 +221,13 @@ def download_and_convert():
             "Origin": "https://rumble.com",
         },
     }
+    if shutil.which("node"):
+        ydl_opts["js_runtimes"] = {"node": {}}
+    else:
+        print(
+            "Warning: Node.js is not installed or not on PATH. yt-dlp needs a JavaScript runtime "
+            "for YouTube extraction. Install Node.js or add it to PATH."
+        )
     if curl_cffi:
         ydl_opts["impersonate"] = ImpersonateTarget(client="firefox")
     else:
@@ -224,8 +245,8 @@ def download_and_convert():
                 metadata = json.load(metadata_file)
         remove_expired_downloads(metadata)
 
-        for channel_url in RUMBLE_CHANNEL_URLS:
-            video_urls = discover_channel_videos(channel_url)
+        for channel_url in FEED_CHANNEL_URLS:
+            video_urls = discover_channel_videos(channel_url, ydl)
             channel_downloads = 0
             for video_url in video_urls:
                 if channel_downloads >= MAX_DOWNLOADS_PER_RUN:

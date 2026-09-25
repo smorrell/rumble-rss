@@ -18,7 +18,14 @@ if %errorlevel% neq 0 (
 )
 
 echo.
-echo [3/4] Checking for Python pip...
+echo [3/4] Installing Node.js LTS (required for YouTube extraction with yt-dlp)...
+winget install --id=OpenJS.NodeJS.LTS -e --accept-source-agreements --accept-package-agreements
+if %errorlevel% neq 0 (
+    echo Node.js installation failed or it is already installed.
+)
+
+echo.
+echo [4/4] Checking for Python pip...
 python -m pip --version >nul 2>&1
 if %errorlevel% neq 0 (
     echo Error: Python or pip is not installed or not in PATH!
@@ -28,7 +35,7 @@ if %errorlevel% neq 0 (
 )
 
 echo.
-echo [4/4] Installing Python libraries (yt-dlp, curl-cffi)...
+echo [5/5] Installing Python libraries (yt-dlp, curl-cffi)...
 python -m pip install --user "yt-dlp[default,curl-cffi]"
 if %errorlevel% neq 0 (
     echo Error: Python libraries could not be installed.
