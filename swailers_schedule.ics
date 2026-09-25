@@ -14,8 +14,6 @@ SUMMARY:Blue Rink: Dark Dutchmen at Swailers
 LOCATION:Blue Rink
 DESCRIPTION:Dark Dutchmen at Swailers\\nSource: https://www.truenorthhockey
  .com/Schedule/GetTeamScheduleGrid?divteamID=1301
-URL:https://www.truenorthhockey.com/Schedule/GetTeamScheduleGrid?divteamID=
- 1301
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Blue Rink: Dark Dutchmen at Swailers starts in 1 hour
@@ -36,8 +34,6 @@ SUMMARY:Tire World - Gold: Swailers at Pucker Ups
 LOCATION:Tire World - Gold
 DESCRIPTION:Swailers at Pucker Ups\\nSource: https://www.truenorthhockey.co
  m/Schedule/GetTeamScheduleGrid?divteamID=1301
-URL:https://www.truenorthhockey.com/Schedule/GetTeamScheduleGrid?divteamID=
- 1301
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Tire World - Gold: Swailers at Pucker Ups starts in 1 hour
@@ -58,8 +54,6 @@ SUMMARY:Red Rink: Swailers at Maple Dawgs
 LOCATION:Red Rink
 DESCRIPTION:Swailers at Maple Dawgs\\nSource: https://www.truenorthhockey.c
  om/Schedule/GetTeamScheduleGrid?divteamID=1301
-URL:https://www.truenorthhockey.com/Schedule/GetTeamScheduleGrid?divteamID=
- 1301
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Red Rink: Swailers at Maple Dawgs starts in 1 hour
@@ -80,8 +74,6 @@ SUMMARY:Spectator: Bolton Choirboys at Swailers
 LOCATION:Spectator
 DESCRIPTION:Bolton Choirboys at Swailers\\nSource: https://www.truenorthhoc
  key.com/Schedule/GetTeamScheduleGrid?divteamID=1301
-URL:https://www.truenorthhockey.com/Schedule/GetTeamScheduleGrid?divteamID=
- 1301
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Spectator: Bolton Choirboys at Swailers starts in 1 hour
@@ -102,8 +94,6 @@ SUMMARY:Tire World - Gold: Jets (HOTAS) at Swailers
 LOCATION:Tire World - Gold
 DESCRIPTION:Jets (HOTAS) at Swailers\\nSource: https://www.truenorthhockey.
  com/Schedule/GetTeamScheduleGrid?divteamID=1301
-URL:https://www.truenorthhockey.com/Schedule/GetTeamScheduleGrid?divteamID=
- 1301
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Tire World - Gold: Jets (HOTAS) at Swailers starts in 1 hour
@@ -124,8 +114,6 @@ SUMMARY:Red Rink: Angry Captains at Swailers
 LOCATION:Red Rink
 DESCRIPTION:Angry Captains at Swailers\\nSource: https://www.truenorthhocke
  y.com/Schedule/GetTeamScheduleGrid?divteamID=1301
-URL:https://www.truenorthhockey.com/Schedule/GetTeamScheduleGrid?divteamID=
- 1301
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Red Rink: Angry Captains at Swailers starts in 1 hour
@@ -146,8 +134,6 @@ SUMMARY:Spectator: Swailers at Happy Hour
 LOCATION:Spectator
 DESCRIPTION:Swailers at Happy Hour\\nSource: https://www.truenorthhockey.co
  m/Schedule/GetTeamScheduleGrid?divteamID=1301
-URL:https://www.truenorthhockey.com/Schedule/GetTeamScheduleGrid?divteamID=
- 1301
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Spectator: Swailers at Happy Hour starts in 1 hour

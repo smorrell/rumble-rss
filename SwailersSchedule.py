@@ -105,7 +105,6 @@ def create_calendar(games, output_path, source_url, time_zone):
                 f"SUMMARY:{ics_escape(title)}",
                 f"LOCATION:{ics_escape(location)}",
                 f"DESCRIPTION:{ics_escape(description)}",
-                f"URL:{source_url}",
                 "BEGIN:VALARM",
                 "ACTION:DISPLAY",
                 f"DESCRIPTION:{ics_escape(title)} starts in 1 hour",
