@@ -2,8 +2,19 @@
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
   <channel>
     <title>Ann and Nick</title>
-    <link>https://rumble.com/c/AnnCoulter</link>
     <itunes:image href="https://raw.githubusercontent.com/smorrell/rumble-rss/master/podcast_cover.jpg" />
+    <item>
+      <title>BC Craziness</title>
+      <pubDate>Fri, 25 Sep 2026 11:00:37 GMT</pubDate>
+      <guid isPermaLink="false">MOx9ZzhlsP4</guid>
+      <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-09-25-BC-Craziness.mp3" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>New Clancy Jury Revelation Could BACKFIRE On The Defense</title>
+      <pubDate>Fri, 25 Sep 2026 14:09:09 GMT</pubDate>
+      <guid isPermaLink="false">YrbQMaaRiQ8</guid>
+      <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-09-25-New-Clancy-Jury-Revelation-Could-BACKFIRE-On-The-Defense.mp3" type="audio/mpeg" />
+    </item>
     <item>
       <title>Ann Coulter on The Mark Simone Show (710 WOR) — September 23, 2026</title>
       <pubDate>Thu, 24 Sep 2026 00:55:09 GMT</pubDate>
@@ -23,6 +34,18 @@
       <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-09-24-Stop-Being-a-Slave-to-the-GOP.mp3" type="audio/mpeg" />
     </item>
     <item>
+      <title>Bank Of Canada Sends A Warning</title>
+      <pubDate>Thu, 24 Sep 2026 11:00:11 GMT</pubDate>
+      <guid isPermaLink="false">5PJ56z6MAZE</guid>
+      <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-09-24-Bank-Of-Canada-Sends-A-Warning.mp3" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>Trump’s Greenland Deal Is MUCH Bigger Than It Looks</title>
+      <pubDate>Thu, 24 Sep 2026 21:46:49 GMT</pubDate>
+      <guid isPermaLink="false">NKyU5sc28MA</guid>
+      <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-09-24-Trump-s-Greenland-Deal-Is-MUCH-Bigger-Than-It-Looks.mp3" type="audio/mpeg" />
+    </item>
+    <item>
       <title>Nick Fuentes on the Alex Jones Show</title>
       <pubDate>Wed, 23 Sep 2026 21:19:47 GMT</pubDate>
       <guid isPermaLink="false">v7dpyga</guid>
@@ -35,16 +58,70 @@
       <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-09-23-MAGA-Defends-RACEMIXING-with-Indians.mp3" type="audio/mpeg" />
     </item>
     <item>
+      <title>Please Reach Out - If you are involved with Todd C Slater &amp; the Simple Investor</title>
+      <pubDate>Wed, 23 Sep 2026 11:00:20 GMT</pubDate>
+      <guid isPermaLink="false">5Xev2JisOVY</guid>
+      <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-09-23-Please-Reach-Out-If-you-are-involved-with-Todd-C-Slater-the-Simple-Investor.mp3" type="audio/mpeg" />
+    </item>
+    <item>
       <title>Trump BANS CNN from the White House</title>
       <pubDate>Tue, 22 Sep 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="false">v7dnrza</guid>
       <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-09-22-Trump-BANS-CNN-from-the-White-House.mp3" type="audio/mpeg" />
     </item>
     <item>
+      <title>Special Guest Gary Mauris- CEO &amp; Co-founder of DLC Group of Companies</title>
+      <pubDate>Tue, 22 Sep 2026 11:00:03 GMT</pubDate>
+      <guid isPermaLink="false">aNds9NdpRGI</guid>
+      <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-09-22-Special-Guest-Gary-Mauris-CEO-Co-founder-of-DLC-Group-of-Companies.mp3" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>When A College Degree Stops Proving You Can Do The Work</title>
+      <pubDate>Tue, 22 Sep 2026 13:00:15 GMT</pubDate>
+      <guid isPermaLink="false">RxbFgSNPalk</guid>
+      <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-09-22-When-A-College-Degree-Stops-Proving-You-Can-Do-The-Work.mp3" type="audio/mpeg" />
+    </item>
+    <item>
       <title>I’M THE GEOGRAPHY GOAT!!!</title>
       <pubDate>Mon, 21 Sep 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="false">v7dkn8g</guid>
       <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-09-21-I-M-THE-GEOGRAPHY-GOAT.mp3" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>Are Young People Broke?</title>
+      <pubDate>Mon, 21 Sep 2026 11:00:24 GMT</pubDate>
+      <guid isPermaLink="false">CaGc0soGuPU</guid>
+      <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-09-21-Are-Young-People-Broke.mp3" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>The $500 MILLION Theory Behind The Lindsay Clancy Case</title>
+      <pubDate>Mon, 21 Sep 2026 18:00:10 GMT</pubDate>
+      <guid isPermaLink="false">I53IuhflJ00</guid>
+      <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-09-21-The-500-MILLION-Theory-Behind-The-Lindsay-Clancy-Case.mp3" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>Clancy Holdout Reveals What REALLY Happened In That Jury Room</title>
+      <pubDate>Mon, 21 Sep 2026 13:00:29 GMT</pubDate>
+      <guid isPermaLink="false">z1VCshwGoUk</guid>
+      <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-09-21-Clancy-Holdout-Reveals-What-REALLY-Happened-In-That-Jury-Room.mp3" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>People Can’t Afford to Live</title>
+      <pubDate>Sun, 20 Sep 2026 18:30:17 GMT</pubDate>
+      <guid isPermaLink="false">mzIdk4hiKCk</guid>
+      <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-09-20-People-Can-t-Afford-to-Live.mp3" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>RBC's Wrong</title>
+      <pubDate>Sun, 20 Sep 2026 11:00:37 GMT</pubDate>
+      <guid isPermaLink="false">K3pwITQgfrM</guid>
+      <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-09-20-RBC-s-Wrong.mp3" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>Clancy Holdout BREAKS SILENCE: “I Didn’t Have Any Doubts”</title>
+      <pubDate>Sun, 20 Sep 2026 20:45:58 GMT</pubDate>
+      <guid isPermaLink="false">Gm_ucI-uZb8</guid>
+      <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-09-20-Clancy-Holdout-BREAKS-SILENCE-I-Didn-t-Have-Any-Doubts.mp3" type="audio/mpeg" />
     </item>
   </channel>
 </rss>

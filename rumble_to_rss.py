@@ -111,7 +111,6 @@ def write_feed(metadata):
     rss = ET.Element("rss", version="2.0")
     channel = ET.SubElement(rss, "channel")
     ET.SubElement(channel, "title").text = "Ann and Nick"
-    ET.SubElement(channel, "link").text = SOURCE_CHANNEL_URL
     ET.SubElement(
         channel,
         f"{{{ITUNES_NAMESPACE}}}image",
