@@ -2,6 +2,7 @@ import os
 import re
 import json
 import shutil
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 from email.utils import format_datetime
 import importlib.util
@@ -34,8 +35,7 @@ MAX_DOWNLOADS_PER_RUN = 7
 REPO_PATH = os.path.dirname(os.path.abspath(__file__))
 AUDIO_DIR = os.path.join(REPO_PATH, "mp3s")
 METADATA_PATH = os.path.join(AUDIO_DIR, "video_metadata.json")
-ANN_COULTER_FEED_PATH = os.path.join(REPO_PATH, "Rumble.xml")
-ANN_COULTER_CHANNEL_URL = "https://rumble.com/c/AnnCoulter"
+RSS_FEED_PATH = os.path.join(REPO_PATH, "Rumble.xml")
 # Example raw asset URL: https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/filename.mp3
 FEED_BASE_URL = os.environ.get(
     "FEED_BASE_URL", "https://raw.githubusercontent.com/smorrell/rumble-rss/master"
@@ -105,12 +105,12 @@ def is_recent_video(info):
     return video_date >= cutoff_date
 
 
-def write_ann_coulter_feed(metadata):
-    """Write an RSS feed containing downloaded Ann Coulter episodes."""
+def write_feed(metadata):
+    """Write the generated podcast RSS feed for all enabled channels."""
     rss = ET.Element("rss", version="2.0")
     channel = ET.SubElement(rss, "channel")
     ET.SubElement(channel, "title").text = "Ann and Nick"
-    ET.SubElement(channel, "link").text = ANN_COULTER_CHANNEL_URL
+    ET.SubElement(channel, "link").text = SOURCE_CHANNEL_URL
     ET.SubElement(
         channel,
         f"{{{ITUNES_NAMESPACE}}}image",
@@ -153,8 +153,8 @@ def write_ann_coulter_feed(metadata):
 
     tree = ET.ElementTree(rss)
     ET.indent(tree, space="  ")
-    tree.write(ANN_COULTER_FEED_PATH, encoding="utf-8", xml_declaration=True)
-    print(f"Wrote {len(ann_entries)} Ann and Nick episode(s) to {ANN_COULTER_FEED_PATH}.")
+    tree.write(RSS_FEED_PATH, encoding="utf-8", xml_declaration=True)
+    print(f"Wrote {len(ann_entries)} episode(s) to {RSS_FEED_PATH}.")
 
 
 def discover_channel_videos(channel_url, ydl):
@@ -200,60 +200,50 @@ def discover_channel_videos(channel_url, ydl):
     return video_urls
 
 def download_and_convert():
-    """Downloads new videos from Rumble, converts to MP3, and returns metadata."""
+    """Downloads new videos from Rumble and YouTube, converts to MP3, and returns metadata."""
     os.makedirs(AUDIO_DIR, exist_ok=True)
 
-    ydl_opts = {
-        "format": "bestaudio/best",
-        "postprocessors": [
-            {
-                "key": "FFmpegExtractAudio",
-                "preferredcodec": "mp3",
-                "preferredquality": "128",
-            }
-        ],
-        "outtmpl": os.path.join(
-            AUDIO_DIR, "%(upload_date>%Y-%m-%d)s - %(title)s.%(ext)s"
-        ),
-        "dateafter": f"now-{MAX_VIDEO_AGE_DAYS}days",
-        "http_headers": {
-            "Referer": "https://rumble.com/",
-            "Origin": "https://rumble.com",
-        },
-    }
-    if shutil.which("node"):
-        ydl_opts["js_runtimes"] = {"node": {}}
-    else:
-        print(
-            "Warning: Node.js is not installed or not on PATH. yt-dlp needs a JavaScript runtime "
-            "for YouTube extraction. Install Node.js or add it to PATH."
-        )
-    if curl_cffi:
-        ydl_opts["impersonate"] = ImpersonateTarget(client="firefox")
-    else:
-        print(
-            "Warning: curl-cffi is not installed; Rumble may reject requests with HTTP 403. "
-            "Run installation.bat to install it."
-        )
+    def build_ydl_options():
+        opts = {
+            "format": "bestaudio/best",
+            "postprocessors": [
+                {
+                    "key": "FFmpegExtractAudio",
+                    "preferredcodec": "mp3",
+                    "preferredquality": "128",
+                }
+            ],
+            "outtmpl": os.path.join(
+                AUDIO_DIR, "%(upload_date>%Y-%m-%d)s - %(title)s.%(ext)s"
+            ),
+            "dateafter": f"now-{MAX_VIDEO_AGE_DAYS}days",
+            "http_headers": {
+                "Referer": "https://rumble.com/",
+                "Origin": "https://rumble.com",
+            },
+        }
+        if shutil.which("node"):
+            opts["js_runtimes"] = {"node": {}}
+        else:
+            print(
+                "Warning: Node.js is not installed or not on PATH. yt-dlp needs a JavaScript runtime "
+                "for YouTube extraction. Install Node.js or add it to PATH."
+            )
+        if curl_cffi:
+            opts["impersonate"] = ImpersonateTarget(client="firefox")
+        else:
+            print(
+                "Warning: curl-cffi is not installed; Rumble may reject requests with HTTP 403. "
+                "Run installation.bat to install it."
+            )
+        return opts
 
-    print("Checking Rumble for new videos...")
-    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-        entries = []
-        metadata = {}
-        if os.path.exists(METADATA_PATH):
-            with open(METADATA_PATH, encoding="utf-8") as metadata_file:
-                metadata = json.load(metadata_file)
-        remove_expired_downloads(metadata)
-
-        for channel_url in FEED_CHANNEL_URLS:
-            video_urls = discover_channel_videos(channel_url, ydl)
-            channel_downloads = 0
-            for video_url in video_urls:
-                if channel_downloads >= MAX_DOWNLOADS_PER_RUN:
-                    break
-                try:
-                    print(f"Video URL: {video_url}")
-                    info = ydl.extract_info(video_url, download=False)
+    def fetch_and_convert(video_url, channel_url, metadata, metadata_lock):
+        with yt_dlp.YoutubeDL(build_ydl_options()) as ydl:
+            try:
+                print(f"Video URL: {video_url}")
+                info = ydl.extract_info(video_url, download=False)
+                with metadata_lock:
                     if info and info.get("id") in metadata:
                         if metadata[info["id"]].get("channel_url") != channel_url:
                             metadata[info["id"]]["channel_url"] = channel_url
@@ -265,7 +255,7 @@ def download_and_convert():
                                     indent=2,
                                 )
                         print(f"Skipping already downloaded video {video_url}.")
-                        continue
+                        return None
 
                     if not is_recent_video(info):
                         upload_date = info.get("upload_date") if info else None
@@ -273,52 +263,90 @@ def download_and_convert():
                             f"Skipping old or undated video {video_url} "
                             f"(upload_date: {upload_date or 'unknown'})."
                         )
-                        continue
+                        return None
 
                     duration = info.get("duration") if info else None
                     if duration is None or duration >= (3600 * 1.5):
                         print(f"Skipping video {video_url}: duration is not less than 1 hour.")
-                        continue
+                        return None
 
-                    info = ydl.extract_info(video_url, download=True)
-                    if info:
-                        entries.append(info)
-                        channel_downloads += 1
-                        if info.get("id"):
-                            prepared_name = os.path.basename(ydl.prepare_filename(info))
-                            source_name = f"{os.path.splitext(prepared_name)[0]}.mp3"
-                            output_name = sanitize_mp3_filename(source_name)
-                            if source_name != output_name:
-                                source_path = os.path.join(AUDIO_DIR, source_name)
-                                output_path = os.path.join(AUDIO_DIR, output_name)
-                                if os.path.exists(output_path):
-                                    output_name = sanitize_mp3_filename(
-                                        f"{os.path.splitext(source_name)[0]}-{info['id']}.mp3"
-                                    )
-                                    output_path = os.path.join(AUDIO_DIR, output_name)
-                                os.rename(source_path, output_path)
-                            metadata[info["id"]] = {
-                                "title": info.get("title"),
-                                "description": info.get("description"),
-                                "upload_date": info.get("upload_date"),
-                                "timestamp": info.get("timestamp"),
-                                "filename": output_name,
-                                "channel_url": channel_url,
-                            }
-                            with open(
-                                METADATA_PATH, "w", encoding="utf-8"
-                            ) as metadata_file:
-                                json.dump(
-                                    metadata,
-                                    metadata_file,
-                                    ensure_ascii=False,
-                                    indent=2,
-                                )
-                except Exception as error:
-                    print(f"Error fetching video {video_url}: {error}")
+                info = ydl.extract_info(video_url, download=True)
+                if not info or not info.get("id"):
+                    return None
 
-        write_ann_coulter_feed(metadata)
-        return entries
+                prepared_name = os.path.basename(ydl.prepare_filename(info))
+                source_name = f"{os.path.splitext(prepared_name)[0]}.mp3"
+                output_name = sanitize_mp3_filename(source_name)
+                if source_name != output_name:
+                    source_path = os.path.join(AUDIO_DIR, source_name)
+                    output_path = os.path.join(AUDIO_DIR, output_name)
+                    if os.path.exists(output_path):
+                        output_name = sanitize_mp3_filename(
+                            f"{os.path.splitext(source_name)[0]}-{info['id']}.mp3"
+                        )
+                        output_path = os.path.join(AUDIO_DIR, output_name)
+                    os.rename(source_path, output_path)
+
+                metadata_entry = {
+                    "title": info.get("title"),
+                    "description": info.get("description"),
+                    "upload_date": info.get("upload_date"),
+                    "timestamp": info.get("timestamp"),
+                    "filename": output_name,
+                    "channel_url": channel_url,
+                }
+
+                with metadata_lock:
+                    metadata[info["id"]] = metadata_entry
+                    with open(METADATA_PATH, "w", encoding="utf-8") as metadata_file:
+                        json.dump(
+                            metadata,
+                            metadata_file,
+                            ensure_ascii=False,
+                            indent=2,
+                        )
+                return info
+            except Exception as error:
+                print(f"Error fetching video {video_url}: {error}")
+                return None
+
+    print("Checking Rumble for new videos...")
+    entries = []
+    metadata = {}
+    if os.path.exists(METADATA_PATH):
+        with open(METADATA_PATH, encoding="utf-8") as metadata_file:
+            metadata = json.load(metadata_file)
+    remove_expired_downloads(metadata)
+    metadata_lock = __import__("threading").Lock()
+
+    pending_tasks = []
+    for channel_url in FEED_CHANNEL_URLS:
+        ydl = yt_dlp.YoutubeDL(build_ydl_options())
+        try:
+            video_urls = discover_channel_videos(channel_url, ydl)
+        finally:
+            ydl.close()
+
+        channel_downloads = 0
+        for video_url in video_urls:
+            if channel_downloads >= MAX_DOWNLOADS_PER_RUN:
+                break
+            pending_tasks.append((video_url, channel_url))
+            channel_downloads += 1
+
+    max_workers = 4
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = [
+            executor.submit(fetch_and_convert, video_url, channel_url, metadata, metadata_lock)
+            for video_url, channel_url in pending_tasks
+        ]
+        for future in as_completed(futures):
+            result = future.result()
+            if result:
+                entries.append(result)
+
+    write_feed(metadata)
+    return entries
 
 if __name__ == "__main__":
     download_and_convert()
