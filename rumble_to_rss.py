@@ -29,6 +29,7 @@ YOUTUBE_CHANNEL_URLS = [
     "https://www.youtube.com/@angrymortgage/videos",    
     "https://www.youtube.com/@TheBrancaShow/videos",
 ]
+YOUTUBE_MAX_VIDEOS = 10
 FEED_CHANNEL_URLS = YOUTUBE_CHANNEL_URLS + RUMBLE_CHANNEL_URLS
 MAX_VIDEO_AGE_DAYS = 5
 MAX_DOWNLOADS_PER_RUN = 7   
@@ -206,6 +207,7 @@ def download_and_convert():
     def build_ydl_options():
         opts = {
             "format": "bestaudio/best",
+            "playlistend": YOUTUBE_MAX_VIDEOS,
             "postprocessors": [
                 {
                     "key": "FFmpegExtractAudio",
