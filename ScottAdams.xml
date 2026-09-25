@@ -22,6 +22,20 @@
     </ns1:category>
     <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/3012323/3012323-1578935161711-71f93031bbe53.jpg" />
     <item>
+      <title>Classic Episode 1877 Scott Adams: The FBI Is Robbing Banks, The Anti-Woke Are Rising, The News Is Fun Today</title>
+      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1877-Scott-Adams-The-FBI-Is-Robbing-Banks--The-Anti-Woke-Are-Rising--The-News-Is-Fun-Today-e1obg3a</link>
+      <guid isPermaLink="false">b5f3bf4b-6dbf-4e72-b0ab-79c0bed9b436</guid>
+      <dc:creator>Scott Adams</dc:creator>
+      <pubDate>Fri, 25 Sep 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://traffic.megaphone.fm/APO5124022921.mp3" length="78722194" type="audio/mpeg" />
+      <ns1:explicit>false</ns1:explicit>
+      <ns1:duration>01:22:00</ns1:duration>
+      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1664125117727-53191d09d655d.jpg" />
+      <ns1:season>46</ns1:season>
+      <ns1:episode>1877</ns1:episode>
+      <ns1:episodeType>full</ns1:episodeType>
+    </item>
+    <item>
       <title>Classic Episode 1876 Scott Adams: I Give You My 11 Point Fentanyl Plan</title>
       <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1876-Scott-Adams-I-Give-You-My-11-Point-Fentanyl-Plan-e1oa9cf</link>
       <guid isPermaLink="false">d9b4b7d8-bcac-4db1-8cd1-4670d8fb87dd</guid>
@@ -145,20 +159,6 @@
       <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1663347110467-2555a4f541bd8.jpg" />
       <ns1:season>46</ns1:season>
       <ns1:episode>1868</ns1:episode>
-      <ns1:episodeType>full</ns1:episodeType>
-    </item>
-    <item>
-      <title>Classic Episode 1867 Scott Adams: Come Watch Me Change The Political Narrative Right In Front Of Your Eyes</title>
-      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1867-Scott-Adams-Come-Watch-Me-Change-The-Political-Narrative-Right-In-Front-Of-Your-Eyes-e1nt1dr</link>
-      <guid isPermaLink="false">eebb285b-0584-4b59-a1ac-04d84c99e42f</guid>
-      <dc:creator>Scott Adams</dc:creator>
-      <pubDate>Tue, 15 Sep 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/APO7511839134.mp3" length="74223281" type="audio/mpeg" />
-      <ns1:explicit>false</ns1:explicit>
-      <ns1:duration>01:17:18</ns1:duration>
-      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1663260300998-e50512b840042.jpg" />
-      <ns1:season>46</ns1:season>
-      <ns1:episode>1867</ns1:episode>
       <ns1:episodeType>full</ns1:episodeType>
     </item>
   </channel>
