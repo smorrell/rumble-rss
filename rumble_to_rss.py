@@ -239,9 +239,10 @@ def download_and_convert():
         return opts
 
     def fetch_and_convert(video_url, channel_url, metadata, metadata_lock):
+        thread_name = f"Thread-{__import__('threading').current_thread().ident}"
         with yt_dlp.YoutubeDL(build_ydl_options()) as ydl:
             try:
-                print(f"Video URL: {video_url}")
+                print(f"[{thread_name}] Video URL: {video_url}")
                 info = ydl.extract_info(video_url, download=False)
                 with metadata_lock:
                     if info and info.get("id") in metadata:
@@ -254,20 +255,20 @@ def download_and_convert():
                                     ensure_ascii=False,
                                     indent=2,
                                 )
-                        print(f"Skipping already downloaded video {video_url}.")
+                        print(f"[{thread_name}] Skipping already downloaded video {video_url}.")
                         return None
 
                     if not is_recent_video(info):
                         upload_date = info.get("upload_date") if info else None
                         print(
-                            f"Skipping old or undated video {video_url} "
+                            f"[{thread_name}] Skipping old or undated video {video_url} "
                             f"(upload_date: {upload_date or 'unknown'})."
                         )
                         return None
 
                     duration = info.get("duration") if info else None
                     if duration is None or duration >= (3600 * 1.5):
-                        print(f"Skipping video {video_url}: duration is not less than 1 hour.")
+                        print(f"[{thread_name}] Skipping video {video_url}: duration is not less than 1 hour.")
                         return None
 
                 info = ydl.extract_info(video_url, download=True)
@@ -307,7 +308,7 @@ def download_and_convert():
                         )
                 return info
             except Exception as error:
-                print(f"Error fetching video {video_url}: {error}")
+                print(f"[{thread_name}] Error fetching video {video_url}: {error}")
                 return None
 
     print("Checking Rumble for new videos...")
