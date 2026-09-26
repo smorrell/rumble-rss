@@ -4,7 +4,7 @@
     <title>Classic Real Coffee with Scott Adams</title>
     <link>https://podcasters.spotify.com/pod/show/scott-adams00</link>
     <generator>Anchor Podcasts</generator>
-    <lastBuildDate>Thu, 24 Sep 2026 05:12:51 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2026 17:22:06 GMT</lastBuildDate>
     <ns0:link href="https://anchor.fm/s/128d072c/podcast/rss" rel="self" type="application/rss+xml" />
     <author>Scott Adams</author>
     <copyright>Scott Adams</copyright>
@@ -21,6 +21,20 @@
       <ns1:category text="News Commentary" />
     </ns1:category>
     <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/3012323/3012323-1578935161711-71f93031bbe53.jpg" />
+    <item>
+      <title>Classic Episode 1878 Scott Adams: Join Me For The Finest News Commentary That Ever Got A Cartoonist Canceled</title>
+      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1878-Scott-Adams-Join-Me-For-The-Finest-News-Commentary-That-Ever-Got-A-Cartoonist-Canceled-e1od7rb</link>
+      <guid isPermaLink="false">d937dbf1-a8a0-45a7-86e8-882827ed24dc</guid>
+      <dc:creator>Scott Adams</dc:creator>
+      <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://traffic.megaphone.fm/APO2507813709.mp3" length="68394840" type="audio/mpeg" />
+      <ns1:explicit>false</ns1:explicit>
+      <ns1:duration>01:11:14</ns1:duration>
+      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1664210850873-3b1b3f4de16f5.jpg" />
+      <ns1:season>46</ns1:season>
+      <ns1:episode>1878</ns1:episode>
+      <ns1:episodeType>full</ns1:episodeType>
+    </item>
     <item>
       <title>Classic Episode 1877 Scott Adams: The FBI Is Robbing Banks, The Anti-Woke Are Rising, The News Is Fun Today</title>
       <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1877-Scott-Adams-The-FBI-Is-Robbing-Banks--The-Anti-Woke-Are-Rising--The-News-Is-Fun-Today-e1obg3a</link>
@@ -145,20 +159,6 @@
       <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1663431646787-99635b303842d.jpg" />
       <ns1:season>46</ns1:season>
       <ns1:episode>1869</ns1:episode>
-      <ns1:episodeType>full</ns1:episodeType>
-    </item>
-    <item>
-      <title>Classic Episode 1868 Scott Adams: Find Out Why Republicans and Democrats Are Different</title>
-      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1868-Scott-Adams-Find-Out-Why-Republicans-and-Democrats-Are-Different-e1nulls</link>
-      <guid isPermaLink="false">8af025d0-45d3-4fee-bac7-ce9732cb2de5</guid>
-      <dc:creator>Scott Adams</dc:creator>
-      <pubDate>Wed, 16 Sep 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/APO7747172137.mp3" length="75992084" type="audio/mpeg" />
-      <ns1:explicit>false</ns1:explicit>
-      <ns1:duration>01:19:09</ns1:duration>
-      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1663347110467-2555a4f541bd8.jpg" />
-      <ns1:season>46</ns1:season>
-      <ns1:episode>1868</ns1:episode>
       <ns1:episodeType>full</ns1:episodeType>
     </item>
   </channel>
