@@ -22,6 +22,34 @@
     </ns1:category>
     <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/3012323/3012323-1578935161711-71f93031bbe53.jpg" />
     <item>
+      <title>Classic Episode 1880 Scott Adams: Let's Figure Out Who Blew Up The Pipeline. Get In Here</title>
+      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1880-Scott-Adams-Lets-Figure-Out-Who-Blew-Up-The-Pipeline--Get-In-Here-e1ogl4p</link>
+      <guid isPermaLink="false">af87152f-4a5d-4551-8682-5165f3d24745</guid>
+      <dc:creator>Scott Adams</dc:creator>
+      <pubDate>Mon, 28 Sep 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://traffic.megaphone.fm/APO4301420467.mp3" length="62721044" type="audio/mpeg" />
+      <ns1:explicit>false</ns1:explicit>
+      <ns1:duration>01:05:20</ns1:duration>
+      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1664382077124-cc6e48cd77acf.jpg" />
+      <ns1:season>46</ns1:season>
+      <ns1:episode>1880</ns1:episode>
+      <ns1:episodeType>full</ns1:episodeType>
+    </item>
+    <item>
+      <title>Classic Episode 1879 Scott Adams: Fake News Delivered A Bountiful Harvest Today, Enjoy With A Beverage</title>
+      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1879-Scott-Adams-Fake-News-Delivered-A-Bountiful-Harvest-Today--Enjoy-With-A-Beverage-e1of168</link>
+      <guid isPermaLink="false">80f24d93-f73e-4225-8663-50e16af1547d</guid>
+      <dc:creator>Scott Adams</dc:creator>
+      <pubDate>Sun, 27 Sep 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://traffic.megaphone.fm/APO7251304736.mp3" length="75843291" type="audio/mpeg" />
+      <ns1:explicit>false</ns1:explicit>
+      <ns1:duration>01:19:00</ns1:duration>
+      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1664296095667-667feb8e81c11.jpg" />
+      <ns1:season>46</ns1:season>
+      <ns1:episode>1879</ns1:episode>
+      <ns1:episodeType>full</ns1:episodeType>
+    </item>
+    <item>
       <title>Classic Episode 1878 Scott Adams: Join Me For The Finest News Commentary That Ever Got A Cartoonist Canceled</title>
       <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1878-Scott-Adams-Join-Me-For-The-Finest-News-Commentary-That-Ever-Got-A-Cartoonist-Canceled-e1od7rb</link>
       <guid isPermaLink="false">d937dbf1-a8a0-45a7-86e8-882827ed24dc</guid>
@@ -131,34 +159,6 @@
       <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1663604906275-2ce336a90ba2.jpg" />
       <ns1:season>46</ns1:season>
       <ns1:episode>1871</ns1:episode>
-      <ns1:episodeType>full</ns1:episodeType>
-    </item>
-    <item>
-      <title>Classic Episode 1870 Scott Adams: Let's Compare Everything To Hitler Because Thinking Is Hard</title>
-      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1870-Scott-Adams-Lets-Compare-Everything-To-Hitler-Because-Thinking-Is-Hard-e1o10gt</link>
-      <guid isPermaLink="false">66911f89-a96c-4c96-aa47-f31dc0368ec6</guid>
-      <dc:creator>Scott Adams</dc:creator>
-      <pubDate>Fri, 18 Sep 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/APO2126108819.mp3" length="62161397" type="audio/mpeg" />
-      <ns1:explicit>false</ns1:explicit>
-      <ns1:duration>01:04:45</ns1:duration>
-      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1663517712037-1ef399ad777fb.jpg" />
-      <ns1:season>46</ns1:season>
-      <ns1:episode>1870</ns1:episode>
-      <ns1:episodeType>full</ns1:episodeType>
-    </item>
-    <item>
-      <title>Classic Episode 1869 Scott Adams: Let's Talk About Those Migrants Going To Martha's Vineyard, Everybody Wins</title>
-      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1869-Scott-Adams-Lets-Talk-About-Those-Migrants-Going-To-Marthas-Vineyard--Everybody-Wins-e1nvr5o</link>
-      <guid isPermaLink="false">7f83aaf4-ee84-44ca-ac25-605c2fac5b67</guid>
-      <dc:creator>Scott Adams</dc:creator>
-      <pubDate>Thu, 17 Sep 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/APO5928277363.mp3" length="51451193" type="audio/mpeg" />
-      <ns1:explicit>false</ns1:explicit>
-      <ns1:duration>00:53:35</ns1:duration>
-      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1663431646787-99635b303842d.jpg" />
-      <ns1:season>46</ns1:season>
-      <ns1:episode>1869</ns1:episode>
       <ns1:episodeType>full</ns1:episodeType>
     </item>
   </channel>
