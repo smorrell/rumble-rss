@@ -4,10 +4,22 @@
     <title>Ann and Nick</title>
     <itunes:image href="https://raw.githubusercontent.com/smorrell/rumble-rss/master/podcast_cover.jpg" />
     <item>
+      <title>Home Prices: What Happens Next?</title>
+      <pubDate>Tue, 29 Sep 2026 11:00:20 GMT</pubDate>
+      <guid isPermaLink="false">fAWzYzZvYyc</guid>
+      <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-09-29-Home-Prices-What-Happens-Next.mp3" type="audio/mpeg" />
+    </item>
+    <item>
       <title>Too Much FEAR</title>
       <pubDate>Mon, 28 Sep 2026 11:00:31 GMT</pubDate>
       <guid isPermaLink="false">Uk2r1Q4tHa0</guid>
       <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-09-28-Too-Much-FEAR.mp3" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>Supreme Court Just REVIVED Trump’s Voter Citizenship Checks</title>
+      <pubDate>Mon, 28 Sep 2026 22:53:27 GMT</pubDate>
+      <guid isPermaLink="false">DYkZkR_csrg</guid>
+      <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-09-28-Supreme-Court-Just-REVIVED-Trump-s-Voter-Citizenship-Checks.mp3" type="audio/mpeg" />
     </item>
     <item>
       <title>Smash the Status Quo</title>
@@ -104,24 +116,6 @@
       <pubDate>Thu, 24 Sep 2026 21:46:49 GMT</pubDate>
       <guid isPermaLink="false">NKyU5sc28MA</guid>
       <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-09-24-Trump-s-Greenland-Deal-Is-MUCH-Bigger-Than-It-Looks.mp3" type="audio/mpeg" />
-    </item>
-    <item>
-      <title>Nick Fuentes on the Alex Jones Show</title>
-      <pubDate>Wed, 23 Sep 2026 21:19:47 GMT</pubDate>
-      <guid isPermaLink="false">v7dpyga</guid>
-      <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-09-23-Nick-Fuentes-on-the-Alex-Jones-Show.mp3" type="audio/mpeg" />
-    </item>
-    <item>
-      <title>MAGA Defends RACEMIXING with Indians???</title>
-      <pubDate>Wed, 23 Sep 2026 16:00:00 GMT</pubDate>
-      <guid isPermaLink="false">v7dpcjw</guid>
-      <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-09-23-MAGA-Defends-RACEMIXING-with-Indians.mp3" type="audio/mpeg" />
-    </item>
-    <item>
-      <title>Please Reach Out - If you are involved with Todd C Slater &amp; the Simple Investor</title>
-      <pubDate>Wed, 23 Sep 2026 11:00:20 GMT</pubDate>
-      <guid isPermaLink="false">5Xev2JisOVY</guid>
-      <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-09-23-Please-Reach-Out-If-you-are-involved-with-Todd-C-Slater-the-Simple-Investor.mp3" type="audio/mpeg" />
     </item>
   </channel>
 </rss>

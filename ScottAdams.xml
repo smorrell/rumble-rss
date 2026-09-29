@@ -4,7 +4,7 @@
     <title>Classic Real Coffee with Scott Adams</title>
     <link>https://podcasters.spotify.com/pod/show/scott-adams00</link>
     <generator>Anchor Podcasts</generator>
-    <lastBuildDate>Fri, 25 Sep 2026 17:22:06 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2026 16:47:04 GMT</lastBuildDate>
     <ns0:link href="https://anchor.fm/s/128d072c/podcast/rss" rel="self" type="application/rss+xml" />
     <author>Scott Adams</author>
     <copyright>Scott Adams</copyright>
@@ -21,6 +21,20 @@
       <ns1:category text="News Commentary" />
     </ns1:category>
     <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/3012323/3012323-1578935161711-71f93031bbe53.jpg" />
+    <item>
+      <title>Classic Episode 1881 Scott Adams: Who Blew Up That Pipeline? Only Trump Can Negotiate Russia/Ukraine Peace?</title>
+      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1881-Scott-Adams-Who-Blew-Up-That-Pipeline--Only-Trump-Can-Negotiate-RussiaUkraine-Peace-e1oic27</link>
+      <guid isPermaLink="false">e0d780d0-50ca-4bb0-8890-cb1038d1514a</guid>
+      <dc:creator>Scott Adams</dc:creator>
+      <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://traffic.megaphone.fm/APO3718621844.mp3" length="69521240" type="audio/mpeg" />
+      <ns1:explicit>false</ns1:explicit>
+      <ns1:duration>01:12:25</ns1:duration>
+      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1664468647767-3b0ddc4649f3e.jpg" />
+      <ns1:season>46</ns1:season>
+      <ns1:episode>1881</ns1:episode>
+      <ns1:episodeType>full</ns1:episodeType>
+    </item>
     <item>
       <title>Classic Episode 1880 Scott Adams: Let's Figure Out Who Blew Up The Pipeline. Get In Here</title>
       <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1880-Scott-Adams-Lets-Figure-Out-Who-Blew-Up-The-Pipeline--Get-In-Here-e1ogl4p</link>
@@ -145,20 +159,6 @@
       <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1663692693857-0e73ea73c6891.jpg" />
       <ns1:season>46</ns1:season>
       <ns1:episode>1872</ns1:episode>
-      <ns1:episodeType>full</ns1:episodeType>
-    </item>
-    <item>
-      <title>Classic Episode 1871 Scott Adams: The Government Is Doing Nothing About Fentanyl, More</title>
-      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1871-Scott-Adams-The-Government-Is-Doing-Nothing-About-Fentanyl--More-e1o2fmn</link>
-      <guid isPermaLink="false">90c28c7f-dd59-4324-a5aa-38398b7d3cef</guid>
-      <dc:creator>Scott Adams</dc:creator>
-      <pubDate>Sat, 19 Sep 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/APO2451638578.mp3" length="52716773" type="audio/mpeg" />
-      <ns1:explicit>false</ns1:explicit>
-      <ns1:duration>00:54:54</ns1:duration>
-      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1663604906275-2ce336a90ba2.jpg" />
-      <ns1:season>46</ns1:season>
-      <ns1:episode>1871</ns1:episode>
       <ns1:episodeType>full</ns1:episodeType>
     </item>
   </channel>
