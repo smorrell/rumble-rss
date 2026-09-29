@@ -56,6 +56,16 @@ def sanitize_mp3_filename(filename):
     return f"{sanitized_basename}.mp3"
 
 
+def channel_show_name(channel_url):
+    """Return a filesystem-safe show name from a channel URL."""
+    path_parts = [part for part in channel_url.rstrip("/").split("/") if part]
+    show_name = next(
+        (part.lstrip("@") for part in reversed(path_parts) if part.lower() != "videos"),
+        "channel",
+    )
+    return re.sub(r"[^A-Za-z0-9]+", "-", show_name).strip("-") or "channel"
+
+
 def remove_expired_downloads(metadata):
     """Remove MP3s and metadata entries for videos older than the retention period."""
     cutoff_date = datetime.now().date() - timedelta(days=MAX_VIDEO_AGE_DAYS)
@@ -203,7 +213,8 @@ def download_and_convert():
     """Downloads new videos from Rumble and YouTube, converts to MP3, and returns metadata."""
     os.makedirs(AUDIO_DIR, exist_ok=True)
 
-    def build_ydl_options():
+    def build_ydl_options(channel_url=None):
+        show_name = channel_show_name(channel_url) if channel_url else "show"
         opts = {
             "format": "bestaudio/best",
             "playlistend": YOUTUBE_MAX_VIDEOS,
@@ -215,7 +226,8 @@ def download_and_convert():
                 }
             ],
             "outtmpl": os.path.join(
-                AUDIO_DIR, "%(upload_date>%Y-%m-%d)s - %(title)s.%(ext)s"
+                AUDIO_DIR,
+                f"%(upload_date>%Y-%m-%d)s - {show_name} - %(title)s.%(ext)s",
             ),
             "dateafter": f"now-{MAX_VIDEO_AGE_DAYS}days",
             "http_headers": {
@@ -241,7 +253,7 @@ def download_and_convert():
 
     def fetch_and_convert(video_url, channel_url, metadata, metadata_lock):
         thread_name = f"Thread-{__import__('threading').current_thread().ident}"
-        with yt_dlp.YoutubeDL(build_ydl_options()) as ydl:
+        with yt_dlp.YoutubeDL(build_ydl_options(channel_url)) as ydl:
             try:
                 print(f"[{thread_name}] Video URL: {video_url}")
                 info = ydl.extract_info(video_url, download=False)
