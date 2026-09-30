@@ -22,6 +22,20 @@
     </ns1:category>
     <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/3012323/3012323-1578935161711-71f93031bbe53.jpg" />
     <item>
+      <title>Classic Episode 1882 Scott Adams: Can Republicans And Incels Join The LGBTQ? Why Not? Let's Discuss</title>
+      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1882-Scott-Adams-Can-Republicans-And-Incels-Join-The-LGBTQ--Why-Not--Lets-Discuss-e1ok2rq</link>
+      <guid isPermaLink="false">8b94e645-d110-4392-bff5-bd3a280ee7b3</guid>
+      <dc:creator>Scott Adams</dc:creator>
+      <pubDate>Wed, 30 Sep 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://traffic.megaphone.fm/APO7134970245.mp3" length="63360104" type="audio/mpeg" />
+      <ns1:explicit>false</ns1:explicit>
+      <ns1:duration>01:06:00</ns1:duration>
+      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1664555658502-8b5ce7a3939ae.jpg" />
+      <ns1:season>46</ns1:season>
+      <ns1:episode>1882</ns1:episode>
+      <ns1:episodeType>full</ns1:episodeType>
+    </item>
+    <item>
       <title>Classic Episode 1881 Scott Adams: Who Blew Up That Pipeline? Only Trump Can Negotiate Russia/Ukraine Peace?</title>
       <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1881-Scott-Adams-Who-Blew-Up-That-Pipeline--Only-Trump-Can-Negotiate-RussiaUkraine-Peace-e1oic27</link>
       <guid isPermaLink="false">e0d780d0-50ca-4bb0-8890-cb1038d1514a</guid>
@@ -145,20 +159,6 @@
       <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1663780068277-32aede299622c.jpg" />
       <ns1:season>46</ns1:season>
       <ns1:episode>1873</ns1:episode>
-      <ns1:episodeType>full</ns1:episodeType>
-    </item>
-    <item>
-      <title>Classic Episode 1872 Scott Adams: My Plan For Decreasing Fentanyl Overdoses And Celebrating Our Victories</title>
-      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1872-Scott-Adams-My-Plan-For-Decreasing-Fentanyl-Overdoses-And-Celebrating-Our-Victories-e1o45mm</link>
-      <guid isPermaLink="false">ac612474-43e8-438e-8054-433d159d641c</guid>
-      <dc:creator>Scott Adams</dc:creator>
-      <pubDate>Sun, 20 Sep 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/APO2721570608.mp3" length="65762115" type="audio/mpeg" />
-      <ns1:explicit>false</ns1:explicit>
-      <ns1:duration>01:08:30</ns1:duration>
-      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1663692693857-0e73ea73c6891.jpg" />
-      <ns1:season>46</ns1:season>
-      <ns1:episode>1872</ns1:episode>
       <ns1:episodeType>full</ns1:episodeType>
     </item>
   </channel>
