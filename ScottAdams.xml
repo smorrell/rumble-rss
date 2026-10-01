@@ -4,7 +4,7 @@
     <title>Classic Real Coffee with Scott Adams</title>
     <link>https://podcasters.spotify.com/pod/show/scott-adams00</link>
     <generator>Anchor Podcasts</generator>
-    <lastBuildDate>Tue, 29 Sep 2026 16:02:52 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2026 16:48:37 GMT</lastBuildDate>
     <ns0:link href="https://anchor.fm/s/128d072c/podcast/rss" rel="self" type="application/rss+xml" />
     <author>Scott Adams</author>
     <copyright>Scott Adams</copyright>
@@ -21,6 +21,20 @@
       <ns1:category text="News Commentary" />
     </ns1:category>
     <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/3012323/3012323-1578935161711-71f93031bbe53.jpg" />
+    <item>
+      <title>Classic Episode 1883 Scott Adams: I Make Some Big Predictions About Russia,  All The Lying White Men</title>
+      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1883-Scott-Adams-I-Make-Some-Big-Predictions-About-Russia---All-The-Lying-White-Men-e1olf0v</link>
+      <guid isPermaLink="false">6a5b8f74-af54-44d3-b76d-8769b6cc9951</guid>
+      <dc:creator>Scott Adams</dc:creator>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://traffic.megaphone.fm/APO4719881646.mp3" length="68161201" type="audio/mpeg" />
+      <ns1:explicit>false</ns1:explicit>
+      <ns1:duration>01:11:00</ns1:duration>
+      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1664643180873-c79a57c6adf12.jpg" />
+      <ns1:season>46</ns1:season>
+      <ns1:episode>1883</ns1:episode>
+      <ns1:episodeType>full</ns1:episodeType>
+    </item>
     <item>
       <title>Classic Episode 1882 Scott Adams: Can Republicans And Incels Join The LGBTQ? Why Not? Let's Discuss</title>
       <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1882-Scott-Adams-Can-Republicans-And-Incels-Join-The-LGBTQ--Why-Not--Lets-Discuss-e1ok2rq</link>
@@ -145,20 +159,6 @@
       <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1663864801255-fbc1b8e93be42.jpg" />
       <ns1:season>46</ns1:season>
       <ns1:episode>1874</ns1:episode>
-      <ns1:episodeType>full</ns1:episodeType>
-    </item>
-    <item>
-      <title>Classic Episode 1873 Scott Adams: Dilbert Canceled In 77 Newspapers, Maybe As Face Of Anti-ESG Sentiment?</title>
-      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1873-Scott-Adams-Dilbert-Canceled-In-77-Newspapers--Maybe-As-Face-Of-Anti-ESG-Sentiment-e1o5spi</link>
-      <guid isPermaLink="false">0f7d499f-fa4d-47e2-8312-0cd6e5fcb2ef</guid>
-      <dc:creator>Scott Adams</dc:creator>
-      <pubDate>Mon, 21 Sep 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/APO2076633343.mp3" length="72949760" type="audio/mpeg" />
-      <ns1:explicit>false</ns1:explicit>
-      <ns1:duration>01:15:59</ns1:duration>
-      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1663780068277-32aede299622c.jpg" />
-      <ns1:season>46</ns1:season>
-      <ns1:episode>1873</ns1:episode>
       <ns1:episodeType>full</ns1:episodeType>
     </item>
   </channel>
