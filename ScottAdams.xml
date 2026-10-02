@@ -22,6 +22,20 @@
     </ns1:category>
     <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/3012323/3012323-1578935161711-71f93031bbe53.jpg" />
     <item>
+      <title>Classic Episode 1884 Scott Adams: I Use The Whiteboard of Wisdom To Explain Racism In America</title>
+      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1884-Scott-Adams-I-Use-The-Whiteboard-of-Wisdom-To-Explain-Racism-In-America-e1omj4e</link>
+      <guid isPermaLink="false">9559d6af-bb87-47d3-a44a-ddace034e262</guid>
+      <dc:creator>Scott Adams</dc:creator>
+      <pubDate>Fri, 02 Oct 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://traffic.megaphone.fm/APO2010803441.mp3" length="63757583" type="audio/mpeg" />
+      <ns1:explicit>false</ns1:explicit>
+      <ns1:duration>01:06:24</ns1:duration>
+      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1664728475218-47859d62ec548.jpg" />
+      <ns1:season>46</ns1:season>
+      <ns1:episode>1884</ns1:episode>
+      <ns1:episodeType>full</ns1:episodeType>
+    </item>
+    <item>
       <title>Classic Episode 1883 Scott Adams: I Make Some Big Predictions About Russia,  All The Lying White Men</title>
       <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1883-Scott-Adams-I-Make-Some-Big-Predictions-About-Russia---All-The-Lying-White-Men-e1olf0v</link>
       <guid isPermaLink="false">6a5b8f74-af54-44d3-b76d-8769b6cc9951</guid>
@@ -145,20 +159,6 @@
       <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1663950763781-610624d79620f.jpg" />
       <ns1:season>46</ns1:season>
       <ns1:episode>1875</ns1:episode>
-      <ns1:episodeType>full</ns1:episodeType>
-    </item>
-    <item>
-      <title>Classic Episode 1874 Scott Adams: Lots Of News About Fentanyl, Trump, Elections, And Affirmative Action</title>
-      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1874-Scott-Adams-Lots-Of-News-About-Fentanyl--Trump--Elections--And-Affirmative-Action-e1o7gi5</link>
-      <guid isPermaLink="false">ac69e18b-aaba-4cd2-9be4-411f3dd1b1e1</guid>
-      <dc:creator>Scott Adams</dc:creator>
-      <pubDate>Tue, 22 Sep 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/APO4745917280.mp3" length="79998223" type="audio/mpeg" />
-      <ns1:explicit>false</ns1:explicit>
-      <ns1:duration>01:23:19</ns1:duration>
-      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1663864801255-fbc1b8e93be42.jpg" />
-      <ns1:season>46</ns1:season>
-      <ns1:episode>1874</ns1:episode>
       <ns1:episodeType>full</ns1:episodeType>
     </item>
   </channel>
