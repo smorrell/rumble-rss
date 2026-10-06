@@ -22,6 +22,20 @@
     </ns1:category>
     <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/3012323/3012323-1578935161711-71f93031bbe53.jpg" />
     <item>
+      <title>Classic Episode 1887 Scott Adams: Kanye Says White Lives Matter And Elon Musk Is Buying Twitter. Fun News</title>
+      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1887-Scott-Adams-Kanye-Says-White-Lives-Matter-And-Elon-Musk-Is-Buying-Twitter--Fun-News-e1orfl6</link>
+      <guid isPermaLink="false">f8b3bc21-96e4-48fc-a4ff-d821fc0a0cfe</guid>
+      <dc:creator>Scott Adams</dc:creator>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://traffic.megaphone.fm/APO9115366311.mp3" length="92169613" type="audio/mpeg" />
+      <ns1:explicit>false</ns1:explicit>
+      <ns1:duration>01:36:00</ns1:duration>
+      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1664995825004-fa8a526ea76bd.jpg" />
+      <ns1:season>46</ns1:season>
+      <ns1:episode>1887</ns1:episode>
+      <ns1:episodeType>full</ns1:episodeType>
+    </item>
+    <item>
       <title>Classic Episode 1886 Scott Adams: Elon Musk's Peace Plans For Ukraine And Trump's Latest Provocation</title>
       <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1886-Scott-Adams-Elon-Musks-Peace-Plans-For-Ukraine-And-Trumps-Latest-Provocation-e1opm26</link>
       <guid isPermaLink="false">265c048d-4e9d-4e5b-9b96-e1c831b46986</guid>
@@ -145,20 +159,6 @@
       <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1664210850873-3b1b3f4de16f5.jpg" />
       <ns1:season>46</ns1:season>
       <ns1:episode>1878</ns1:episode>
-      <ns1:episodeType>full</ns1:episodeType>
-    </item>
-    <item>
-      <title>Classic Episode 1877 Scott Adams: The FBI Is Robbing Banks, The Anti-Woke Are Rising, The News Is Fun Today</title>
-      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1877-Scott-Adams-The-FBI-Is-Robbing-Banks--The-Anti-Woke-Are-Rising--The-News-Is-Fun-Today-e1obg3a</link>
-      <guid isPermaLink="false">b5f3bf4b-6dbf-4e72-b0ab-79c0bed9b436</guid>
-      <dc:creator>Scott Adams</dc:creator>
-      <pubDate>Fri, 25 Sep 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/APO5124022921.mp3" length="78722194" type="audio/mpeg" />
-      <ns1:explicit>false</ns1:explicit>
-      <ns1:duration>01:22:00</ns1:duration>
-      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1664125117727-53191d09d655d.jpg" />
-      <ns1:season>46</ns1:season>
-      <ns1:episode>1877</ns1:episode>
       <ns1:episodeType>full</ns1:episodeType>
     </item>
   </channel>
