@@ -4,7 +4,7 @@
     <title>Classic Real Coffee with Scott Adams</title>
     <link>https://podcasters.spotify.com/pod/show/scott-adams00</link>
     <generator>Anchor Podcasts</generator>
-    <lastBuildDate>Fri, 02 Oct 2026 16:21:10 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 17:06:15 GMT</lastBuildDate>
     <ns0:link href="https://anchor.fm/s/128d072c/podcast/rss" rel="self" type="application/rss+xml" />
     <author>Scott Adams</author>
     <copyright>Scott Adams</copyright>
@@ -21,6 +21,20 @@
       <ns1:category text="News Commentary" />
     </ns1:category>
     <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/3012323/3012323-1578935161711-71f93031bbe53.jpg" />
+    <item>
+      <title>Classic Episode 1888 Scott Adams: All Of The News Is Funny Today. Come Enjoy It With Me</title>
+      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1888-Scott-Adams-All-Of-The-News-Is-Funny-Today--Come-Enjoy-It-With-Me-e1ostq6</link>
+      <guid isPermaLink="false">a04681d1-0f38-4772-a366-a12fb087a62c</guid>
+      <dc:creator>Scott Adams</dc:creator>
+      <pubDate>Tue, 06 Oct 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://traffic.megaphone.fm/APO2029395252.mp3" length="80561214" type="audio/mpeg" />
+      <ns1:explicit>false</ns1:explicit>
+      <ns1:duration>01:23:55</ns1:duration>
+      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1665075736099-b5b8a91c03309.jpg" />
+      <ns1:season>46</ns1:season>
+      <ns1:episode>1888</ns1:episode>
+      <ns1:episodeType>full</ns1:episodeType>
+    </item>
     <item>
       <title>Classic Episode 1887 Scott Adams: Kanye Says White Lives Matter And Elon Musk Is Buying Twitter. Fun News</title>
       <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1887-Scott-Adams-Kanye-Says-White-Lives-Matter-And-Elon-Musk-Is-Buying-Twitter--Fun-News-e1orfl6</link>
@@ -145,20 +159,6 @@
       <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1664296095667-667feb8e81c11.jpg" />
       <ns1:season>46</ns1:season>
       <ns1:episode>1879</ns1:episode>
-      <ns1:episodeType>full</ns1:episodeType>
-    </item>
-    <item>
-      <title>Classic Episode 1878 Scott Adams: Join Me For The Finest News Commentary That Ever Got A Cartoonist Canceled</title>
-      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1878-Scott-Adams-Join-Me-For-The-Finest-News-Commentary-That-Ever-Got-A-Cartoonist-Canceled-e1od7rb</link>
-      <guid isPermaLink="false">d937dbf1-a8a0-45a7-86e8-882827ed24dc</guid>
-      <dc:creator>Scott Adams</dc:creator>
-      <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/APO2507813709.mp3" length="68394840" type="audio/mpeg" />
-      <ns1:explicit>false</ns1:explicit>
-      <ns1:duration>01:11:14</ns1:duration>
-      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1664210850873-3b1b3f4de16f5.jpg" />
-      <ns1:season>46</ns1:season>
-      <ns1:episode>1878</ns1:episode>
       <ns1:episodeType>full</ns1:episodeType>
     </item>
   </channel>
