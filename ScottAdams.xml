@@ -4,7 +4,7 @@
     <title>Classic Real Coffee with Scott Adams</title>
     <link>https://podcasters.spotify.com/pod/show/scott-adams00</link>
     <generator>Anchor Podcasts</generator>
-    <lastBuildDate>Tue, 06 Oct 2026 17:06:15 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2026 17:17:39 GMT</lastBuildDate>
     <ns0:link href="https://anchor.fm/s/128d072c/podcast/rss" rel="self" type="application/rss+xml" />
     <author>Scott Adams</author>
     <copyright>Scott Adams</copyright>
@@ -21,6 +21,20 @@
       <ns1:category text="News Commentary" />
     </ns1:category>
     <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/3012323/3012323-1578935161711-71f93031bbe53.jpg" />
+    <item>
+      <title>Classic Episode 1889 Scott Adams: Ye West, AI Fooled Me, And The Real Reason For The Ukraine War</title>
+      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1889-Scott-Adams-Ye-West--AI-Fooled-Me--And-The-Real-Reason-For-The-Ukraine-War-e1ouhij</link>
+      <guid isPermaLink="false">8fad7678-59d4-48c6-93e0-2a19e9aa8e9d</guid>
+      <dc:creator>Scott Adams</dc:creator>
+      <pubDate>Wed, 07 Oct 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://traffic.megaphone.fm/APO6252025864.mp3" length="66081854" type="audio/mpeg" />
+      <ns1:explicit>false</ns1:explicit>
+      <ns1:duration>01:08:50</ns1:duration>
+      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1665162882344-9092db93b8173.jpg" />
+      <ns1:season>46</ns1:season>
+      <ns1:episode>1889</ns1:episode>
+      <ns1:episodeType>full</ns1:episodeType>
+    </item>
     <item>
       <title>Classic Episode 1888 Scott Adams: All Of The News Is Funny Today. Come Enjoy It With Me</title>
       <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1888-Scott-Adams-All-Of-The-News-Is-Funny-Today--Come-Enjoy-It-With-Me-e1ostq6</link>
@@ -145,20 +159,6 @@
       <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1664382077124-cc6e48cd77acf.jpg" />
       <ns1:season>46</ns1:season>
       <ns1:episode>1880</ns1:episode>
-      <ns1:episodeType>full</ns1:episodeType>
-    </item>
-    <item>
-      <title>Classic Episode 1879 Scott Adams: Fake News Delivered A Bountiful Harvest Today, Enjoy With A Beverage</title>
-      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1879-Scott-Adams-Fake-News-Delivered-A-Bountiful-Harvest-Today--Enjoy-With-A-Beverage-e1of168</link>
-      <guid isPermaLink="false">80f24d93-f73e-4225-8663-50e16af1547d</guid>
-      <dc:creator>Scott Adams</dc:creator>
-      <pubDate>Sun, 27 Sep 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/APO7251304736.mp3" length="75843291" type="audio/mpeg" />
-      <ns1:explicit>false</ns1:explicit>
-      <ns1:duration>01:19:00</ns1:duration>
-      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1664296095667-667feb8e81c11.jpg" />
-      <ns1:season>46</ns1:season>
-      <ns1:episode>1879</ns1:episode>
       <ns1:episodeType>full</ns1:episodeType>
     </item>
   </channel>
