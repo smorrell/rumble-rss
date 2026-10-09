@@ -22,6 +22,20 @@
     </ns1:category>
     <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/3012323/3012323-1578935161711-71f93031bbe53.jpg" />
     <item>
+      <title>Classic Episode 1891 Scott Adams: Let's Talk About Kanye Causing Trouble</title>
+      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1891-Scott-Adams-Lets-Talk-About-Kanye-Causing-Trouble-e1p0prq</link>
+      <guid isPermaLink="false">6a46e554-d97c-40c1-8e32-674bb483d0d3</guid>
+      <dc:creator>Scott Adams</dc:creator>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://traffic.megaphone.fm/APO6420312986.mp3" length="57198968" type="audio/mpeg" />
+      <ns1:explicit>false</ns1:explicit>
+      <ns1:duration>00:59:34</ns1:duration>
+      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/3012323/3012323-1578935161711-71f93031bbe53.jpg" />
+      <ns1:season>46</ns1:season>
+      <ns1:episode>1891</ns1:episode>
+      <ns1:episodeType>full</ns1:episodeType>
+    </item>
+    <item>
       <title>Classic Episode 1890 Scott Adams: Putin Attacks His Crimea Bridge To Prove He's Tough. Black Lives Matter</title>
       <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1890-Scott-Adams-Putin-Attacks-His-Crimea-Bridge-To-Prove-Hes-Tough--Black-Lives-Matter-e1ovnfj</link>
       <guid isPermaLink="false">13cc51d9-ec5c-4232-8b87-e482633423d7</guid>
@@ -145,20 +159,6 @@
       <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1664555658502-8b5ce7a3939ae.jpg" />
       <ns1:season>46</ns1:season>
       <ns1:episode>1882</ns1:episode>
-      <ns1:episodeType>full</ns1:episodeType>
-    </item>
-    <item>
-      <title>Classic Episode 1881 Scott Adams: Who Blew Up That Pipeline? Only Trump Can Negotiate Russia/Ukraine Peace?</title>
-      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1881-Scott-Adams-Who-Blew-Up-That-Pipeline--Only-Trump-Can-Negotiate-RussiaUkraine-Peace-e1oic27</link>
-      <guid isPermaLink="false">e0d780d0-50ca-4bb0-8890-cb1038d1514a</guid>
-      <dc:creator>Scott Adams</dc:creator>
-      <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/APO3718621844.mp3" length="69521240" type="audio/mpeg" />
-      <ns1:explicit>false</ns1:explicit>
-      <ns1:duration>01:12:25</ns1:duration>
-      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1664468647767-3b0ddc4649f3e.jpg" />
-      <ns1:season>46</ns1:season>
-      <ns1:episode>1881</ns1:episode>
       <ns1:episodeType>full</ns1:episodeType>
     </item>
   </channel>
