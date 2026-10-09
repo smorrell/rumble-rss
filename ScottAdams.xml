@@ -4,7 +4,7 @@
     <title>Classic Real Coffee with Scott Adams</title>
     <link>https://podcasters.spotify.com/pod/show/scott-adams00</link>
     <generator>Anchor Podcasts</generator>
-    <lastBuildDate>Wed, 07 Oct 2026 17:17:39 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 17:24:46 GMT</lastBuildDate>
     <ns0:link href="https://anchor.fm/s/128d072c/podcast/rss" rel="self" type="application/rss+xml" />
     <author>Scott Adams</author>
     <copyright>Scott Adams</copyright>
@@ -21,6 +21,20 @@
       <ns1:category text="News Commentary" />
     </ns1:category>
     <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/3012323/3012323-1578935161711-71f93031bbe53.jpg" />
+    <item>
+      <title>Classic Episode 1890 Scott Adams: Putin Attacks His Crimea Bridge To Prove He's Tough. Black Lives Matter</title>
+      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1890-Scott-Adams-Putin-Attacks-His-Crimea-Bridge-To-Prove-Hes-Tough--Black-Lives-Matter-e1ovnfj</link>
+      <guid isPermaLink="false">13cc51d9-ec5c-4232-8b87-e482633423d7</guid>
+      <dc:creator>Scott Adams</dc:creator>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://traffic.megaphone.fm/APO5686333289.mp3" length="70961110" type="audio/mpeg" />
+      <ns1:explicit>false</ns1:explicit>
+      <ns1:duration>01:13:55</ns1:duration>
+      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1665247284079-28f5770310a4e.jpg" />
+      <ns1:season>46</ns1:season>
+      <ns1:episode>1890</ns1:episode>
+      <ns1:episodeType>full</ns1:episodeType>
+    </item>
     <item>
       <title>Classic Episode 1889 Scott Adams: Ye West, AI Fooled Me, And The Real Reason For The Ukraine War</title>
       <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1889-Scott-Adams-Ye-West--AI-Fooled-Me--And-The-Real-Reason-For-The-Ukraine-War-e1ouhij</link>
@@ -145,20 +159,6 @@
       <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1664468647767-3b0ddc4649f3e.jpg" />
       <ns1:season>46</ns1:season>
       <ns1:episode>1881</ns1:episode>
-      <ns1:episodeType>full</ns1:episodeType>
-    </item>
-    <item>
-      <title>Classic Episode 1880 Scott Adams: Let's Figure Out Who Blew Up The Pipeline. Get In Here</title>
-      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1880-Scott-Adams-Lets-Figure-Out-Who-Blew-Up-The-Pipeline--Get-In-Here-e1ogl4p</link>
-      <guid isPermaLink="false">af87152f-4a5d-4551-8682-5165f3d24745</guid>
-      <dc:creator>Scott Adams</dc:creator>
-      <pubDate>Mon, 28 Sep 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/APO4301420467.mp3" length="62721044" type="audio/mpeg" />
-      <ns1:explicit>false</ns1:explicit>
-      <ns1:duration>01:05:20</ns1:duration>
-      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1664382077124-cc6e48cd77acf.jpg" />
-      <ns1:season>46</ns1:season>
-      <ns1:episode>1880</ns1:episode>
       <ns1:episodeType>full</ns1:episodeType>
     </item>
   </channel>
