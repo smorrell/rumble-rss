@@ -28,11 +28,12 @@ RUMBLE_CHANNEL_URLS = [
 YOUTUBE_CHANNEL_URLS = [
     "https://www.youtube.com/@angrymortgage/videos",    
     "https://www.youtube.com/@TheBrancaShow/videos",
+    "https://www.youtube.com/@TheMooseOnTheLooseExtra/videos",
 ]
 YOUTUBE_MAX_VIDEOS = 10
 FEED_CHANNEL_URLS = YOUTUBE_CHANNEL_URLS + RUMBLE_CHANNEL_URLS
-MAX_VIDEO_AGE_DAYS = 5
-MAX_DOWNLOADS_PER_RUN = 7   
+MAX_VIDEO_AGE_DAYS = 15
+MAX_DOWNLOADS_PER_RUN = 25   
 REPO_PATH = os.path.dirname(os.path.abspath(__file__))
 AUDIO_DIR = os.path.join(REPO_PATH, "mp3s")
 METADATA_PATH = os.path.join(AUDIO_DIR, "video_metadata.json")
