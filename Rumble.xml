@@ -4,10 +4,22 @@
     <title>Ann and Nick</title>
     <itunes:image href="https://raw.githubusercontent.com/smorrell/rumble-rss/master/podcast_cover.jpg" />
     <item>
+      <title>I Love Alberta</title>
+      <pubDate>Mon, 12 Oct 2026 11:00:27 GMT</pubDate>
+      <guid isPermaLink="false">tMB69ejxQaI</guid>
+      <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-10-12-angrymortgage-I-Love-Alberta.mp3" type="audio/mpeg" />
+    </item>
+    <item>
       <title>OSAP Disaster</title>
       <pubDate>Sun, 11 Oct 2026 11:00:02 GMT</pubDate>
       <guid isPermaLink="false">yUgL0qndfsE</guid>
       <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-10-11-angrymortgage-OSAP-Disaster.mp3" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>Best Call This Year</title>
+      <pubDate>Sun, 11 Oct 2026 18:30:28 GMT</pubDate>
+      <guid isPermaLink="false">4qFHXvcjw2M</guid>
+      <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-10-11-angrymortgage-Best-Call-This-Year.mp3" type="audio/mpeg" />
     </item>
     <item>
       <title>Condo Building Failures</title>

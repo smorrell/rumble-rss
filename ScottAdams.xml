@@ -22,6 +22,20 @@
     </ns1:category>
     <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/3012323/3012323-1578935161711-71f93031bbe53.jpg" />
     <item>
+      <title>Classic Episode 1894 Scott Adams: Musk Versus Bremmer, Drafting Women, AI Does Podcasting And More Fun</title>
+      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1894-Scott-Adams-Musk-Versus-Bremmer--Drafting-Women--AI-Does-Podcasting-And-More-Fun-e1p5lf6</link>
+      <guid isPermaLink="false">28090b82-8614-41db-b742-72ccdb566416</guid>
+      <dc:creator>Scott Adams</dc:creator>
+      <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://traffic.megaphone.fm/APO7784645792.mp3" length="68722102" type="audio/mpeg" />
+      <ns1:explicit>false</ns1:explicit>
+      <ns1:duration>01:11:35</ns1:duration>
+      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1665593132558-be0ac2b19063a.jpg" />
+      <ns1:season>46</ns1:season>
+      <ns1:episode>1894</ns1:episode>
+      <ns1:episodeType>full</ns1:episodeType>
+    </item>
+    <item>
       <title>Classic Episode 1893 Scott Adams: Declaring War On The Cartels, Tulsi Gabbard Quits Democrats &amp; Schiff Lies</title>
       <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1893-Scott-Adams-Declaring-War-On-The-Cartels--Tulsi-Gabbard-Quits-Democrats--Schiff-Lies-e1p3u0r</link>
       <guid isPermaLink="false">23a2987a-0d31-481b-91bc-e0dc0a05aecd</guid>
@@ -145,20 +159,6 @@
       <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1664812690462-0fcbde8f56e15.jpg" />
       <ns1:season>46</ns1:season>
       <ns1:episode>1885</ns1:episode>
-      <ns1:episodeType>full</ns1:episodeType>
-    </item>
-    <item>
-      <title>Classic Episode 1884 Scott Adams: I Use The Whiteboard of Wisdom To Explain Racism In America</title>
-      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1884-Scott-Adams-I-Use-The-Whiteboard-of-Wisdom-To-Explain-Racism-In-America-e1omj4e</link>
-      <guid isPermaLink="false">9559d6af-bb87-47d3-a44a-ddace034e262</guid>
-      <dc:creator>Scott Adams</dc:creator>
-      <pubDate>Fri, 02 Oct 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/APO2010803441.mp3" length="63757583" type="audio/mpeg" />
-      <ns1:explicit>false</ns1:explicit>
-      <ns1:duration>01:06:24</ns1:duration>
-      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1664728475218-47859d62ec548.jpg" />
-      <ns1:season>46</ns1:season>
-      <ns1:episode>1884</ns1:episode>
       <ns1:episodeType>full</ns1:episodeType>
     </item>
   </channel>
