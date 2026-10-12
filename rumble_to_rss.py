@@ -32,6 +32,13 @@ YOUTUBE_CHANNEL_URLS = [
 ]
 YOUTUBE_MAX_VIDEOS = 10
 FEED_CHANNEL_URLS = YOUTUBE_CHANNEL_URLS + RUMBLE_CHANNEL_URLS
+CHANNEL_TITLE_PREFIXES = {
+    "https://www.youtube.com/@angrymortgage/videos": "AM",
+    "https://www.youtube.com/@TheBrancaShow/videos": "TBS",
+    "https://www.youtube.com/@TheMooseOnTheLooseExtra/videos": "TMOTLE",
+    "https://rumble.com/c/AnnCoulter": "AC",
+    "https://rumble.com/c/nickjfuentes": "NF",
+}
 MAX_VIDEO_AGE_DAYS = 15
 MAX_DOWNLOADS_PER_RUN = 25   
 REPO_PATH = os.path.dirname(os.path.abspath(__file__))
@@ -65,6 +72,13 @@ def channel_show_name(channel_url):
         "channel",
     )
     return re.sub(r"[^A-Za-z0-9]+", "-", show_name).strip("-") or "channel"
+
+
+def format_episode_title(item, video_id):
+    """Prefix an episode title with its channel's configured initials."""
+    title = item.get("title") or f"Episode {video_id}"
+    prefix = CHANNEL_TITLE_PREFIXES.get(item.get("channel_url"))
+    return f"{prefix} - {title}" if prefix else title
 
 
 def remove_expired_downloads(metadata):
@@ -150,7 +164,7 @@ def write_feed(metadata):
             continue
 
         rss_item = ET.SubElement(items_container, "item")
-        ET.SubElement(rss_item, "title").text = item.get("title") or f"Episode {video_id}"
+        ET.SubElement(rss_item, "title").text = format_episode_title(item, video_id)
         ET.SubElement(rss_item, "pubDate").text = format_datetime(published, usegmt=True)
         ET.SubElement(rss_item, "guid", isPermaLink="false").text = video_id
         filename = item.get("filename")
