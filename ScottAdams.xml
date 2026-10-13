@@ -4,7 +4,7 @@
     <title>Classic Real Coffee with Scott Adams</title>
     <link>https://podcasters.spotify.com/pod/show/scott-adams00</link>
     <generator>Anchor Podcasts</generator>
-    <lastBuildDate>Thu, 08 Oct 2026 17:24:46 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 17:19:40 GMT</lastBuildDate>
     <ns0:link href="https://anchor.fm/s/128d072c/podcast/rss" rel="self" type="application/rss+xml" />
     <author>Scott Adams</author>
     <copyright>Scott Adams</copyright>
@@ -21,6 +21,20 @@
       <ns1:category text="News Commentary" />
     </ns1:category>
     <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/3012323/3012323-1578935161711-71f93031bbe53.jpg" />
+    <item>
+      <title>Classic Episode 1895 Scott Adams: Almost Everything You Suspected About Your Government Turns Out To Be True</title>
+      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1895-Scott-Adams-Almost-Everything-You-Suspected-About-Your-Government-Turns-Out-To-Be-True-e1p78mf</link>
+      <guid isPermaLink="false">89ef8d5e-c030-4a3c-b644-04d8f1d92f08</guid>
+      <dc:creator>Scott Adams</dc:creator>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://traffic.megaphone.fm/APO2995186556.mp3" length="61034161" type="audio/mpeg" />
+      <ns1:explicit>false</ns1:explicit>
+      <ns1:duration>01:03:34</ns1:duration>
+      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1665678521056-4c60521249692.jpg" />
+      <ns1:season>46</ns1:season>
+      <ns1:episode>1895</ns1:episode>
+      <ns1:episodeType>full</ns1:episodeType>
+    </item>
     <item>
       <title>Classic Episode 1894 Scott Adams: Musk Versus Bremmer, Drafting Women, AI Does Podcasting And More Fun</title>
       <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1894-Scott-Adams-Musk-Versus-Bremmer--Drafting-Women--AI-Does-Podcasting-And-More-Fun-e1p5lf6</link>
@@ -145,20 +159,6 @@
       <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1664901404139-bc5041548f7df.jpg" />
       <ns1:season>46</ns1:season>
       <ns1:episode>1886</ns1:episode>
-      <ns1:episodeType>full</ns1:episodeType>
-    </item>
-    <item>
-      <title>Classic Episode 1885 Scott Adams: Let's Talk About All The Racism And Sexism Against White Men</title>
-      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1885-Scott-Adams-Lets-Talk-About-All-The-Racism-And-Sexism-Against-White-Men-e1oo1li</link>
-      <guid isPermaLink="false">b883bce3-e7af-4c4e-ae91-4a08141d4392</guid>
-      <dc:creator>Scott Adams</dc:creator>
-      <pubDate>Sat, 03 Oct 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/APO3562308669.mp3" length="48881580" type="audio/mpeg" />
-      <ns1:explicit>false</ns1:explicit>
-      <ns1:duration>00:50:55</ns1:duration>
-      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1664812690462-0fcbde8f56e15.jpg" />
-      <ns1:season>46</ns1:season>
-      <ns1:episode>1885</ns1:episode>
       <ns1:episodeType>full</ns1:episodeType>
     </item>
   </channel>
