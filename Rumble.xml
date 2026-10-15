@@ -4,6 +4,18 @@
     <title>Ann and Nick</title>
     <itunes:image href="https://raw.githubusercontent.com/smorrell/rumble-rss/master/podcast_cover.jpg" />
     <item>
+      <title>AM - Rents DOWN?</title>
+      <pubDate>Wed, 14 Oct 2026 11:00:28 GMT</pubDate>
+      <guid isPermaLink="false">46ooS3kCBok</guid>
+      <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-10-14-angrymortgage-Rents-DOWN.mp3" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>TBS - Federal Judge ERUPTS At Trump Lawyers Over 430 Golf Course Trees</title>
+      <pubDate>Wed, 14 Oct 2026 23:48:25 GMT</pubDate>
+      <guid isPermaLink="false">vTyRIDll5_Q</guid>
+      <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-10-14-TheBrancaShow-Federal-Judge-ERUPTS-At-Trump-Lawyers-Over-430-Golf-Course-Trees.mp3" type="audio/mpeg" />
+    </item>
+    <item>
       <title>AM - New Bank Competition with Grant Armstrong</title>
       <pubDate>Tue, 13 Oct 2026 11:00:08 GMT</pubDate>
       <guid isPermaLink="false">L1a0K2gaBLA</guid>
@@ -188,24 +200,6 @@
       <pubDate>Wed, 30 Sep 2026 17:21:52 GMT</pubDate>
       <guid isPermaLink="false">v7e0kak</guid>
       <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-09-30-nickjfuentes-The-GOP-s-New-Anti-White-Advertisement.mp3" type="audio/mpeg" />
-    </item>
-    <item>
-      <title>TBS - Supreme Court Just BLOCKED Missouri’s New Election Map</title>
-      <pubDate>Tue, 29 Sep 2026 16:04:20 GMT</pubDate>
-      <guid isPermaLink="false">7Zl_lAyUY4k</guid>
-      <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-09-29-TheBrancaShow-Supreme-Court-Just-BLOCKED-Missouri-s-New-Election-Map.mp3" type="audio/mpeg" />
-    </item>
-    <item>
-      <title>NF - Recapping My Debate with Professor Jiang</title>
-      <pubDate>Tue, 29 Sep 2026 16:00:00 GMT</pubDate>
-      <guid isPermaLink="false">v7dytq0</guid>
-      <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-09-29-nickjfuentes-Recapping-My-Debate-with-Professor-Jiang.mp3" type="audio/mpeg" />
-    </item>
-    <item>
-      <title>TBS - Supreme Court Just REVIVED Trump’s Voter Citizenship Checks</title>
-      <pubDate>Mon, 28 Sep 2026 22:53:27 GMT</pubDate>
-      <guid isPermaLink="false">DYkZkR_csrg</guid>
-      <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-09-28-TheBrancaShow-Supreme-Court-Just-REVIVED-Trump-s-Voter-Citizenship-Checks.mp3" type="audio/mpeg" />
     </item>
   </channel>
 </rss>
