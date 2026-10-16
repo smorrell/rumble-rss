@@ -22,6 +22,20 @@
     </ns1:category>
     <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/3012323/3012323-1578935161711-71f93031bbe53.jpg" />
     <item>
+      <title>Classic Episode 1898 Scott Adams: Why Hasn't Elon Musk Ended Ukraine War In His Spare Time Yet? Is He Lazy?</title>
+      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1898-Scott-Adams-Why-Hasnt-Elon-Musk-Ended-Ukraine-War-In-His-Spare-Time-Yet--Is-He-Lazy-e1pbfcl</link>
+      <guid isPermaLink="false">da9464d4-5abc-493d-bdf3-d976a5f81219</guid>
+      <dc:creator>Scott Adams</dc:creator>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://traffic.megaphone.fm/APO6263179809.mp3" length="49991262" type="audio/mpeg" />
+      <ns1:explicit>false</ns1:explicit>
+      <ns1:duration>00:52:04</ns1:duration>
+      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1665937170880-18f61f6b61ad6.jpg" />
+      <ns1:season>46</ns1:season>
+      <ns1:episode>1898</ns1:episode>
+      <ns1:episodeType>full</ns1:episodeType>
+    </item>
+    <item>
       <title>Classic Episode 1897 Scott Adams: Ukraine Starts War With Elon Musk. And Nancy Pelosi's Coup Attempt</title>
       <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1897-Scott-Adams-Ukraine-Starts-War-With-Elon-Musk--And-Nancy-Pelosis-Coup-Attempt-e1paank</link>
       <guid isPermaLink="false">b30515f4-b52e-428a-a8b9-ef233f4fda35</guid>
@@ -145,20 +159,6 @@
       <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1665162882344-9092db93b8173.jpg" />
       <ns1:season>46</ns1:season>
       <ns1:episode>1889</ns1:episode>
-      <ns1:episodeType>full</ns1:episodeType>
-    </item>
-    <item>
-      <title>Classic Episode 1888 Scott Adams: All Of The News Is Funny Today. Come Enjoy It With Me</title>
-      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1888-Scott-Adams-All-Of-The-News-Is-Funny-Today--Come-Enjoy-It-With-Me-e1ostq6</link>
-      <guid isPermaLink="false">a04681d1-0f38-4772-a366-a12fb087a62c</guid>
-      <dc:creator>Scott Adams</dc:creator>
-      <pubDate>Tue, 06 Oct 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/APO2029395252.mp3" length="80561214" type="audio/mpeg" />
-      <ns1:explicit>false</ns1:explicit>
-      <ns1:duration>01:23:55</ns1:duration>
-      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1665075736099-b5b8a91c03309.jpg" />
-      <ns1:season>46</ns1:season>
-      <ns1:episode>1888</ns1:episode>
       <ns1:episodeType>full</ns1:episodeType>
     </item>
   </channel>
