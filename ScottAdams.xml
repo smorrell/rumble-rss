@@ -4,7 +4,7 @@
     <title>Classic Real Coffee with Scott Adams</title>
     <link>https://podcasters.spotify.com/pod/show/scott-adams00</link>
     <generator>Anchor Podcasts</generator>
-    <lastBuildDate>Thu, 15 Oct 2026 18:37:06 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 11:01:27 GMT</lastBuildDate>
     <ns0:link href="https://anchor.fm/s/128d072c/podcast/rss" rel="self" type="application/rss+xml" />
     <author>Scott Adams</author>
     <copyright>Scott Adams</copyright>
@@ -21,6 +21,20 @@
       <ns1:category text="News Commentary" />
     </ns1:category>
     <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/3012323/3012323-1578935161711-71f93031bbe53.jpg" />
+    <item>
+      <title>Classic Episode 1899 Scott Adams: Ye Buys Parler, I Try To Get Canceled Again, And A Peace Plan For Ukraine</title>
+      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1899-Scott-Adams-Ye-Buys-Parler--I-Try-To-Get-Canceled-Again--And-A-Peace-Plan-For-Ukraine-e1pd21i</link>
+      <guid isPermaLink="false">56d69f8b-16ba-4734-9ba6-4e8c2c523bac</guid>
+      <dc:creator>Scott Adams</dc:creator>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://traffic.megaphone.fm/APO9652044500.mp3" length="64960888" type="audio/mpeg" />
+      <ns1:explicit>false</ns1:explicit>
+      <ns1:duration>01:07:40</ns1:duration>
+      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1666024434120-d6cdaa44fb47d.jpg" />
+      <ns1:season>46</ns1:season>
+      <ns1:episode>1899</ns1:episode>
+      <ns1:episodeType>full</ns1:episodeType>
+    </item>
     <item>
       <title>Classic Episode 1898 Scott Adams: Why Hasn't Elon Musk Ended Ukraine War In His Spare Time Yet? Is He Lazy?</title>
       <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1898-Scott-Adams-Why-Hasnt-Elon-Musk-Ended-Ukraine-War-In-His-Spare-Time-Yet--Is-He-Lazy-e1pbfcl</link>
@@ -145,20 +159,6 @@
       <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1665247284079-28f5770310a4e.jpg" />
       <ns1:season>46</ns1:season>
       <ns1:episode>1890</ns1:episode>
-      <ns1:episodeType>full</ns1:episodeType>
-    </item>
-    <item>
-      <title>Classic Episode 1889 Scott Adams: Ye West, AI Fooled Me, And The Real Reason For The Ukraine War</title>
-      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1889-Scott-Adams-Ye-West--AI-Fooled-Me--And-The-Real-Reason-For-The-Ukraine-War-e1ouhij</link>
-      <guid isPermaLink="false">8fad7678-59d4-48c6-93e0-2a19e9aa8e9d</guid>
-      <dc:creator>Scott Adams</dc:creator>
-      <pubDate>Wed, 07 Oct 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/APO6252025864.mp3" length="66081854" type="audio/mpeg" />
-      <ns1:explicit>false</ns1:explicit>
-      <ns1:duration>01:08:50</ns1:duration>
-      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1665162882344-9092db93b8173.jpg" />
-      <ns1:season>46</ns1:season>
-      <ns1:episode>1889</ns1:episode>
       <ns1:episodeType>full</ns1:episodeType>
     </item>
   </channel>

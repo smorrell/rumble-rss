@@ -4,6 +4,18 @@
     <title>Ann and Nick</title>
     <itunes:image href="https://raw.githubusercontent.com/smorrell/rumble-rss/master/podcast_cover.jpg" />
     <item>
+      <title>AM - MONDAY COULD CHANGE EVERYTHING</title>
+      <pubDate>Sat, 17 Oct 2026 11:00:35 GMT</pubDate>
+      <guid isPermaLink="false">xkVuGRm0p8w</guid>
+      <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-10-17-angrymortgage-MONDAY-COULD-CHANGE-EVERYTHING.mp3" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>TBS - Hero Dad Saves Kids—Now He Could Face 5 Years In Prison</title>
+      <pubDate>Sat, 17 Oct 2026 22:00:28 GMT</pubDate>
+      <guid isPermaLink="false">zzHk1ob9APY</guid>
+      <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-10-17-TheBrancaShow-Hero-Dad-Saves-Kids-Now-He-Could-Face-5-Years-In-Prison.mp3" type="audio/mpeg" />
+    </item>
+    <item>
       <title>TBS - Could Ilhan Omar LOSE Her U.S. Citizenship Over This?</title>
       <pubDate>Fri, 16 Oct 2026 00:00:22 GMT</pubDate>
       <guid isPermaLink="false">vu4Jd5lnfP8</guid>
@@ -14,6 +26,12 @@
       <pubDate>Fri, 16 Oct 2026 11:00:35 GMT</pubDate>
       <guid isPermaLink="false">rNq0wVxD8zc</guid>
       <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-10-16-angrymortgage-24-Shops-CLOSED.mp3" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>NF - Trump BEGS Zelensky and Putin for an Energy Truce</title>
+      <pubDate>Fri, 16 Oct 2026 16:00:00 GMT</pubDate>
+      <guid isPermaLink="false">v7erfn0</guid>
+      <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-10-16-nickjfuentes-Trump-BEGS-Zelensky-and-Putin-for-an-Energy-Truce.mp3" type="audio/mpeg" />
     </item>
     <item>
       <title>AM - How to Handle a Mortgage Renewal</title>
@@ -230,18 +248,6 @@
       <pubDate>Fri, 02 Oct 2026 16:29:48 GMT</pubDate>
       <guid isPermaLink="false">v7e3kek</guid>
       <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-10-02-nickjfuentes-Cornell-Jane-Doe-EXPOSED-as-Slut.mp3" type="audio/mpeg" />
-    </item>
-    <item>
-      <title>AC - UNSAFE with Ann Coulter: Top Stories You May Have Missed!</title>
-      <pubDate>Thu, 01 Oct 2026 18:22:41 GMT</pubDate>
-      <guid isPermaLink="false">v7e2iyc</guid>
-      <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-10-01-AnnCoulter-UNSAFE-with-Ann-Coulter-Top-Stories-You-May-Have-Missed.mp3" type="audio/mpeg" />
-    </item>
-    <item>
-      <title>NF - Netanyahu KNEW About Israeli Plane Hijacking?</title>
-      <pubDate>Thu, 01 Oct 2026 16:00:00 GMT</pubDate>
-      <guid isPermaLink="false">v7e226w</guid>
-      <enclosure url="https://raw.githubusercontent.com/smorrell/rumble-rss/master/mp3s/2026-10-01-nickjfuentes-Netanyahu-KNEW-About-Israeli-Plane-Hijacking.mp3" type="audio/mpeg" />
     </item>
   </channel>
 </rss>
