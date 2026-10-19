@@ -22,6 +22,20 @@
     </ns1:category>
     <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/3012323/3012323-1578935161711-71f93031bbe53.jpg" />
     <item>
+      <title>Classic Episode 1900 Scott Adams: Obama Craps All Over Democrats, ESG Is Dying, Ukraine Peace Plan, And More</title>
+      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1900-Scott-Adams-Obama-Craps-All-Over-Democrats--ESG-Is-Dying--Ukraine-Peace-Plan--And-More-e1peqa5</link>
+      <guid isPermaLink="false">bc1cae26-4b84-4352-b0c3-32af08dcf90c</guid>
+      <dc:creator>Scott Adams</dc:creator>
+      <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://traffic.megaphone.fm/APO2683175517.mp3" length="55441449" type="audio/mpeg" />
+      <ns1:explicit>false</ns1:explicit>
+      <ns1:duration>00:57:45</ns1:duration>
+      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1666113664506-50097b59161f9.jpg" />
+      <ns1:season>46</ns1:season>
+      <ns1:episode>1900</ns1:episode>
+      <ns1:episodeType>full</ns1:episodeType>
+    </item>
+    <item>
       <title>Classic Episode 1899 Scott Adams: Ye Buys Parler, I Try To Get Canceled Again, And A Peace Plan For Ukraine</title>
       <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1899-Scott-Adams-Ye-Buys-Parler--I-Try-To-Get-Canceled-Again--And-A-Peace-Plan-For-Ukraine-e1pd21i</link>
       <guid isPermaLink="false">56d69f8b-16ba-4734-9ba6-4e8c2c523bac</guid>
@@ -145,20 +159,6 @@
       <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/3012323/3012323-1578935161711-71f93031bbe53.jpg" />
       <ns1:season>46</ns1:season>
       <ns1:episode>1891</ns1:episode>
-      <ns1:episodeType>full</ns1:episodeType>
-    </item>
-    <item>
-      <title>Classic Episode 1890 Scott Adams: Putin Attacks His Crimea Bridge To Prove He's Tough. Black Lives Matter</title>
-      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1890-Scott-Adams-Putin-Attacks-His-Crimea-Bridge-To-Prove-Hes-Tough--Black-Lives-Matter-e1ovnfj</link>
-      <guid isPermaLink="false">13cc51d9-ec5c-4232-8b87-e482633423d7</guid>
-      <dc:creator>Scott Adams</dc:creator>
-      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/APO5686333289.mp3" length="70961110" type="audio/mpeg" />
-      <ns1:explicit>false</ns1:explicit>
-      <ns1:duration>01:13:55</ns1:duration>
-      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1665247284079-28f5770310a4e.jpg" />
-      <ns1:season>46</ns1:season>
-      <ns1:episode>1890</ns1:episode>
       <ns1:episodeType>full</ns1:episodeType>
     </item>
   </channel>
