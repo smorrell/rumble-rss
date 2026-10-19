@@ -36,7 +36,7 @@ CHANNEL_TITLE_PREFIXES = {
     "https://www.youtube.com/@angrymortgage/videos": "AgMrtg",
     "https://www.youtube.com/@TheBrancaShow/videos": "Branca",
     "https://www.youtube.com/@TheMooseOnTheLooseExtra/videos": "Moose",
-    "https://rumble.com/c/AnnCoulter": "Ann",11
+    "https://rumble.com/c/AnnCoulter": "Ann",
     "https://rumble.com/c/nickjfuentes": "Nick",
 }
 MAX_VIDEO_AGE_DAYS = 15
