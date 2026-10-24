@@ -35,8 +35,8 @@ if %errorlevel% neq 0 (
 )
 
 echo.
-echo [5/5] Installing Python libraries (yt-dlp, curl-cffi)...
-python -m pip install --user "yt-dlp[default,curl-cffi]" azure-storage-blob
+echo [5/5] Installing Python libraries (yt-dlp, curl-cffi, Pillow)...
+python -m pip install --user "yt-dlp[default,curl-cffi]" azure-storage-blob Pillow
 if %errorlevel% neq 0 (
     echo Error: Python libraries could not be installed.
     echo Try running this file from a normal user account, or install Python for your user.

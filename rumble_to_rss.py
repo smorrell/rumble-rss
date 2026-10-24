@@ -2,11 +2,14 @@ import os
 import re
 import json
 import shutil
+import tempfile
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 from email.utils import format_datetime
+from html.parser import HTMLParser
 import importlib.util
 import sys
+from io import BytesIO
 from urllib.parse import quote, urljoin
 from urllib.request import Request, urlopen
 import xml.etree.ElementTree as ET
@@ -14,8 +17,12 @@ import xml.etree.ElementTree as ET
 try:
     import yt_dlp
     from yt_dlp.networking.impersonate import ImpersonateTarget
+    from PIL import Image, ImageDraw, ImageFont, ImageOps
 except ImportError:
-    print("Required packages are missing. Please run installation.bat first.")
+    print(
+        "Required packages are missing. Please run installation.bat first "
+        "to install yt-dlp and Pillow."
+    )
     sys.exit(1)
 
 curl_cffi = importlib.util.find_spec("curl_cffi")
@@ -59,6 +66,201 @@ FEED_BASE_URL = os.environ.get("FEED_BASE_URL", AZURE_CONTAINER_URL).rstrip("/")
 PODCAST_COVER_URL = f"{FEED_BASE_URL}/podcast_cover.jpg"
 ITUNES_NAMESPACE = "http://www.itunes.com/dtds/podcast-1.0.dtd"
 ET.register_namespace("itunes", ITUNES_NAMESPACE)
+CHANNEL_IMAGE_LABELS = {
+    "https://www.youtube.com/@angrymortgage/videos": "ANGRY MORTGAGE",
+    "https://www.youtube.com/@TheBrancaShow/videos": "ANDREW BRANCA",
+    "https://www.youtube.com/@TheMooseOnTheLooseExtra/videos": "MOOSE",
+    "https://rumble.com/c/AnnCoulter": "ANN COULTER",
+    "https://rumble.com/c/nickjfuentes": "NICK FUENTES",
+}
+
+
+class RumbleAvatarParser(HTMLParser):
+    """Find a Rumble channel avatar inside its channel-header--thumb element."""
+
+    def __init__(self):
+        super().__init__()
+        self._div_stack = []
+        self._avatar_depth = 0
+        self.image_url = None
+
+    def handle_starttag(self, tag, attrs):
+        attributes = dict(attrs)
+        if tag == "div":
+            is_avatar_container = "channel-header--thumb" in (
+                attributes.get("class") or ""
+            ).split()
+            self._div_stack.append(is_avatar_container)
+            if is_avatar_container:
+                self._avatar_depth += 1
+        elif (
+            self._avatar_depth
+            and tag == "img"
+            and "channel-header--img" in (attributes.get("class") or "").split()
+        ):
+            self.image_url = attributes.get("src")
+
+    def handle_endtag(self, tag):
+        if tag == "div" and self._div_stack:
+            if self._div_stack.pop():
+                self._avatar_depth -= 1
+
+
+def channel_avatar_url(channel_url):
+    """Return the profile-image URL for a configured YouTube or Rumble channel."""
+    if "youtube.com/" in channel_url:
+        options = {
+            "extract_flat": "in_playlist",
+            "playlistend": 1,
+            "quiet": True,
+            "skip_download": True,
+            "no_warnings": True,
+        }
+        with yt_dlp.YoutubeDL(options) as ydl:
+            channel_info = ydl.extract_info(channel_url, download=False)
+
+        square_thumbnails = [
+            thumbnail
+            for thumbnail in (channel_info.get("thumbnails") or [])
+            if thumbnail.get("url")
+            and thumbnail.get("width")
+            and thumbnail.get("height")
+            and abs(thumbnail["width"] - thumbnail["height"]) <= 1
+        ]
+        if not square_thumbnails:
+            raise RuntimeError(f"No square channel avatar found for {channel_url}.")
+        return max(
+            square_thumbnails,
+            key=lambda thumbnail: thumbnail["width"] * thumbnail["height"],
+        )["url"]
+
+    request = Request(channel_url, headers={"User-Agent": "Mozilla/5.0"})
+    with urlopen(request, timeout=30) as response:
+        webpage = response.read().decode("utf-8", errors="replace")
+    parser = RumbleAvatarParser()
+    parser.feed(webpage)
+    if not parser.image_url:
+        raise RuntimeError(f"No channel-header--thumb avatar found for {channel_url}.")
+    return parser.image_url
+
+
+def download_channel_images():
+    """Refresh channel portraits and build the square podcast-cover collage."""
+    print("Refreshing channel portraits and podcast cover...")
+    portraits = []
+    temporary_paths = []
+    try:
+        for channel_url in FEED_CHANNEL_URLS:
+            show_name = channel_show_name(channel_url)
+            avatar_url = channel_avatar_url(channel_url)
+            request = Request(avatar_url, headers={"User-Agent": "Mozilla/5.0"})
+            with urlopen(request, timeout=30) as response:
+                avatar_data = response.read()
+
+            with Image.open(BytesIO(avatar_data)) as source:
+                portrait = ImageOps.fit(
+                    source.convert("RGB"),
+                    (540, 540),
+                    method=Image.Resampling.LANCZOS,
+                    centering=(0.5, 0.38),
+                )
+            portraits.append((show_name, CHANNEL_IMAGE_LABELS[channel_url], portrait))
+            print(f"Downloaded {show_name}.jpg.")
+
+        cover = Image.new("RGB", (1800, 1800), "#263238")
+        draw = ImageDraw.Draw(cover)
+        try:
+            title_font = ImageFont.truetype("arial.ttf", 76)
+            label_font = ImageFont.truetype("arial.ttf", 32)
+            subtitle_font = ImageFont.truetype("arial.ttf", 30)
+        except OSError:
+            title_font = ImageFont.load_default()
+            label_font = ImageFont.load_default()
+            subtitle_font = ImageFont.load_default()
+
+        title = "CHANNEL LINEUP"
+        title_bounds = draw.textbbox((0, 0), title, font=title_font)
+        draw.text(
+            ((1800 - (title_bounds[2] - title_bounds[0])) / 2, 82),
+            title,
+            fill="#FFF4DC",
+            font=title_font,
+        )
+        subtitle = "FIVE CHANNELS  |  ONE SHOW"
+        subtitle_bounds = draw.textbbox((0, 0), subtitle, font=subtitle_font)
+        draw.text(
+            ((1800 - (subtitle_bounds[2] - subtitle_bounds[0])) / 2, 190),
+            subtitle,
+            fill="#E5B66A",
+            font=subtitle_font,
+        )
+
+        positions = (
+            (60, 300),
+            (630, 300),
+            (1200, 300),
+            (345, 870),
+            (915, 870),
+        )
+        panel_colors = ("#B64A3A", "#476D9A", "#628052", "#9A6D9A", "#CF7C42")
+        for index, ((_, label, portrait), (x, y)) in enumerate(
+            zip(portraits, positions)
+        ):
+            panel_color = panel_colors[index]
+            draw.rectangle((x - 8, y - 8, x + 548, y + 548), fill=panel_color)
+            cover.paste(portrait, (x, y))
+            draw.rectangle((x, y + 468, x + 540, y + 540), fill="#172126")
+            label_bounds = draw.textbbox((0, 0), label, font=label_font)
+            draw.text(
+                (
+                    x + (540 - (label_bounds[2] - label_bounds[0])) / 2,
+                    y + 486,
+                ),
+                label,
+                fill="#FFFFFF",
+                font=label_font,
+            )
+
+        footer = "YOUTUBE  +  RUMBLE"
+        footer_bounds = draw.textbbox((0, 0), footer, font=subtitle_font)
+        draw.text(
+            ((1800 - (footer_bounds[2] - footer_bounds[0])) / 2, 1600),
+            footer,
+            fill="#E5B66A",
+            font=subtitle_font,
+        )
+
+        for show_name, _, portrait in portraits:
+            with tempfile.NamedTemporaryFile(
+                dir=REPO_PATH, suffix=".jpg", delete=False
+            ) as temporary_file:
+                temporary_paths.append(temporary_file.name)
+            portrait.save(temporary_paths[-1], format="JPEG", quality=92)
+
+        cover_path = os.path.join(REPO_PATH, "podcast_cover.jpg")
+        with tempfile.NamedTemporaryFile(
+            dir=REPO_PATH, suffix=".jpg", delete=False
+        ) as temporary_file:
+            temporary_paths.append(temporary_file.name)
+        cover.save(temporary_paths[-1], format="JPEG", quality=92)
+
+        for (show_name, _, _), temporary_path in zip(
+            portraits, temporary_paths[:-1]
+        ):
+            os.replace(
+                temporary_path,
+                os.path.join(REPO_PATH, f"{show_name}.jpg"),
+            )
+        os.replace(temporary_paths[-1], cover_path)
+        print(f"Updated podcast cover: {cover_path}")
+    finally:
+        for temporary_path in temporary_paths:
+            if os.path.exists(temporary_path):
+                os.remove(temporary_path)
+        for _, _, portrait in portraits:
+            portrait.close()
+        if "cover" in locals():
+            cover.close()
 
 
 def sanitize_mp3_filename(filename):
@@ -231,6 +433,7 @@ def discover_channel_videos(channel_url, ydl):
 
 def download_and_convert():
     """Downloads new videos from Rumble and YouTube, converts to MP3, and returns metadata."""
+    download_channel_images()
     os.makedirs(AUDIO_DIR, exist_ok=True)
 
     def build_ydl_options(channel_url=None):
