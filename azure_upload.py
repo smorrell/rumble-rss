@@ -37,6 +37,10 @@ def main():
             "Set the AZURE_STORAGE_CONNECTION_STRING environment variable."
         )
 
+    logger.info(CONTAINER_NAME)
+    logger.info(ACCOUNT_NAME)
+    logger.info(connection_string)
+
     cover_path = REPO_PATH / "podcast_cover.jpg"
     feed_paths = [REPO_PATH / filename for filename in FEED_FILES]
     required_paths = [cover_path, *feed_paths]
