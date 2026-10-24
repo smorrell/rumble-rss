@@ -23,14 +23,14 @@ curl_cffi = importlib.util.find_spec("curl_cffi")
 # --- CONFIGURATION ---
 RUMBLE_CHANNEL_URLS = [
     "https://rumble.com/c/AnnCoulter",
-   # "https://rumble.com/c/nickjfuentes"
+    "https://rumble.com/c/nickjfuentes"
 ]
 YOUTUBE_CHANNEL_URLS = [
     "https://www.youtube.com/@angrymortgage/videos",    
-    #"https://www.youtube.com/@TheBrancaShow/videos",
-    #"https://www.youtube.com/@TheMooseOnTheLooseExtra/videos",
+    "https://www.youtube.com/@TheBrancaShow/videos",
+    "https://www.youtube.com/@TheMooseOnTheLooseExtra/videos",
 ]
-YOUTUBE_MAX_VIDEOS = 1
+YOUTUBE_MAX_VIDEOS = 5
 FEED_CHANNEL_URLS = YOUTUBE_CHANNEL_URLS + RUMBLE_CHANNEL_URLS
 CHANNEL_TITLE_PREFIXES = {
     "https://www.youtube.com/@angrymortgage/videos": "AgMrtg",
@@ -40,7 +40,7 @@ CHANNEL_TITLE_PREFIXES = {
     "https://rumble.com/c/nickjfuentes": "Nick",
 }
 MAX_VIDEO_AGE_DAYS = 5
-MAX_DOWNLOADS_PER_RUN = 1   
+MAX_DOWNLOADS_PER_RUN = 10   
 REPO_PATH = os.path.dirname(os.path.abspath(__file__))
 AUDIO_DIR = os.path.join(REPO_PATH, "mp3s")
 METADATA_PATH = os.path.join(AUDIO_DIR, "video_metadata.json")
