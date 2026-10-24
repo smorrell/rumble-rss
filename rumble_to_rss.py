@@ -39,8 +39,8 @@ CHANNEL_TITLE_PREFIXES = {
     "https://rumble.com/c/AnnCoulter": "Ann",
     "https://rumble.com/c/nickjfuentes": "Nick",
 }
-MAX_VIDEO_AGE_DAYS = 5
-MAX_DOWNLOADS_PER_RUN = 10   
+MAX_VIDEO_AGE_DAYS = 7
+MAX_DOWNLOADS_PER_RUN = 25
 REPO_PATH = os.path.dirname(os.path.abspath(__file__))
 AUDIO_DIR = os.path.join(REPO_PATH, "mp3s")
 METADATA_PATH = os.path.join(AUDIO_DIR, "video_metadata.json")
