@@ -75,73 +75,91 @@ CHANNEL_IMAGE_LABELS = {
 }
 
 
-class RumbleAvatarParser(HTMLParser):
-    """Find a Rumble channel avatar inside its channel-header--thumb element."""
+class EpisodeThumbnailParser(HTMLParser):
+    """Find the first episode thumbnail with a platform-specific image class."""
 
-    def __init__(self):
+    def __init__(self, image_class):
         super().__init__()
-        self._div_stack = []
-        self._avatar_depth = 0
+        self.image_class = image_class
         self.image_url = None
 
     def handle_starttag(self, tag, attrs):
         attributes = dict(attrs)
-        if tag == "div":
-            is_avatar_container = "channel-header--thumb" in (
-                attributes.get("class") or ""
-            ).split()
-            self._div_stack.append(is_avatar_container)
-            if is_avatar_container:
-                self._avatar_depth += 1
-        elif (
-            self._avatar_depth
+        if (
+            self.image_url is None
             and tag == "img"
-            and "channel-header--img" in (attributes.get("class") or "").split()
+            and self.image_class in (attributes.get("class") or "").split()
         ):
-            self.image_url = attributes.get("src")
+            self.image_url = (
+                attributes.get("src")
+                or attributes.get("data-src")
+                or attributes.get("data-thumb")
+            )
+            if not self.image_url and attributes.get("srcset"):
+                self.image_url = attributes["srcset"].split(",")[-1].strip().split()[0]
 
-    def handle_endtag(self, tag):
-        if tag == "div" and self._div_stack:
-            if self._div_stack.pop():
-                self._avatar_depth -= 1
 
+def channel_episode_thumbnail_url(channel_url):
+    """Return the latest episode thumbnail URL for a configured channel."""
+    image_class = (
+        "ytCoreImageHost"
+        if "youtube.com/" in channel_url
+        else "rum-video-thumbnail__image"
+    )
+    page_error = None
 
-def channel_avatar_url(channel_url):
-    """Return the profile-image URL for a configured YouTube or Rumble channel."""
-    if "youtube.com/" in channel_url:
-        options = {
-            "extract_flat": "in_playlist",
-            "playlistend": 1,
-            "quiet": True,
-            "skip_download": True,
-            "no_warnings": True,
-        }
-        with yt_dlp.YoutubeDL(options) as ydl:
-            channel_info = ydl.extract_info(channel_url, download=False)
+    try:
+        request = Request(channel_url, headers={"User-Agent": "Mozilla/5.0"})
+        with urlopen(request, timeout=30) as response:
+            webpage = response.read().decode("utf-8", errors="replace")
+        parser = EpisodeThumbnailParser(image_class)
+        parser.feed(webpage)
+        if parser.image_url:
+            return urljoin(channel_url, parser.image_url)
+    except OSError as error:
+        page_error = error
 
-        square_thumbnails = [
+    options = {
+        "extract_flat": "in_playlist",
+        "playlistend": 1,
+        "quiet": True,
+        "skip_download": True,
+        "no_warnings": True,
+        "http_headers": {
+            "Referer": "https://rumble.com/",
+            "Origin": "https://rumble.com",
+        },
+    }
+    if curl_cffi:
+        options["impersonate"] = ImpersonateTarget(client="firefox")
+    if shutil.which("node"):
+        options["js_runtimes"] = {"node": {}}
+
+    with yt_dlp.YoutubeDL(options) as ydl:
+        video_urls = discover_channel_videos(channel_url, ydl)
+        if not video_urls:
+            detail = f" Page request failed: {page_error}" if page_error else ""
+            raise RuntimeError(
+                f"No latest episode found for {channel_url}.{detail}"
+            )
+        episode_info = ydl.extract_info(video_urls[0], download=False)
+
+    if not episode_info:
+        raise RuntimeError(f"Could not read the latest episode for {channel_url}.")
+    thumbnail_url = episode_info.get("thumbnail")
+    if not thumbnail_url:
+        thumbnails = [
             thumbnail
-            for thumbnail in (channel_info.get("thumbnails") or [])
+            for thumbnail in (episode_info.get("thumbnails") or [])
             if thumbnail.get("url")
-            and thumbnail.get("width")
-            and thumbnail.get("height")
-            and abs(thumbnail["width"] - thumbnail["height"]) <= 1
         ]
-        if not square_thumbnails:
-            raise RuntimeError(f"No square channel avatar found for {channel_url}.")
-        return max(
-            square_thumbnails,
-            key=lambda thumbnail: thumbnail["width"] * thumbnail["height"],
-        )["url"]
-
-    request = Request(channel_url, headers={"User-Agent": "Mozilla/5.0"})
-    with urlopen(request, timeout=30) as response:
-        webpage = response.read().decode("utf-8", errors="replace")
-    parser = RumbleAvatarParser()
-    parser.feed(webpage)
-    if not parser.image_url:
-        raise RuntimeError(f"No channel-header--thumb avatar found for {channel_url}.")
-    return parser.image_url
+        if thumbnails:
+            thumbnail_url = thumbnails[-1]["url"]
+    if not thumbnail_url:
+        raise RuntimeError(
+            f"No latest episode thumbnail found for {channel_url}."
+        )
+    return thumbnail_url
 
 
 def download_channel_images():
@@ -152,20 +170,25 @@ def download_channel_images():
     try:
         for channel_url in FEED_CHANNEL_URLS:
             show_name = channel_show_name(channel_url)
-            avatar_url = channel_avatar_url(channel_url)
-            request = Request(avatar_url, headers={"User-Agent": "Mozilla/5.0"})
+            thumbnail_url = channel_episode_thumbnail_url(channel_url)
+            request = Request(thumbnail_url, headers={"User-Agent": "Mozilla/5.0"})
             with urlopen(request, timeout=30) as response:
-                avatar_data = response.read()
+                thumbnail_data = response.read()
 
-            with Image.open(BytesIO(avatar_data)) as source:
-                portrait = ImageOps.fit(
+            with Image.open(BytesIO(thumbnail_data)) as source:
+                thumbnail = ImageOps.contain(
                     source.convert("RGB"),
-                    (540, 540),
+                    (540, 468),
                     method=Image.Resampling.LANCZOS,
-                    centering=(0.5, 0.38),
                 )
+            portrait = Image.new("RGB", (540, 540), "#172126")
+            portrait.paste(
+                thumbnail,
+                ((540 - thumbnail.width) // 2, (468 - thumbnail.height) // 2),
+            )
+            thumbnail.close()
             portraits.append((show_name, CHANNEL_IMAGE_LABELS[channel_url], portrait))
-            print(f"Downloaded {show_name}.jpg.")
+            print(f"Downloaded the latest episode thumbnail for {show_name}.")
 
         cover = Image.new("RGB", (1800, 1800), "#263238")
         draw = ImageDraw.Draw(cover)
@@ -178,7 +201,7 @@ def download_channel_images():
             label_font = ImageFont.load_default()
             subtitle_font = ImageFont.load_default()
 
-        title = "CHANNEL LINEUP"
+        title = "LATEST EPISODES"
         title_bounds = draw.textbbox((0, 0), title, font=title_font)
         draw.text(
             ((1800 - (title_bounds[2] - title_bounds[0])) / 2, 82),
