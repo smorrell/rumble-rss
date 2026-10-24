@@ -1,3 +1,4 @@
+import logging
 import os
 from pathlib import Path
 
@@ -11,6 +12,8 @@ except ImportError:
     )
 
 
+logger = logging.getLogger(__name__)
+
 REPO_PATH = Path(__file__).resolve().parent
 MP3_DIR = REPO_PATH / "mp3s"
 CONTAINER_NAME = os.environ.get("AZURE_STORAGE_CONTAINER_NAME", "podcastmp3s")
@@ -21,8 +24,15 @@ FEED_FILES = ("Rumble.xml", "ScottAdams.xml")
 
 
 def main():
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s %(levelname)s %(name)s: %(message)s",
+    )
+    logger.info("Starting upload to Azure container '%s'.", CONTAINER_NAME)
+
     connection_string = os.environ.get("AZURE_STORAGE_CONNECTION_STRING")
     if not connection_string:
+        logger.error("AZURE_STORAGE_CONNECTION_STRING is not set.")
         raise SystemExit(
             "Set the AZURE_STORAGE_CONNECTION_STRING environment variable."
         )
@@ -33,31 +43,36 @@ def main():
     missing_paths = [path for path in required_paths if not path.is_file()]
     if missing_paths:
         missing = ", ".join(str(path) for path in missing_paths)
+        logger.error("Required upload file(s) not found: %s", missing)
         raise SystemExit(f"Required upload file(s) not found: {missing}")
 
+    logger.info("Connecting to Azure Blob Storage.")
     blob_service = BlobServiceClient.from_connection_string(connection_string)
     container = blob_service.get_container_client(CONTAINER_NAME)
     try:
         properties = container.get_container_properties()
     except ResourceNotFoundError:
+        logger.info("Creating container '%s' with public blob access.", CONTAINER_NAME)
         container.create_container(public_access="blob")
-        print(f"Created container '{CONTAINER_NAME}' with public blob access.")
+        logger.info("Created container '%s'.", CONTAINER_NAME)
     else:
         if properties.public_access != "blob":
+            logger.info("Enabling public blob access on '%s'.", CONTAINER_NAME)
             container.set_container_access_policy(
                 signed_identifiers={}, public_access="blob"
             )
-            print(f"Enabled public blob access on '{CONTAINER_NAME}'.")
+            logger.info("Enabled public blob access on '%s'.", CONTAINER_NAME)
 
     def upload_file(path, blob_name, content_type):
         blob = container.get_blob_client(blob_name)
+        logger.info("Uploading '%s'.", blob_name)
         with path.open("rb") as data:
             blob.upload_blob(
                 data,
                 overwrite=True,
                 content_settings=ContentSettings(content_type=content_type),
             )
-        print(f"Uploaded {blob_name}.")
+        logger.info("Uploaded '%s'.", blob_name)
 
     for mp3_path in sorted(MP3_DIR.glob("*.mp3")):
         upload_file(mp3_path, f"mp3s/{mp3_path.name}", "audio/mpeg")
@@ -66,12 +81,12 @@ def main():
     for feed_path in feed_paths:
         upload_file(feed_path, feed_path.name, "application/rss+xml")
 
-    print(
+    logger.info(
         "Rumble feed URL: "
         f"https://{ACCOUNT_NAME}.blob.core.windows.net/"
         f"{CONTAINER_NAME}/Rumble.xml"
     )
-    print(
+    logger.info(
         "Scott Adams feed URL: "
         f"https://{ACCOUNT_NAME}.blob.core.windows.net/"
         f"{CONTAINER_NAME}/ScottAdams.xml"
