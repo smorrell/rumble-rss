@@ -125,8 +125,35 @@ class _SameOriginRedirectHandler(HTTPRedirectHandler):
 
 def _write_http_log(log_path: str, entry: dict[str, Any]) -> None:
     entry["timestamp"] = datetime.now().astimezone().isoformat()
+    separator = "=" * 80
+    lines = [
+        separator,
+        f"{entry['event'].upper()}  {entry['timestamp']}",
+    ]
+    for key in ("method", "url", "status", "reason"):
+        if key in entry:
+            lines.append(f"{key.title()}: {entry[key]}")
+    if "headers" in entry:
+        lines.extend(
+            [
+                "Headers:",
+                json.dumps(entry["headers"], ensure_ascii=False, indent=2),
+            ]
+        )
+    if "body" in entry:
+        body = entry["body"]
+        try:
+            body = json.dumps(
+                json.loads(body),
+                ensure_ascii=False,
+                indent=2,
+            )
+        except (TypeError, json.JSONDecodeError):
+            pass
+        lines.extend(["Body:", body])
+    lines.append(separator)
     with open(log_path, "a", encoding="utf-8") as log_file:
-        log_file.write(json.dumps(entry, ensure_ascii=False) + "\n")
+        log_file.write("\n".join(lines) + "\n\n")
 
 
 class ODataConnector:
@@ -153,7 +180,7 @@ class ODataConnector:
         timestamp = datetime.now().astimezone().strftime("%Y%m%d-%H%M%S-%f")
         self.log_path = os.path.join(
             os.path.dirname(os.path.abspath(__file__)),
-            f"odata-http-{timestamp}.jsonl",
+            f"odata-http-{timestamp}.log",
         )
 
     def iter_entities(
