@@ -15,6 +15,7 @@ import logging
 import os
 import re
 from collections.abc import Iterator, Mapping
+from datetime import datetime
 from typing import Any
 from urllib.error import HTTPError, URLError
 from urllib.parse import quote, urlencode, urljoin, urlsplit
@@ -26,6 +27,17 @@ from urllib.request import (
 
 
 logger = logging.getLogger(__name__)
+
+
+def _redact_headers(
+    headers: Mapping[str, str] | list[tuple[str, str]],
+) -> dict[str, str]:
+    sensitive_headers = {"authorization", "proxy-authorization", "cookie", "set-cookie"}
+    header_items = headers.items() if hasattr(headers, "items") else headers
+    return {
+        name: "<redacted>" if name.lower() in sensitive_headers else value
+        for name, value in header_items
+    }
 
 
 def _has_basic_auth_challenge(error: HTTPError) -> bool:
@@ -43,9 +55,14 @@ def _url_origin(url: str) -> tuple[str, str, int | None]:
 
 
 class _SameOriginRedirectHandler(HTTPRedirectHandler):
-    def __init__(self, origin: tuple[str, str, int | None]) -> None:
+    def __init__(
+        self,
+        origin: tuple[str, str, int | None],
+        log_path: str,
+    ) -> None:
         super().__init__()
         self.origin = origin
+        self.log_path = log_path
 
     def redirect_request(
         self,
@@ -58,6 +75,17 @@ class _SameOriginRedirectHandler(HTTPRedirectHandler):
     ) -> Request | None:
         source_path = urlsplit(request.full_url).path
         target_path = urlsplit(new_url).path
+        _write_http_log(
+            self.log_path,
+            {
+                "event": "response",
+                "url": request.full_url,
+                "status": code,
+                "reason": message,
+                "headers": _redact_headers(headers),
+                "body": response.read().decode("utf-8", errors="replace"),
+            },
+        )
         if _url_origin(new_url) != self.origin:
             logger.warning(
                 "Blocked cross-origin HTTP %s redirect from %s to %s.",
@@ -78,9 +106,27 @@ class _SameOriginRedirectHandler(HTTPRedirectHandler):
             source_path,
             target_path,
         )
-        return super().redirect_request(
+        redirected_request = super().redirect_request(
             request, response, code, message, headers, new_url
         )
+        if redirected_request is not None:
+            _write_http_log(
+                self.log_path,
+                {
+                    "event": "request",
+                    "method": redirected_request.get_method(),
+                    "url": redirected_request.full_url,
+                    "headers": _redact_headers(redirected_request.header_items()),
+                    "body": "<request body omitted>",
+                },
+            )
+        return redirected_request
+
+
+def _write_http_log(log_path: str, entry: dict[str, Any]) -> None:
+    entry["timestamp"] = datetime.now().astimezone().isoformat()
+    with open(log_path, "a", encoding="utf-8") as log_file:
+        log_file.write(json.dumps(entry, ensure_ascii=False) + "\n")
 
 
 class ODataConnector:
@@ -104,6 +150,11 @@ class ODataConnector:
         self.password = password
         self.timeout = timeout
         self._origin = _url_origin(self.service_url)
+        timestamp = datetime.now().astimezone().strftime("%Y%m%d-%H%M%S-%f")
+        self.log_path = os.path.join(
+            os.path.dirname(os.path.abspath(__file__)),
+            f"odata-http-{timestamp}.jsonl",
+        )
 
     def iter_entities(
         self,
@@ -150,11 +201,35 @@ class ODataConnector:
 
     def _get_json(self, url: str) -> dict[str, Any]:
         request = Request(url, headers={"Accept": "application/json"})
-        opener = build_opener(_SameOriginRedirectHandler(self._origin))
+        opener = build_opener(
+            _SameOriginRedirectHandler(self._origin, self.log_path)
+        )
+        _write_http_log(
+            self.log_path,
+            {
+                "event": "request",
+                "method": request.get_method(),
+                "url": request.full_url,
+                "headers": _redact_headers(request.header_items()),
+                "body": "<request body omitted>",
+            },
+        )
         try:
             try:
                 response = opener.open(request, timeout=self.timeout)
             except HTTPError as error:
+                error_body = error.read().decode("utf-8", errors="replace")
+                _write_http_log(
+                    self.log_path,
+                    {
+                        "event": "response",
+                        "url": error.url,
+                        "status": error.code,
+                        "reason": error.reason,
+                        "headers": _redact_headers(error.headers),
+                        "body": error_body,
+                    },
+                )
                 if error.code != 401 or not _has_basic_auth_challenge(error):
                     error.close()
                     raise RuntimeError(
@@ -179,13 +254,37 @@ class ODataConnector:
                         "Authorization": f"Basic {credentials}",
                     },
                 )
+                _write_http_log(
+                    self.log_path,
+                    {
+                        "event": "request",
+                        "method": authorized_request.get_method(),
+                        "url": authorized_request.full_url,
+                        "headers": _redact_headers(
+                            authorized_request.header_items()
+                        ),
+                        "body": "<request body omitted>",
+                    },
+                )
                 response = opener.open(
                     authorized_request,
                     timeout=self.timeout,
                 )
 
             with response:
-                payload = json.load(response)
+                response_body = response.read().decode("utf-8", errors="replace")
+                _write_http_log(
+                    self.log_path,
+                    {
+                        "event": "response",
+                        "url": response.url,
+                        "status": response.status,
+                        "reason": response.reason,
+                        "headers": _redact_headers(response.headers),
+                        "body": response_body,
+                    },
+                )
+                payload = json.loads(response_body)
         except HTTPError as error:
             raise RuntimeError(
                 f"OData request failed for {url}: {error}"
@@ -215,5 +314,6 @@ if __name__ == "__main__":
         os.environ.get("ODATA_USERNAME", "day.doron.posner"),
         os.environ.get("ODATA_PASSWORD","1")    ,
     )
+    print(f"HTTP request/response log: {connector.log_path}")
     reports = connector.get_entities()
     print(json.dumps(reports, ensure_ascii=False, indent=2))
