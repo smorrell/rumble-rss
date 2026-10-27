@@ -40,13 +40,15 @@ YOUTUBE_CHANNEL_URLS = [
     "https://www.youtube.com/@angrymortgage/videos",    
     "https://www.youtube.com/@TheBrancaShow/videos",
     "https://www.youtube.com/@TheMooseOnTheLooseExtra/videos",
+    "https://www.youtube.com/@CompoundCensoredOfficial"
 ]
 YOUTUBE_MAX_VIDEOS = 5
 FEED_CHANNEL_URLS = YOUTUBE_CHANNEL_URLS + RUMBLE_CHANNEL_URLS
 CHANNEL_TITLE_PREFIXES = {
     "https://www.youtube.com/@angrymortgage/videos": "AgMrtg",
     "https://www.youtube.com/@TheBrancaShow/videos": "Branca",
-    "https://www.youtube.com/@TheMooseOnTheLooseExtra/videos": "Moose",
+    "https://www.youtube.com/@TheMooseOnTheLooseExtra/videos": "MooseExtra",
+    "https://www.youtube.com/@CompoundCensoredOfficial": "Gavin",
     "https://rumble.com/c/AnnCoulter": "Ann",
     "https://rumble.com/c/nickjfuentes": "Nick",
 }

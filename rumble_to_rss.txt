@@ -144,3 +144,21 @@ Found 28 videos on channel page 1.
 [Thread-18044] Skipping old or undated video https://rumble.com/v7ghv50-america-first-ep.-1759.html (upload_date: 20261007).
 Wrote 17 episode(s) to O:\smorrell\OneDrive\Desktop\rumble rss\Rumble.xml.
 ===== Run ended 2026-10-27T09:29:25-04:00 =====
+
+===== Run started 2026-10-27T15:56:15-04:00 =====
+Refreshing channel portraits and podcast cover...
+Downloaded the latest episode thumbnail for angrymortgage.
+Downloaded the latest episode thumbnail for TheBrancaShow.
+Downloaded the latest episode thumbnail for TheMooseOnTheLooseExtra.
+Traceback (most recent call last):
+  File [35m"O:\smorrell\OneDrive\Desktop\rumble rss\rumble_to_rss.py"[0m, line [35m620[0m, in [35m<module>[0m
+    [31mdownload_and_convert[0m[1;31m()[0m
+    [31m~~~~~~~~~~~~~~~~~~~~[0m[1;31m^^[0m
+  File [35m"O:\smorrell\OneDrive\Desktop\rumble rss\rumble_to_rss.py"[0m, line [35m467[0m, in [35mdownload_and_convert[0m
+    [31mdownload_channel_images[0m[1;31m()[0m
+    [31m~~~~~~~~~~~~~~~~~~~~~~~[0m[1;31m^^[0m
+  File [35m"O:\smorrell\OneDrive\Desktop\rumble rss\rumble_to_rss.py"[0m, line [35m198[0m, in [35mdownload_channel_images[0m
+    portraits.append((show_name, [31mCHANNEL_IMAGE_LABELS[0m[1;31m[channel_url][0m, portrait))
+                                 [31m~~~~~~~~~~~~~~~~~~~~[0m[1;31m^^^^^^^^^^^^^[0m
+[1;35mKeyError[0m: [35m'https://www.youtube.com/@CompoundCensoredOfficial'[0m
+===== Run ended 2026-10-27T15:56:36-04:00 =====
