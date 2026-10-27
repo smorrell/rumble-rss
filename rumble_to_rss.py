@@ -50,6 +50,7 @@ MAX_VIDEO_AGE_DAYS = 7
 MAX_DOWNLOADS_PER_RUN = 25
 REPO_PATH = os.path.dirname(os.path.abspath(__file__))
 AUDIO_DIR = os.path.join(REPO_PATH, "mp3s")
+IMAGE_DIR = os.path.join(REPO_PATH, "img")
 METADATA_PATH = os.path.join(AUDIO_DIR, "video_metadata.json")
 RSS_FEED_PATH = os.path.join(REPO_PATH, "Rumble.xml")
 AZURE_STORAGE_ACCOUNT_NAME = os.environ.get(
@@ -63,7 +64,7 @@ AZURE_CONTAINER_URL = (
     f"{AZURE_STORAGE_CONTAINER_NAME}"
 )
 FEED_BASE_URL = os.environ.get("FEED_BASE_URL", AZURE_CONTAINER_URL).rstrip("/")
-PODCAST_COVER_URL = f"{FEED_BASE_URL}/podcast_cover.jpg"
+PODCAST_COVER_URL = f"{FEED_BASE_URL}/img/podcast_cover.jpg"
 ITUNES_NAMESPACE = "http://www.itunes.com/dtds/podcast-1.0.dtd"
 ET.register_namespace("itunes", ITUNES_NAMESPACE)
 CHANNEL_IMAGE_LABELS = {
@@ -165,6 +166,7 @@ def channel_episode_thumbnail_url(channel_url):
 def download_channel_images():
     """Refresh channel portraits and build the square podcast-cover collage."""
     print("Refreshing channel portraits and podcast cover...")
+    os.makedirs(IMAGE_DIR, exist_ok=True)
     portraits = []
     temporary_paths = []
     try:
@@ -255,14 +257,14 @@ def download_channel_images():
 
         for show_name, _, portrait in portraits:
             with tempfile.NamedTemporaryFile(
-                dir=REPO_PATH, suffix=".jpg", delete=False
+                dir=IMAGE_DIR, suffix=".jpg", delete=False
             ) as temporary_file:
                 temporary_paths.append(temporary_file.name)
             portrait.save(temporary_paths[-1], format="JPEG", quality=92)
 
-        cover_path = os.path.join(REPO_PATH, "podcast_cover.jpg")
+        cover_path = os.path.join(IMAGE_DIR, "podcast_cover.jpg")
         with tempfile.NamedTemporaryFile(
-            dir=REPO_PATH, suffix=".jpg", delete=False
+            dir=IMAGE_DIR, suffix=".jpg", delete=False
         ) as temporary_file:
             temporary_paths.append(temporary_file.name)
         cover.save(temporary_paths[-1], format="JPEG", quality=92)
@@ -272,7 +274,7 @@ def download_channel_images():
         ):
             os.replace(
                 temporary_path,
-                os.path.join(REPO_PATH, f"{show_name}.jpg"),
+                os.path.join(IMAGE_DIR, f"{show_name}.jpg"),
             )
         os.replace(temporary_paths[-1], cover_path)
         print(f"Updated podcast cover: {cover_path}")

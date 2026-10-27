@@ -5,3 +5,4 @@
 odata-http-*.jsonl
 odata-http-*.log
 *.jpg
+/img/

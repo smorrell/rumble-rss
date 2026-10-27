@@ -41,7 +41,7 @@ def main():
     logger.info(ACCOUNT_NAME)
     logger.info(connection_string)
 
-    cover_path = REPO_PATH / "podcast_cover.jpg"
+    cover_path = REPO_PATH / "img" / "podcast_cover.jpg"
     feed_paths = [REPO_PATH / filename for filename in FEED_FILES]
     required_paths = [cover_path, *feed_paths]
     missing_paths = [path for path in required_paths if not path.is_file()]
@@ -81,7 +81,7 @@ def main():
     for mp3_path in sorted(MP3_DIR.glob("*.mp3")):
         upload_file(mp3_path, f"mp3s/{mp3_path.name}", "audio/mpeg")
 
-    upload_file(cover_path, cover_path.name, "image/jpeg")
+    upload_file(cover_path, f"img/{cover_path.name}", "image/jpeg")
     for feed_path in feed_paths:
         upload_file(feed_path, feed_path.name, "application/rss+xml")
 
