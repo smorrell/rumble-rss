@@ -4,7 +4,7 @@
     <title>Classic Real Coffee with Scott Adams</title>
     <link>https://podcasters.spotify.com/pod/show/scott-adams00</link>
     <generator>Anchor Podcasts</generator>
-    <lastBuildDate>Fri, 23 Oct 2026 18:14:50 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 16:36:22 GMT</lastBuildDate>
     <ns0:link href="https://anchor.fm/s/128d072c/podcast/rss" rel="self" type="application/rss+xml" />
     <author>Scott Adams</author>
     <copyright>Scott Adams</copyright>
@@ -21,6 +21,20 @@
       <ns1:category text="News Commentary" />
     </ns1:category>
     <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/3012323/3012323-1578935161711-71f93031bbe53.jpg" />
+    <item>
+      <title>Classic Episode 1909 Scott Adams: Elon Musk Buys Twitter And Nothing Will Be The Same, Including Ukraine War</title>
+      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1909-Scott-Adams-Elon-Musk-Buys-Twitter-And-Nothing-Will-Be-The-Same--Including-Ukraine-War-e1priv0</link>
+      <guid isPermaLink="false">a4bdf645-585b-42c6-bd63-fd43201db928</guid>
+      <dc:creator>Scott Adams</dc:creator>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://anchor.fm/s/128d072c/podcast/play/59672992/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2022-9-27%2Fc55ad953-bb10-2df3-741e-64807be7a8f5.mp3" length="42536586" type="audio/mpeg" />
+      <ns1:explicit>false</ns1:explicit>
+      <ns1:duration>00:59:04</ns1:duration>
+      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1666888914164-5793cf7f2831f.jpg" />
+      <ns1:season>46</ns1:season>
+      <ns1:episode>1909</ns1:episode>
+      <ns1:episodeType>full</ns1:episodeType>
+    </item>
     <item>
       <title>Classic Episode 1908 Scott Adams: Politics Reaches Peak Absurdity Just In Time For The Midterms. Buckle Up</title>
       <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1908-Scott-Adams-Politics-Reaches-Peak-Absurdity-Just-In-Time-For-The-Midterms--Buckle-Up-e1ppui6</link>
@@ -145,20 +159,6 @@
       <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1666113664506-50097b59161f9.jpg" />
       <ns1:season>46</ns1:season>
       <ns1:episode>1900</ns1:episode>
-      <ns1:episodeType>full</ns1:episodeType>
-    </item>
-    <item>
-      <title>Classic Episode 1899 Scott Adams: Ye Buys Parler, I Try To Get Canceled Again, And A Peace Plan For Ukraine</title>
-      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1899-Scott-Adams-Ye-Buys-Parler--I-Try-To-Get-Canceled-Again--And-A-Peace-Plan-For-Ukraine-e1pd21i</link>
-      <guid isPermaLink="false">56d69f8b-16ba-4734-9ba6-4e8c2c523bac</guid>
-      <dc:creator>Scott Adams</dc:creator>
-      <pubDate>Sat, 17 Oct 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/APO9652044500.mp3" length="64960888" type="audio/mpeg" />
-      <ns1:explicit>false</ns1:explicit>
-      <ns1:duration>01:07:40</ns1:duration>
-      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1666024434120-d6cdaa44fb47d.jpg" />
-      <ns1:season>46</ns1:season>
-      <ns1:episode>1899</ns1:episode>
       <ns1:episodeType>full</ns1:episodeType>
     </item>
   </channel>

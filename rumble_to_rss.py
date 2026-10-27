@@ -132,7 +132,7 @@ def channel_episode_thumbnail_url(channel_url):
         },
     }
     if curl_cffi:
-        options["impersonate"] = ImpersonateTarget(client="firefox")
+        options["impersonate"] = ImpersonateTarget(client="chrome")
     if shutil.which("node"):
         options["js_runtimes"] = {"node": {}}
 
@@ -491,7 +491,7 @@ def download_and_convert():
                 "for YouTube extraction. Install Node.js or add it to PATH."
             )
         if curl_cffi:
-            opts["impersonate"] = ImpersonateTarget(client="firefox")
+            opts["impersonate"] = ImpersonateTarget(client="chrome")
         else:
             print(
                 "Warning: curl-cffi is not installed; Rumble may reject requests with HTTP 403. "
