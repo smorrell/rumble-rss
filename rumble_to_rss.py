@@ -3,7 +3,6 @@ import re
 import json
 import shutil
 import tempfile
-import atexit
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 from email.utils import format_datetime
@@ -11,28 +10,13 @@ from html.parser import HTMLParser
 import importlib.util
 import sys
 from io import BytesIO
+from script_logging import configure_script_logging
 from urllib.parse import quote, urljoin
 from urllib.request import Request, urlopen
 import xml.etree.ElementTree as ET
 
 if __name__ == "__main__":
-    log_file = open(
-        os.path.join(os.path.dirname(os.path.abspath(__file__)), "rumble_to_rss.txt"),
-        "a",
-        encoding="utf-8",
-        buffering=1,
-    )
-    sys.stdout = log_file
-    sys.stderr = log_file
-    print(
-        f"\n===== Run started "
-        f"{datetime.now().astimezone().isoformat(timespec='seconds')} ====="
-    )
-    atexit.register(
-        lambda: print(
-            f"===== Run ended {datetime.now().astimezone().isoformat(timespec='seconds')} ====="
-        )
-    )
+    configure_script_logging("rumble_to_rss.txt")
 
 try:
     import yt_dlp

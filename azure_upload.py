@@ -1,26 +1,10 @@
-import atexit
 import logging
 import os
-import sys
-from datetime import datetime
 from pathlib import Path
+from script_logging import configure_script_logging
 
 if __name__ == "__main__":
-    log_file = Path(__file__).with_name("azure_upload.txt").open(
-        "a", encoding="utf-8", buffering=1
-    )
-    sys.stdout = log_file
-    sys.stderr = log_file
-    print(
-        f"\n===== Run started "
-        f"{datetime.now().astimezone().isoformat(timespec='seconds')} ====="
-    )
-    atexit.register(
-        lambda: print(
-            f"===== Run ended "
-            f"{datetime.now().astimezone().isoformat(timespec='seconds')} ====="
-        )
-    )
+    configure_script_logging("azure_upload.txt")
 
 try:
     from azure.core.exceptions import ResourceNotFoundError
