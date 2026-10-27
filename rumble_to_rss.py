@@ -77,6 +77,7 @@ CHANNEL_IMAGE_LABELS = {
     "https://www.youtube.com/@angrymortgage/videos": "ANGRY MORTGAGE",
     "https://www.youtube.com/@TheBrancaShow/videos": "ANDREW BRANCA",
     "https://www.youtube.com/@TheMooseOnTheLooseExtra/videos": "MOOSE",
+    "https://www.youtube.com/@CompoundCensoredOfficial": "GAVIN",
     "https://rumble.com/c/AnnCoulter": "ANN COULTER",
     "https://rumble.com/c/nickjfuentes": "NICK FUENTES",
 }
@@ -217,7 +218,7 @@ def download_channel_images():
             fill="#FFF4DC",
             font=title_font,
         )
-        subtitle = "FIVE CHANNELS  |  ONE SHOW"
+        subtitle = "SIX CHANNELS  |  ONE SHOW"
         subtitle_bounds = draw.textbbox((0, 0), subtitle, font=subtitle_font)
         draw.text(
             ((1800 - (subtitle_bounds[2] - subtitle_bounds[0])) / 2, 190),
@@ -230,10 +231,18 @@ def download_channel_images():
             (60, 300),
             (630, 300),
             (1200, 300),
-            (345, 870),
-            (915, 870),
+            (60, 870),
+            (630, 870),
+            (1200, 870),
         )
-        panel_colors = ("#B64A3A", "#476D9A", "#628052", "#9A6D9A", "#CF7C42")
+        panel_colors = (
+            "#B64A3A",
+            "#476D9A",
+            "#628052",
+            "#9A6D9A",
+            "#CF7C42",
+            "#497C78",
+        )
         for index, ((_, label, portrait), (x, y)) in enumerate(
             zip(portraits, positions)
         ):
