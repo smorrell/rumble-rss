@@ -1,6 +1,26 @@
+import atexit
 import logging
 import os
+import sys
+from datetime import datetime
 from pathlib import Path
+
+if __name__ == "__main__":
+    log_file = Path(__file__).with_name("azure_upload.txt").open(
+        "a", encoding="utf-8", buffering=1
+    )
+    sys.stdout = log_file
+    sys.stderr = log_file
+    print(
+        f"\n===== Run started "
+        f"{datetime.now().astimezone().isoformat(timespec='seconds')} ====="
+    )
+    atexit.register(
+        lambda: print(
+            f"===== Run ended "
+            f"{datetime.now().astimezone().isoformat(timespec='seconds')} ====="
+        )
+    )
 
 try:
     from azure.core.exceptions import ResourceNotFoundError
@@ -39,7 +59,6 @@ def main():
 
     logger.info(CONTAINER_NAME)
     logger.info(ACCOUNT_NAME)
-    logger.info(connection_string)
 
     cover_path = REPO_PATH / "img" / "podcast_cover.jpg"
     feed_paths = [REPO_PATH / filename for filename in FEED_FILES]

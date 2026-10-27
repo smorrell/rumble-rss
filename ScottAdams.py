@@ -1,7 +1,9 @@
-from datetime import date
+import atexit
+import calendar
+import sys
+from datetime import date, datetime
 from email.utils import parsedate_to_datetime
 from pathlib import Path
-import calendar
 from urllib.request import Request, urlopen
 import xml.etree.ElementTree as ET
 
@@ -13,6 +15,22 @@ FEED_TITLE = "Classic Real Coffee with Scott Adams"
 EPISODE_OFFSET_YEARS = 4
 EPISODE_WINDOW_MONTHS = 1
 ITUNES_NAMESPACE = "http://www.itunes.com/dtds/podcast-1.0.dtd"
+
+if __name__ == "__main__":
+    log_file = OUTPUT_PATH.with_name("ScottAdams.txt").open(
+        "a", encoding="utf-8", buffering=1
+    )
+    sys.stdout = log_file
+    sys.stderr = log_file
+    print(
+        f"\n===== Run started "
+        f"{datetime.now().astimezone().isoformat(timespec='seconds')} ====="
+    )
+    atexit.register(
+        lambda: print(
+            f"===== Run ended {datetime.now().astimezone().isoformat(timespec='seconds')} ====="
+        )
+    )
 
 
 def subtract_years(value, years):
