@@ -24,9 +24,8 @@ class TeeStream:
 
 def configure_script_logging(log_filename):
     log_file = Path(__file__).with_name(log_filename).open(
-        "a", encoding="utf-8", buffering=1
+        "w", encoding="utf-8", buffering=1
     )
-    atexit.register(log_file.close)
     sys.stdout = TeeStream(sys.stdout, log_file)
     sys.stderr = TeeStream(sys.stderr, log_file)
 

@@ -77,7 +77,7 @@ CHANNEL_IMAGE_LABELS = {
     "https://www.youtube.com/@angrymortgage/videos": "ANGRY MORTGAGE",
     "https://www.youtube.com/@TheBrancaShow/videos": "ANDREW BRANCA",
     "https://www.youtube.com/@TheMooseOnTheLooseExtra/videos": "MOOSE",
-    "https://www.youtube.com/@CompoundCensoredOfficial": "GAVIN",
+    "https://www.youtube.com/@CompoundCensoredOfficial": "GAVIN CENSORED",
     "https://rumble.com/c/AnnCoulter": "ANN COULTER",
     "https://rumble.com/c/nickjfuentes": "NICK FUENTES",
 }
