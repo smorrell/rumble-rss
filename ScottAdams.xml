@@ -22,6 +22,20 @@
     </ns1:category>
     <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/3012323/3012323-1578935161711-71f93031bbe53.jpg" />
     <item>
+      <title>Classic Episode 1911 Scott Adams: Let's Have Fun With The News Because Its Been A Wonderful Week</title>
+      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1911-Scott-Adams-Lets-Have-Fun-With-The-News-Because-Its-Been-A-Wonderful-Week-e1pukuq</link>
+      <guid isPermaLink="false">3acf8eb5-310a-45cb-811d-e6c0943263ea</guid>
+      <dc:creator>Scott Adams</dc:creator>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://traffic.megaphone.fm/APO2712732581.mp3" length="83351510" type="audio/mpeg" />
+      <ns1:explicit>false</ns1:explicit>
+      <ns1:duration>01:26:49</ns1:duration>
+      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1667064774453-3b14d8ed506cf.jpg" />
+      <ns1:season>46</ns1:season>
+      <ns1:episode>1911</ns1:episode>
+      <ns1:episodeType>full</ns1:episodeType>
+    </item>
+    <item>
       <title>Classic Episode 1910 Scott Adams: Twitter, Paul Pelosi Attacked, New Ivermectin Study, Ukraine Update, More</title>
       <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1910-Scott-Adams-Twitter--Paul-Pelosi-Attacked--New-Ivermectin-Study--Ukraine-Update--More-e1ptb91</link>
       <guid isPermaLink="false">0a9d16f5-f866-48ba-aae7-7cce7e8c4b53</guid>
@@ -145,20 +159,6 @@
       <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1666284678761-7bc265ed52aaa.jpg" />
       <ns1:season>46</ns1:season>
       <ns1:episode>1902</ns1:episode>
-      <ns1:episodeType>full</ns1:episodeType>
-    </item>
-    <item>
-      <title>Classic Episode 1901 Scott Adams: George Floyd vs Ye, Corporate Diversity, Musk Tweets, Iran Revolution	</title>
-      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1901-Scott-Adams-George-Floyd-vs-Ye--Corporate-Diversity--Musk-Tweets--Iran-Revolution-e1pg9j1</link>
-      <guid isPermaLink="false">68ade30c-f76a-4dde-9ad1-c471f9bb5a75</guid>
-      <dc:creator>Scott Adams</dc:creator>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/APO5746316532.mp3" length="81918328" type="audio/mpeg" />
-      <ns1:explicit>false</ns1:explicit>
-      <ns1:duration>01:25:19</ns1:duration>
-      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1666200985337-cd0f958e066d1.jpg" />
-      <ns1:season>46</ns1:season>
-      <ns1:episode>1901</ns1:episode>
       <ns1:episodeType>full</ns1:episodeType>
     </item>
   </channel>

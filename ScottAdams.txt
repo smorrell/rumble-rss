@@ -1,4 +1,4 @@
 
-===== Run started 2026-10-28T16:13:46-04:00 =====
-Wrote 10 episode(s) to O:\smorrell\OneDrive\Desktop\rumble rss\ScottAdams.xml for 2022-09-28 through 2022-10-28.
-===== Run ended 2026-10-28T16:13:47-04:00 =====
+===== Run started 2026-10-29T11:20:23-04:00 =====
+Wrote 10 episode(s) to O:\smorrell\OneDrive\Desktop\rumble rss\ScottAdams.xml for 2022-09-29 through 2022-10-29.
+===== Run ended 2026-10-29T11:20:23-04:00 =====
