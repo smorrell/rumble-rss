@@ -4,7 +4,7 @@
     <title>Classic Real Coffee with Scott Adams</title>
     <link>https://podcasters.spotify.com/pod/show/scott-adams00</link>
     <generator>Anchor Podcasts</generator>
-    <lastBuildDate>Wed, 28 Oct 2026 17:43:18 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 16:37:44 GMT</lastBuildDate>
     <ns0:link href="https://anchor.fm/s/128d072c/podcast/rss" rel="self" type="application/rss+xml" />
     <author>Scott Adams</author>
     <copyright>Scott Adams</copyright>
@@ -21,6 +21,20 @@
       <ns1:category text="News Commentary" />
     </ns1:category>
     <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/3012323/3012323-1578935161711-71f93031bbe53.jpg" />
+    <item>
+      <title>Classic Episode 1912 Scott Adams: A Nonzero Chance The Pelosis Were Getting Hammered At The Same Time</title>
+      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1912-Scott-Adams-A-Nonzero-Chance-The-Pelosis-Were-Getting-Hammered-At-The-Same-Time-e1pvmqq</link>
+      <guid isPermaLink="false">a5b65397-cffc-405d-b345-3ce8eb40a4c6</guid>
+      <dc:creator>Scott Adams</dc:creator>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://traffic.megaphone.fm/APO3800957183.mp3" length="79381315" type="audio/mpeg" />
+      <ns1:explicit>false</ns1:explicit>
+      <ns1:duration>01:22:41</ns1:duration>
+      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1667148916190-24d5592238b8.jpg" />
+      <ns1:season>46</ns1:season>
+      <ns1:episode>1912</ns1:episode>
+      <ns1:episodeType>full</ns1:episodeType>
+    </item>
     <item>
       <title>Classic Episode 1911 Scott Adams: Let's Have Fun With The News Because Its Been A Wonderful Week</title>
       <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1911-Scott-Adams-Lets-Have-Fun-With-The-News-Because-Its-Been-A-Wonderful-Week-e1pukuq</link>
@@ -145,20 +159,6 @@
       <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1666366503140-77359f8d7c889.jpg" />
       <ns1:season>46</ns1:season>
       <ns1:episode>1903</ns1:episode>
-      <ns1:episodeType>full</ns1:episodeType>
-    </item>
-    <item>
-      <title>Classic Episode 1902 Scott Adams: UFO Theory, Musk, Masks, Moscow, Meds, Mascots, And More</title>
-      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1902-Scott-Adams-UFO-Theory--Musk--Masks--Moscow--Meds--Mascots--And-More-e1phnut</link>
-      <guid isPermaLink="false">9e3ce2ea-d3dd-4853-8902-0a4f9a0df01b</guid>
-      <dc:creator>Scott Adams</dc:creator>
-      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/APO8555494523.mp3" length="69681319" type="audio/mpeg" />
-      <ns1:explicit>false</ns1:explicit>
-      <ns1:duration>01:12:35</ns1:duration>
-      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1666284678761-7bc265ed52aaa.jpg" />
-      <ns1:season>46</ns1:season>
-      <ns1:episode>1902</ns1:episode>
       <ns1:episodeType>full</ns1:episodeType>
     </item>
   </channel>
