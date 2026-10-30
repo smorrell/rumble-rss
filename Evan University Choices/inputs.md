@@ -7,15 +7,16 @@
 - He has completed Advanced Functions, Calculus and Vectors, Data Management, and Grade 12 English.
 - He has a French immersion certificate from high school.
 - He does not have senior science credits.
+- Marks provided so far: Advanced Functions 95%; Calculus and Vectors 97%.
 - A timetable screenshot lists these courses and codes:
   - Nutrition and Health — HFA4U0.1
   - English — ENG4U0.5
   - Mathematics of Data Management — MDM4U0.1
   - French Immersion — FFI4U0.1
   - Drama — ADA4M0.1
-- Evan also took Calculus and Vectors — MCV4U-04.
-- Evan also took Advanced Functions online — MHF4U-21.
-- Marks and the complete set of Grade 12 U/M courses for his admission average have not yet been provided.
+- Evan also took Calculus and Vectors — MCV4U-04 (97%).
+- Evan also took Advanced Functions online — MHF4U-21 (95%).
+- Marks for his other courses and the complete set of Grade 12 U/M courses for his admission average have not yet been provided.
 
 ## Questions to ponder
 
@@ -59,7 +60,7 @@
 
 ## Information still needed
 
-- His exact Grade 12 course codes and marks, especially English, Advanced Functions, and Calculus and Vectors
+- His exact Grade 12 course codes and remaining marks, especially English
 - The other Grade 12 U/M courses available for his admission average
 - Which fields or programs are his strongest interests
 - Other priorities or constraints, such as cost and campus environment
