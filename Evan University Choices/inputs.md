@@ -2,13 +2,14 @@
 
 ## Education and location
 
-- Evan is considering universities anywhere in Ontario and wants to go away for school.
+- Evan is considering universities anywhere in Ontario
+- he wants to go away for school but would consider UTM as it is close to home
 - His family is in Mississauga.
 - He has completed Advanced Functions, Calculus and Vectors, Data Management, and Grade 12 English.
 - He has a French immersion certificate from high school.
 - He does not have senior science credits.
 - Marks provided so far: Advanced Functions 95%; Calculus and Vectors 97%.
-- A timetable screenshot lists these courses and codes:
+- courses and codes:
   - Nutrition and Health — HFA4U0.1
   - English — ENG4U0.5
   - Mathematics of Data Management — MDM4U0.1
