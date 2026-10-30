@@ -32,20 +32,20 @@
 
 ## Top ten programs to consider
 
-Ranked for Evan's stated interests and strengths, not by admissions likelihood. These are program areas to investigate; exact program names, offerings, and prerequisites vary by university.
+These are specific Ontario university programs, ranked by academic and interest fit rather than by admissions likelihood or location. Check current program names, admission requirements, and any required supplementary applications before applying.
 
-1. **Digital Enterprise Management** — University of Toronto Mississauga. Combines business and technology, with potential connections to digital content and audience analytics.
-2. **Computing and Creative Arts** — Queen's University. Could bring together his math and computing strengths with his creative interests.
-3. **Commerce or business with a marketing focus** — Connects business, creativity, and his interest in tracking video views and audience response.
-4. **Commerce or business with a human resources focus** — A direct route to explore his interest in HR and organized, office-based work.
-5. **Accounting** — Builds on his math strengths and can lead to office-based roles; investigate busy-season workloads when considering work-life balance.
-6. **Communication, digital media, or media production** — A strong match for making videos and exploring how digital content reaches an audience.
-7. **Theatre production, theatre and performance, or arts management** — Builds on his interest in drama and dancing while including production and organizational work.
-8. **Economics** — Uses math and analytical thinking and can lead toward office-based careers; compare BA and business-degree routes.
-9. **Data analytics or data science** — A possible match for math and audience-measurement interests. Check prerequisites carefully, since some programs require senior science courses.
-10. **An undergraduate degree leading to teacher education** — Could fit his interest in teaching; investigate the subject areas, additional education requirements, and day-to-day workload.
+1. **Computing and Creative Arts (B.CmpH/BFA)** — Queen's University. Combines computing with creative arts, matching his math and creative interests.
+2. **Global Business and Digital Arts (BGBDA)** — University of Waterloo. Blends business, digital media, and design, including his interest in creating and measuring online content.
+3. **Digital Enterprise Management (DEM)** — University of Toronto Mississauga. Connects business and technology, with potential paths in digital products and analytics. This is near home, so consider it alongside farther-away options rather than as an away-at-school choice.
+4. **Creative Industries (BA)** — Toronto Metropolitan University. Mixes media, culture, and business, and could connect to content creation, marketing, or arts management.
+5. **Interactive Multimedia and Design (B.I.M.D.)** — Carleton University, in partnership with Algonquin College. Combines technology, design, and digital media.
+6. **Theatre and Performance Studies (BA)** — University of Toronto Scarborough. Fits his interests in drama and dancing; explore production and arts-management opportunities alongside performance.
+7. **Business Management (BComm), Marketing Management major** — Toronto Metropolitan University. Connects business with marketing, creative campaigns, and audience engagement.
+8. **Human Resources Management (BHRM)** — York University. A direct fit for his interest in HR and his organizational strengths.
+9. **Bachelor of Commerce (BComm), Marketing Management major** — University of Guelph. A business-focused alternative for exploring marketing and content audiences.
+10. **Accounting (BAcc)** — Brock University. Builds on his math strengths and interest in accounting; compare the program's professional pathway and typical work demands.
 
-Occupational therapy and speech-language pathology are also interests to investigate, but are not in this initial top ten: these careers generally require graduate professional training, and science prerequisites and clinical placements may be important considerations.
+Teaching remains worth exploring, but in Ontario it generally involves completing an undergraduate degree and then teacher education; it is not one single direct-entry program choice. Occupational therapy and speech-language pathology typically require further professional education, so check science prerequisites and graduate-program requirements before treating them as undergraduate options.
 
 ## Not interested in
 
@@ -57,12 +57,18 @@ Occupational therapy and speech-language pathology are also interests to investi
 - His ideal job would be office-based, allow him to work from home, and have a predictable schedule that ends by 5 p.m.
 - Work-life balance is an important priority.
 
+## Location preferences
+
+- Evan wants to go away for university.
+- His family is in Mississauga.
+
 ## Still to learn
 
 - Which fields or programs are his strongest interests
 - Admissions prerequisites for programs of interest, especially where senior science courses may be required
-- Other priorities or constraints, such as cost, location, and campus environment
+- Other priorities or constraints, such as cost and campus environment
 
 ## Current direction
 
 Compare programs against Evan's interests in math, creative work, business, and the performing arts, as well as his preference for independent work and a predictable, balanced career. Check each program's current admissions requirements and investigate the typical work settings and schedules associated with its career paths.
+        
