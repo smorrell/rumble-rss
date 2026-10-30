@@ -14,7 +14,7 @@
   - French Immersion — FFI4U0.1
   - Drama — ADA4M0.1
 - Evan also took Calculus and Vectors — MCV4U-04.
-- Advanced Functions was previously reported as completed, but its course code has not been provided.
+- Evan also took Advanced Functions online — MHF4U-21.
 - Marks and the complete set of Grade 12 U/M courses for his admission average have not yet been provided.
 
 ## Questions to ponder
