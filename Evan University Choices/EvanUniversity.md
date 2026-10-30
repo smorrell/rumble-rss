@@ -30,6 +30,23 @@
 - University of Toronto Scarborough: theatre and performance arts
 - University of Toronto Mississauga: digital enterprise management
 
+## Top ten programs to consider
+
+Ranked for Evan's stated interests and strengths, not by admissions likelihood. These are program areas to investigate; exact program names, offerings, and prerequisites vary by university.
+
+1. **Digital Enterprise Management** — University of Toronto Mississauga. Combines business and technology, with potential connections to digital content and audience analytics.
+2. **Computing and Creative Arts** — Queen's University. Could bring together his math and computing strengths with his creative interests.
+3. **Commerce or business with a marketing focus** — Connects business, creativity, and his interest in tracking video views and audience response.
+4. **Commerce or business with a human resources focus** — A direct route to explore his interest in HR and organized, office-based work.
+5. **Accounting** — Builds on his math strengths and can lead to office-based roles; investigate busy-season workloads when considering work-life balance.
+6. **Communication, digital media, or media production** — A strong match for making videos and exploring how digital content reaches an audience.
+7. **Theatre production, theatre and performance, or arts management** — Builds on his interest in drama and dancing while including production and organizational work.
+8. **Economics** — Uses math and analytical thinking and can lead toward office-based careers; compare BA and business-degree routes.
+9. **Data analytics or data science** — A possible match for math and audience-measurement interests. Check prerequisites carefully, since some programs require senior science courses.
+10. **An undergraduate degree leading to teacher education** — Could fit his interest in teaching; investigate the subject areas, additional education requirements, and day-to-day workload.
+
+Occupational therapy and speech-language pathology are also interests to investigate, but are not in this initial top ten: these careers generally require graduate professional training, and science prerequisites and clinical placements may be important considerations.
+
 ## Not interested in
 
 - Architecture
