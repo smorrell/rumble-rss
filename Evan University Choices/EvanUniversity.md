@@ -71,4 +71,7 @@ Teaching remains worth exploring, but in Ontario it generally involves completin
 ## Current direction
 
 Compare programs against Evan's interests in math, creative work, business, and the performing arts, as well as his preference for independent work and a predictable, balanced career. Check each program's current admissions requirements and investigate the typical work settings and schedules associated with its career paths.
-        
+
+
+## general notes
+york unitversity has a lot of options
