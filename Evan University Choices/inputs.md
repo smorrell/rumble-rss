@@ -9,6 +9,12 @@
 - He does not have senior science credits.
 - Exact course codes, marks, and the rest of his Grade 12 U/M courses have not yet been provided.
 
+## Questions to ponder
+
+- am I going to like this program
+- when I’m done are there going to be jobs
+- am I going to like this job
+
 ## Interests and strengths
 
 - He likes math and is creative, organized, and responsible.
