@@ -7,7 +7,15 @@
 - He has completed Advanced Functions, Calculus and Vectors, Data Management, and Grade 12 English.
 - He has a French immersion certificate from high school.
 - He does not have senior science credits.
-- Exact course codes, marks, and the rest of his Grade 12 U/M courses have not yet been provided.
+- A timetable screenshot lists these courses and codes:
+  - Nutrition and Health — HFA4U0.1
+  - English — ENG4U0.5
+  - Mathematics of Data Management — MDM4U0.1
+  - French Immersion — FFI4U0.1
+  - Drama — ADA4M0.1
+- Evan also took Calculus and Vectors — MCV4U-04.
+- Advanced Functions was previously reported as completed, but its course code has not been provided.
+- Marks and the complete set of Grade 12 U/M courses for his admission average have not yet been provided.
 
 ## Questions to ponder
 
