@@ -25,7 +25,7 @@ The shortlist now weighs three questions from the planning notes: **Will Evan en
 
 ## Prerequisites and admission marks
 
-**Eligibility cannot yet be confirmed, but the math prerequisites are strong.** The timetable screenshot provides five course entries: HFA4U, ENG4U, MDM4U, FFI4U, and ADA4M (the screenshot also displays section suffixes). Evan reports 95% in online Advanced Functions (MHF4U-21) and 97% in Calculus and Vectors (MCV4U-04). Marks for English and other courses, and the complete set of courses for the admission average, have not been provided. Ontario programs commonly require six 4U/M courses.
+**Eligibility cannot yet be confirmed, but the math prerequisites are strong.** The course list provides HFA4U, ENG4U, MDM4U, FFI4U, ADA4M, and Designing Your Future (GWL3OZ). Evan reports 95% in online Advanced Functions (MHF4U-21) and 97% in Calculus and Vectors (MCV4U-04). GWL3OZ is a Grade 11 open course and generally will not count toward the six Grade 12 U/M courses used for admission averages. Marks for English and other Grade 12 courses, and the complete admission-average course set, have not been provided.
 
 | Program | What the published requirements say | What we can conclude from the inputs |
 |---|---|---|
@@ -40,7 +40,7 @@ The shortlist now weighs three questions from the planning notes: **Will Evan en
 | UTSC Theatre and Performance Studies | Confirm whether applicants enter the study area directly or through a broader admission category, and whether any supplementary requirements apply. | Cannot confirm program-specific admission requirements or a historical cutoff from the pages reviewed. |
 | UTM Management / DEM | OSSD and six 4U/M courses including English for Management. | The six-course total and English course details are unknown. No previous-year cutoff was confirmed in the program-entry page reviewed. |
 
-The timetable shows five courses at the 4U/M level, but this alone does not establish which six will count toward each admission average or whether they are completed/current. No senior science prerequisite appears in the verified requirements for Queen's Computing, Waterloo GBDA, TMU Creative Industries, or York HRM/Accounting. Requirements for Carleton IMD, Guelph Marketing, and UTSC Theatre still need confirmation. Do not treat the absence of a science course on an incomplete or general program page as proof of eligibility.
+The course list shows five Grade 12 U/M courses (HFA4U, ENG4U, MDM4U, FFI4U, ADA4M) plus the Grade 11 open course GWL3OZ. The two additional Grade 12 math courses are also documented, bringing the identified 4U/M courses to seven; each university will calculate the admission average using its own rules. No senior science prerequisite appears in the verified requirements for Queen's Computing, Waterloo GBDA, TMU Creative Industries, or York HRM/Accounting. Requirements for Carleton IMD, Guelph Marketing, and UTSC Theatre still need confirmation. Do not treat the absence of a science course on an incomplete or general program page as proof of eligibility.
 
 ## Decision guidance
 

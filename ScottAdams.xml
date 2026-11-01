@@ -4,7 +4,7 @@
     <title>Classic Real Coffee with Scott Adams</title>
     <link>https://podcasters.spotify.com/pod/show/scott-adams00</link>
     <generator>Anchor Podcasts</generator>
-    <lastBuildDate>Thu, 29 Oct 2026 16:37:44 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 17:03:16 GMT</lastBuildDate>
     <ns0:link href="https://anchor.fm/s/128d072c/podcast/rss" rel="self" type="application/rss+xml" />
     <author>Scott Adams</author>
     <copyright>Scott Adams</copyright>
@@ -21,6 +21,20 @@
       <ns1:category text="News Commentary" />
     </ns1:category>
     <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/3012323/3012323-1578935161711-71f93031bbe53.jpg" />
+    <item>
+      <title>Classic Episode 1913 Scott Adams: Elon Musk Looks At Internal Twitter Communications And It's Glorious, More 	</title>
+      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1913-Scott-Adams-Elon-Musk-Looks-At-Internal-Twitter-Communications-And-Its-Glorious--More-e1q1aeg</link>
+      <guid isPermaLink="false">996227c2-c524-473e-bdfe-9a1bdecad03a</guid>
+      <dc:creator>Scott Adams</dc:creator>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://traffic.megaphone.fm/APO9841366416.mp3" length="100650422" type="audio/mpeg" />
+      <ns1:explicit>false</ns1:explicit>
+      <ns1:duration>01:44:50</ns1:duration>
+      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1667236703855-e46c0d9f7c384.jpg" />
+      <ns1:season>46</ns1:season>
+      <ns1:episode>1913</ns1:episode>
+      <ns1:episodeType>full</ns1:episodeType>
+    </item>
     <item>
       <title>Classic Episode 1912 Scott Adams: A Nonzero Chance The Pelosis Were Getting Hammered At The Same Time</title>
       <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1912-Scott-Adams-A-Nonzero-Chance-The-Pelosis-Were-Getting-Hammered-At-The-Same-Time-e1pvmqq</link>
@@ -145,20 +159,6 @@
       <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1666452077087-1a125d87f1fc2.jpg" />
       <ns1:season>46</ns1:season>
       <ns1:episode>1904</ns1:episode>
-      <ns1:episodeType>full</ns1:episodeType>
-    </item>
-    <item>
-      <title>Classic Episode 1903 Scott Adams: I'm Grumpy This Morning. This Will Not Go Well</title>
-      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1903-Scott-Adams-Im-Grumpy-This-Morning--This-Will-Not-Go-Well-e1pj3du</link>
-      <guid isPermaLink="false">ec391511-ceec-4f55-8378-8537d813ec56</guid>
-      <dc:creator>Scott Adams</dc:creator>
-      <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/APO5943190177.mp3" length="49676956" type="audio/mpeg" />
-      <ns1:explicit>false</ns1:explicit>
-      <ns1:duration>00:51:44</ns1:duration>
-      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1666366503140-77359f8d7c889.jpg" />
-      <ns1:season>46</ns1:season>
-      <ns1:episode>1903</ns1:episode>
       <ns1:episodeType>full</ns1:episodeType>
     </item>
   </channel>

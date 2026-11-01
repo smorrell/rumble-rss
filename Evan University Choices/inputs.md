@@ -9,6 +9,7 @@
 - He has a French immersion certificate from high school.
 - He does not have senior science credits.
 - Marks provided so far: Advanced Functions 95%; Calculus and Vectors 97%.
+- Designing Your Future (GWL3OZ): 95%. This is a Grade 11 open course, so it does not count toward the usual six Grade 12 U/M courses used for university admission averages.
 - courses and codes:
   - Nutrition and Health — HFA4U0.1
   - English — ENG4U0.5
