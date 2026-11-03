@@ -328,6 +328,20 @@ def format_episode_title(item, video_id):
     return f"{prefix} - {title}" if prefix else title
 
 
+def format_episode_duration(duration):
+    """Format seconds as an iTunes-compatible HH:MM:SS duration."""
+    try:
+        total_seconds = int(duration)
+    except (TypeError, ValueError, OverflowError):
+        return None
+    if total_seconds < 0:
+        return None
+
+    hours, remainder = divmod(total_seconds, 3600)
+    minutes, seconds = divmod(remainder, 60)
+    return f"{hours:02d}:{minutes:02d}:{seconds:02d}"
+
+
 def remove_expired_downloads(metadata):
     """Remove MP3s and metadata entries for videos older than the retention period."""
     cutoff_date = datetime.now().date() - timedelta(days=MAX_VIDEO_AGE_DAYS)
@@ -414,6 +428,9 @@ def write_feed(metadata):
         ET.SubElement(rss_item, "title").text = format_episode_title(item, video_id)
         ET.SubElement(rss_item, "pubDate").text = format_datetime(published, usegmt=True)
         ET.SubElement(rss_item, "guid", isPermaLink="false").text = video_id
+        duration = format_episode_duration(item.get("duration"))
+        if duration:
+            ET.SubElement(rss_item, f"{{{ITUNES_NAMESPACE}}}duration").text = duration
         filename = item.get("filename")
         if filename:
             ET.SubElement(
@@ -522,8 +539,19 @@ def download_and_convert():
                 info = ydl.extract_info(video_url, download=False)
                 with metadata_lock:
                     if info and info.get("id") in metadata:
-                        if metadata[info["id"]].get("channel_url") != channel_url:
-                            metadata[info["id"]]["channel_url"] = channel_url
+                        metadata_entry = metadata[info["id"]]
+                        metadata_changed = False
+                        if metadata_entry.get("channel_url") != channel_url:
+                            metadata_entry["channel_url"] = channel_url
+                            metadata_changed = True
+                        duration = info.get("duration")
+                        if (
+                            duration is not None
+                            and metadata_entry.get("duration") != duration
+                        ):
+                            metadata_entry["duration"] = duration
+                            metadata_changed = True
+                        if metadata_changed:
                             with open(METADATA_PATH, "w", encoding="utf-8") as metadata_file:
                                 json.dump(
                                     metadata,
@@ -569,6 +597,7 @@ def download_and_convert():
                     "description": info.get("description"),
                     "upload_date": info.get("upload_date"),
                     "timestamp": info.get("timestamp"),
+                    "duration": info.get("duration"),
                     "filename": output_name,
                     "channel_url": channel_url,
                 }
