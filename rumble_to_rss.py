@@ -430,14 +430,14 @@ def write_feed(metadata):
     )
     items_container = channel
     feed_channels = {channel.url for channel in CHANNELS}
-    ann_entries = [
+    feed_entries = [
         (video_id, item)
         for video_id, item in metadata.items()
         if item.get("channel_url") in feed_channels
     ]
-    ann_entries.sort(key=lambda entry: entry[1].get("upload_date") or "", reverse=True)
+    feed_entries.sort(key=lambda entry: entry[1].get("upload_date") or "", reverse=True)
 
-    for video_id, item in ann_entries:
+    for video_id, item in feed_entries:
         upload_date = item.get("upload_date")
         try:
             timestamp = item.get("timestamp")
@@ -469,7 +469,7 @@ def write_feed(metadata):
     tree = ET.ElementTree(rss)
     ET.indent(tree, space="  ")
     tree.write(RSS_FEED_PATH, encoding="utf-8", xml_declaration=True)
-    print(f"Wrote {len(ann_entries)} episode(s) to {RSS_FEED_PATH}.")
+    print(f"Wrote {len(feed_entries)} episode(s) to {RSS_FEED_PATH}.")
 
 
 def discover_channel_videos(channel_url, ydl):
