@@ -33,6 +33,9 @@ except ImportError:
 curl_cffi = importlib.util.find_spec("curl_cffi")
 
 # --- CONFIGURATION ---
+REPO_PATH = os.path.dirname(os.path.abspath(__file__))
+
+
 @dataclass(frozen=True)
 class ChannelConfig:
     """Channel settings; max_duration_minutes is in minutes."""
@@ -43,48 +46,15 @@ class ChannelConfig:
     max_duration_minutes: int
 
 
-CHANNELS = [
-    ChannelConfig(
-        url="https://www.youtube.com/@angrymortgage/videos",
-        prefix="AgMrtg",
-        image_label="ANGRY MORTGAGE",
-        max_duration_minutes=90,
-    ),
-    ChannelConfig(
-        url="https://www.youtube.com/@TheBrancaShow/videos",
-        prefix="Branca",
-        image_label="ANDREW BRANCA",
-        max_duration_minutes=90,
-    ),
-    ChannelConfig(
-        url="https://www.youtube.com/@TheMooseOnTheLooseExtra/videos",
-        prefix="MooseExtra",
-        image_label="MOOSE",
-        max_duration_minutes=90,
-    ),
-    ChannelConfig(
-        url="https://www.youtube.com/@CompoundCensoredOfficial/videos",
-        prefix="Gavin",
-        image_label="GAVIN CENSORED",
-        max_duration_minutes=90,
-    ),
-    ChannelConfig(
-        url="https://rumble.com/c/AnnCoulter",
-        prefix="Ann",
-        image_label="ANN COULTER",
-        max_duration_minutes=90,
-    ),
-    ChannelConfig(
-        url="https://rumble.com/c/nickjfuentes",
-        prefix="Nick",
-        image_label="NICK FUENTES",
-        max_duration_minutes=90,
-    ),
-]
+CHANNEL_CONFIG_PATH = os.path.join(REPO_PATH, "channels.json")
+with open(CHANNEL_CONFIG_PATH, encoding="utf-8") as channel_config_file:
+    CHANNELS = [
+        ChannelConfig(**channel_data)
+        for channel_data in json.load(channel_config_file)
+    ]
 YOUTUBE_MAX_VIDEOS = 5
 MAX_VIDEO_AGE_DAYS = 7
 MAX_DOWNLOADS_PER_RUN = 25
-REPO_PATH = os.path.dirname(os.path.abspath(__file__))
 AUDIO_DIR = os.path.join(REPO_PATH, "mp3s")
 IMAGE_DIR = os.path.join(REPO_PATH, "img")
 METADATA_PATH = os.path.join(AUDIO_DIR, "video_metadata.json")
