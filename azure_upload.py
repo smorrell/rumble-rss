@@ -27,6 +27,25 @@ ACCOUNT_NAME = os.environ.get(
 FEED_FILES = ("Rumble.xml", "ScottAdams.xml")
 
 
+def delete_stale_mp3_blobs(container, local_mp3_paths):
+    """Delete MP3 blobs that no longer have a corresponding local file."""
+    local_blob_names = {f"mp3s/{path.name}" for path in local_mp3_paths}
+    deleted_count = 0
+
+    for blob in container.list_blobs(name_starts_with="mp3s/"):
+        if (
+            blob.name.startswith("mp3s/")
+            and blob.name.lower().endswith(".mp3")
+            and blob.name not in local_blob_names
+        ):
+            logger.info("Deleting stale MP3 blob '%s'.", blob.name)
+            container.delete_blob(blob.name)
+            deleted_count += 1
+
+    logger.info("Deleted %s stale MP3 blob(s).", deleted_count)
+    return deleted_count
+
+
 def main():
     logging.basicConfig(
         level=logging.INFO,
@@ -52,6 +71,10 @@ def main():
         missing = ", ".join(str(path) for path in missing_paths)
         logger.error("Required upload file(s) not found: %s", missing)
         raise SystemExit(f"Required upload file(s) not found: {missing}")
+    if not MP3_DIR.is_dir():
+        logger.error("MP3 directory does not exist: %s", MP3_DIR)
+        raise SystemExit(f"MP3 directory does not exist: {MP3_DIR}")
+    mp3_paths = sorted(MP3_DIR.glob("*.mp3"))
 
     logger.info("Connecting to Azure Blob Storage.")
     blob_service = BlobServiceClient.from_connection_string(connection_string)
@@ -81,12 +104,14 @@ def main():
             )
         logger.info("Uploaded '%s'.", blob_name)
 
-    for mp3_path in sorted(MP3_DIR.glob("*.mp3")):
+    for mp3_path in mp3_paths:
         upload_file(mp3_path, f"mp3s/{mp3_path.name}", "audio/mpeg")
 
     upload_file(cover_path, f"img/{cover_path.name}", "image/jpeg")
     for feed_path in feed_paths:
         upload_file(feed_path, feed_path.name, "application/rss+xml")
+
+    delete_stale_mp3_blobs(container, mp3_paths)
 
     logger.info(
         "Rumble feed URL: "
