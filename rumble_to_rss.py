@@ -63,7 +63,7 @@ CHANNELS = [
         max_duration_minutes=90,
     ),
     ChannelConfig(
-        url="https://www.youtube.com/@CompoundCensoredOfficial",
+        url="https://www.youtube.com/@CompoundCensoredOfficial/videos",
         prefix="Gavin",
         image_label="GAVIN CENSORED",
         max_duration_minutes=90,
