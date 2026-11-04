@@ -3,6 +3,7 @@ import re
 import json
 import shutil
 import tempfile
+from dataclasses import dataclass
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 from email.utils import format_datetime
@@ -32,26 +33,55 @@ except ImportError:
 curl_cffi = importlib.util.find_spec("curl_cffi")
 
 # --- CONFIGURATION ---
-RUMBLE_CHANNEL_URLS = [
-    "https://rumble.com/c/AnnCoulter",
-    "https://rumble.com/c/nickjfuentes",
-]
-YOUTUBE_CHANNEL_URLS = [
-    "https://www.youtube.com/@angrymortgage/videos",    
-    "https://www.youtube.com/@TheBrancaShow/videos",
-    "https://www.youtube.com/@TheMooseOnTheLooseExtra/videos",
-    "https://www.youtube.com/@CompoundCensoredOfficial",
+@dataclass(frozen=True)
+class ChannelConfig:
+    """Channel settings; max_duration_minutes is in minutes."""
+
+    url: str
+    prefix: str
+    image_label: str
+    max_duration_minutes: int
+
+
+CHANNELS = [
+    ChannelConfig(
+        url="https://www.youtube.com/@angrymortgage/videos",
+        prefix="AgMrtg",
+        image_label="ANGRY MORTGAGE",
+        max_duration_minutes=90,
+    ),
+    ChannelConfig(
+        url="https://www.youtube.com/@TheBrancaShow/videos",
+        prefix="Branca",
+        image_label="ANDREW BRANCA",
+        max_duration_minutes=90,
+    ),
+    ChannelConfig(
+        url="https://www.youtube.com/@TheMooseOnTheLooseExtra/videos",
+        prefix="MooseExtra",
+        image_label="MOOSE",
+        max_duration_minutes=90,
+    ),
+    ChannelConfig(
+        url="https://www.youtube.com/@CompoundCensoredOfficial",
+        prefix="Gavin",
+        image_label="GAVIN CENSORED",
+        max_duration_minutes=90,
+    ),
+    ChannelConfig(
+        url="https://rumble.com/c/AnnCoulter",
+        prefix="Ann",
+        image_label="ANN COULTER",
+        max_duration_minutes=90,
+    ),
+    ChannelConfig(
+        url="https://rumble.com/c/nickjfuentes",
+        prefix="Nick",
+        image_label="NICK FUENTES",
+        max_duration_minutes=90,
+    ),
 ]
 YOUTUBE_MAX_VIDEOS = 5
-FEED_CHANNEL_URLS = YOUTUBE_CHANNEL_URLS + RUMBLE_CHANNEL_URLS
-CHANNEL_TITLE_PREFIXES = {
-    "https://www.youtube.com/@angrymortgage/videos": "AgMrtg",
-    "https://www.youtube.com/@TheBrancaShow/videos": "Branca",
-    "https://www.youtube.com/@TheMooseOnTheLooseExtra/videos": "MooseExtra",
-    "https://www.youtube.com/@CompoundCensoredOfficial": "Gavin",
-    "https://rumble.com/c/AnnCoulter": "Ann",
-    "https://rumble.com/c/nickjfuentes": "Nick",
-}
 MAX_VIDEO_AGE_DAYS = 7
 MAX_DOWNLOADS_PER_RUN = 25
 REPO_PATH = os.path.dirname(os.path.abspath(__file__))
@@ -73,14 +103,6 @@ FEED_BASE_URL = os.environ.get("FEED_BASE_URL", AZURE_CONTAINER_URL).rstrip("/")
 PODCAST_COVER_URL = f"{FEED_BASE_URL}/img/podcast_cover.jpg"
 ITUNES_NAMESPACE = "http://www.itunes.com/dtds/podcast-1.0.dtd"
 ET.register_namespace("itunes", ITUNES_NAMESPACE)
-CHANNEL_IMAGE_LABELS = {
-    "https://www.youtube.com/@angrymortgage/videos": "ANGRY MORTGAGE",
-    "https://www.youtube.com/@TheBrancaShow/videos": "ANDREW BRANCA",
-    "https://www.youtube.com/@TheMooseOnTheLooseExtra/videos": "MOOSE",
-    "https://www.youtube.com/@CompoundCensoredOfficial": "GAVIN CENSORED",
-    "https://rumble.com/c/AnnCoulter": "ANN COULTER",
-    "https://rumble.com/c/nickjfuentes": "NICK FUENTES",
-}
 
 
 class EpisodeThumbnailParser(HTMLParser):
@@ -177,9 +199,9 @@ def download_channel_images():
     portraits = []
     temporary_paths = []
     try:
-        for channel_url in FEED_CHANNEL_URLS:
-            show_name = channel_show_name(channel_url)
-            thumbnail_url = channel_episode_thumbnail_url(channel_url)
+        for channel in CHANNELS:
+            show_name = channel_show_name(channel.url)
+            thumbnail_url = channel_episode_thumbnail_url(channel.url)
             request = Request(thumbnail_url, headers={"User-Agent": "Mozilla/5.0"})
             with urlopen(request, timeout=30) as response:
                 thumbnail_data = response.read()
@@ -196,7 +218,7 @@ def download_channel_images():
                 ((540 - thumbnail.width) // 2, (468 - thumbnail.height) // 2),
             )
             thumbnail.close()
-            portraits.append((show_name, CHANNEL_IMAGE_LABELS[channel_url], portrait))
+            portraits.append((show_name, channel.image_label, portrait))
             print(f"Downloaded the latest episode thumbnail for {show_name}.")
 
         cover = Image.new("RGB", (1800, 1800), "#263238")
@@ -324,7 +346,11 @@ def channel_show_name(channel_url):
 def format_episode_title(item, video_id):
     """Prefix an episode title with its channel's configured initials."""
     title = item.get("title") or f"Episode {video_id}"
-    prefix = CHANNEL_TITLE_PREFIXES.get(item.get("channel_url"))
+    channel = next(
+        (channel for channel in CHANNELS if channel.url == item.get("channel_url")),
+        None,
+    )
+    prefix = channel.prefix if channel else None
     return f"{prefix} - {title}" if prefix else title
 
 
@@ -403,7 +429,7 @@ def write_feed(metadata):
         href=PODCAST_COVER_URL,
     )
     items_container = channel
-    feed_channels = set(FEED_CHANNEL_URLS)
+    feed_channels = {channel.url for channel in CHANNELS}
     ann_entries = [
         (video_id, item)
         for video_id, item in metadata.items()
@@ -531,7 +557,8 @@ def download_and_convert():
             )
         return opts
 
-    def fetch_and_convert(video_url, channel_url, metadata, metadata_lock):
+    def fetch_and_convert(video_url, channel, metadata, metadata_lock):
+        channel_url = channel.url
         thread_name = f"Thread-{__import__('threading').current_thread().ident}"
         with yt_dlp.YoutubeDL(build_ydl_options(channel_url)) as ydl:
             try:
@@ -571,8 +598,12 @@ def download_and_convert():
                         return None
 
                     duration = info.get("duration") if info else None
-                    if duration is None or duration >= (3600 * 1.5):
-                        print(f"[{thread_name}] Skipping video {video_url}: duration is not less than 1 hour.")
+                    if duration is None or duration >= channel.max_duration_minutes * 60:
+                        print(
+                            f"[{thread_name}] Skipping video {video_url}: duration is "
+                            f"unknown or not less than the "
+                            f"{channel.max_duration_minutes}-minute channel maximum."
+                        )
                         return None
 
                 info = ydl.extract_info(video_url, download=True)
@@ -626,10 +657,10 @@ def download_and_convert():
     metadata_lock = __import__("threading").Lock()
 
     pending_tasks = []
-    for channel_url in FEED_CHANNEL_URLS:
+    for channel in CHANNELS:
         ydl = yt_dlp.YoutubeDL(build_ydl_options())
         try:
-            video_urls = discover_channel_videos(channel_url, ydl)
+            video_urls = discover_channel_videos(channel.url, ydl)
         finally:
             ydl.close()
 
@@ -637,14 +668,14 @@ def download_and_convert():
         for video_url in video_urls:
             if channel_downloads >= MAX_DOWNLOADS_PER_RUN:
                 break
-            pending_tasks.append((video_url, channel_url))
+            pending_tasks.append((video_url, channel))
             channel_downloads += 1
 
     max_workers = 4
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         futures = [
-            executor.submit(fetch_and_convert, video_url, channel_url, metadata, metadata_lock)
-            for video_url, channel_url in pending_tasks
+            executor.submit(fetch_and_convert, video_url, channel, metadata, metadata_lock)
+            for video_url, channel in pending_tasks
         ]
         for future in as_completed(futures):
             result = future.result()

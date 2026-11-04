@@ -4,7 +4,7 @@
     <title>Classic Real Coffee with Scott Adams</title>
     <link>https://podcasters.spotify.com/pod/show/scott-adams00</link>
     <generator>Anchor Podcasts</generator>
-    <lastBuildDate>Tue, 03 Nov 2026 05:33:10 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 17:42:36 GMT</lastBuildDate>
     <ns0:link href="https://anchor.fm/s/128d072c/podcast/rss" rel="self" type="application/rss+xml" />
     <author>Scott Adams</author>
     <copyright>Scott Adams</copyright>
@@ -21,6 +21,20 @@
       <ns1:category text="News Commentary" />
     </ns1:category>
     <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/3012323/3012323-1578935161711-71f93031bbe53.jpg" />
+    <item>
+      <title>Classic Episode 1917 Scott Adams: Everyone Is Crazy. It Must Be Time For The Midterms. Let's Sort It All Out</title>
+      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1917-Scott-Adams-Everyone-Is-Crazy--It-Must-Be-Time-For-The-Midterms--Lets-Sort-It-All-Out-e1q8g34</link>
+      <guid isPermaLink="false">7551e864-0c75-4cb5-a047-08879e5058c4</guid>
+      <dc:creator>Scott Adams</dc:creator>
+      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://traffic.megaphone.fm/APO5449757651.mp3" length="81840587" type="audio/mpeg" />
+      <ns1:explicit>false</ns1:explicit>
+      <ns1:duration>01:25:15</ns1:duration>
+      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1667584231801-ab8b15ecc5c0c.jpg" />
+      <ns1:season>46</ns1:season>
+      <ns1:episode>1917</ns1:episode>
+      <ns1:episodeType>full</ns1:episodeType>
+    </item>
     <item>
       <title>Classic Episode 1916 Scott Adams: Seasonal Flu Deaths Confirmed Fake, Dems Think Narrative Is The Problem</title>
       <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1916-Scott-Adams-Seasonal-Flu-Deaths-Confirmed-Fake--Dems-Think-Narrative-Is-The-Problem-e1q6len</link>
@@ -145,20 +159,6 @@
       <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1666806362106-937fc6937f9bb.jpg" />
       <ns1:season>46</ns1:season>
       <ns1:episode>1908</ns1:episode>
-      <ns1:episodeType>full</ns1:episodeType>
-    </item>
-    <item>
-      <title>Classic Episode 1907 Scott Adams: Political Dirty Tricks, Ye Talks To Lex, Hillary Signals New Scheme, More</title>
-      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1907-Scott-Adams-Political-Dirty-Tricks--Ye-Talks-To-Lex--Hillary-Signals-New-Scheme--More-e1po5cv</link>
-      <guid isPermaLink="false">a147cb51-75a4-44f2-a544-a442fed7ab4b</guid>
-      <dc:creator>Scott Adams</dc:creator>
-      <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/APO2180036045.mp3" length="72951431" type="audio/mpeg" />
-      <ns1:explicit>false</ns1:explicit>
-      <ns1:duration>01:15:59</ns1:duration>
-      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1666716854405-6daca8cfec6df.jpg" />
-      <ns1:season>46</ns1:season>
-      <ns1:episode>1907</ns1:episode>
       <ns1:episodeType>full</ns1:episodeType>
     </item>
   </channel>
