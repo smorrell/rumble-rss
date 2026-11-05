@@ -3,13 +3,13 @@
     "url": "https://www.youtube.com/@angrymortgage/videos",
     "prefix": "AgMrtg",
     "image_label": "ANGRY MORTGAGE",
-    "max_duration_minutes": 20
+    "max_duration_minutes": 10
   },
   {
     "url": "https://www.youtube.com/@TheBrancaShow/videos",
     "prefix": "Branca",
     "image_label": "ANDREW BRANCA",
-    "max_duration_minutes": 20
+    "max_duration_minutes": 10
   },
   {
     "url": "https://www.youtube.com/@TheMooseOnTheLooseExtra/videos",
