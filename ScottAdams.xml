@@ -4,7 +4,7 @@
     <title>Classic Real Coffee with Scott Adams</title>
     <link>https://podcasters.spotify.com/pod/show/scott-adams00</link>
     <generator>Anchor Podcasts</generator>
-    <lastBuildDate>Tue, 03 Nov 2026 17:42:36 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 17:56:38 GMT</lastBuildDate>
     <ns0:link href="https://anchor.fm/s/128d072c/podcast/rss" rel="self" type="application/rss+xml" />
     <author>Scott Adams</author>
     <copyright>Scott Adams</copyright>
@@ -21,6 +21,20 @@
       <ns1:category text="News Commentary" />
     </ns1:category>
     <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/3012323/3012323-1578935161711-71f93031bbe53.jpg" />
+    <item>
+      <title>Classic Episode 1918 Scott Adams: Delicious News Today, Let's Take A Big Bite. The Midterms Are Upon Us</title>
+      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1918-Scott-Adams-Delicious-News-Today--Lets-Take-A-Big-Bite--The-Midterms-Are-Upon-Us-e1q9ucu</link>
+      <guid isPermaLink="false">0a0cc354-2e0d-443c-9bf4-e709c848459e</guid>
+      <dc:creator>Scott Adams</dc:creator>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://traffic.megaphone.fm/APO5769593357.mp3" length="89439503" type="audio/mpeg" />
+      <ns1:explicit>false</ns1:explicit>
+      <ns1:duration>01:33:09</ns1:duration>
+      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1667672928196-a7bce5c667f44.jpg" />
+      <ns1:season>46</ns1:season>
+      <ns1:episode>1919</ns1:episode>
+      <ns1:episodeType>full</ns1:episodeType>
+    </item>
     <item>
       <title>Classic Episode 1917 Scott Adams: Everyone Is Crazy. It Must Be Time For The Midterms. Let's Sort It All Out</title>
       <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1917-Scott-Adams-Everyone-Is-Crazy--It-Must-Be-Time-For-The-Midterms--Lets-Sort-It-All-Out-e1q8g34</link>
@@ -145,20 +159,6 @@
       <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1666888914164-5793cf7f2831f.jpg" />
       <ns1:season>46</ns1:season>
       <ns1:episode>1909</ns1:episode>
-      <ns1:episodeType>full</ns1:episodeType>
-    </item>
-    <item>
-      <title>Classic Episode 1908 Scott Adams: Politics Reaches Peak Absurdity Just In Time For The Midterms. Buckle Up</title>
-      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1908-Scott-Adams-Politics-Reaches-Peak-Absurdity-Just-In-Time-For-The-Midterms--Buckle-Up-e1ppui6</link>
-      <guid isPermaLink="false">477ad56c-1d85-43e3-ac76-6234ed0296e4</guid>
-      <dc:creator>Scott Adams</dc:creator>
-      <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/APO9658561324.mp3" length="81853544" type="audio/mpeg" />
-      <ns1:explicit>false</ns1:explicit>
-      <ns1:duration>01:25:15</ns1:duration>
-      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1666806362106-937fc6937f9bb.jpg" />
-      <ns1:season>46</ns1:season>
-      <ns1:episode>1908</ns1:episode>
       <ns1:episodeType>full</ns1:episodeType>
     </item>
   </channel>

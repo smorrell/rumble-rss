@@ -44,6 +44,11 @@ if %errorlevel% neq 0 (
     exit /b 1
 )
 
+
+python.exe -m pip install --upgrade pip
+
+
+
 echo.
 echo ===================================================
 echo  Installation complete! 
