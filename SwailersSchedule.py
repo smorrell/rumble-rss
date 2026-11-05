@@ -75,6 +75,20 @@ def fold_ics_line(line, limit=75):
     return "\r\n".join(chunks)
 
 
+def strip_dtstamp_lines(ics_text):
+    return "\r\n".join(
+        line for line in ics_text.splitlines() if not line.upper().startswith("DTSTAMP:")
+    )
+
+
+def extract_dtstamp_values(ics_text):
+    return [
+        line.split(":", 1)[1]
+        for line in ics_text.splitlines()
+        if line.upper().startswith("DTSTAMP:")
+    ]
+
+
 def create_calendar(games, output_path, source_url, time_zone):
     generated_at = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     lines = [
@@ -120,8 +134,28 @@ def create_calendar(games, output_path, source_url, time_zone):
         )
 
     lines.append("END:VCALENDAR")
+    new_calendar = "\r\n".join(fold_ics_line(line) for line in lines) + "\r\n"
+
+    if output_path.exists():
+        existing_calendar = output_path.read_text(encoding="utf-8")
+        if strip_dtstamp_lines(existing_calendar) == strip_dtstamp_lines(new_calendar):
+            existing_dtstamps = extract_dtstamp_values(existing_calendar)
+            target_dtstamps = extract_dtstamp_values(new_calendar)
+            if len(existing_dtstamps) == len(target_dtstamps) and existing_dtstamps:
+                updated_lines = []
+                dtstamp_index = 0
+                for line in lines:
+                    if line.upper().startswith("DTSTAMP:"):
+                        updated_lines.append(f"DTSTAMP:{existing_dtstamps[dtstamp_index]}")
+                        dtstamp_index += 1
+                    else:
+                        updated_lines.append(line)
+                new_calendar = "\r\n".join(
+                    fold_ics_line(line) for line in updated_lines
+                ) + "\r\n"
+
     output_path.write_text(
-        "\r\n".join(fold_ics_line(line) for line in lines) + "\r\n",
+        new_calendar,
         encoding="utf-8",
         newline="",
     )
