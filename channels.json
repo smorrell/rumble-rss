@@ -3,36 +3,42 @@
     "url": "https://www.youtube.com/@angrymortgage/videos",
     "prefix": "AgMrtg",
     "image_label": "ANGRY MORTGAGE",
-    "max_duration_minutes": 10
+    "max_duration_minutes": 10,
+    "paused": false
   },
   {
     "url": "https://www.youtube.com/@TheBrancaShow/videos",
     "prefix": "Branca",
     "image_label": "ANDREW BRANCA",
-    "max_duration_minutes": 10
+    "max_duration_minutes": 10,
+    "paused": false
   },
   {
     "url": "https://www.youtube.com/@TheMooseOnTheLooseExtra/videos",
     "prefix": "MooseExtra",
     "image_label": "MOOSE",
-    "max_duration_minutes": 90
+    "max_duration_minutes": 90,
+    "paused": false
   },
   {
     "url": "https://www.youtube.com/@CompoundCensoredOfficial/videos",
     "prefix": "Gavin",
     "image_label": "GAVIN CENSORED",
-    "max_duration_minutes": 90
+    "max_duration_minutes": 90,
+    "paused": false
   },
   {
     "url": "https://rumble.com/c/AnnCoulter",
     "prefix": "Ann",
     "image_label": "ANN COULTER",
-    "max_duration_minutes": 90
+    "max_duration_minutes": 90,
+    "paused": false
   },
   {
     "url": "https://rumble.com/c/nickjfuentes",
     "prefix": "Nick",
     "image_label": "NICK FUENTES",
-    "max_duration_minutes": 120
+    "max_duration_minutes": 120,
+    "paused": false
   }
 ]

@@ -44,6 +44,7 @@ class ChannelConfig:
     prefix: str
     image_label: str
     max_duration_minutes: int
+    paused: bool = False
 
 
 CHANNEL_CONFIG_PATH = os.path.join(REPO_PATH, "channels.json")
@@ -168,8 +169,12 @@ def download_channel_images():
     os.makedirs(IMAGE_DIR, exist_ok=True)
     portraits = []
     temporary_paths = []
+    active_channels = [channel for channel in CHANNELS if not channel.paused]
+    if not active_channels:
+        print("No active channels; keeping the existing podcast cover.")
+        return
     try:
-        for channel in CHANNELS:
+        for channel in active_channels:
             show_name = channel_show_name(channel.url)
             thumbnail_url = channel_episode_thumbnail_url(channel.url)
             request = Request(thumbnail_url, headers={"User-Agent": "Mozilla/5.0"})
@@ -210,7 +215,7 @@ def download_channel_images():
             fill="#FFF4DC",
             font=title_font,
         )
-        subtitle = "SIX CHANNELS  |  ONE SHOW"
+        subtitle = f"{len(portraits)} CHANNELS  |  ONE SHOW"
         subtitle_bounds = draw.textbbox((0, 0), subtitle, font=subtitle_font)
         draw.text(
             ((1800 - (subtitle_bounds[2] - subtitle_bounds[0])) / 2, 190),
@@ -399,7 +404,7 @@ def write_feed(metadata):
         href=PODCAST_COVER_URL,
     )
     items_container = channel
-    feed_channels = {channel.url for channel in CHANNELS}
+    feed_channels = {channel.url for channel in CHANNELS if not channel.paused}
     feed_entries = [
         (video_id, item)
         for video_id, item in metadata.items()
@@ -628,6 +633,9 @@ def download_and_convert():
 
     pending_tasks = []
     for channel in CHANNELS:
+        if channel.paused:
+            print(f"Skipping paused channel {channel.url}.")
+            continue
         ydl = yt_dlp.YoutubeDL(build_ydl_options())
         try:
             video_urls = discover_channel_videos(channel.url, ydl)
