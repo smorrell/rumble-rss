@@ -4,6 +4,27 @@
     <title>Ann and Nick</title>
     <itunes:image href="https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/img/podcast_cover.jpg" />
     <item>
+      <title>AgMrtg - Private Mortgage Meltdown</title>
+      <pubDate>Fri, 06 Nov 2026 12:00:39 GMT</pubDate>
+      <guid isPermaLink="false">Ov14BUyO5nE</guid>
+      <itunes:duration>00:08:17</itunes:duration>
+      <enclosure url="https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-06-angrymortgage-Private-Mortgage-Meltdown.mp3" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>Gavin - Gavin McInnes' Drunken Chris Cuomo Story Gets More Hilarious by the Minute</title>
+      <pubDate>Fri, 06 Nov 2026 15:30:33 GMT</pubDate>
+      <guid isPermaLink="false">lq-PV8oJEq4</guid>
+      <itunes:duration>00:20:18</itunes:duration>
+      <enclosure url="https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-06-CompoundCensoredOfficial-Gavin-McInnes-Drunken-Chris-Cuomo-Story-Gets-More-Hilarious-by-the-Minute.mp3" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>Nick - Trump BLAMES Voters for Crushing Defeat</title>
+      <pubDate>Fri, 06 Nov 2026 17:00:00 GMT</pubDate>
+      <guid isPermaLink="false">v7frpp0</guid>
+      <itunes:duration>00:49:29</itunes:duration>
+      <enclosure url="https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-06-nickjfuentes-Trump-BLAMES-Voters-for-Crushing-Defeat.mp3" type="audio/mpeg" />
+    </item>
+    <item>
       <title>AgMrtg - When Your Profession Gets It So WRONG</title>
       <pubDate>Thu, 05 Nov 2026 11:30:29 GMT</pubDate>
       <guid isPermaLink="false">_F6BzKl0jEE</guid>
@@ -195,26 +216,6 @@
       <guid isPermaLink="false">v7ffof0</guid>
       <itunes:duration>00:22:39</itunes:duration>
       <enclosure url="https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-10-30-nickjfuentes-Governments-Tell-Citizens-to-Prepare-for-DISASTER.mp3" type="audio/mpeg" />
-    </item>
-    <item>
-      <title>AgMrtg - Bank Of Canada- What Mortgage Now?</title>
-      <pubDate>Thu, 29 Oct 2026 10:30:39 GMT</pubDate>
-      <guid isPermaLink="false">Jfok0WIBGEI</guid>
-      <enclosure url="https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-10-29-angrymortgage-Bank-Of-Canada-What-Mortgage-Now.mp3" type="audio/mpeg" />
-    </item>
-    <item>
-      <title>Nick - Leftist Hackers DOX ICE Agents</title>
-      <pubDate>Thu, 29 Oct 2026 16:00:00 GMT</pubDate>
-      <guid isPermaLink="false">v7fdkso</guid>
-      <itunes:duration>00:40:22</itunes:duration>
-      <enclosure url="https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-10-29-nickjfuentes-Leftist-Hackers-DOX-ICE-Agents.mp3" type="audio/mpeg" />
-    </item>
-    <item>
-      <title>Ann - UNSAFE with Ann Coulter: Top Stories You May Have Missed!</title>
-      <pubDate>Thu, 29 Oct 2026 16:57:05 GMT</pubDate>
-      <guid isPermaLink="false">v7fe4cy</guid>
-      <itunes:duration>00:50:32</itunes:duration>
-      <enclosure url="https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-10-29-AnnCoulter-UNSAFE-with-Ann-Coulter-Top-Stories-You-May-Have-Missed.mp3" type="audio/mpeg" />
     </item>
   </channel>
 </rss>
