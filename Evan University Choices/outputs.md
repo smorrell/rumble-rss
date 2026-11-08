@@ -95,6 +95,40 @@ I could not find comparable, program-specific statistics showing what proportion
 
 Use the [Government of Canada's Job Bank wage explorer](https://www.jobbank.gc.ca/trend-analysis/search-wages) to compare the specific occupation and Ontario region Evan cares about. Recheck closer to graduation; inflation, demand, location, and career progression could materially change the figures.
 
+### Estimated lifetime employment earnings
+
+These are **rough modeled gross earnings in current 2026 dollars**, not published lifetime earnings for graduates of these specific programs. The model assumes about 35–40 years of full-time paid work after graduation, with average career earnings per year of roughly 75%–100% of the corresponding ten-year salary band above. The lower end uses the low end of that salary band and the shorter career; the upper end uses the high end and longer career. Amounts are rounded to the nearest $100,000. The ranking below sorts by the midpoint of each range; equal midpoints share a rank.
+
+The figures are before tax and exclude benefits, pension value, investment returns, tuition and living costs, further-study costs, unemployment, career breaks, and changes in future wages. They are not adjusted for inflation or discounted to present value. They should be used only to compare broad career possibilities: occupation, credentials, location, experience, and individual choices matter far more than the degree title. No credible program-specific lifetime-earnings dataset was found.
+
+| Rank | Degree path | Approximate gross earnings over 35–40 working years |
+|---:|---|---:|
+| 1 | Accounting and Financial Management — Waterloo | $2.2M–$5.6M |
+| 2 | Digital Enterprise Management — UTM | $2.1M–$5.2M |
+| 3 | Economics — Queen's | $2.0M–$5.2M |
+| 3 | Computing and the Creative Arts — Queen's | $2.0M–$5.2M |
+| 5 | Concurrent Education, JI — Brock | $2.2M–$4.8M |
+| 5 | Concurrent Education, IS — Brock | $2.2M–$4.8M |
+| 5 | Concurrent Education with Economics — Queen's | $2.2M–$4.8M |
+| 5 | Business Administration — Laurier (earlier comparison) | $2.0M–$5.0M |
+| 9 | Industrial Design — Carleton | $2.0M–$4.8M |
+| 10 | Planning — Waterloo | $2.0M–$4.6M |
+| 10 | Global Business and Digital Arts — Waterloo (earlier comparison) | $1.8M–$4.8M |
+| 10 | Interactive Media and Design — Carleton (earlier comparison) | $1.8M–$4.8M |
+| 13 | Game Design / Game Design and Development — Laurier, Brantford | $1.7M–$4.8M |
+| 13 | Game Design — Brock | $1.7M–$4.8M |
+| 15 | Human Resources Management — York | $1.8M–$4.6M |
+| 15 | Marketing Management — Guelph | $1.8M–$4.6M |
+| 15 | Business Management / Marketing Management — TMU (earlier comparison) | $1.8M–$4.6M |
+| 18 | Design — York | $1.6M–$4.4M |
+| 19 | Digital Media — York | $1.6M–$4.2M |
+| 19 | Creative Industries — TMU (earlier comparison) | $1.6M–$4.2M |
+| 21 | Food and Nutrition / Nutrition — Western | $1.6M–$4.0M |
+| 22 | Film Studies — Western | $1.3M–$4.0M |
+| 23 | Family Studies and Human Development — Western | $1.4M–$3.6M |
+| 23 | Human Development and Family Studies — Guelph | $1.4M–$3.6M |
+| 25 | Visual and Performing Arts — UTSC | $1.2M–$3.6M |
+
 ## Prerequisites and admission marks
 
 The verified admissions notes below were gathered for an earlier comparison shortlist. Some of those programs are now lower priority or were ruled out; admissions requirements for Evan's newer yes/maybe programs are still to be checked with the universities.
