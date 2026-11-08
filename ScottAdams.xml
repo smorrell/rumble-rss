@@ -22,6 +22,20 @@
     </ns1:category>
     <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/3012323/3012323-1578935161711-71f93031bbe53.jpg" />
     <item>
+      <title>Classic Episode 1920 Scott Adams: Let's Use The News To Amuse. Hope You Have A Special Coffee Mug Like Some</title>
+      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1920-Scott-Adams-Lets-Use-The-News-To-Amuse--Hope-You-Have-A-Special-Coffee-Mug-Like-Some-e1qd4p2</link>
+      <guid isPermaLink="false">d66c3be0-a51a-474c-adbc-cb38b2b5d7e9</guid>
+      <dc:creator>Scott Adams</dc:creator>
+      <pubDate>Sat, 07 Nov 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://traffic.megaphone.fm/APO9257040500.mp3" length="85679542" type="audio/mpeg" />
+      <ns1:explicit>false</ns1:explicit>
+      <ns1:duration>01:29:14</ns1:duration>
+      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1667851343197-d42dceae7512c.jpg" />
+      <ns1:season>46</ns1:season>
+      <ns1:episode>1920</ns1:episode>
+      <ns1:episodeType>full</ns1:episodeType>
+    </item>
+    <item>
       <title>Classic Episode 1919 Scott Adams: Two Days Before Elections And The News Is Delicious &amp; Stimulating. Join Us</title>
       <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1919-Scott-Adams-Two-Days-Before-Elections-And-The-News-Is-Delicious--Stimulating--Join-Us-e1qb9d0</link>
       <guid isPermaLink="false">8a844598-5629-49c0-95d7-1613d4653967</guid>
@@ -145,20 +159,6 @@
       <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1667064774453-3b14d8ed506cf.jpg" />
       <ns1:season>46</ns1:season>
       <ns1:episode>1911</ns1:episode>
-      <ns1:episodeType>full</ns1:episodeType>
-    </item>
-    <item>
-      <title>Classic Episode 1910 Scott Adams: Twitter, Paul Pelosi Attacked, New Ivermectin Study, Ukraine Update, More</title>
-      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1910-Scott-Adams-Twitter--Paul-Pelosi-Attacked--New-Ivermectin-Study--Ukraine-Update--More-e1ptb91</link>
-      <guid isPermaLink="false">0a9d16f5-f866-48ba-aae7-7cce7e8c4b53</guid>
-      <dc:creator>Scott Adams</dc:creator>
-      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/APO9453437079.mp3" length="81523774" type="audio/mpeg" />
-      <ns1:explicit>false</ns1:explicit>
-      <ns1:duration>01:24:55</ns1:duration>
-      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1666978875375-b0501fc736716.jpg" />
-      <ns1:season>46</ns1:season>
-      <ns1:episode>1910</ns1:episode>
       <ns1:episodeType>full</ns1:episodeType>
     </item>
   </channel>

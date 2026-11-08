@@ -4,6 +4,20 @@
     <title>Ann and Nick</title>
     <itunes:image href="https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/img/podcast_cover.jpg" />
     <item>
+      <title>AgMrtg - Real Estate Keeps Falling</title>
+      <pubDate>Sat, 07 Nov 2026 12:00:37 GMT</pubDate>
+      <guid isPermaLink="false">0IXPJDpxxfA</guid>
+      <itunes:duration>00:08:14</itunes:duration>
+      <enclosure url="https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-07-angrymortgage-Real-Estate-Keeps-Falling.mp3" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>Gavin - Gavin McInnes: You Can Literally Punch a Cop in the Face in NYC and Get Away With It</title>
+      <pubDate>Sat, 07 Nov 2026 21:36:12 GMT</pubDate>
+      <guid isPermaLink="false">P_udzcIBf1g</guid>
+      <itunes:duration>00:22:10</itunes:duration>
+      <enclosure url="https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-07-CompoundCensoredOfficial-Gavin-McInnes-You-Can-Literally-Punch-a-Cop-in-the-Face-in-NYC-and-Get-Away-With-It.mp3" type="audio/mpeg" />
+    </item>
+    <item>
       <title>AgMrtg - Private Mortgage Meltdown</title>
       <pubDate>Fri, 06 Nov 2026 12:00:39 GMT</pubDate>
       <guid isPermaLink="false">Ov14BUyO5nE</guid>
@@ -210,19 +224,6 @@
       <guid isPermaLink="false">pa8TAy3sN00</guid>
       <itunes:duration>00:22:40</itunes:duration>
       <enclosure url="https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-10-31-CompoundCensoredOfficial-Gavin-McInnes-Exposes-the-Political-Indoctrination-Happening-on-College-Campuses.mp3" type="audio/mpeg" />
-    </item>
-    <item>
-      <title>AgMrtg - NEW INTEL: Will Real Estate Get WORSE?</title>
-      <pubDate>Fri, 30 Oct 2026 10:30:07 GMT</pubDate>
-      <guid isPermaLink="false">aMdAWIWpzGk</guid>
-      <enclosure url="https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-10-30-angrymortgage-NEW-INTEL-Will-Real-Estate-Get-WORSE.mp3" type="audio/mpeg" />
-    </item>
-    <item>
-      <title>Nick - Governments Tell Citizens to Prepare for DISASTER</title>
-      <pubDate>Fri, 30 Oct 2026 16:00:00 GMT</pubDate>
-      <guid isPermaLink="false">v7ffof0</guid>
-      <itunes:duration>00:22:39</itunes:duration>
-      <enclosure url="https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-10-30-nickjfuentes-Governments-Tell-Citizens-to-Prepare-for-DISASTER.mp3" type="audio/mpeg" />
     </item>
   </channel>
 </rss>
