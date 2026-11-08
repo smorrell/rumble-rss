@@ -46,9 +46,38 @@
 ## Programs and universities already mentioned
 
 - Queen's Computing and the Creative Arts specialization
-- University of Toronto Scarborough: Theatre and Performance Studies
 - University of Toronto Mississauga: Digital Enterprise Management
-- York University has a broad range of program options worth exploring.
+- Brock University Game Design
+- Brock University Concurrent Education (Junior/Intermediate and Intermediate/Senior options were mentioned; confirm the exact program names)
+- Queen's Economics and Concurrent Education with an Economics option
+- University of Guelph Marketing Management
+- Carleton University Industrial Design
+- Waterloo Accounting and Financial Management
+
+## Reactions to programs discussed
+
+| University and program | Evan's reaction / next step |
+|---|---|
+| Brock University Concurrent Education, Junior/Intermediate ("JI" in notes) | Yes; confirm exact program/teachable or degree combination |
+| Brock University Concurrent Education, Intermediate/Senior ("IS" in notes) | Yes; confirm exact program/teachable or degree combination |
+| Queen's Economics | Maybe |
+| Queen's Concurrent Education with Economics option | Yes; Shannon and Evan plan to call Queen's for details |
+| Western University Family Studies and Human Development | Probably not |
+| Western University Food and Nutrition | Probably not; jobs after graduation need investigation |
+| Western University Arts and Humanities, Film Studies | Not really |
+| Laurier Game Design, Brantford campus | No; Evan does not want the Brantford campus |
+| Queen's Computing and the Creative Arts | Yes; Evan wants to learn what jobs the degree can lead to |
+| University of Toronto Scarborough Visual and Performing Arts | No; Evan does not want the campus |
+| University of Toronto Mississauga Digital Enterprise Management | Undecided; Evan needs to research it |
+| University of Waterloo Planning | Probably not |
+| York University Resource Management / Human Resources Management | No; Evan does not want to attend York |
+| York University Digital Media | No; Evan does not want to attend York |
+| University of Guelph Human Development and Family Studies | No |
+| Brock University Game Design | Yes |
+| University of Guelph Marketing Management | Yes |
+| York University Design | No; Evan does not want to attend York |
+| University of Waterloo Accounting and Financial Management | Not a first choice |
+| Carleton University Industrial Design | Sounds interesting; Evan needs to research what it involves |
 
 ## Not interested in
 
