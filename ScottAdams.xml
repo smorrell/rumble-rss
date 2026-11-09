@@ -22,6 +22,34 @@
     </ns1:category>
     <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/3012323/3012323-1578935161711-71f93031bbe53.jpg" />
     <item>
+      <title>Classic Episode 1922 Scott Adams: Red Wave Blues And Signals Everyone Missed. Persuasion Filter: ON</title>
+      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1922-Scott-Adams-Red-Wave-Blues-And-Signals-Everyone-Missed--Persuasion-Filter-ON-e1qgm9n</link>
+      <guid isPermaLink="false">392fbf6d-ccd6-4f1b-b220-e32e55f7b232</guid>
+      <dc:creator>Scott Adams</dc:creator>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://traffic.megaphone.fm/APO5822781763.mp3" length="94706625" type="audio/mpeg" />
+      <ns1:explicit>false</ns1:explicit>
+      <ns1:duration>01:38:39</ns1:duration>
+      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1668019776773-80f0b5e678504.jpg" />
+      <ns1:season>46</ns1:season>
+      <ns1:episode>1922</ns1:episode>
+      <ns1:episodeType>full</ns1:episodeType>
+    </item>
+    <item>
+      <title>Classic Episode 1921 Scott Adams: It's The End Of Democracy As We Know It, AKA A Normal Election Day</title>
+      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1921-Scott-Adams-Its-The-End-Of-Democracy-As-We-Know-It--AKA-A-Normal-Election-Day-e1qenku</link>
+      <guid isPermaLink="false">5ec95afa-c731-4d34-897a-ffd56a0ea074</guid>
+      <dc:creator>Scott Adams</dc:creator>
+      <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://traffic.megaphone.fm/APO7359176034.mp3" length="61600914" type="audio/mpeg" />
+      <ns1:explicit>false</ns1:explicit>
+      <ns1:duration>01:04:10</ns1:duration>
+      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1667929645885-2516c395a4b93.jpg" />
+      <ns1:season>46</ns1:season>
+      <ns1:episode>1921</ns1:episode>
+      <ns1:episodeType>full</ns1:episodeType>
+    </item>
+    <item>
       <title>Classic Episode 1920 Scott Adams: Let's Use The News To Amuse. Hope You Have A Special Coffee Mug Like Some</title>
       <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1920-Scott-Adams-Lets-Use-The-News-To-Amuse--Hope-You-Have-A-Special-Coffee-Mug-Like-Some-e1qd4p2</link>
       <guid isPermaLink="false">d66c3be0-a51a-474c-adbc-cb38b2b5d7e9</guid>
@@ -131,34 +159,6 @@
       <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1667236703855-e46c0d9f7c384.jpg" />
       <ns1:season>46</ns1:season>
       <ns1:episode>1913</ns1:episode>
-      <ns1:episodeType>full</ns1:episodeType>
-    </item>
-    <item>
-      <title>Classic Episode 1912 Scott Adams: A Nonzero Chance The Pelosis Were Getting Hammered At The Same Time</title>
-      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1912-Scott-Adams-A-Nonzero-Chance-The-Pelosis-Were-Getting-Hammered-At-The-Same-Time-e1pvmqq</link>
-      <guid isPermaLink="false">a5b65397-cffc-405d-b345-3ce8eb40a4c6</guid>
-      <dc:creator>Scott Adams</dc:creator>
-      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/APO3800957183.mp3" length="79381315" type="audio/mpeg" />
-      <ns1:explicit>false</ns1:explicit>
-      <ns1:duration>01:22:41</ns1:duration>
-      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1667148916190-24d5592238b8.jpg" />
-      <ns1:season>46</ns1:season>
-      <ns1:episode>1912</ns1:episode>
-      <ns1:episodeType>full</ns1:episodeType>
-    </item>
-    <item>
-      <title>Classic Episode 1911 Scott Adams: Let's Have Fun With The News Because Its Been A Wonderful Week</title>
-      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1911-Scott-Adams-Lets-Have-Fun-With-The-News-Because-Its-Been-A-Wonderful-Week-e1pukuq</link>
-      <guid isPermaLink="false">3acf8eb5-310a-45cb-811d-e6c0943263ea</guid>
-      <dc:creator>Scott Adams</dc:creator>
-      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/APO2712732581.mp3" length="83351510" type="audio/mpeg" />
-      <ns1:explicit>false</ns1:explicit>
-      <ns1:duration>01:26:49</ns1:duration>
-      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1667064774453-3b14d8ed506cf.jpg" />
-      <ns1:season>46</ns1:season>
-      <ns1:episode>1911</ns1:episode>
       <ns1:episodeType>full</ns1:episodeType>
     </item>
   </channel>
