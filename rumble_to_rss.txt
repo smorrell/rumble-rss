@@ -1,164 +1,156 @@
 
-===== Run started 2026-11-09T11:29:51-05:00 =====
+===== Run started 2026-11-09T23:39:31-05:00 =====
 Refreshing channel portraits and podcast cover...
 Downloaded the latest episode thumbnail for angrymortgage.
 Downloaded the latest episode thumbnail for TheBrancaShow.
 Downloaded the latest episode thumbnail for TheMooseOnTheLooseExtra.
 Downloaded the latest episode thumbnail for CompoundCensoredOfficial.
-Found 33 videos on channel page 1.
+Found 27 videos on channel page 1.
 Downloaded the latest episode thumbnail for AnnCoulter.
-Found 33 videos on channel page 1.
+Found 27 videos on channel page 1.
 Downloaded the latest episode thumbnail for nickjfuentes.
 Updated podcast cover: O:\smorrell\OneDrive\Desktop\rumble rss\img\podcast_cover.jpg
 Checking Rumble for new videos...
-Removed expired MP3: 2026-10-31-angrymortgage-The-Reverse-Mortgage-BOOM-Is-Here.mp3
-Removed expired MP3: 2026-10-31-TheBrancaShow-Trump-s-Golf-Course-Fight-Just-Took-An-Unexpected-Legal-Turn.mp3
-Removed expired MP3: 2026-10-31-TheBrancaShow-James-O-Keefe-Faces-5-Years-After-Minnesota-Voter-ID-Sting.mp3
-Removed expired MP3: 2026-10-31-TheBrancaShow-Trump-Wins-Emergency-Appeal-After-Judge-Orders-55-000-Visas.mp3
-Removed expired MP3: 2026-11-01-angrymortgage-Can-you-handle-it.mp3
-Removed expired MP3: 2026-11-01-angrymortgage-CEO-Carney-Of-Canada-INC.mp3
-Removed expired MP3: 2026-11-01-TheBrancaShow-James-O-Keefe-s-First-Amendment-Defense-Could-Backfire-in-Court.mp3
-Removed expired MP3: 2026-11-01-TheBrancaShow-Lindsay-Clancy-Case-Can-Her-Psychiatrists-Be-Held-Responsible.mp3
-Removed expired MP3: 2026-11-01-TheBrancaShow-California-Election-Officials-Could-Face-FEDERAL-Criminal-Charges.mp3
-Removed expired MP3: 2026-11-01-TheMooseOnTheLooseExtra-Carney-Faces-Calls-to-Audit-26-Billion-in-Ukraine-Aid-Amid-Money-Laundering-Allegations.mp3
-Removed expired MP3: 2026-11-01-CompoundCensoredOfficial-Gavin-McInnes-Gets-Into-HEATED-Immigration-Debate-with-2-Feminists-and-REFUSES-to-Back-Down.mp3
-Removed expired MP3: 2026-10-31-CompoundCensoredOfficial-Gavin-McInnes-Exposes-the-Political-Indoctrination-Happening-on-College-Campuses.mp3
-Removed 12 expired video metadata entries.
-Found 33 videos on channel page 1.
-Found 33 videos on channel page 1.
-[Thread-21892] Video URL: https://www.youtube.com/watch?v=fJbirXCFF-0
-[Thread-103264] Video URL: https://www.youtube.com/watch?v=Aj2zD0-td2g
-[Thread-95572] Video URL: https://www.youtube.com/watch?v=Lr1w4GHEiuY[Thread-98252] Video URL: https://www.youtube.com/watch?v=0IXPJDpxxfA
+Found 27 videos on channel page 1.
+Found 27 videos on channel page 1.
+[Thread-102540] Video URL: https://www.youtube.com/watch?v=fJbirXCFF-0[Thread-105324] Video URL: https://www.youtube.com/watch?v=fSHXUjv5mAc
 
-[Thread-98252] Skipping already downloaded video https://www.youtube.com/watch?v=0IXPJDpxxfA.
-[Thread-95572] Skipping already downloaded video https://www.youtube.com/watch?v=Lr1w4GHEiuY.
-[Thread-98252] Video URL: https://www.youtube.com/watch?v=Ov14BUyO5nE
-[Thread-95572] Video URL: https://www.youtube.com/watch?v=P1mOH-9WNss
-[Thread-95572] Skipping video https://www.youtube.com/watch?v=P1mOH-9WNss: duration is unknown or not less than the 10-minute channel maximum.
-[Thread-98252] Skipping already downloaded video https://www.youtube.com/watch?v=Ov14BUyO5nE.
-[Thread-21892] Video URL: https://www.youtube.com/watch?v=0PE0ZLD-RXA
-[Thread-95572] Video URL: https://www.youtube.com/watch?v=xEjg-BKEPvQ
-[Thread-98252] Video URL: https://www.youtube.com/watch?v=YKHyl6jP34U
-[Thread-103264] Video URL: https://www.youtube.com/watch?v=YM8go2GZxIA
-[Thread-98252] Skipping video https://www.youtube.com/watch?v=YKHyl6jP34U: duration is unknown or not less than the 10-minute channel maximum.
-[Thread-95572] Skipping video https://www.youtube.com/watch?v=xEjg-BKEPvQ: duration is unknown or not less than the 10-minute channel maximum.
-[Thread-95572] Video URL: https://www.youtube.com/watch?v=TS2J0deEK6s
-[Thread-98252] Video URL: https://www.youtube.com/watch?v=dvkYoDPJd78
-[Thread-103264] Skipping video https://www.youtube.com/watch?v=YM8go2GZxIA: duration is unknown or not less than the 10-minute channel maximum.
-[Thread-103264] Video URL: https://www.youtube.com/watch?v=D3UWf-tD1k8
-[Thread-95572] Skipping old or undated video https://www.youtube.com/watch?v=TS2J0deEK6s (upload_date: 20261025).
-[Thread-98252] Skipping old or undated video https://www.youtube.com/watch?v=dvkYoDPJd78 (upload_date: 20261101).
-[Thread-95572] Video URL: https://www.youtube.com/watch?v=2P1fmIFNTM0
-[Thread-98252] Video URL: https://www.youtube.com/watch?v=qyOpNkSGPr8
-[Thread-103264] Skipping old or undated video https://www.youtube.com/watch?v=D3UWf-tD1k8 (upload_date: 20261018).
-[Thread-103264] Video URL: https://www.youtube.com/watch?v=Pa4pXQpCwc0
-[Thread-98252] Skipping old or undated video https://www.youtube.com/watch?v=qyOpNkSGPr8 (upload_date: 20260425).
-[Thread-95572] Skipping old or undated video https://www.youtube.com/watch?v=2P1fmIFNTM0 (upload_date: 20261010).
-[Thread-98252] Video URL: https://www.youtube.com/watch?v=yy_w19tyCao
-[Thread-95572] Video URL: https://www.youtube.com/watch?v=P_udzcIBf1g
-[Thread-21892] Video URL: https://www.youtube.com/watch?v=lq-PV8oJEq4
-[Thread-95572] Skipping already downloaded video https://www.youtube.com/watch?v=P_udzcIBf1g.
-[Thread-21892] Skipping already downloaded video https://www.youtube.com/watch?v=lq-PV8oJEq4.
-[Thread-95572] Video URL: https://www.youtube.com/watch?v=daWnUfC2bVo
-[Thread-21892] Video URL: https://rumble.com/v7ht13y-unsafe-2026-midterm-elections-special.html
-[Thread-21892] Skipping already downloaded video https://rumble.com/v7ht13y-unsafe-2026-midterm-elections-special.html.
-[Thread-95572] Skipping already downloaded video https://www.youtube.com/watch?v=daWnUfC2bVo.
-[Thread-21892] Video URL: https://rumble.com/v7hwrrg-ann-coulter-on-the-mark-simone-show-710-wor-november-4-2026.html
-[Thread-95572] Video URL: https://rumble.com/v7hkhag-unsafe-with-ann-coulter-top-stories-you-may-have-missed.html
-[Thread-21892] Skipping already downloaded video https://rumble.com/v7hwrrg-ann-coulter-on-the-mark-simone-show-710-wor-november-4-2026.html.
-[Thread-21892] Video URL: https://rumble.com/v7hj8gk-ann-coulter-on-the-mark-simone-show-710-wor-october-28-2026.html
-[Thread-95572] Skipping old or undated video https://rumble.com/v7hkhag-unsafe-with-ann-coulter-top-stories-you-may-have-missed.html (upload_date: 20261029).
-[Thread-95572] Video URL: https://rumble.com/v7h8wwe-unsafe-with-ann-coulter-top-stories-you-may-have-missed.html
-[Thread-21892] Skipping old or undated video https://rumble.com/v7hj8gk-ann-coulter-on-the-mark-simone-show-710-wor-october-28-2026.html (upload_date: 20261028).
-[Thread-21892] Video URL: https://rumble.com/v7h8tck-ann-coulter-on-the-mark-simone-show-710-wor-october-21-2026.html
-[Thread-95572] Skipping old or undated video https://rumble.com/v7h8wwe-unsafe-with-ann-coulter-top-stories-you-may-have-missed.html (upload_date: 20261022).
-[Thread-95572] Video URL: https://rumble.com/v7h1u08-andy-ngo-and-ann-coulter-inside-the-zizian-trans-death-cult.html
-[Thread-21892] Skipping old or undated video https://rumble.com/v7h8tck-ann-coulter-on-the-mark-simone-show-710-wor-october-21-2026.html (upload_date: 20261022).
-[Thread-21892] Video URL: https://rumble.com/v7gwgu4-unsafe-with-ann-coulter-top-stories-you-may-have-missed.html
-[Thread-95572] Skipping old or undated video https://rumble.com/v7h1u08-andy-ngo-and-ann-coulter-inside-the-zizian-trans-death-cult.html (upload_date: 20261018).
-[Thread-95572] Video URL: https://rumble.com/v7gv7wk-ann-coulter-on-the-mark-simone-show-710-wor-october-14-2026.html
-[Thread-21892] Skipping old or undated video https://rumble.com/v7gwgu4-unsafe-with-ann-coulter-top-stories-you-may-have-missed.html (upload_date: 20261015).
-[Thread-95572] Skipping old or undated video https://rumble.com/v7gv7wk-ann-coulter-on-the-mark-simone-show-710-wor-october-14-2026.html (upload_date: 20261014).
-[Thread-21892] Video URL: https://rumble.com/v7gl0ea-ann-coulter-on-the-mark-simone-show-710-wor-october-7-2026.html
-[Thread-95572] Video URL: https://rumble.com/v7gl08s-ann-coulter-on-the-mark-simone-show-710-wor-september-30-2026.html
-[Thread-21892] Skipping old or undated video https://rumble.com/v7gl0ea-ann-coulter-on-the-mark-simone-show-710-wor-october-7-2026.html (upload_date: 20261009).
-[Thread-21892] Video URL: https://rumble.com/v7g8vvu-unsafe-with-ann-coulter-top-stories-you-may-have-missed.html
-[Thread-95572] Skipping old or undated video https://rumble.com/v7gl08s-ann-coulter-on-the-mark-simone-show-710-wor-september-30-2026.html (upload_date: 20261008).
-[Thread-95572] Video URL: https://rumble.com/v7fxmpq-unsafe-with-ann-coulter-top-stories-you-may-have-missed.html
-[Thread-21892] Skipping old or undated video https://rumble.com/v7g8vvu-unsafe-with-ann-coulter-top-stories-you-may-have-missed.html (upload_date: 20261001).
-[Thread-21892] Video URL: https://rumble.com/v7fwm4s-ann-coulter-on-the-mark-simone-show-710-wor-september-23-2026.html
-[Thread-95572] Skipping old or undated video https://rumble.com/v7fxmpq-unsafe-with-ann-coulter-top-stories-you-may-have-missed.html (upload_date: 20260924).
-[Thread-95572] Video URL: https://rumble.com/v7fmkdm-top-five-stories-you-might-have-missed-unsafe-live.html
-[Thread-21892] Skipping old or undated video https://rumble.com/v7fwm4s-ann-coulter-on-the-mark-simone-show-710-wor-september-23-2026.html (upload_date: 20260924).
-[Thread-21892] Video URL: https://rumble.com/v7fla5c-ann-coulter-on-the-mark-simone-show-710-wor-september-16-2026.html
-[Thread-95572] Skipping old or undated video https://rumble.com/v7fmkdm-top-five-stories-you-might-have-missed-unsafe-live.html (upload_date: 20260917).
-[Thread-95572] Video URL: https://rumble.com/v7fh2w2-ann-coulter-on-the-mark-simone-show-710-wor-september-9-2026.html
-[Thread-21892] Skipping old or undated video https://rumble.com/v7fla5c-ann-coulter-on-the-mark-simone-show-710-wor-september-16-2026.html (upload_date: 20260916).
-[Thread-21892] Video URL: https://rumble.com/v7fbx76-5-stories-911-and-flock-cameras-with-john-cardillo-unsafe-live.html
-[Thread-95572] Skipping old or undated video https://rumble.com/v7fh2w2-ann-coulter-on-the-mark-simone-show-710-wor-september-9-2026.html (upload_date: 20260914).
-[Thread-95572] Video URL: https://rumble.com/v7f19le-top-five-stories-this-week-unsafe-live.html
-[Thread-21892] Skipping old or undated video https://rumble.com/v7fbx76-5-stories-911-and-flock-cameras-with-john-cardillo-unsafe-live.html (upload_date: 20260910).
-[Thread-21892] Video URL: https://rumble.com/v7ellqa-one-year-after-stabbing-of-iryna-zarutska-4-stories-this-week.html
-[Thread-95572] Skipping old or undated video https://rumble.com/v7f19le-top-five-stories-this-week-unsafe-live.html (upload_date: 20260903).
-[Thread-95572] Video URL: https://rumble.com/v7eel5i-ann-coulter-on-the-mark-simone-show-710-wor-august-19-2026.html
-[Thread-21892] Skipping old or undated video https://rumble.com/v7ellqa-one-year-after-stabbing-of-iryna-zarutska-4-stories-this-week.html (upload_date: 20260824).
-[Thread-21892] Video URL: https://rumble.com/v7eam5q-josh-hammer-on-ending-anchor-baby-citizenship-israel-and-civilization.html
-[Thread-95572] Skipping old or undated video https://rumble.com/v7eel5i-ann-coulter-on-the-mark-simone-show-710-wor-august-19-2026.html (upload_date: 20260820).
-[Thread-95572] Video URL: https://rumble.com/v7dz6w2-interviewing-scott-greer-on-whitepill.html
-[Thread-21892] Skipping old or undated video https://rumble.com/v7eam5q-josh-hammer-on-ending-anchor-baby-citizenship-israel-and-civilization.html (upload_date: 20260817).
-[Thread-21892] Video URL: https://rumble.com/v7djc7m-kris-kobach-on-americas-most-gruesome-murder-fixing-ks-courts-and-more-unsa.html
-[Thread-95572] Skipping old or undated video https://rumble.com/v7dz6w2-interviewing-scott-greer-on-whitepill.html (upload_date: 20260810).
-[Thread-95572] Video URL: https://rumble.com/v7dcepe-5-stories-d4vd-on-trial-ressurecting-prisoners-and-more-unsafe-live.html
-[Thread-21892] Skipping old or undated video https://rumble.com/v7djc7m-kris-kobach-on-americas-most-gruesome-murder-fixing-ks-courts-and-more-unsa.html (upload_date: 20260731).
-[Thread-21892] Video URL: https://rumble.com/v7hxk2w-america-first-ep.-1775.html
-[Thread-95572] Skipping old or undated video https://rumble.com/v7dcepe-5-stories-d4vd-on-trial-ressurecting-prisoners-and-more-unsafe-live.html (upload_date: 20260727).
-[Thread-95572] Video URL: https://rumble.com/v7i2s8w-i-was-right-about-everything.html
-[Thread-21892] Skipping video https://rumble.com/v7hxk2w-america-first-ep.-1775.html: duration is unknown or not less than the 120-minute channel maximum.
-[Thread-21892] Video URL: https://rumble.com/v7hy2mi-trump-blames-voters-for-crushing-defeat.html
-[Thread-21892] Skipping already downloaded video https://rumble.com/v7hy2mi-trump-blames-voters-for-crushing-defeat.html.
-[Thread-21892] Video URL: https://rumble.com/v7hw9zc-blue-tsunami-wipes-out-the-gop.html
-[Thread-21892] Skipping already downloaded video https://rumble.com/v7hw9zc-blue-tsunami-wipes-out-the-gop.html.
-[Thread-21892] Video URL: https://rumble.com/v7hvrgu-america-first-ep.-1774.html
-[Thread-103264] Video URL: https://rumble.com/v7htuj8-2026-midterm-election.html
-[Thread-21892] Skipping video https://rumble.com/v7hvrgu-america-first-ep.-1774.html: duration is unknown or not less than the 120-minute channel maximum.
-[Thread-21892] Video URL: https://rumble.com/v7htakq-a-blue-tsunami-is-coming....html
-[Thread-103264] Skipping video https://rumble.com/v7htuj8-2026-midterm-election.html: duration is unknown or not less than the 120-minute channel maximum.
-[Thread-103264] Video URL: https://rumble.com/v7hs63m-america-first-ep.-1773.html
-[Thread-21892] Skipping already downloaded video https://rumble.com/v7htakq-a-blue-tsunami-is-coming....html.
-[Thread-21892] Video URL: https://rumble.com/v7hpguy-make-the-goyim-great-again.html
-[Thread-98252] Video URL: https://rumble.com/v7hm1ci-governments-tell-citizens-to-prepare-for-disaster.html
-[Thread-103264] Skipping video https://rumble.com/v7hs63m-america-first-ep.-1773.html: duration is unknown or not less than the 120-minute channel maximum.
-[Thread-103264] Video URL: https://rumble.com/v7hl510-america-first-ep.-1772.html
-[Thread-21892] Skipping video https://rumble.com/v7hpguy-make-the-goyim-great-again.html: duration is unknown or not less than the 120-minute channel maximum.
-[Thread-98252] Skipping old or undated video https://rumble.com/v7hm1ci-governments-tell-citizens-to-prepare-for-disaster.html (upload_date: 20261030).
-[Thread-21892] Video URL: https://rumble.com/v7hjxq6-leftist-hackers-dox-ice-agents.html
-[Thread-98252] Video URL: https://rumble.com/v7hjgi0-america-first-ep.-1771.html
-[Thread-21892] Skipping old or undated video https://rumble.com/v7hjxq6-leftist-hackers-dox-ice-agents.html (upload_date: 20261029).
-[Thread-103264] Skipping old or undated video https://rumble.com/v7hl510-america-first-ep.-1772.html (upload_date: 20261030).
-[Thread-21892] Video URL: https://rumble.com/v7hili4-netanyahu-survives-israeli-elections.html
-[Thread-103264] Video URL: https://rumble.com/v7hhqsg-america-first-ep.-1770.html
-[Thread-98252] Skipping old or undated video https://rumble.com/v7hjgi0-america-first-ep.-1771.html (upload_date: 20261029).
-[Thread-98252] Video URL: https://rumble.com/v7hgvfo-netanyahus-desperate-attempt-to-stay-in-power.html
-[Thread-21892] Skipping old or undated video https://rumble.com/v7hili4-netanyahu-survives-israeli-elections.html (upload_date: 20261028).
-[Thread-21892] Video URL: https://rumble.com/v7hfxlc-america-first-ep.-1769.html
-[Thread-98252] Skipping old or undated video https://rumble.com/v7hgvfo-netanyahus-desperate-attempt-to-stay-in-power.html (upload_date: 20261027).
-[Thread-103264] Skipping old or undated video https://rumble.com/v7hhqsg-america-first-ep.-1770.html (upload_date: 20261028).
-[Thread-98252] Video URL: https://rumble.com/v7hdnp0-its-time-for-groypers-to-ascend.html
-[Thread-103264] Video URL: https://rumble.com/v7h9twk-trump-ally-corey-lewandowski-probed-by-the-doj.html
-[Thread-98252] Skipping old or undated video https://rumble.com/v7hdnp0-its-time-for-groypers-to-ascend.html (upload_date: 20261026).
-[Thread-98252] Video URL: https://rumble.com/v7h99s6-america-first-ep.-1768.html
-[Thread-21892] Skipping old or undated video https://rumble.com/v7hfxlc-america-first-ep.-1769.html (upload_date: 20261027).
-[Thread-21892] Video URL: https://rumble.com/v7h8c1a-susie-wiles-should-be-fired-from-the-trump-administration.html
-[Thread-103264] Skipping old or undated video https://rumble.com/v7h9twk-trump-ally-corey-lewandowski-probed-by-the-doj.html (upload_date: 20261023).
-[Thread-103264] Video URL: https://rumble.com/v7h7jfs-america-first-ep.-1767.html
-[Thread-98252] Skipping old or undated video https://rumble.com/v7h99s6-america-first-ep.-1768.html (upload_date: 20261023).
-[Thread-21892] Skipping old or undated video https://rumble.com/v7h8c1a-susie-wiles-should-be-fired-from-the-trump-administration.html (upload_date: 20261022).
-[Thread-98252] Video URL: https://rumble.com/v7h69wo-viveks-despicable-attack-ad-backfires.html
-[Thread-21892] Video URL: https://rumble.com/v7h5qsu-america-first-ep.-1766.html
-[Thread-103264] Skipping old or undated video https://rumble.com/v7h7jfs-america-first-ep.-1767.html (upload_date: 20261022).
-[Thread-103264] Video URL: https://rumble.com/v7h4jm2-the-end-of-france.html
-[Thread-103264] Skipping old or undated video https://rumble.com/v7h4jm2-the-end-of-france.html (upload_date: 20261020).
-[Thread-21892] Skipping old or undated video https://rumble.com/v7h5qsu-america-first-ep.-1766.html (upload_date: 20261021).
-[Thread-98252] Skipping old or undated video https://rumble.com/v7h69wo-viveks-despicable-attack-ad-backfires.html (upload_date: 20261021).
-Wrote 26 episode(s) to O:\smorrell\OneDrive\Desktop\rumble rss\Rumble.xml.
-===== Run ended 2026-11-09T11:35:40-05:00 =====
+[Thread-82236] Video URL: https://www.youtube.com/watch?v=0IXPJDpxxfA
+[Thread-98784] Video URL: https://www.youtube.com/watch?v=Aj2zD0-td2g
+[Thread-98784] Skipping already downloaded video https://www.youtube.com/watch?v=Aj2zD0-td2g.
+[Thread-82236] Skipping already downloaded video https://www.youtube.com/watch?v=0IXPJDpxxfA.
+[Thread-102540] Skipping already downloaded video https://www.youtube.com/watch?v=fJbirXCFF-0.
+[Thread-98784] Video URL: https://www.youtube.com/watch?v=Lr1w4GHEiuY
+[Thread-82236] Video URL: https://www.youtube.com/watch?v=CvzkDsxZoRA
+[Thread-102540] Video URL: https://www.youtube.com/watch?v=P1mOH-9WNss
+[Thread-102540] Skipping video https://www.youtube.com/watch?v=P1mOH-9WNss: duration is unknown or not less than the 10-minute channel maximum.
+[Thread-98784] Skipping already downloaded video https://www.youtube.com/watch?v=Lr1w4GHEiuY.
+[Thread-82236] Skipping video https://www.youtube.com/watch?v=CvzkDsxZoRA: duration is unknown or not less than the 10-minute channel maximum.
+[Thread-102540] Video URL: https://www.youtube.com/watch?v=0PE0ZLD-RXA
+[Thread-105324] Video URL: https://www.youtube.com/watch?v=xEjg-BKEPvQ
+[Thread-98784] Video URL: https://www.youtube.com/watch?v=YKHyl6jP34U
+[Thread-82236] Video URL: https://www.youtube.com/watch?v=dvkYoDPJd78
+[Thread-102540] Skipping already downloaded video https://www.youtube.com/watch?v=0PE0ZLD-RXA.
+[Thread-105324] Skipping video https://www.youtube.com/watch?v=xEjg-BKEPvQ: duration is unknown or not less than the 10-minute channel maximum.
+[Thread-98784] Skipping video https://www.youtube.com/watch?v=YKHyl6jP34U: duration is unknown or not less than the 10-minute channel maximum.
+[Thread-82236] Skipping old or undated video https://www.youtube.com/watch?v=dvkYoDPJd78 (upload_date: 20261101).
+[Thread-102540] Video URL: https://www.youtube.com/watch?v=TS2J0deEK6s
+[Thread-105324] Video URL: https://www.youtube.com/watch?v=D3UWf-tD1k8
+[Thread-98784] Video URL: https://www.youtube.com/watch?v=2P1fmIFNTM0
+[Thread-82236] Video URL: https://www.youtube.com/watch?v=qyOpNkSGPr8
+[Thread-82236] Skipping old or undated video https://www.youtube.com/watch?v=qyOpNkSGPr8 (upload_date: 20260425).
+[Thread-98784] Skipping old or undated video https://www.youtube.com/watch?v=2P1fmIFNTM0 (upload_date: 20261010).
+[Thread-105324] Skipping old or undated video https://www.youtube.com/watch?v=D3UWf-tD1k8 (upload_date: 20261018).
+[Thread-102540] Skipping old or undated video https://www.youtube.com/watch?v=TS2J0deEK6s (upload_date: 20261025).
+[Thread-82236] Video URL: https://www.youtube.com/watch?v=Pa4pXQpCwc0
+[Thread-105324] Video URL: https://www.youtube.com/watch?v=P_udzcIBf1g
+[Thread-98784] Video URL: https://www.youtube.com/watch?v=yy_w19tyCao
+[Thread-102540] Video URL: https://www.youtube.com/watch?v=lq-PV8oJEq4
+[Thread-105324] Skipping already downloaded video https://www.youtube.com/watch?v=P_udzcIBf1g.
+[Thread-98784] Skipping already downloaded video https://www.youtube.com/watch?v=yy_w19tyCao.
+[Thread-102540] Skipping already downloaded video https://www.youtube.com/watch?v=lq-PV8oJEq4.
+[Thread-82236] Skipping already downloaded video https://www.youtube.com/watch?v=Pa4pXQpCwc0.
+[Thread-105324] Video URL: https://www.youtube.com/watch?v=daWnUfC2bVo
+[Thread-98784] Video URL: https://rumble.com/v7ht13y-unsafe-2026-midterm-elections-special.html
+[Thread-102540] Video URL: https://rumble.com/v7hwrrg-ann-coulter-on-the-mark-simone-show-710-wor-november-4-2026.html
+[Thread-82236] Video URL: https://rumble.com/v7hkhag-unsafe-with-ann-coulter-top-stories-you-may-have-missed.html
+[Thread-102540] Skipping already downloaded video https://rumble.com/v7hwrrg-ann-coulter-on-the-mark-simone-show-710-wor-november-4-2026.html.
+[Thread-98784] Skipping already downloaded video https://rumble.com/v7ht13y-unsafe-2026-midterm-elections-special.html.
+[Thread-82236] Skipping old or undated video https://rumble.com/v7hkhag-unsafe-with-ann-coulter-top-stories-you-may-have-missed.html (upload_date: 20261029).
+[Thread-105324] Skipping already downloaded video https://www.youtube.com/watch?v=daWnUfC2bVo.
+[Thread-102540] Video URL: https://rumble.com/v7hj8gk-ann-coulter-on-the-mark-simone-show-710-wor-october-28-2026.html
+[Thread-98784] Video URL: https://rumble.com/v7h8wwe-unsafe-with-ann-coulter-top-stories-you-may-have-missed.html
+[Thread-82236] Video URL: https://rumble.com/v7h8tck-ann-coulter-on-the-mark-simone-show-710-wor-october-21-2026.html
+[Thread-105324] Video URL: https://rumble.com/v7h1u08-andy-ngo-and-ann-coulter-inside-the-zizian-trans-death-cult.html
+[Thread-82236] Skipping old or undated video https://rumble.com/v7h8tck-ann-coulter-on-the-mark-simone-show-710-wor-october-21-2026.html (upload_date: 20261022).
+[Thread-102540] Skipping old or undated video https://rumble.com/v7hj8gk-ann-coulter-on-the-mark-simone-show-710-wor-october-28-2026.html (upload_date: 20261028).
+[Thread-98784] Skipping old or undated video https://rumble.com/v7h8wwe-unsafe-with-ann-coulter-top-stories-you-may-have-missed.html (upload_date: 20261022).
+[Thread-82236] Video URL: https://rumble.com/v7gwgu4-unsafe-with-ann-coulter-top-stories-you-may-have-missed.html
+[Thread-98784] Video URL: https://rumble.com/v7gl0ea-ann-coulter-on-the-mark-simone-show-710-wor-october-7-2026.html
+[Thread-102540] Video URL: https://rumble.com/v7gv7wk-ann-coulter-on-the-mark-simone-show-710-wor-october-14-2026.html
+[Thread-105324] Skipping old or undated video https://rumble.com/v7h1u08-andy-ngo-and-ann-coulter-inside-the-zizian-trans-death-cult.html (upload_date: 20261018).
+[Thread-105324] Video URL: https://rumble.com/v7gl08s-ann-coulter-on-the-mark-simone-show-710-wor-september-30-2026.html
+[Thread-82236] Skipping old or undated video https://rumble.com/v7gwgu4-unsafe-with-ann-coulter-top-stories-you-may-have-missed.html (upload_date: 20261015).
+[Thread-82236] Video URL: https://rumble.com/v7g8vvu-unsafe-with-ann-coulter-top-stories-you-may-have-missed.html
+[Thread-102540] Skipping old or undated video https://rumble.com/v7gv7wk-ann-coulter-on-the-mark-simone-show-710-wor-october-14-2026.html (upload_date: 20261014).
+[Thread-98784] Skipping old or undated video https://rumble.com/v7gl0ea-ann-coulter-on-the-mark-simone-show-710-wor-october-7-2026.html (upload_date: 20261009).
+[Thread-102540] Video URL: https://rumble.com/v7fxmpq-unsafe-with-ann-coulter-top-stories-you-may-have-missed.html
+[Thread-98784] Video URL: https://rumble.com/v7fwm4s-ann-coulter-on-the-mark-simone-show-710-wor-september-23-2026.html
+[Thread-105324] Skipping old or undated video https://rumble.com/v7gl08s-ann-coulter-on-the-mark-simone-show-710-wor-september-30-2026.html (upload_date: 20261008).
+[Thread-105324] Video URL: https://rumble.com/v7fmkdm-top-five-stories-you-might-have-missed-unsafe-live.html
+[Thread-82236] Skipping old or undated video https://rumble.com/v7g8vvu-unsafe-with-ann-coulter-top-stories-you-may-have-missed.html (upload_date: 20261001).
+[Thread-82236] Video URL: https://rumble.com/v7fla5c-ann-coulter-on-the-mark-simone-show-710-wor-september-16-2026.html
+[Thread-98784] Skipping old or undated video https://rumble.com/v7fwm4s-ann-coulter-on-the-mark-simone-show-710-wor-september-23-2026.html (upload_date: 20260924).
+[Thread-98784] Video URL: https://rumble.com/v7fh2w2-ann-coulter-on-the-mark-simone-show-710-wor-september-9-2026.html
+[Thread-105324] Skipping old or undated video https://rumble.com/v7fmkdm-top-five-stories-you-might-have-missed-unsafe-live.html (upload_date: 20260917).
+[Thread-102540] Skipping old or undated video https://rumble.com/v7fxmpq-unsafe-with-ann-coulter-top-stories-you-may-have-missed.html (upload_date: 20260924).
+[Thread-105324] Video URL: https://rumble.com/v7fbx76-5-stories-911-and-flock-cameras-with-john-cardillo-unsafe-live.html
+[Thread-102540] Video URL: https://rumble.com/v7f19le-top-five-stories-this-week-unsafe-live.html
+[Thread-98784] Skipping old or undated video https://rumble.com/v7fh2w2-ann-coulter-on-the-mark-simone-show-710-wor-september-9-2026.html (upload_date: 20260914).
+[Thread-98784] Video URL: https://rumble.com/v7ellqa-one-year-after-stabbing-of-iryna-zarutska-4-stories-this-week.html
+[Thread-82236] Skipping old or undated video https://rumble.com/v7fla5c-ann-coulter-on-the-mark-simone-show-710-wor-september-16-2026.html (upload_date: 20260916).
+[Thread-82236] Video URL: https://rumble.com/v7eel5i-ann-coulter-on-the-mark-simone-show-710-wor-august-19-2026.html
+[Thread-105324] Skipping old or undated video https://rumble.com/v7fbx76-5-stories-911-and-flock-cameras-with-john-cardillo-unsafe-live.html (upload_date: 20260910).
+[Thread-105324] Video URL: https://rumble.com/v7eam5q-josh-hammer-on-ending-anchor-baby-citizenship-israel-and-civilization.html
+[Thread-102540] Skipping old or undated video https://rumble.com/v7f19le-top-five-stories-this-week-unsafe-live.html (upload_date: 20260903).
+[Thread-102540] Video URL: https://rumble.com/v7dz6w2-interviewing-scott-greer-on-whitepill.html
+[Thread-82236] Skipping old or undated video https://rumble.com/v7eel5i-ann-coulter-on-the-mark-simone-show-710-wor-august-19-2026.html (upload_date: 20260820).
+[Thread-98784] Skipping old or undated video https://rumble.com/v7ellqa-one-year-after-stabbing-of-iryna-zarutska-4-stories-this-week.html (upload_date: 20260824).
+[Thread-82236] Video URL: https://rumble.com/v7djc7m-kris-kobach-on-americas-most-gruesome-murder-fixing-ks-courts-and-more-unsa.html
+[Thread-98784] Video URL: https://rumble.com/v7dcepe-5-stories-d4vd-on-trial-ressurecting-prisoners-and-more-unsafe-live.html
+[Thread-102540] Skipping old or undated video https://rumble.com/v7dz6w2-interviewing-scott-greer-on-whitepill.html (upload_date: 20260810).
+[Thread-102540] Video URL: https://rumble.com/v7i48ms-america-first-ep.-1776.html
+[Thread-105324] Skipping old or undated video https://rumble.com/v7eam5q-josh-hammer-on-ending-anchor-baby-citizenship-israel-and-civilization.html (upload_date: 20260817).
+[Thread-105324] Video URL: https://rumble.com/v7i2s8w-i-was-right-about-everything.html
+[Thread-82236] Skipping old or undated video https://rumble.com/v7djc7m-kris-kobach-on-americas-most-gruesome-murder-fixing-ks-courts-and-more-unsa.html (upload_date: 20260731).
+[Thread-82236] Video URL: https://rumble.com/v7hy2mi-trump-blames-voters-for-crushing-defeat.html
+[Thread-102540] Skipping video https://rumble.com/v7i48ms-america-first-ep.-1776.html: duration is unknown or not less than the 120-minute channel maximum.
+[Thread-102540] Video URL: https://rumble.com/v7hxk2w-america-first-ep.-1775.html
+[Thread-98784] Skipping old or undated video https://rumble.com/v7dcepe-5-stories-d4vd-on-trial-ressurecting-prisoners-and-more-unsafe-live.html (upload_date: 20260727).
+[Thread-98784] Video URL: https://rumble.com/v7hw9zc-blue-tsunami-wipes-out-the-gop.html
+[Thread-105324] Skipping already downloaded video https://rumble.com/v7i2s8w-i-was-right-about-everything.html.
+[Thread-105324] Video URL: https://rumble.com/v7hvrgu-america-first-ep.-1774.html
+[Thread-82236] Skipping already downloaded video https://rumble.com/v7hy2mi-trump-blames-voters-for-crushing-defeat.html.
+[Thread-82236] Video URL: https://rumble.com/v7htuj8-2026-midterm-election.html
+[Thread-98784] Skipping already downloaded video https://rumble.com/v7hw9zc-blue-tsunami-wipes-out-the-gop.html.
+[Thread-102540] Skipping video https://rumble.com/v7hxk2w-america-first-ep.-1775.html: duration is unknown or not less than the 120-minute channel maximum.
+[Thread-98784] Video URL: https://rumble.com/v7htakq-a-blue-tsunami-is-coming....html
+[Thread-102540] Video URL: https://rumble.com/v7hs63m-america-first-ep.-1773.html
+[Thread-105324] Skipping video https://rumble.com/v7hvrgu-america-first-ep.-1774.html: duration is unknown or not less than the 120-minute channel maximum.
+[Thread-105324] Video URL: https://rumble.com/v7hpguy-make-the-goyim-great-again.html
+[Thread-82236] Skipping video https://rumble.com/v7htuj8-2026-midterm-election.html: duration is unknown or not less than the 120-minute channel maximum.
+[Thread-82236] Video URL: https://rumble.com/v7hm1ci-governments-tell-citizens-to-prepare-for-disaster.html
+[Thread-98784] Skipping already downloaded video https://rumble.com/v7htakq-a-blue-tsunami-is-coming....html.
+[Thread-98784] Video URL: https://rumble.com/v7hl510-america-first-ep.-1772.html
+[Thread-102540] Skipping video https://rumble.com/v7hs63m-america-first-ep.-1773.html: duration is unknown or not less than the 120-minute channel maximum.
+[Thread-105324] Skipping video https://rumble.com/v7hpguy-make-the-goyim-great-again.html: duration is unknown or not less than the 120-minute channel maximum.
+[Thread-102540] Video URL: https://rumble.com/v7hjxq6-leftist-hackers-dox-ice-agents.html
+[Thread-105324] Video URL: https://rumble.com/v7hjgi0-america-first-ep.-1771.html
+[Thread-82236] Skipping old or undated video https://rumble.com/v7hm1ci-governments-tell-citizens-to-prepare-for-disaster.html (upload_date: 20261030).
+[Thread-82236] Video URL: https://rumble.com/v7hili4-netanyahu-survives-israeli-elections.html
+[Thread-98784] Skipping old or undated video https://rumble.com/v7hl510-america-first-ep.-1772.html (upload_date: 20261030).
+[Thread-98784] Video URL: https://rumble.com/v7hhqsg-america-first-ep.-1770.html
+[Thread-102540] Skipping old or undated video https://rumble.com/v7hjxq6-leftist-hackers-dox-ice-agents.html (upload_date: 20261029).
+[Thread-102540] Video URL: https://rumble.com/v7hgvfo-netanyahus-desperate-attempt-to-stay-in-power.html
+[Thread-105324] Skipping old or undated video https://rumble.com/v7hjgi0-america-first-ep.-1771.html (upload_date: 20261029).
+[Thread-105324] Video URL: https://rumble.com/v7hfxlc-america-first-ep.-1769.html
+[Thread-82236] Skipping old or undated video https://rumble.com/v7hili4-netanyahu-survives-israeli-elections.html (upload_date: 20261028).
+[Thread-82236] Video URL: https://rumble.com/v7hdnp0-its-time-for-groypers-to-ascend.html
+[Thread-102540] Skipping old or undated video https://rumble.com/v7hgvfo-netanyahus-desperate-attempt-to-stay-in-power.html (upload_date: 20261027).
+[Thread-98784] Skipping old or undated video https://rumble.com/v7hhqsg-america-first-ep.-1770.html (upload_date: 20261028).
+[Thread-102540] Video URL: https://rumble.com/v7h9twk-trump-ally-corey-lewandowski-probed-by-the-doj.html
+[Thread-98784] Video URL: https://rumble.com/v7h99s6-america-first-ep.-1768.html
+[Thread-105324] Skipping old or undated video https://rumble.com/v7hfxlc-america-first-ep.-1769.html (upload_date: 20261027).
+[Thread-105324] Video URL: https://rumble.com/v7h8c1a-susie-wiles-should-be-fired-from-the-trump-administration.html
+[Thread-82236] Skipping old or undated video https://rumble.com/v7hdnp0-its-time-for-groypers-to-ascend.html (upload_date: 20261026).
+[Thread-82236] Video URL: https://rumble.com/v7h7jfs-america-first-ep.-1767.html
+[Thread-98784] Skipping old or undated video https://rumble.com/v7h99s6-america-first-ep.-1768.html (upload_date: 20261023).
+[Thread-102540] Skipping old or undated video https://rumble.com/v7h9twk-trump-ally-corey-lewandowski-probed-by-the-doj.html (upload_date: 20261023).
+[Thread-98784] Video URL: https://rumble.com/v7h69wo-viveks-despicable-attack-ad-backfires.html
+[Thread-102540] Video URL: https://rumble.com/v7h5qsu-america-first-ep.-1766.html
+[Thread-105324] Skipping old or undated video https://rumble.com/v7h8c1a-susie-wiles-should-be-fired-from-the-trump-administration.html (upload_date: 20261022).
+[Thread-82236] Skipping old or undated video https://rumble.com/v7h7jfs-america-first-ep.-1767.html (upload_date: 20261022).
+[Thread-98784] Skipping old or undated video https://rumble.com/v7h69wo-viveks-despicable-attack-ad-backfires.html (upload_date: 20261021).
+[Thread-102540] Skipping old or undated video https://rumble.com/v7h5qsu-america-first-ep.-1766.html (upload_date: 20261021).
+Wrote 27 episode(s) to O:\smorrell\OneDrive\Desktop\rumble rss\Rumble.xml.
+===== Run ended 2026-11-09T23:43:34-05:00 =====
