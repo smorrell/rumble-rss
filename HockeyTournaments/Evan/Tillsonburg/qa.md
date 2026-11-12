@@ -91,6 +91,10 @@ Yes. The schedule in `summary.md` is formatted as a table with date, time, game,
 
 Yes. The schedule tables in `summary.md` and `summary.html` now include the address, 45 Hardy Ave., Tillsonburg, ON, for each listed arena.
 
+### Can you make the address a Google Maps link?
+
+Yes. The arena address in each schedule row is now a link to Google Maps in both summary files.
+
 ### Can you add a summary.html file with the same information as summary.md?
 
 Yes. `summary.html` now contains the same tournament details, schedule, driving guidance, requirements, arena notes, and contact information as `summary.md`.
