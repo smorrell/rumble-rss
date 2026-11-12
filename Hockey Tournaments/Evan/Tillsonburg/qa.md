@@ -78,3 +78,7 @@ The addresses are 2475 Truscott Drive, Mississauga, and 45 Hardy Ave., Tillsonbu
 The tournament venue listing gives the arena/community centre address as **45 Hardy Ave., Tillsonburg, ON**. Both the Colin Campbell and Memorial arenas are listed at this address.
 
 Venue listing: https://tmhi.org/Tournaments/3346/Venues/153/
+
+### Can the game dates use DEC and FRI or SAT so the characters line up?
+
+Yes. The schedule in `summary.md` now uses consistent abbreviated date labels (`FRI, DEC 04`, `SAT, DEC 05`, and `SUN, DEC 06`) so the entries are easier to scan.
