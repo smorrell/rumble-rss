@@ -22,7 +22,7 @@ Check the rules and schedule pages regularly for updates before and during the t
 
 The playoff slots are placeholders, not confirmed Lorne Park game assignments; semifinal participation and time depend on qualification and seeding, and the final applies only if the team advances. Check the official schedule after results are determined.
 
-For the Friday morning game, from Clarkson Community Centre (2475 Truscott Drive) to Colin Campbell Arena (45 Hardy Ave.), allow roughly 1 hour 45 minutes to 2 hours or more, depending on traffic. Since games may start up to 15 minutes early, aim to arrive by 8:15 a.m.; leaving around **6:00 a.m.** allows some extra time. Recheck live directions and traffic before departing.
+For Friday morning, the drive from **Clarkson Community Centre (2475 Truscott Drive)** to **Colin Campbell Arena (45 Hardy Ave.)** is roughly **1 hour 45 minutes to 2 hours or more**, depending on traffic. Because games may start up to 15 minutes early, aim to arrive by **8:15 a.m.** Leave around **6:00 a.m.** to allow extra time, and recheck live directions and traffic before departing.
 
 ## Player and team requirements
 
