@@ -1,0 +1,55 @@
+# Tournament Q&A
+
+This file records the questions asked and answers researched during planning. The parent handout is in [summary.md](summary.md).
+
+## 2026-11-12
+
+### Can you keep a summary.md file going with answers to all my questions?
+
+Yes. The running notes were kept in `summary.md`. At your request, that file is now a parent handout, and this Q&A log is in `qa.md`.
+
+### Here is the email we got about the tournament
+
+The email welcomed the team to the 2026 Max Partlo Memorial Tournament in Tillsonburg, December 4–6, 2026. Each team will play 4 round-robin games. The email also covered roster entry in Gamesheet, bench-staff check-in, MVP and finalist/champion medals, arena conduct, and tournament contacts. The parent handout summarizes the practical details.
+
+### What are some requirements like jerseys and mouthguards?
+
+The tournament rules say all players must wear mouth and neck guards. Home teams wear white jerseys; teams with only one jersey set should notify the tournament director. Each team may have up to 20 players and 5 bench staff, all on the approved roster.
+
+Official rules: https://tmhi.org/Tournaments/3346/Pages/13174/Rules/
+
+### Are mouth guards a requirement by Hockey Canada?
+
+The tournament rules require mouth and neck guards for this event. That event-specific rule alone does not establish that mouthguards are a universal Hockey Canada requirement.
+
+### Is this a TMHI requirement only?
+
+The tournament's published rules explicitly require mouth and neck guards for its players. The cited MHL policy says mouthguards were not an MHL/GTHL requirement when that policy was written. Requirements can vary by league and tournament.
+
+**Correction:** An earlier answer described this as a broader Hockey Canada/OMHA requirement without verifying that claim. The evidence here supports saying it is required by this tournament; do not infer a universal Hockey Canada mouthguard requirement from the tournament rule.
+
+### Currently in the Mississauga Hockey League mouthguards are optional.
+
+The MHL and tournament rules can differ. The tournament's own published rules require mouth and neck guards, so players should bring both for this event even if their regular league does not require a mouthguard.
+
+### Can you confirm that MHL doesn't require mouth guards?
+
+The linked MHL policy PDF states: “While it is not currently an MHL or GTHL requirement to wear mouth guards, it is recommended that all players do so.” This confirms what the MHL policy said when it was written; check with MHL for any current policy changes.
+
+Policy PDF: https://hockey.on.ca/wp-content/uploads/2014/02/MHL-Helmet-and-Mouth-Guard-Policy.pdf
+
+### The site is hockey.on.ca.
+
+After you provided the MHL website, searches of the site's public search results did not find a relevant mouthguard rule. The policy PDF you then shared was the relevant source and states that mouthguards were not an MHL/GTHL requirement at the time it was written.
+
+### Is there scientific evidence to support the use of mouth guards, and for what purpose—for example, concussions or broken teeth?
+
+Yes. Evidence is strongest for reducing dental and other orofacial injuries, such as broken or knocked-out teeth and injuries to the lips and cheeks. The American Dental Association recommends properly fitted mouthguards for sports with dental/orofacial injury risk, including ice hockey.
+
+Evidence that mouthguards prevent concussions is mixed and inconclusive. Some studies suggest a possible benefit, but more research is needed; mouthguards should not be relied on as concussion protection. A mouthguard is not a neck guard and does not replace a helmet or concussion evaluation.
+
+Source: https://www.ada.org/resources/ada-library/oral-health-topics/athletic-mouth-protectors-mouthguards
+
+### What is the current practical takeaway?
+
+For regular MHL play, the cited policy says mouthguards were not required when it was written, though they were recommended. For this tournament, the event rules explicitly require both mouth and neck guards. Follow any updated league or tournament rules.
