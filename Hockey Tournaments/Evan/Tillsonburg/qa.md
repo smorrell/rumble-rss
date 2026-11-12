@@ -81,4 +81,12 @@ Venue listing: https://tmhi.org/Tournaments/3346/Venues/153/
 
 ### Can the game dates use DEC and FRI or SAT so the characters line up?
 
-Yes. The schedule in `summary.md` now uses consistent abbreviated date labels (`FRI, DEC 04`, `SAT, DEC 05`, and `SUN, DEC 06`) so the entries are easier to scan.
+Yes. The schedule in `summary.md` uses consistent abbreviated date labels (`FRI, DEC 04`, `SAT, DEC 05`, and `SUN, DEC 06`) and is now formatted as a table.
+
+### Can you put the game times in a table?
+
+Yes. The schedule in `summary.md` is formatted as a table with date, time, game, and arena columns.
+
+### Can you add a summary.html file with the same information as summary.md?
+
+Yes. `summary.html` now contains the same tournament details, schedule, driving guidance, requirements, arena notes, and contact information as `summary.md`.
