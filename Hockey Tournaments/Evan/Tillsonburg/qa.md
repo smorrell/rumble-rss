@@ -72,3 +72,9 @@ The addresses are 2475 Truscott Drive, Mississauga, and 45 Hardy Ave., Tillsonbu
 - Clarkson Community Centre address: https://www.mississauga.ca/recreation-and-sports/locations/clarkson-community-centre/
 - Arena address: https://tmhi.org/Tournaments/3346/Venues/153/
 - [Google Maps driving directions](https://www.google.com/maps/dir/Clarkson+Community+Centre,+2475+Truscott+Drive,+Mississauga,+ON/45+Hardy+Ave,+Tillsonburg,+ON/)
+
+### What is the address of the Tillsonburg Community Centre?
+
+The tournament venue listing gives the arena/community centre address as **45 Hardy Ave., Tillsonburg, ON**. Both the Colin Campbell and Memorial arenas are listed at this address.
+
+Venue listing: https://tmhi.org/Tournaments/3346/Venues/153/
