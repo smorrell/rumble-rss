@@ -87,6 +87,14 @@ Yes. The schedule in `summary.md` uses consistent abbreviated date labels (`FRI,
 
 Yes. The schedule in `summary.md` is formatted as a table with date, time, game, and arena columns.
 
+### Can you include the arena address in the table?
+
+Yes. The schedule tables in `summary.md` and `summary.html` now include the address, 45 Hardy Ave., Tillsonburg, ON, for each listed arena.
+
 ### Can you add a summary.html file with the same information as summary.md?
 
 Yes. `summary.html` now contains the same tournament details, schedule, driving guidance, requirements, arena notes, and contact information as `summary.md`.
+
+### Can you change the directory name to HockeyTournaments?
+
+The tournament files are now under `HockeyTournaments\Evan\Tillsonburg`. Windows blocked renaming/removing the old `Hockey Tournaments` directory because it is in use or access-restricted; that old directory is empty.

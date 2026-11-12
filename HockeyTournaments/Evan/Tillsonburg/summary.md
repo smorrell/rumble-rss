@@ -12,15 +12,15 @@ Check the rules and schedule pages regularly for updates before and during the t
 
 ## Lorne Park Clarkson Wild schedule (U18, Pool A)
 
-| Date | Time | Game | Arena |
-|---|---:|---|---|
-| FRI, DEC 04 | 9:30 a.m. | vs. Lucan Irish White | Tillsonburg Arena (Colin Campbell) |
-| FRI, DEC 04 | 3:30 p.m. | vs. Tillsonburg Tornadoes | Tillsonburg Arena (Memorial) |
-| SAT, DEC 05 | 12:00 p.m. | vs. Ingersoll Express LL3 | Tillsonburg Arena (Colin Campbell) |
-| SAT, DEC 05 | 3:45 p.m. | vs. Mid Huron Huskies LL2 | Tillsonburg Arena (Colin Campbell) |
-| SUN, DEC 06 | 11:00 a.m. (if necessary) | U18 semifinal: Pool B seed 2 vs. Pool A seed 1 | Tillsonburg Arena (Memorial) |
-| SUN, DEC 06 | 12:30 p.m. (if necessary) | U18 semifinal: Pool A seed 2 vs. Pool B seed 1 | Tillsonburg Arena (Memorial) |
-| SUN, DEC 06 | 4:00 p.m. (if necessary) | U18 championship final | Tillsonburg Arena (Memorial) |
+| Date | Time | Game | Arena | Address |
+|---|---:|---|---|---|
+| FRI, DEC 04 | 9:30 a.m. | vs. Lucan Irish White | Tillsonburg Arena (Colin Campbell) | 45 Hardy Ave., Tillsonburg, ON |
+| FRI, DEC 04 | 3:30 p.m. | vs. Tillsonburg Tornadoes | Tillsonburg Arena (Memorial) | 45 Hardy Ave., Tillsonburg, ON |
+| SAT, DEC 05 | 12:00 p.m. | vs. Ingersoll Express LL3 | Tillsonburg Arena (Colin Campbell) | 45 Hardy Ave., Tillsonburg, ON |
+| SAT, DEC 05 | 3:45 p.m. | vs. Mid Huron Huskies LL2 | Tillsonburg Arena (Colin Campbell) | 45 Hardy Ave., Tillsonburg, ON |
+| SUN, DEC 06 | 11:00 a.m. (if necessary) | U18 semifinal: Pool B seed 2 vs. Pool A seed 1 | Tillsonburg Arena (Memorial) | 45 Hardy Ave., Tillsonburg, ON |
+| SUN, DEC 06 | 12:30 p.m. (if necessary) | U18 semifinal: Pool A seed 2 vs. Pool B seed 1 | Tillsonburg Arena (Memorial) | 45 Hardy Ave., Tillsonburg, ON |
+| SUN, DEC 06 | 4:00 p.m. (if necessary) | U18 championship final | Tillsonburg Arena (Memorial) | 45 Hardy Ave., Tillsonburg, ON |
 
 The playoff slots are placeholders, not confirmed Lorne Park game assignments; semifinal participation and time depend on qualification and seeding, and the final applies only if the team advances. Check the official schedule after results are determined.
 
