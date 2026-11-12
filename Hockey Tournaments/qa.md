@@ -53,3 +53,22 @@ Source: https://www.ada.org/resources/ada-library/oral-health-topics/athletic-mo
 ### What is the current practical takeaway?
 
 For regular MHL play, the cited policy says mouthguards were not required when it was written, though they were recommended. For this tournament, the event rules explicitly require both mouth and neck guards. Follow any updated league or tournament rules.
+
+### When do the Lorne Park Clarkson Wild play?
+
+The official schedule lists the Lorne Park Clarkson Wild (U18, Pool A) for:
+
+- Friday, December 4, 9:30 a.m. vs. Lucan Irish White at Tillsonburg Arena (Colin Campbell)
+- Friday, December 4, 3:30 p.m. vs. Tillsonburg Tornadoes at Tillsonburg Arena (Memorial)
+- Saturday, December 5, 12:00 p.m. vs. Ingersoll Express LL3 at Tillsonburg Arena (Colin Campbell)
+- Saturday, December 5, 3:45 p.m. vs. Mid Huron Huskies LL2 at Tillsonburg Arena (Colin Campbell)
+
+If they qualify, the U18 semifinals are Sunday at 11:00 a.m. or 12:30 p.m., depending on seeding. The official schedule lists U18 semifinals on Sunday at 11:00 a.m. and 12:30 p.m., and the U18 final at 4:00 p.m. These are placeholder playoff slots, not confirmed Lorne Park game assignments; which semifinal they play depends on seeding, and the final applies only if they advance. Check the official schedule after results and seeding are determined: https://tmhi.org/Tournaments/3346/Schedule/
+
+### How long is the drive from Clarkson Community Centre to Colin Campbell Arena, and when should I leave to arrive an hour early?
+
+The addresses are 2475 Truscott Drive, Mississauga, and 45 Hardy Ave., Tillsonburg. Allow roughly 1 hour 45 minutes to 2 hours or more for the drive; actual Friday traffic can vary, and this is not a live traffic prediction. For the 9:30 a.m. game, aim to be at the arena by 8:15 a.m. because the tournament says games may start up to 15 minutes early. Leaving around 6:00 a.m. provides some traffic/parking cushion. Check live directions before leaving.
+
+- Clarkson Community Centre address: https://www.mississauga.ca/recreation-and-sports/locations/clarkson-community-centre/
+- Arena address: https://tmhi.org/Tournaments/3346/Venues/153/
+- [Google Maps driving directions](https://www.google.com/maps/dir/Clarkson+Community+Centre,+2475+Truscott+Drive,+Mississauga,+ON/45+Hardy+Ave,+Tillsonburg,+ON/)

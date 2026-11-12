@@ -10,6 +10,20 @@
 
 Check the rules and schedule pages regularly for updates before and during the tournament. Games may start up to 15 minutes early.
 
+## Lorne Park Clarkson Wild schedule (U18, Pool A)
+
+- **Friday, December 4, 9:30 a.m.** vs. Lucan Irish White — Tillsonburg Arena (Colin Campbell)
+- **Friday, December 4, 3:30 p.m.** vs. Tillsonburg Tornadoes — Tillsonburg Arena (Memorial)
+- **Saturday, December 5, 12:00 p.m.** vs. Ingersoll Express LL3 — Tillsonburg Arena (Colin Campbell)
+- **Saturday, December 5, 3:45 p.m.** vs. Mid Huron Huskies LL2 — Tillsonburg Arena (Colin Campbell)
+- **Sunday, December 6, 11:00 a.m. (if necessary)** — U18 semifinal (Pool B seed 2 vs. Pool A seed 1) — Tillsonburg Arena (Memorial)
+- **Sunday, December 6, 12:30 p.m. (if necessary)** — U18 semifinal (Pool A seed 2 vs. Pool B seed 1) — Tillsonburg Arena (Memorial)
+- **Sunday, December 6, 4:00 p.m. (if necessary)** — U18 championship final — Tillsonburg Arena (Memorial)
+
+The playoff slots are placeholders, not confirmed Lorne Park game assignments; semifinal participation and time depend on qualification and seeding, and the final applies only if the team advances. Check the official schedule after results are determined.
+
+For the Friday morning game, from Clarkson Community Centre (2475 Truscott Drive) to Colin Campbell Arena (45 Hardy Ave.), allow roughly 1 hour 45 minutes to 2 hours or more, depending on traffic. Since games may start up to 15 minutes early, aim to arrive by 8:15 a.m.; leaving around **6:00 a.m.** allows some extra time. Recheck live directions and traffic before departing.
+
 ## Player and team requirements
 
 - The tournament rules require **mouthguards and neck guards for all players**. Bring both for every game.
