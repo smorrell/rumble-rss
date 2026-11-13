@@ -4,7 +4,7 @@
     <title>Classic Real Coffee with Scott Adams</title>
     <link>https://podcasters.spotify.com/pod/show/scott-adams00</link>
     <generator>Anchor Podcasts</generator>
-    <lastBuildDate>Wed, 11 Nov 2026 22:12:31 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 17:54:58 GMT</lastBuildDate>
     <ns0:link href="https://anchor.fm/s/128d072c/podcast/rss" rel="self" type="application/rss+xml" />
     <author>Scott Adams</author>
     <copyright>Scott Adams</copyright>
@@ -21,6 +21,20 @@
       <ns1:category text="News Commentary" />
     </ns1:category>
     <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/3012323/3012323-1578935161711-71f93031bbe53.jpg" />
+    <item>
+      <title>Classic Episode 1925 Scott Adams: How Much Should You Trust The Arizona Election? Can Trump Get Elected Now?</title>
+      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1925-Scott-Adams-How-Much-Should-You-Trust-The-Arizona-Election--Can-Trump-Get-Elected-Now-e1qlh0i</link>
+      <guid isPermaLink="false">829fb83c-a4d7-4e1a-883d-434ba64572f5</guid>
+      <dc:creator>Scott Adams</dc:creator>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://traffic.megaphone.fm/APO5903611987.mp3" length="70719111" type="audio/mpeg" />
+      <ns1:explicit>false</ns1:explicit>
+      <ns1:duration>01:13:39</ns1:duration>
+      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1668275094844-f1726dbee1558.jpg" />
+      <ns1:season>46</ns1:season>
+      <ns1:episode>1925</ns1:episode>
+      <ns1:episodeType>full</ns1:episodeType>
+    </item>
     <item>
       <title>Classic Episode 1924 Scott Adams: Trump Alienates His Base, And Elon Musk Tries To Turn Twitter Around</title>
       <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1924-Scott-Adams-Trump-Alienates-His-Base--And-Elon-Musk-Tries-To-Turn-Twitter-Around-e1qk2q3</link>
@@ -145,20 +159,6 @@
       <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1667498915744-ebebd984b64d4.jpg" />
       <ns1:season>46</ns1:season>
       <ns1:episode>1916</ns1:episode>
-      <ns1:episodeType>full</ns1:episodeType>
-    </item>
-    <item>
-      <title>Classic Episode 1915 Scott Adams: Lots Of Good News Today If You Know Where To Look. Come Have Some Fun</title>
-      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1915-Scott-Adams-Lots-Of-Good-News-Today-If-You-Know-Where-To-Look--Come-Have-Some-Fun-e1q4qs5</link>
-      <guid isPermaLink="false">28b1c781-5e34-425d-bb87-3e52084df20b</guid>
-      <dc:creator>Scott Adams</dc:creator>
-      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/APO3549082698.mp3" length="80231862" type="audio/mpeg" />
-      <ns1:explicit>false</ns1:explicit>
-      <ns1:duration>01:23:34</ns1:duration>
-      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1667411564715-fb6b5952bf83f.jpg" />
-      <ns1:season>46</ns1:season>
-      <ns1:episode>1915</ns1:episode>
       <ns1:episodeType>full</ns1:episodeType>
     </item>
   </channel>
