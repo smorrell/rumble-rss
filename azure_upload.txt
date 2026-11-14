@@ -1,27 +1,27 @@
 
-===== Run started 2026-11-12T23:36:39-05:00 =====
-2026-11-12 23:36:40,948 INFO __main__: Starting upload to Azure container 'podcastmp3s'.
-2026-11-12 23:36:40,948 INFO __main__: podcastmp3s
-2026-11-12 23:36:40,950 INFO __main__: podcasttrimmeraf20240207
-2026-11-12 23:36:40,951 INFO __main__: Connecting to Azure Blob Storage.
-2026-11-12 23:36:41,112 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s?restype=REDACTED'
+===== Run started 2026-11-13T23:03:09-05:00 =====
+2026-11-13 23:03:10,602 INFO __main__: Starting upload to Azure container 'podcastmp3s'.
+2026-11-13 23:03:10,602 INFO __main__: podcastmp3s
+2026-11-13 23:03:10,603 INFO __main__: podcasttrimmeraf20240207
+2026-11-13 23:03:10,606 INFO __main__: Connecting to Azure Blob Storage.
+2026-11-13 23:03:10,742 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s?restype=REDACTED'
 Request method: 'GET'
 Request headers:
     'x-ms-version': 'REDACTED'
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'd2555a20-df1b-11f1-869f-001a7dda7115'
+    'x-ms-client-request-id': '4e78ddc2-dfe0-11f1-8a47-001a7dda7115'
     'Authorization': 'REDACTED'
 No body was attached to the request
-2026-11-12 23:36:41,328 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 200
+2026-11-13 23:03:10,981 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 200
 Response headers:
     'Content-Length': '0'
     'Last-Modified': 'Sat, 24 Oct 2026 15:32:11 GMT'
     'ETag': '"0x8DF31E3F91701F6"'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b809b48-b01e-003e-7328-735fe0000000'
-    'x-ms-client-request-id': 'd2555a20-df1b-11f1-869f-001a7dda7115'
+    'x-ms-request-id': '1aa7deb2-401e-0005-1aed-731a44000000'
+    'x-ms-client-request-id': '4e78ddc2-dfe0-11f1-8a47-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-lease-status': 'REDACTED'
     'x-ms-lease-state': 'REDACTED'
@@ -31,125 +31,9 @@ Response headers:
     'x-ms-blob-public-access': 'REDACTED'
     'x-ms-default-encryption-scope': 'REDACTED'
     'x-ms-deny-encryption-scope-override': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:36:41 GMT'
-2026-11-12 23:36:41,329 INFO __main__: Uploading 'mp3s/2026-11-05-angrymortgage-When-Your-Profession-Gets-It-So-WRONG.mp3'.
-2026-11-12 23:36:41,433 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-05-angrymortgage-When-Your-Profession-Gets-It-So-WRONG.mp3'
-Request method: 'PUT'
-Request headers:
-    'Content-Length': '7546028'
-    'x-ms-blob-type': 'REDACTED'
-    'x-ms-blob-content-type': 'REDACTED'
-    'x-ms-version': 'REDACTED'
-    'Content-Type': 'application/octet-stream'
-    'Accept': 'application/xml'
-    'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
-    'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'd2865ced-df1b-11f1-a4ef-001a7dda7115'
-    'Authorization': 'REDACTED'
-A body is sent with the request
-2026-11-12 23:36:42,242 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
-Response headers:
-    'Content-Length': '0'
-    'Content-MD5': 'REDACTED'
-    'Last-Modified': 'Fri, 13 Nov 2026 04:36:42 GMT'
-    'ETag': '"0x8DF413FB751CE3B"'
-    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b809bf7-b01e-003e-0c28-735fe0000000'
-    'x-ms-client-request-id': 'd2865ced-df1b-11f1-a4ef-001a7dda7115'
-    'x-ms-version': 'REDACTED'
-    'x-ms-content-crc64': 'REDACTED'
-    'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:36:42 GMT'
-2026-11-12 23:36:42,244 INFO __main__: Uploaded 'mp3s/2026-11-05-angrymortgage-When-Your-Profession-Gets-It-So-WRONG.mp3'.
-2026-11-12 23:36:42,246 INFO __main__: Uploading 'mp3s/2026-11-05-AnnCoulter-Ann-Coulter-on-The-Mark-Simone-Show-710-WOR-November-4-2026.mp3'.
-2026-11-12 23:36:42,365 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-05-AnnCoulter-Ann-Coulter-on-The-Mark-Simone-Show-710-WOR-November-4-2026.mp3'
-Request method: 'PUT'
-Request headers:
-    'Content-Length': '11520428'
-    'x-ms-blob-type': 'REDACTED'
-    'x-ms-blob-content-type': 'REDACTED'
-    'x-ms-version': 'REDACTED'
-    'Content-Type': 'application/octet-stream'
-    'Accept': 'application/xml'
-    'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
-    'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'd3149a66-df1b-11f1-a1c5-001a7dda7115'
-    'Authorization': 'REDACTED'
-A body is sent with the request
-2026-11-12 23:36:43,314 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
-Response headers:
-    'Content-Length': '0'
-    'Content-MD5': 'REDACTED'
-    'Last-Modified': 'Fri, 13 Nov 2026 04:36:43 GMT'
-    'ETag': '"0x8DF413FB7F58344"'
-    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b809f85-b01e-003e-3a28-735fe0000000'
-    'x-ms-client-request-id': 'd3149a66-df1b-11f1-a1c5-001a7dda7115'
-    'x-ms-version': 'REDACTED'
-    'x-ms-content-crc64': 'REDACTED'
-    'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:36:43 GMT'
-2026-11-12 23:36:43,316 INFO __main__: Uploaded 'mp3s/2026-11-05-AnnCoulter-Ann-Coulter-on-The-Mark-Simone-Show-710-WOR-November-4-2026.mp3'.
-2026-11-12 23:36:43,318 INFO __main__: Uploading 'mp3s/2026-11-05-CompoundCensoredOfficial-Gavin-McInnes-Predicts-Two-Years-of-CHAOS-Under-Democrat-Control-w-Alex-Jones-and-Harrison-Smith.mp3'.
-2026-11-12 23:36:43,511 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-05-CompoundCensoredOfficial-Gavin-McInnes-Predicts-Two-Years-of-CHAOS-Under-Democrat-Control-w-Alex-Jones-and-Harrison-Smith.mp3'
-Request method: 'PUT'
-Request headers:
-    'Content-Length': '17608748'
-    'x-ms-blob-type': 'REDACTED'
-    'x-ms-blob-content-type': 'REDACTED'
-    'x-ms-version': 'REDACTED'
-    'Content-Type': 'application/octet-stream'
-    'Accept': 'application/xml'
-    'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
-    'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'd3c37603-df1b-11f1-8870-001a7dda7115'
-    'Authorization': 'REDACTED'
-A body is sent with the request
-2026-11-12 23:36:44,887 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
-Response headers:
-    'Content-Length': '0'
-    'Content-MD5': 'REDACTED'
-    'Last-Modified': 'Fri, 13 Nov 2026 04:36:45 GMT'
-    'ETag': '"0x8DF413FB8E5783B"'
-    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b80a36a-b01e-003e-3828-735fe0000000'
-    'x-ms-client-request-id': 'd3c37603-df1b-11f1-8870-001a7dda7115'
-    'x-ms-version': 'REDACTED'
-    'x-ms-content-crc64': 'REDACTED'
-    'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:36:45 GMT'
-2026-11-12 23:36:44,891 INFO __main__: Uploaded 'mp3s/2026-11-05-CompoundCensoredOfficial-Gavin-McInnes-Predicts-Two-Years-of-CHAOS-Under-Democrat-Control-w-Alex-Jones-and-Harrison-Smith.mp3'.
-2026-11-12 23:36:44,892 INFO __main__: Uploading 'mp3s/2026-11-05-nickjfuentes-Blue-Tsunami-DESTROYS-MAGA-Here-s-What-Comes-Next.mp3'.
-2026-11-12 23:36:45,425 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-05-nickjfuentes-Blue-Tsunami-DESTROYS-MAGA-Here-s-What-Comes-Next.mp3'
-Request method: 'PUT'
-Request headers:
-    'Content-Length': '60013130'
-    'x-ms-blob-type': 'REDACTED'
-    'x-ms-blob-content-type': 'REDACTED'
-    'x-ms-version': 'REDACTED'
-    'Content-Type': 'application/octet-stream'
-    'Accept': 'application/xml'
-    'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
-    'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'd4e77d85-df1b-11f1-8a3b-001a7dda7115'
-    'Authorization': 'REDACTED'
-A body is sent with the request
-2026-11-12 23:36:52,519 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
-Response headers:
-    'Content-Length': '0'
-    'Content-MD5': 'REDACTED'
-    'Last-Modified': 'Fri, 13 Nov 2026 04:36:52 GMT'
-    'ETag': '"0x8DF413FBD7246CB"'
-    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b80aadd-b01e-003e-3f28-735fe0000000'
-    'x-ms-client-request-id': 'd4e77d85-df1b-11f1-8a3b-001a7dda7115'
-    'x-ms-version': 'REDACTED'
-    'x-ms-content-crc64': 'REDACTED'
-    'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:36:52 GMT'
-2026-11-12 23:36:52,528 INFO __main__: Uploaded 'mp3s/2026-11-05-nickjfuentes-Blue-Tsunami-DESTROYS-MAGA-Here-s-What-Comes-Next.mp3'.
-2026-11-12 23:36:52,529 INFO __main__: Uploading 'mp3s/2026-11-06-angrymortgage-Foreign-Buyers-Ban-LIFTED.mp3'.
-2026-11-12 23:36:52,618 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-06-angrymortgage-Foreign-Buyers-Ban-LIFTED.mp3'
+    'Date': 'Sat, 14 Nov 2026 04:03:10 GMT'
+2026-11-13 23:03:10,982 INFO __main__: Uploading 'mp3s/2026-11-06-angrymortgage-Foreign-Buyers-Ban-LIFTED.mp3'.
+2026-11-13 23:03:11,074 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-06-angrymortgage-Foreign-Buyers-Ban-LIFTED.mp3'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '7680428'
@@ -160,25 +44,25 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'd93119c5-df1b-11f1-809c-001a7dda7115'
+    'x-ms-client-request-id': '4eabbe4e-dfe0-11f1-9ee1-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:36:53,813 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:03:12,149 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Content-MD5': 'REDACTED'
-    'Last-Modified': 'Fri, 13 Nov 2026 04:36:53 GMT'
-    'ETag': '"0x8DF413FBE3793BC"'
+    'Last-Modified': 'Sat, 14 Nov 2026 04:03:12 GMT'
+    'ETag': '"0x8DF420433F0CD99"'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b80c914-b01e-003e-5c28-735fe0000000'
-    'x-ms-client-request-id': 'd93119c5-df1b-11f1-809c-001a7dda7115'
+    'x-ms-request-id': '1aa7def7-401e-0005-50ed-731a44000000'
+    'x-ms-client-request-id': '4eabbe4e-dfe0-11f1-9ee1-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:36:53 GMT'
-2026-11-12 23:36:53,815 INFO __main__: Uploaded 'mp3s/2026-11-06-angrymortgage-Foreign-Buyers-Ban-LIFTED.mp3'.
-2026-11-12 23:36:53,816 INFO __main__: Uploading 'mp3s/2026-11-06-angrymortgage-Private-Mortgage-Meltdown.mp3'.
-2026-11-12 23:36:53,914 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-06-angrymortgage-Private-Mortgage-Meltdown.mp3'
+    'Date': 'Sat, 14 Nov 2026 04:03:12 GMT'
+2026-11-13 23:03:12,150 INFO __main__: Uploaded 'mp3s/2026-11-06-angrymortgage-Foreign-Buyers-Ban-LIFTED.mp3'.
+2026-11-13 23:03:12,152 INFO __main__: Uploading 'mp3s/2026-11-06-angrymortgage-Private-Mortgage-Meltdown.mp3'.
+2026-11-13 23:03:12,239 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-06-angrymortgage-Private-Mortgage-Meltdown.mp3'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '7958444'
@@ -189,25 +73,25 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'd9f6e5b3-df1b-11f1-a2d7-001a7dda7115'
+    'x-ms-client-request-id': '4f5d7a20-dfe0-11f1-9de9-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:36:55,128 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:03:13,756 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Content-MD5': 'REDACTED'
-    'Last-Modified': 'Fri, 13 Nov 2026 04:36:55 GMT'
-    'ETag': '"0x8DF413FBF00521A"'
+    'Last-Modified': 'Sat, 14 Nov 2026 04:03:14 GMT'
+    'ETag': '"0x8DF420434E5A4F6"'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b80cf8b-b01e-003e-3f28-735fe0000000'
-    'x-ms-client-request-id': 'd9f6e5b3-df1b-11f1-a2d7-001a7dda7115'
+    'x-ms-request-id': '1aa7e288-401e-0005-58ed-731a44000000'
+    'x-ms-client-request-id': '4f5d7a20-dfe0-11f1-9de9-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:36:55 GMT'
-2026-11-12 23:36:55,130 INFO __main__: Uploaded 'mp3s/2026-11-06-angrymortgage-Private-Mortgage-Meltdown.mp3'.
-2026-11-12 23:36:55,131 INFO __main__: Uploading 'mp3s/2026-11-06-CompoundCensoredOfficial-Gavin-McInnes-Drunken-Chris-Cuomo-Story-Gets-More-Hilarious-by-the-Minute.mp3'.
-2026-11-12 23:36:55,319 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-06-CompoundCensoredOfficial-Gavin-McInnes-Drunken-Chris-Cuomo-Story-Gets-More-Hilarious-by-the-Minute.mp3'
+    'Date': 'Sat, 14 Nov 2026 04:03:13 GMT'
+2026-11-13 23:03:13,758 INFO __main__: Uploaded 'mp3s/2026-11-06-angrymortgage-Private-Mortgage-Meltdown.mp3'.
+2026-11-13 23:03:13,759 INFO __main__: Uploading 'mp3s/2026-11-06-CompoundCensoredOfficial-Gavin-McInnes-Drunken-Chris-Cuomo-Story-Gets-More-Hilarious-by-the-Minute.mp3'.
+2026-11-13 23:03:13,940 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-06-CompoundCensoredOfficial-Gavin-McInnes-Drunken-Chris-Cuomo-Story-Gets-More-Hilarious-by-the-Minute.mp3'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '19488428'
@@ -218,25 +102,25 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'dacd4a91-df1b-11f1-afda-001a7dda7115'
+    'x-ms-client-request-id': '50610251-dfe0-11f1-9206-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:36:58,125 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:03:19,256 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Content-MD5': 'REDACTED'
-    'Last-Modified': 'Fri, 13 Nov 2026 04:36:58 GMT'
-    'ETag': '"0x8DF413FC0C94B84"'
+    'Last-Modified': 'Sat, 14 Nov 2026 04:03:19 GMT'
+    'ETag': '"0x8DF4204382D4B21"'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b80d63c-b01e-003e-7028-735fe0000000'
-    'x-ms-client-request-id': 'dacd4a91-df1b-11f1-afda-001a7dda7115'
+    'x-ms-request-id': '1aa7e916-401e-0005-43ed-731a44000000'
+    'x-ms-client-request-id': '50610251-dfe0-11f1-9206-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:36:58 GMT'
-2026-11-12 23:36:58,128 INFO __main__: Uploaded 'mp3s/2026-11-06-CompoundCensoredOfficial-Gavin-McInnes-Drunken-Chris-Cuomo-Story-Gets-More-Hilarious-by-the-Minute.mp3'.
-2026-11-12 23:36:58,129 INFO __main__: Uploading 'mp3s/2026-11-06-nickjfuentes-Trump-BLAMES-Voters-for-Crushing-Defeat.mp3'.
-2026-11-12 23:36:58,541 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-06-nickjfuentes-Trump-BLAMES-Voters-for-Crushing-Defeat.mp3'
+    'Date': 'Sat, 14 Nov 2026 04:03:19 GMT'
+2026-11-13 23:03:19,259 INFO __main__: Uploaded 'mp3s/2026-11-06-CompoundCensoredOfficial-Gavin-McInnes-Drunken-Chris-Cuomo-Story-Gets-More-Hilarious-by-the-Minute.mp3'.
+2026-11-13 23:03:19,260 INFO __main__: Uploading 'mp3s/2026-11-06-nickjfuentes-Trump-BLAMES-Voters-for-Crushing-Defeat.mp3'.
+2026-11-13 23:03:19,662 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-06-nickjfuentes-Trump-BLAMES-Voters-for-Crushing-Defeat.mp3'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '47514478'
@@ -247,25 +131,25 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'dcb8d76a-df1b-11f1-bb20-001a7dda7115'
+    'x-ms-client-request-id': '53ca360a-dfe0-11f1-bdbd-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:04,870 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:03:35,786 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Content-MD5': 'REDACTED'
-    'Last-Modified': 'Fri, 13 Nov 2026 04:37:05 GMT'
-    'ETag': '"0x8DF413FC4CEDFAE"'
+    'Last-Modified': 'Sat, 14 Nov 2026 04:03:36 GMT'
+    'ETag': '"0x8DF42044207DA01"'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b80e23f-b01e-003e-5628-735fe0000000'
-    'x-ms-client-request-id': 'dcb8d76a-df1b-11f1-bb20-001a7dda7115'
+    'x-ms-request-id': '1aa7f8c9-401e-0005-36ed-731a44000000'
+    'x-ms-client-request-id': '53ca360a-dfe0-11f1-bdbd-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:04 GMT'
-2026-11-12 23:37:04,875 INFO __main__: Uploaded 'mp3s/2026-11-06-nickjfuentes-Trump-BLAMES-Voters-for-Crushing-Defeat.mp3'.
-2026-11-12 23:37:04,876 INFO __main__: Uploading 'mp3s/2026-11-07-angrymortgage-Real-Estate-Keeps-Falling.mp3'.
-2026-11-12 23:37:04,977 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-07-angrymortgage-Real-Estate-Keeps-Falling.mp3'
+    'Date': 'Sat, 14 Nov 2026 04:03:35 GMT'
+2026-11-13 23:03:35,791 INFO __main__: Uploaded 'mp3s/2026-11-06-nickjfuentes-Trump-BLAMES-Voters-for-Crushing-Defeat.mp3'.
+2026-11-13 23:03:35,792 INFO __main__: Uploading 'mp3s/2026-11-07-angrymortgage-Real-Estate-Keeps-Falling.mp3'.
+2026-11-13 23:03:35,902 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-07-angrymortgage-Real-Estate-Keeps-Falling.mp3'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '7906220'
@@ -276,25 +160,25 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'e08ee238-df1b-11f1-b580-001a7dda7115'
+    'x-ms-client-request-id': '5d7822ea-dfe0-11f1-9cf3-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:06,075 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:03:38,394 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Content-MD5': 'REDACTED'
-    'Last-Modified': 'Fri, 13 Nov 2026 04:37:06 GMT'
-    'ETag': '"0x8DF413FC5869AA0"'
+    'Last-Modified': 'Sat, 14 Nov 2026 04:03:39 GMT'
+    'ETag': '"0x8DF420443957CC9"'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b80fd44-b01e-003e-1f28-735fe0000000'
-    'x-ms-client-request-id': 'e08ee238-df1b-11f1-b580-001a7dda7115'
+    'x-ms-request-id': '1aa82c5a-401e-0005-3eed-731a44000000'
+    'x-ms-client-request-id': '5d7822ea-dfe0-11f1-9cf3-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:06 GMT'
-2026-11-12 23:37:06,078 INFO __main__: Uploaded 'mp3s/2026-11-07-angrymortgage-Real-Estate-Keeps-Falling.mp3'.
-2026-11-12 23:37:06,080 INFO __main__: Uploading 'mp3s/2026-11-07-CompoundCensoredOfficial-Gavin-McInnes-You-Can-Literally-Punch-a-Cop-in-the-Face-in-NYC-and-Get-Away-With-It.mp3'.
-2026-11-12 23:37:06,282 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-07-CompoundCensoredOfficial-Gavin-McInnes-You-Can-Literally-Punch-a-Cop-in-the-Face-in-NYC-and-Get-Away-With-It.mp3'
+    'Date': 'Sat, 14 Nov 2026 04:03:38 GMT'
+2026-11-13 23:03:38,396 INFO __main__: Uploaded 'mp3s/2026-11-07-angrymortgage-Real-Estate-Keeps-Falling.mp3'.
+2026-11-13 23:03:38,399 INFO __main__: Uploading 'mp3s/2026-11-07-CompoundCensoredOfficial-Gavin-McInnes-You-Can-Literally-Punch-a-Cop-in-the-Face-in-NYC-and-Get-Away-With-It.mp3'.
+2026-11-13 23:03:38,624 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-07-CompoundCensoredOfficial-Gavin-McInnes-You-Can-Literally-Punch-a-Cop-in-the-Face-in-NYC-and-Get-Away-With-It.mp3'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '21285932'
@@ -305,25 +189,25 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'e15613f1-df1b-11f1-8b90-001a7dda7115'
+    'x-ms-client-request-id': '5f178793-dfe0-11f1-89bb-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:08,686 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:03:44,034 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Content-MD5': 'REDACTED'
-    'Last-Modified': 'Fri, 13 Nov 2026 04:37:08 GMT'
-    'ETag': '"0x8DF413FC71516CF"'
+    'Last-Modified': 'Sat, 14 Nov 2026 04:03:44 GMT'
+    'ETag': '"0x8DF420446F056E1"'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b81019e-b01e-003e-7328-735fe0000000'
-    'x-ms-client-request-id': 'e15613f1-df1b-11f1-8b90-001a7dda7115'
+    'x-ms-request-id': '1aa83602-401e-0005-6ded-731a44000000'
+    'x-ms-client-request-id': '5f178793-dfe0-11f1-89bb-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:08 GMT'
-2026-11-12 23:37:08,690 INFO __main__: Uploaded 'mp3s/2026-11-07-CompoundCensoredOfficial-Gavin-McInnes-You-Can-Literally-Punch-a-Cop-in-the-Face-in-NYC-and-Get-Away-With-It.mp3'.
-2026-11-12 23:37:08,691 INFO __main__: Uploading 'mp3s/2026-11-08-angrymortgage-Immigration-Nation.mp3'.
-2026-11-12 23:37:08,822 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-08-angrymortgage-Immigration-Nation.mp3'
+    'Date': 'Sat, 14 Nov 2026 04:03:43 GMT'
+2026-11-13 23:03:44,038 INFO __main__: Uploaded 'mp3s/2026-11-07-CompoundCensoredOfficial-Gavin-McInnes-You-Can-Literally-Punch-a-Cop-in-the-Face-in-NYC-and-Get-Away-With-It.mp3'.
+2026-11-13 23:03:44,039 INFO __main__: Uploading 'mp3s/2026-11-08-angrymortgage-Immigration-Nation.mp3'.
+2026-11-13 23:03:44,152 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-08-angrymortgage-Immigration-Nation.mp3'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '8983724'
@@ -334,25 +218,25 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'e2d9a83e-df1b-11f1-bfbd-001a7dda7115'
+    'x-ms-client-request-id': '62630ec2-dfe0-11f1-b390-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:10,088 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:03:48,641 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Content-MD5': 'REDACTED'
-    'Last-Modified': 'Fri, 13 Nov 2026 04:37:10 GMT'
-    'ETag': '"0x8DF413FC7EB1839"'
+    'Last-Modified': 'Sat, 14 Nov 2026 04:03:49 GMT'
+    'ETag': '"0x8DF420449B13E64"'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b810af7-b01e-003e-5c28-735fe0000000'
-    'x-ms-client-request-id': 'e2d9a83e-df1b-11f1-bfbd-001a7dda7115'
+    'x-ms-request-id': '1aa847fa-401e-0005-75ed-731a44000000'
+    'x-ms-client-request-id': '62630ec2-dfe0-11f1-b390-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:10 GMT'
-2026-11-12 23:37:10,090 INFO __main__: Uploaded 'mp3s/2026-11-08-angrymortgage-Immigration-Nation.mp3'.
-2026-11-12 23:37:10,093 INFO __main__: Uploading 'mp3s/2026-11-08-angrymortgage-My-Biggest-Challenge.mp3'.
-2026-11-12 23:37:10,160 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-08-angrymortgage-My-Biggest-Challenge.mp3'
+    'Date': 'Sat, 14 Nov 2026 04:03:48 GMT'
+2026-11-13 23:03:48,643 INFO __main__: Uploaded 'mp3s/2026-11-08-angrymortgage-Immigration-Nation.mp3'.
+2026-11-13 23:03:48,644 INFO __main__: Uploading 'mp3s/2026-11-08-angrymortgage-My-Biggest-Challenge.mp3'.
+2026-11-13 23:03:48,711 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-08-angrymortgage-My-Biggest-Challenge.mp3'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '4254764'
@@ -363,25 +247,25 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'e3a5dd7a-df1b-11f1-a3c4-001a7dda7115'
+    'x-ms-client-request-id': '651ab79d-dfe0-11f1-9d61-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:10,749 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:03:50,044 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Content-MD5': 'REDACTED'
-    'Last-Modified': 'Fri, 13 Nov 2026 04:37:10 GMT'
-    'ETag': '"0x8DF413FC8500D52"'
+    'Last-Modified': 'Sat, 14 Nov 2026 04:03:50 GMT'
+    'ETag': '"0x8DF42044A876699"'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b81105b-b01e-003e-3328-735fe0000000'
-    'x-ms-client-request-id': 'e3a5dd7a-df1b-11f1-a3c4-001a7dda7115'
+    'x-ms-request-id': '1aa85755-401e-0005-22ed-731a44000000'
+    'x-ms-client-request-id': '651ab79d-dfe0-11f1-9d61-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:10 GMT'
-2026-11-12 23:37:10,751 INFO __main__: Uploaded 'mp3s/2026-11-08-angrymortgage-My-Biggest-Challenge.mp3'.
-2026-11-12 23:37:10,753 INFO __main__: Uploading 'mp3s/2026-11-08-CompoundCensoredOfficial-Shane-Gillis-LOSES-IT-Over-Video-of-a-Man-Knocking-Out-a-Teenage-Girl-w-Ian-Fidance-1-30-2019.mp3'.
-2026-11-12 23:37:11,053 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-08-CompoundCensoredOfficial-Shane-Gillis-LOSES-IT-Over-Video-of-a-Man-Knocking-Out-a-Teenage-Girl-w-Ian-Fidance-1-30-2019.mp3'
+    'Date': 'Sat, 14 Nov 2026 04:03:49 GMT'
+2026-11-13 23:03:50,046 INFO __main__: Uploaded 'mp3s/2026-11-08-angrymortgage-My-Biggest-Challenge.mp3'.
+2026-11-13 23:03:50,048 INFO __main__: Uploading 'mp3s/2026-11-08-CompoundCensoredOfficial-Shane-Gillis-LOSES-IT-Over-Video-of-a-Man-Knocking-Out-a-Teenage-Girl-w-Ian-Fidance-1-30-2019.mp3'.
+2026-11-13 23:03:50,347 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-08-CompoundCensoredOfficial-Shane-Gillis-LOSES-IT-Over-Video-of-a-Man-Knocking-Out-a-Teenage-Girl-w-Ian-Fidance-1-30-2019.mp3'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '27118892'
@@ -392,25 +276,25 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'e42e083b-df1b-11f1-9359-001a7dda7115'
+    'x-ms-client-request-id': '661460e6-dfe0-11f1-99fd-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:14,124 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:04:00,676 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Content-MD5': 'REDACTED'
-    'Last-Modified': 'Fri, 13 Nov 2026 04:37:14 GMT'
-    'ETag': '"0x8DF413FCA52F67F"'
+    'Last-Modified': 'Sat, 14 Nov 2026 04:04:01 GMT'
+    'ETag': '"0x8DF420450DDCECE"'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b811420-b01e-003e-0e28-735fe0000000'
-    'x-ms-client-request-id': 'e42e083b-df1b-11f1-9359-001a7dda7115'
+    'x-ms-request-id': '1aa85d35-401e-0005-53ed-731a44000000'
+    'x-ms-client-request-id': '661460e6-dfe0-11f1-99fd-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:14 GMT'
-2026-11-12 23:37:14,128 INFO __main__: Uploaded 'mp3s/2026-11-08-CompoundCensoredOfficial-Shane-Gillis-LOSES-IT-Over-Video-of-a-Man-Knocking-Out-a-Teenage-Girl-w-Ian-Fidance-1-30-2019.mp3'.
-2026-11-12 23:37:14,129 INFO __main__: Uploading 'mp3s/2026-11-08-TheBrancaShow-Chicago-Firefighter-Drops-RAGING-Suspect-Should-He-Be-Charged.mp3'.
-2026-11-12 23:37:14,208 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-08-TheBrancaShow-Chicago-Firefighter-Drops-RAGING-Suspect-Should-He-Be-Charged.mp3'
+    'Date': 'Sat, 14 Nov 2026 04:04:00 GMT'
+2026-11-13 23:04:00,679 INFO __main__: Uploaded 'mp3s/2026-11-08-CompoundCensoredOfficial-Shane-Gillis-LOSES-IT-Over-Video-of-a-Man-Knocking-Out-a-Teenage-Girl-w-Ian-Fidance-1-30-2019.mp3'.
+2026-11-13 23:04:00,680 INFO __main__: Uploading 'mp3s/2026-11-08-TheBrancaShow-Chicago-Firefighter-Drops-RAGING-Suspect-Should-He-Be-Charged.mp3'.
+2026-11-13 23:04:00,790 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-08-TheBrancaShow-Chicago-Firefighter-Drops-RAGING-Suspect-Should-He-Be-Charged.mp3'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '9040556'
@@ -421,25 +305,25 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'e60f8437-df1b-11f1-bbd0-001a7dda7115'
+    'x-ms-client-request-id': '6c4dbe9d-dfe0-11f1-a26f-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:15,289 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:04:04,824 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Content-MD5': 'REDACTED'
-    'Last-Modified': 'Fri, 13 Nov 2026 04:37:15 GMT'
-    'ETag': '"0x8DF413FCB04B96C"'
+    'Last-Modified': 'Sat, 14 Nov 2026 04:04:05 GMT'
+    'ETag': '"0x8DF420453567886"'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b811e14-b01e-003e-5428-735fe0000000'
-    'x-ms-client-request-id': 'e60f8437-df1b-11f1-bbd0-001a7dda7115'
+    'x-ms-request-id': '1aa88419-401e-0005-2ded-731a44000000'
+    'x-ms-client-request-id': '6c4dbe9d-dfe0-11f1-a26f-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:15 GMT'
-2026-11-12 23:37:15,291 INFO __main__: Uploaded 'mp3s/2026-11-08-TheBrancaShow-Chicago-Firefighter-Drops-RAGING-Suspect-Should-He-Be-Charged.mp3'.
-2026-11-12 23:37:15,292 INFO __main__: Uploading 'mp3s/2026-11-09-angrymortgage-Good-Bad-Federal-Budget.mp3'.
-2026-11-12 23:37:15,392 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-angrymortgage-Good-Bad-Federal-Budget.mp3'
+    'Date': 'Sat, 14 Nov 2026 04:04:04 GMT'
+2026-11-13 23:04:04,826 INFO __main__: Uploaded 'mp3s/2026-11-08-TheBrancaShow-Chicago-Firefighter-Drops-RAGING-Suspect-Should-He-Be-Charged.mp3'.
+2026-11-13 23:04:04,827 INFO __main__: Uploading 'mp3s/2026-11-09-angrymortgage-Good-Bad-Federal-Budget.mp3'.
+2026-11-13 23:04:04,948 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-angrymortgage-Good-Bad-Federal-Budget.mp3'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '8876588'
@@ -450,25 +334,25 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'e6c42145-df1b-11f1-b0d3-001a7dda7115'
+    'x-ms-client-request-id': '6ec83465-dfe0-11f1-aaf3-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:16,364 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:04:10,153 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Content-MD5': 'REDACTED'
-    'Last-Modified': 'Fri, 13 Nov 2026 04:37:16 GMT'
-    'ETag': '"0x8DF413FCBA8D11D"'
+    'Last-Modified': 'Sat, 14 Nov 2026 04:04:10 GMT'
+    'ETag': '"0x8DF42045683CF31"'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b81222f-b01e-003e-7528-735fe0000000'
-    'x-ms-client-request-id': 'e6c42145-df1b-11f1-b0d3-001a7dda7115'
+    'x-ms-request-id': '1aa89691-401e-0005-06ed-731a44000000'
+    'x-ms-client-request-id': '6ec83465-dfe0-11f1-aaf3-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:16 GMT'
-2026-11-12 23:37:16,366 INFO __main__: Uploaded 'mp3s/2026-11-09-angrymortgage-Good-Bad-Federal-Budget.mp3'.
-2026-11-12 23:37:16,367 INFO __main__: Uploading 'mp3s/2026-11-09-CompoundCensoredOfficial-Shane-Gillis-and-Dave-Landau-Talk-Drugs-Reddit-and-Growing-Up-Dysfunctional-2-27-2019.mp3'.
-2026-11-12 23:37:16,615 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-CompoundCensoredOfficial-Shane-Gillis-and-Dave-Landau-Talk-Drugs-Reddit-and-Growing-Up-Dysfunctional-2-27-2019.mp3'
+    'Date': 'Sat, 14 Nov 2026 04:04:09 GMT'
+2026-11-13 23:04:10,156 INFO __main__: Uploaded 'mp3s/2026-11-09-angrymortgage-Good-Bad-Federal-Budget.mp3'.
+2026-11-13 23:04:10,158 INFO __main__: Uploading 'mp3s/2026-11-09-CompoundCensoredOfficial-Shane-Gillis-and-Dave-Landau-Talk-Drugs-Reddit-and-Growing-Up-Dysfunctional-2-27-2019.mp3'.
+2026-11-13 23:04:10,414 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-CompoundCensoredOfficial-Shane-Gillis-and-Dave-Landau-Talk-Drugs-Reddit-and-Growing-Up-Dysfunctional-2-27-2019.mp3'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '21998252'
@@ -479,25 +363,25 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'e77eb5fd-df1b-11f1-9bf2-001a7dda7115'
+    'x-ms-client-request-id': '720a3ff6-dfe0-11f1-97a1-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:18,563 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:04:18,179 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Content-MD5': 'REDACTED'
-    'Last-Modified': 'Fri, 13 Nov 2026 04:37:18 GMT'
-    'ETag': '"0x8DF413FCCF69A54"'
+    'Last-Modified': 'Sat, 14 Nov 2026 04:04:18 GMT'
+    'ETag': '"0x8DF42045B4C5C7F"'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b8126d4-b01e-003e-0328-735fe0000000'
-    'x-ms-client-request-id': 'e77eb5fd-df1b-11f1-9bf2-001a7dda7115'
+    'x-ms-request-id': '1aa8ac88-401e-0005-34ed-731a44000000'
+    'x-ms-client-request-id': '720a3ff6-dfe0-11f1-97a1-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:18 GMT'
-2026-11-12 23:37:18,567 INFO __main__: Uploaded 'mp3s/2026-11-09-CompoundCensoredOfficial-Shane-Gillis-and-Dave-Landau-Talk-Drugs-Reddit-and-Growing-Up-Dysfunctional-2-27-2019.mp3'.
-2026-11-12 23:37:18,568 INFO __main__: Uploading 'mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3'.
-2026-11-12 23:37:18,640 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
+    'Date': 'Sat, 14 Nov 2026 04:04:18 GMT'
+2026-11-13 23:04:18,187 INFO __main__: Uploaded 'mp3s/2026-11-09-CompoundCensoredOfficial-Shane-Gillis-and-Dave-Landau-Talk-Drugs-Reddit-and-Growing-Up-Dysfunctional-2-27-2019.mp3'.
+2026-11-13 23:04:18,189 INFO __main__: Uploading 'mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3'.
+2026-11-13 23:04:18,258 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '4194304'
@@ -506,20 +390,20 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'e8b3b33f-df1b-11f1-a0c3-001a7dda7115'
+    'x-ms-client-request-id': '76b73880-dfe0-11f1-adf2-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:19,056 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:04:19,484 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b812d69-b01e-003e-4528-735fe0000000'
-    'x-ms-client-request-id': 'e8b3b33f-df1b-11f1-a0c3-001a7dda7115'
+    'x-ms-request-id': '1aa8cbf3-401e-0005-37ed-731a44000000'
+    'x-ms-client-request-id': '76b73880-dfe0-11f1-adf2-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:19 GMT'
-2026-11-12 23:37:19,061 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
+    'Date': 'Sat, 14 Nov 2026 04:04:19 GMT'
+2026-11-13 23:04:19,491 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '4194304'
@@ -528,20 +412,20 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'e8f3f51f-df1b-11f1-b518-001a7dda7115'
+    'x-ms-client-request-id': '77735fe4-dfe0-11f1-8626-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:19,516 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:04:20,872 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b812ec2-b01e-003e-6628-735fe0000000'
-    'x-ms-client-request-id': 'e8f3f51f-df1b-11f1-b518-001a7dda7115'
+    'x-ms-request-id': '1aa8d0d2-401e-0005-07ed-731a44000000'
+    'x-ms-client-request-id': '77735fe4-dfe0-11f1-8626-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:19 GMT'
-2026-11-12 23:37:19,522 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
+    'Date': 'Sat, 14 Nov 2026 04:04:20 GMT'
+2026-11-13 23:04:20,879 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '4194304'
@@ -550,20 +434,20 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'e93a5de0-df1b-11f1-a612-001a7dda7115'
+    'x-ms-client-request-id': '7847195c-dfe0-11f1-8cf0-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:19,971 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:04:22,147 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b813050-b01e-003e-4128-735fe0000000'
-    'x-ms-client-request-id': 'e93a5de0-df1b-11f1-a612-001a7dda7115'
+    'x-ms-request-id': '1aa8d5c2-401e-0005-7aed-731a44000000'
+    'x-ms-client-request-id': '7847195c-dfe0-11f1-8cf0-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:20 GMT'
-2026-11-12 23:37:19,976 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
+    'Date': 'Sat, 14 Nov 2026 04:04:21 GMT'
+2026-11-13 23:04:22,152 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '4194304'
@@ -572,20 +456,20 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'e97f8dfc-df1b-11f1-99f4-001a7dda7115'
+    'x-ms-client-request-id': '79095978-dfe0-11f1-8240-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:20,433 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:04:23,401 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b81319e-b01e-003e-5f28-735fe0000000'
-    'x-ms-client-request-id': 'e97f8dfc-df1b-11f1-99f4-001a7dda7115'
+    'x-ms-request-id': '1aa8da26-401e-0005-5ded-731a44000000'
+    'x-ms-client-request-id': '79095978-dfe0-11f1-8240-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:20 GMT'
-2026-11-12 23:37:20,437 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
+    'Date': 'Sat, 14 Nov 2026 04:04:23 GMT'
+2026-11-13 23:04:23,409 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '4194304'
@@ -594,20 +478,20 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'e9c5ecc3-df1b-11f1-bcd9-001a7dda7115'
+    'x-ms-client-request-id': '79c907f5-dfe0-11f1-b041-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:20,863 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:04:24,480 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b81333e-b01e-003e-4c28-735fe0000000'
-    'x-ms-client-request-id': 'e9c5ecc3-df1b-11f1-bcd9-001a7dda7115'
+    'x-ms-request-id': '1aa8de4a-401e-0005-07ed-731a44000000'
+    'x-ms-client-request-id': '79c907f5-dfe0-11f1-b041-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:20 GMT'
-2026-11-12 23:37:20,869 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
+    'Date': 'Sat, 14 Nov 2026 04:04:24 GMT'
+2026-11-13 23:04:24,491 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '4194304'
@@ -616,20 +500,20 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'ea07e5e0-df1b-11f1-9f2c-001a7dda7115'
+    'x-ms-client-request-id': '7a6e5892-dfe0-11f1-9ad2-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:21,292 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:04:25,677 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b8134ec-b01e-003e-5228-735fe0000000'
-    'x-ms-client-request-id': 'ea07e5e0-df1b-11f1-9f2c-001a7dda7115'
+    'x-ms-request-id': '1aa8e24f-401e-0005-18ed-731a44000000'
+    'x-ms-client-request-id': '7a6e5892-dfe0-11f1-9ad2-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:21 GMT'
-2026-11-12 23:37:21,297 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
+    'Date': 'Sat, 14 Nov 2026 04:04:25 GMT'
+2026-11-13 23:04:25,684 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '4194304'
@@ -638,20 +522,20 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'ea4925da-df1b-11f1-922c-001a7dda7115'
+    'x-ms-client-request-id': '7b243f8a-dfe0-11f1-ab56-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:21,737 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:04:28,151 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b813660-b01e-003e-2428-735fe0000000'
-    'x-ms-client-request-id': 'ea4925da-df1b-11f1-922c-001a7dda7115'
+    'x-ms-request-id': '1aa8e68a-401e-0005-75ed-731a44000000'
+    'x-ms-client-request-id': '7b243f8a-dfe0-11f1-ab56-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:21 GMT'
-2026-11-12 23:37:21,742 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
+    'Date': 'Sat, 14 Nov 2026 04:04:27 GMT'
+2026-11-13 23:04:28,157 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '4194304'
@@ -660,20 +544,20 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'ea8d0c79-df1b-11f1-8df3-001a7dda7115'
+    'x-ms-client-request-id': '7c9da02d-dfe0-11f1-80b9-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:22,146 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:04:30,663 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b8137d8-b01e-003e-7128-735fe0000000'
-    'x-ms-client-request-id': 'ea8d0c79-df1b-11f1-8df3-001a7dda7115'
+    'x-ms-request-id': '1aa8f09d-401e-0005-76ed-731a44000000'
+    'x-ms-client-request-id': '7c9da02d-dfe0-11f1-80b9-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:22 GMT'
-2026-11-12 23:37:22,150 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
+    'Date': 'Sat, 14 Nov 2026 04:04:30 GMT'
+2026-11-13 23:04:30,670 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '4194304'
@@ -682,20 +566,20 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'eacb586d-df1b-11f1-bc43-001a7dda7115'
+    'x-ms-client-request-id': '7e1d1138-dfe0-11f1-9fe9-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:22,554 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:04:32,536 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b813900-b01e-003e-7a28-735fe0000000'
-    'x-ms-client-request-id': 'eacb586d-df1b-11f1-bc43-001a7dda7115'
+    'x-ms-request-id': '1aa8f9ae-401e-0005-1bed-731a44000000'
+    'x-ms-client-request-id': '7e1d1138-dfe0-11f1-9fe9-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:22 GMT'
-2026-11-12 23:37:22,560 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
+    'Date': 'Sat, 14 Nov 2026 04:04:32 GMT'
+2026-11-13 23:04:32,542 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '4194304'
@@ -704,20 +588,20 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'eb09dbb9-df1b-11f1-90fd-001a7dda7115'
+    'x-ms-client-request-id': '7f3aabe6-dfe0-11f1-b1b2-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:22,943 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:04:33,910 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b813a53-b01e-003e-0428-735fe0000000'
-    'x-ms-client-request-id': 'eb09dbb9-df1b-11f1-90fd-001a7dda7115'
+    'x-ms-request-id': '1aa9025b-401e-0005-5fed-731a44000000'
+    'x-ms-client-request-id': '7f3aabe6-dfe0-11f1-b1b2-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:23 GMT'
-2026-11-12 23:37:22,947 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
+    'Date': 'Sat, 14 Nov 2026 04:04:33 GMT'
+2026-11-13 23:04:33,915 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '4194304'
@@ -726,20 +610,20 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'eb44fdc7-df1b-11f1-884b-001a7dda7115'
+    'x-ms-client-request-id': '800c451e-dfe0-11f1-a7bb-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:23,338 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:04:35,086 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b813b96-b01e-003e-7828-735fe0000000'
-    'x-ms-client-request-id': 'eb44fdc7-df1b-11f1-884b-001a7dda7115'
+    'x-ms-request-id': '1aa90828-401e-0005-0bed-731a44000000'
+    'x-ms-client-request-id': '800c451e-dfe0-11f1-a7bb-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:23 GMT'
-2026-11-12 23:37:23,342 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
+    'Date': 'Sat, 14 Nov 2026 04:04:34 GMT'
+2026-11-13 23:04:35,092 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '4194304'
@@ -748,20 +632,20 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'eb814730-df1b-11f1-bcd2-001a7dda7115'
+    'x-ms-client-request-id': '80bfc8ac-dfe0-11f1-9196-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:23,719 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:04:37,079 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b813d05-b01e-003e-2028-735fe0000000'
-    'x-ms-client-request-id': 'eb814730-df1b-11f1-bcd2-001a7dda7115'
+    'x-ms-request-id': '1aa90cef-401e-0005-6eed-731a44000000'
+    'x-ms-client-request-id': '80bfc8ac-dfe0-11f1-9196-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:23 GMT'
-2026-11-12 23:37:23,724 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
+    'Date': 'Sat, 14 Nov 2026 04:04:36 GMT'
+2026-11-13 23:04:37,085 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '4194304'
@@ -770,20 +654,20 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'ebbb9419-df1b-11f1-a983-001a7dda7115'
+    'x-ms-client-request-id': '81f005fa-dfe0-11f1-86b8-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:24,089 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:04:39,434 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b813e61-b01e-003e-2f28-735fe0000000'
-    'x-ms-client-request-id': 'ebbb9419-df1b-11f1-a983-001a7dda7115'
+    'x-ms-request-id': '1aa91541-401e-0005-70ed-731a44000000'
+    'x-ms-client-request-id': '81f005fa-dfe0-11f1-86b8-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:24 GMT'
-2026-11-12 23:37:24,094 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
+    'Date': 'Sat, 14 Nov 2026 04:04:39 GMT'
+2026-11-13 23:04:39,441 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '4194304'
@@ -792,20 +676,20 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'ebf3f660-df1b-11f1-b965-001a7dda7115'
+    'x-ms-client-request-id': '83577f35-dfe0-11f1-85ef-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:24,523 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:04:41,760 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b813fb4-b01e-003e-4128-735fe0000000'
-    'x-ms-client-request-id': 'ebf3f660-df1b-11f1-b965-001a7dda7115'
+    'x-ms-request-id': '1aa91d1f-401e-0005-0ced-731a44000000'
+    'x-ms-client-request-id': '83577f35-dfe0-11f1-85ef-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:24 GMT'
-2026-11-12 23:37:24,529 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
+    'Date': 'Sat, 14 Nov 2026 04:04:41 GMT'
+2026-11-13 23:04:41,766 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '4194304'
@@ -814,20 +698,20 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'ec364c7b-df1b-11f1-b345-001a7dda7115'
+    'x-ms-client-request-id': '84ba3c38-dfe0-11f1-923a-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:24,956 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:04:43,524 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b8140d3-b01e-003e-3428-735fe0000000'
-    'x-ms-client-request-id': 'ec364c7b-df1b-11f1-b345-001a7dda7115'
+    'x-ms-request-id': '1aa924df-401e-0005-75ed-731a44000000'
+    'x-ms-client-request-id': '84ba3c38-dfe0-11f1-923a-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:25 GMT'
-2026-11-12 23:37:24,961 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
+    'Date': 'Sat, 14 Nov 2026 04:04:43 GMT'
+2026-11-13 23:04:43,532 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '4194304'
@@ -836,20 +720,20 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'ec783304-df1b-11f1-86c7-001a7dda7115'
+    'x-ms-client-request-id': '85c79975-dfe0-11f1-9e25-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:25,331 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:04:44,756 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b8141d4-b01e-003e-1128-735fe0000000'
-    'x-ms-client-request-id': 'ec783304-df1b-11f1-86c7-001a7dda7115'
+    'x-ms-request-id': '1aa92b31-401e-0005-7eed-731a44000000'
+    'x-ms-client-request-id': '85c79975-dfe0-11f1-9e25-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:25 GMT'
-2026-11-12 23:37:25,336 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
+    'Date': 'Sat, 14 Nov 2026 04:04:44 GMT'
+2026-11-13 23:04:44,762 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '4194304'
@@ -858,20 +742,20 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'ecb182f0-df1b-11f1-813d-001a7dda7115'
+    'x-ms-client-request-id': '868357e7-dfe0-11f1-a3af-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:25,722 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:04:46,037 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b8142d4-b01e-003e-7528-735fe0000000'
-    'x-ms-client-request-id': 'ecb182f0-df1b-11f1-813d-001a7dda7115'
+    'x-ms-request-id': '1aa92fcd-401e-0005-28ed-731a44000000'
+    'x-ms-client-request-id': '868357e7-dfe0-11f1-a3af-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:25 GMT'
-2026-11-12 23:37:25,727 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
+    'Date': 'Sat, 14 Nov 2026 04:04:45 GMT'
+2026-11-13 23:04:46,043 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '4194304'
@@ -880,20 +764,20 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'eced14dd-df1b-11f1-ad7a-001a7dda7115'
+    'x-ms-client-request-id': '8746d17d-dfe0-11f1-9e92-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:26,028 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:04:47,665 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b81442a-b01e-003e-2228-735fe0000000'
-    'x-ms-client-request-id': 'eced14dd-df1b-11f1-ad7a-001a7dda7115'
+    'x-ms-request-id': '1aa93505-401e-0005-09ed-731a44000000'
+    'x-ms-client-request-id': '8746d17d-dfe0-11f1-9e92-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:26 GMT'
-2026-11-12 23:37:26,032 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
+    'Date': 'Sat, 14 Nov 2026 04:04:47 GMT'
+2026-11-13 23:04:47,670 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '4194304'
@@ -902,20 +786,20 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'ed1ba0d1-df1b-11f1-93af-001a7dda7115'
+    'x-ms-client-request-id': '883f0cb8-dfe0-11f1-95a9-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:26,344 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:04:50,539 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b814539-b01e-003e-0228-735fe0000000'
-    'x-ms-client-request-id': 'ed1ba0d1-df1b-11f1-93af-001a7dda7115'
+    'x-ms-request-id': '1aa93ac6-401e-0005-1ced-731a44000000'
+    'x-ms-client-request-id': '883f0cb8-dfe0-11f1-95a9-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:26 GMT'
-2026-11-12 23:37:26,349 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
+    'Date': 'Sat, 14 Nov 2026 04:04:50 GMT'
+2026-11-13 23:04:50,545 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '4194304'
@@ -924,20 +808,20 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'ed4c16ba-df1b-11f1-ac10-001a7dda7115'
+    'x-ms-client-request-id': '89f5b4d4-dfe0-11f1-b594-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:26,677 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:04:52,769 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b814668-b01e-003e-1628-735fe0000000'
-    'x-ms-client-request-id': 'ed4c16ba-df1b-11f1-ac10-001a7dda7115'
+    'x-ms-request-id': '1aa946c6-401e-0005-06ed-731a44000000'
+    'x-ms-client-request-id': '89f5b4d4-dfe0-11f1-b594-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:26 GMT'
-2026-11-12 23:37:26,681 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
+    'Date': 'Sat, 14 Nov 2026 04:04:52 GMT'
+2026-11-13 23:04:52,774 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '4194304'
@@ -946,20 +830,20 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'ed7eab2e-df1b-11f1-ada3-001a7dda7115'
+    'x-ms-client-request-id': '8b49f531-dfe0-11f1-9efe-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:26,972 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:04:54,509 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b814787-b01e-003e-2128-735fe0000000'
-    'x-ms-client-request-id': 'ed7eab2e-df1b-11f1-ada3-001a7dda7115'
+    'x-ms-request-id': '1aa94e8d-401e-0005-67ed-731a44000000'
+    'x-ms-client-request-id': '8b49f531-dfe0-11f1-9efe-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:27 GMT'
-2026-11-12 23:37:26,977 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
+    'Date': 'Sat, 14 Nov 2026 04:04:54 GMT'
+2026-11-13 23:04:54,515 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '4194304'
@@ -968,20 +852,20 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'edabe5b8-df1b-11f1-822e-001a7dda7115'
+    'x-ms-client-request-id': '8c53863f-dfe0-11f1-86c0-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:27,370 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:04:56,830 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b814863-b01e-003e-6928-735fe0000000'
-    'x-ms-client-request-id': 'edabe5b8-df1b-11f1-822e-001a7dda7115'
+    'x-ms-request-id': '1aa9542f-401e-0005-6eed-731a44000000'
+    'x-ms-client-request-id': '8c53863f-dfe0-11f1-86c0-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:27 GMT'
-2026-11-12 23:37:27,374 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
+    'Date': 'Sat, 14 Nov 2026 04:04:56 GMT'
+2026-11-13 23:04:56,835 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '4194304'
@@ -990,20 +874,20 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'ede88a78-df1b-11f1-8c13-001a7dda7115'
+    'x-ms-client-request-id': '8db59e71-dfe0-11f1-a48e-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:27,633 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:04:58,570 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b81495b-b01e-003e-4028-735fe0000000'
-    'x-ms-client-request-id': 'ede88a78-df1b-11f1-8c13-001a7dda7115'
+    'x-ms-request-id': '1aa95d09-401e-0005-06ed-731a44000000'
+    'x-ms-client-request-id': '8db59e71-dfe0-11f1-a48e-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:27 GMT'
-2026-11-12 23:37:27,636 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
+    'Date': 'Sat, 14 Nov 2026 04:04:58 GMT'
+2026-11-13 23:04:58,574 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED&blockid=REDACTED'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '1536628'
@@ -1012,20 +896,20 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'ee10756c-df1b-11f1-8e16-001a7dda7115'
+    'x-ms-client-request-id': '8ebeee45-dfe0-11f1-a074-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:27,814 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:04:59,236 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b814a0a-b01e-003e-5f28-735fe0000000'
-    'x-ms-client-request-id': 'ee10756c-df1b-11f1-8e16-001a7dda7115'
+    'x-ms-request-id': '1aa963b3-401e-0005-31ed-731a44000000'
+    'x-ms-client-request-id': '8ebeee45-dfe0-11f1-a074-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:27 GMT'
-2026-11-12 23:37:27,816 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED'
+    'Date': 'Sat, 14 Nov 2026 04:04:59 GMT'
+2026-11-13 23:04:59,239 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3?comp=REDACTED'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '2006'
@@ -1035,24 +919,24 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'ee2bf1f5-df1b-11f1-9382-001a7dda7115'
+    'x-ms-client-request-id': '8f246df3-dfe0-11f1-9b51-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:27,866 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:04:59,292 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
-    'Last-Modified': 'Fri, 13 Nov 2026 04:37:28 GMT'
-    'ETag': '"0x8DF413FD283B13F"'
+    'Last-Modified': 'Sat, 14 Nov 2026 04:05:00 GMT'
+    'ETag': '"0x8DF420473CE0B37"'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b814a88-b01e-003e-4828-735fe0000000'
-    'x-ms-client-request-id': 'ee2bf1f5-df1b-11f1-9382-001a7dda7115'
+    'x-ms-request-id': '1aa96639-401e-0005-74ed-731a44000000'
+    'x-ms-client-request-id': '8f246df3-dfe0-11f1-9b51-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:27 GMT'
-2026-11-12 23:37:27,867 INFO __main__: Uploaded 'mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3'.
-2026-11-12 23:37:27,869 INFO __main__: Uploading 'mp3s/2026-11-10-CompoundCensoredOfficial-If-We-Lose-This-Next-Election-We-re-ALL-Going-to-PRISON-Gavin-McInnes-Warning-to-Republicans.mp3'.
-2026-11-12 23:37:28,105 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-10-CompoundCensoredOfficial-If-We-Lose-This-Next-Election-We-re-ALL-Going-to-PRISON-Gavin-McInnes-Warning-to-Republicans.mp3'
+    'Date': 'Sat, 14 Nov 2026 04:04:59 GMT'
+2026-11-13 23:04:59,294 INFO __main__: Uploaded 'mp3s/2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3'.
+2026-11-13 23:04:59,301 INFO __main__: Uploading 'mp3s/2026-11-10-CompoundCensoredOfficial-If-We-Lose-This-Next-Election-We-re-ALL-Going-to-PRISON-Gavin-McInnes-Warning-to-Republicans.mp3'.
+2026-11-13 23:04:59,542 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-10-CompoundCensoredOfficial-If-We-Lose-This-Next-Election-We-re-ALL-Going-to-PRISON-Gavin-McInnes-Warning-to-Republicans.mp3'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '20019116'
@@ -1063,25 +947,25 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'ee5805dc-df1b-11f1-a39c-001a7dda7115'
+    'x-ms-client-request-id': '8f52a7a8-dfe0-11f1-8e42-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:28,899 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:05:07,476 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Content-MD5': 'REDACTED'
-    'Last-Modified': 'Fri, 13 Nov 2026 04:37:29 GMT'
-    'ETag': '"0x8DF413FD3216F9C"'
+    'Last-Modified': 'Sat, 14 Nov 2026 04:05:08 GMT'
+    'ETag': '"0x8DF420478AF0CEB"'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b814b32-b01e-003e-5828-735fe0000000'
-    'x-ms-client-request-id': 'ee5805dc-df1b-11f1-a39c-001a7dda7115'
+    'x-ms-request-id': '1aa967b5-401e-0005-4bed-731a44000000'
+    'x-ms-client-request-id': '8f52a7a8-dfe0-11f1-8e42-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:28 GMT'
-2026-11-12 23:37:28,902 INFO __main__: Uploaded 'mp3s/2026-11-10-CompoundCensoredOfficial-If-We-Lose-This-Next-Election-We-re-ALL-Going-to-PRISON-Gavin-McInnes-Warning-to-Republicans.mp3'.
-2026-11-12 23:37:28,903 INFO __main__: Uploading 'mp3s/2026-11-10-nickjfuentes-Nick-Fuentes-on-the-Alex-Jones-Show.mp3'.
-2026-11-12 23:37:29,529 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-10-nickjfuentes-Nick-Fuentes-on-the-Alex-Jones-Show.mp3'
+    'Date': 'Sat, 14 Nov 2026 04:05:07 GMT'
+2026-11-13 23:05:07,478 INFO __main__: Uploaded 'mp3s/2026-11-10-CompoundCensoredOfficial-If-We-Lose-This-Next-Election-We-re-ALL-Going-to-PRISON-Gavin-McInnes-Warning-to-Republicans.mp3'.
+2026-11-13 23:05:07,480 INFO __main__: Uploading 'mp3s/2026-11-10-nickjfuentes-Nick-Fuentes-on-the-Alex-Jones-Show.mp3'.
+2026-11-13 23:05:08,100 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-10-nickjfuentes-Nick-Fuentes-on-the-Alex-Jones-Show.mp3'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '64368265'
@@ -1092,25 +976,39 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'ef3156fc-df1b-11f1-a12a-001a7dda7115'
+    'x-ms-client-request-id': '946c7d29-dfe0-11f1-b1bf-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:38,408 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:05:43,600 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-10-nickjfuentes-Nick-Fuentes-on-the-Alex-Jones-Show.mp3'
+Request method: 'PUT'
+Request headers:
+    'Content-Length': '64368265'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-blob-content-type': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'a9954bae-dfe0-11f1-a268-001a7dda7115'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+2026-11-13 23:05:55,853 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Content-MD5': 'REDACTED'
-    'Last-Modified': 'Fri, 13 Nov 2026 04:37:38 GMT'
-    'ETag': '"0x8DF413FD8CC1B5F"'
+    'Last-Modified': 'Sat, 14 Nov 2026 04:05:56 GMT'
+    'ETag': '"0x8DF420495850823"'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b814f07-b01e-003e-3728-735fe0000000'
-    'x-ms-client-request-id': 'ef3156fc-df1b-11f1-a12a-001a7dda7115'
+    'x-ms-request-id': '15bfe4fa-b01e-0011-57ed-73522b000000'
+    'x-ms-client-request-id': 'a9954bae-dfe0-11f1-a268-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:38 GMT'
-2026-11-12 23:37:38,416 INFO __main__: Uploaded 'mp3s/2026-11-10-nickjfuentes-Nick-Fuentes-on-the-Alex-Jones-Show.mp3'.
-2026-11-12 23:37:38,417 INFO __main__: Uploading 'mp3s/2026-11-10-nickjfuentes-Trump-CUCKS-on-Deportations-Embraces-AMNESTY.mp3'.
-2026-11-12 23:37:38,983 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-10-nickjfuentes-Trump-CUCKS-on-Deportations-Embraces-AMNESTY.mp3'
+    'Date': 'Sat, 14 Nov 2026 04:05:55 GMT'
+2026-11-13 23:05:55,855 INFO __main__: Uploaded 'mp3s/2026-11-10-nickjfuentes-Nick-Fuentes-on-the-Alex-Jones-Show.mp3'.
+2026-11-13 23:05:55,862 INFO __main__: Uploading 'mp3s/2026-11-10-nickjfuentes-Trump-CUCKS-on-Deportations-Embraces-AMNESTY.mp3'.
+2026-11-13 23:05:56,450 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-10-nickjfuentes-Trump-CUCKS-on-Deportations-Embraces-AMNESTY.mp3'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '57217819'
@@ -1121,25 +1019,25 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'f4d3eda9-df1b-11f1-816d-001a7dda7115'
+    'x-ms-client-request-id': 'b13e29ce-dfe0-11f1-b93d-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:49,428 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:06:13,737 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Content-MD5': 'REDACTED'
-    'Last-Modified': 'Fri, 13 Nov 2026 04:37:49 GMT'
-    'ETag': '"0x8DF413FDF5DC058"'
+    'Last-Modified': 'Sat, 14 Nov 2026 04:06:14 GMT'
+    'ETag': '"0x8DF4204A02DE84E"'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b817142-b01e-003e-4128-735fe0000000'
-    'x-ms-client-request-id': 'f4d3eda9-df1b-11f1-816d-001a7dda7115'
+    'x-ms-request-id': '15c00fe8-b01e-0011-39ed-73522b000000'
+    'x-ms-client-request-id': 'b13e29ce-dfe0-11f1-b93d-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:49 GMT'
-2026-11-12 23:37:49,436 INFO __main__: Uploaded 'mp3s/2026-11-10-nickjfuentes-Trump-CUCKS-on-Deportations-Embraces-AMNESTY.mp3'.
-2026-11-12 23:37:49,437 INFO __main__: Uploading 'mp3s/2026-11-11-angrymortgage-COMING-SOON-RON-ON-THE-ROAD.mp3'.
-2026-11-12 23:37:49,469 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-11-angrymortgage-COMING-SOON-RON-ON-THE-ROAD.mp3'
+    'Date': 'Sat, 14 Nov 2026 04:06:13 GMT'
+2026-11-13 23:06:13,747 INFO __main__: Uploaded 'mp3s/2026-11-10-nickjfuentes-Trump-CUCKS-on-Deportations-Embraces-AMNESTY.mp3'.
+2026-11-13 23:06:13,749 INFO __main__: Uploading 'mp3s/2026-11-11-angrymortgage-COMING-SOON-RON-ON-THE-ROAD.mp3'.
+2026-11-13 23:06:13,782 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-11-angrymortgage-COMING-SOON-RON-ON-THE-ROAD.mp3'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '390572'
@@ -1150,25 +1048,25 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'fb13e5ce-df1b-11f1-9a9e-001a7dda7115'
+    'x-ms-client-request-id': 'bb92b5e6-dfe0-11f1-af4a-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:49,597 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:06:13,901 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Content-MD5': 'REDACTED'
-    'Last-Modified': 'Fri, 13 Nov 2026 04:37:49 GMT'
-    'ETag': '"0x8DF413FDF77AD32"'
+    'Last-Modified': 'Sat, 14 Nov 2026 04:06:14 GMT'
+    'ETag': '"0x8DF4204A047121F"'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b819373-b01e-003e-5328-735fe0000000'
-    'x-ms-client-request-id': 'fb13e5ce-df1b-11f1-9a9e-001a7dda7115'
+    'x-ms-request-id': '15c051cc-b01e-0011-32ed-73522b000000'
+    'x-ms-client-request-id': 'bb92b5e6-dfe0-11f1-af4a-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:49 GMT'
-2026-11-12 23:37:49,599 INFO __main__: Uploaded 'mp3s/2026-11-11-angrymortgage-COMING-SOON-RON-ON-THE-ROAD.mp3'.
-2026-11-12 23:37:49,603 INFO __main__: Uploading 'mp3s/2026-11-11-CompoundCensoredOfficial-Gavin-McInnes-FIRES-BACK-at-The-Young-Turks-After-EXPLOSIVE-Encounter-with-Luke-Beasley.mp3'.
-2026-11-12 23:37:49,913 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-11-CompoundCensoredOfficial-Gavin-McInnes-FIRES-BACK-at-The-Young-Turks-After-EXPLOSIVE-Encounter-with-Luke-Beasley.mp3'
+    'Date': 'Sat, 14 Nov 2026 04:06:13 GMT'
+2026-11-13 23:06:13,902 INFO __main__: Uploaded 'mp3s/2026-11-11-angrymortgage-COMING-SOON-RON-ON-THE-ROAD.mp3'.
+2026-11-13 23:06:13,906 INFO __main__: Uploading 'mp3s/2026-11-11-CompoundCensoredOfficial-Gavin-McInnes-FIRES-BACK-at-The-Young-Turks-After-EXPLOSIVE-Encounter-with-Luke-Beasley.mp3'.
+2026-11-13 23:06:14,179 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-11-CompoundCensoredOfficial-Gavin-McInnes-FIRES-BACK-at-The-Young-Turks-After-EXPLOSIVE-Encounter-with-Luke-Beasley.mp3'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '25425068'
@@ -1179,25 +1077,25 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'fb57adc1-df1b-11f1-83de-001a7dda7115'
+    'x-ms-client-request-id': 'bbcf66f8-dfe0-11f1-b897-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:37:54,712 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:06:19,553 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Content-MD5': 'REDACTED'
-    'Last-Modified': 'Fri, 13 Nov 2026 04:37:54 GMT'
-    'ETag': '"0x8DF413FE2845754"'
+    'Last-Modified': 'Sat, 14 Nov 2026 04:06:20 GMT'
+    'ETag': '"0x8DF4204A3A52B0E"'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b8194d6-b01e-003e-0e28-735fe0000000'
-    'x-ms-client-request-id': 'fb57adc1-df1b-11f1-83de-001a7dda7115'
+    'x-ms-request-id': '15c05385-b01e-0011-39ed-73522b000000'
+    'x-ms-client-request-id': 'bbcf66f8-dfe0-11f1-b897-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:37:54 GMT'
-2026-11-12 23:37:54,718 INFO __main__: Uploaded 'mp3s/2026-11-11-CompoundCensoredOfficial-Gavin-McInnes-FIRES-BACK-at-The-Young-Turks-After-EXPLOSIVE-Encounter-with-Luke-Beasley.mp3'.
-2026-11-12 23:37:54,720 INFO __main__: Uploading 'mp3s/2026-11-11-nickjfuentes-Pete-Hegseth-SURVIVES-Impeachment-Vote.mp3'.
-2026-11-12 23:37:55,099 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-11-nickjfuentes-Pete-Hegseth-SURVIVES-Impeachment-Vote.mp3'
+    'Date': 'Sat, 14 Nov 2026 04:06:19 GMT'
+2026-11-13 23:06:19,558 INFO __main__: Uploaded 'mp3s/2026-11-11-CompoundCensoredOfficial-Gavin-McInnes-FIRES-BACK-at-The-Young-Turks-After-EXPLOSIVE-Encounter-with-Luke-Beasley.mp3'.
+2026-11-13 23:06:19,560 INFO __main__: Uploading 'mp3s/2026-11-11-nickjfuentes-Pete-Hegseth-SURVIVES-Impeachment-Vote.mp3'.
+2026-11-13 23:06:19,954 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-11-nickjfuentes-Pete-Hegseth-SURVIVES-Impeachment-Vote.mp3'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '38428460'
@@ -1208,25 +1106,25 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': 'fe6ef3d4-df1b-11f1-8cc5-001a7dda7115'
+    'x-ms-client-request-id': 'bf408ddf-dfe0-11f1-aa52-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:38:02,128 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:06:32,131 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Content-MD5': 'REDACTED'
-    'Last-Modified': 'Fri, 13 Nov 2026 04:38:02 GMT'
-    'ETag': '"0x8DF413FE6EFCCFF"'
+    'Last-Modified': 'Sat, 14 Nov 2026 04:06:32 GMT'
+    'ETag': '"0x8DF4204AB247DE7"'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b81a7a3-b01e-003e-6c28-735fe0000000'
-    'x-ms-client-request-id': 'fe6ef3d4-df1b-11f1-8cc5-001a7dda7115'
+    'x-ms-request-id': '15c068aa-b01e-0011-5fed-73522b000000'
+    'x-ms-client-request-id': 'bf408ddf-dfe0-11f1-aa52-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:38:02 GMT'
-2026-11-12 23:38:02,132 INFO __main__: Uploaded 'mp3s/2026-11-11-nickjfuentes-Pete-Hegseth-SURVIVES-Impeachment-Vote.mp3'.
-2026-11-12 23:38:02,134 INFO __main__: Uploading 'mp3s/2026-11-12-angrymortgage-The-Catastrophe-Of-Todd-Slater.mp3'.
-2026-11-12 23:38:02,143 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-12-angrymortgage-The-Catastrophe-Of-Todd-Slater.mp3'
+    'Date': 'Sat, 14 Nov 2026 04:06:32 GMT'
+2026-11-13 23:06:32,138 INFO __main__: Uploaded 'mp3s/2026-11-11-nickjfuentes-Pete-Hegseth-SURVIVES-Impeachment-Vote.mp3'.
+2026-11-13 23:06:32,140 INFO __main__: Uploading 'mp3s/2026-11-12-angrymortgage-The-Catastrophe-Of-Todd-Slater.mp3'.
+2026-11-13 23:06:32,235 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-12-angrymortgage-The-Catastrophe-Of-Todd-Slater.mp3'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '8553260'
@@ -1237,25 +1135,25 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': '02a1d3a7-df1c-11f1-8c76-001a7dda7115'
+    'x-ms-client-request-id': 'c6926c4e-dfe0-11f1-8207-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:38:03,416 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:06:34,669 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Content-MD5': 'REDACTED'
-    'Last-Modified': 'Fri, 13 Nov 2026 04:38:03 GMT'
-    'ETag': '"0x8DF413FE7B3D20B"'
+    'Last-Modified': 'Sat, 14 Nov 2026 04:06:35 GMT'
+    'ETag': '"0x8DF4204ACA7D0CD"'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b81c548-b01e-003e-6628-735fe0000000'
-    'x-ms-client-request-id': '02a1d3a7-df1c-11f1-8c76-001a7dda7115'
+    'x-ms-request-id': '15c097b6-b01e-0011-66ed-73522b000000'
+    'x-ms-client-request-id': 'c6926c4e-dfe0-11f1-8207-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:38:03 GMT'
-2026-11-12 23:38:03,417 INFO __main__: Uploaded 'mp3s/2026-11-12-angrymortgage-The-Catastrophe-Of-Todd-Slater.mp3'.
-2026-11-12 23:38:03,418 INFO __main__: Uploading 'mp3s/2026-11-12-AnnCoulter-Ann-Coulter-on-The-Mark-Simone-Show-710-WOR-November-11-2026.mp3'.
-2026-11-12 23:38:03,423 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-12-AnnCoulter-Ann-Coulter-on-The-Mark-Simone-Show-710-WOR-November-11-2026.mp3'
+    'Date': 'Sat, 14 Nov 2026 04:06:34 GMT'
+2026-11-13 23:06:34,672 INFO __main__: Uploaded 'mp3s/2026-11-12-angrymortgage-The-Catastrophe-Of-Todd-Slater.mp3'.
+2026-11-13 23:06:34,677 INFO __main__: Uploading 'mp3s/2026-11-12-AnnCoulter-Ann-Coulter-on-The-Mark-Simone-Show-710-WOR-November-11-2026.mp3'.
+2026-11-13 23:06:34,791 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-12-AnnCoulter-Ann-Coulter-on-The-Mark-Simone-Show-710-WOR-November-11-2026.mp3'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '9555116'
@@ -1266,25 +1164,25 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': '0365261d-df1c-11f1-8860-001a7dda7115'
+    'x-ms-client-request-id': 'c81880eb-dfe0-11f1-b028-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:38:04,851 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:06:37,597 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Content-MD5': 'REDACTED'
-    'Last-Modified': 'Fri, 13 Nov 2026 04:38:05 GMT'
-    'ETag': '"0x8DF413FE88F27C1"'
+    'Last-Modified': 'Sat, 14 Nov 2026 04:06:38 GMT'
+    'ETag': '"0x8DF4204AE6704FA"'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b81ca40-b01e-003e-5428-735fe0000000'
-    'x-ms-client-request-id': '0365261d-df1c-11f1-8860-001a7dda7115'
+    'x-ms-request-id': '15c09ea5-b01e-0011-28ed-73522b000000'
+    'x-ms-client-request-id': 'c81880eb-dfe0-11f1-b028-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:38:04 GMT'
-2026-11-12 23:38:04,854 INFO __main__: Uploaded 'mp3s/2026-11-12-AnnCoulter-Ann-Coulter-on-The-Mark-Simone-Show-710-WOR-November-11-2026.mp3'.
-2026-11-12 23:38:04,859 INFO __main__: Uploading 'mp3s/2026-11-12-AnnCoulter-UNSAFE-with-Ann-Coulter-Top-Stories-You-May-Have-Missed.mp3'.
-2026-11-12 23:38:04,893 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-12-AnnCoulter-UNSAFE-with-Ann-Coulter-Top-Stories-You-May-Have-Missed.mp3'
+    'Date': 'Sat, 14 Nov 2026 04:06:37 GMT'
+2026-11-13 23:06:37,600 INFO __main__: Uploaded 'mp3s/2026-11-12-AnnCoulter-Ann-Coulter-on-The-Mark-Simone-Show-710-WOR-November-11-2026.mp3'.
+2026-11-13 23:06:37,605 INFO __main__: Uploading 'mp3s/2026-11-12-AnnCoulter-UNSAFE-with-Ann-Coulter-Top-Stories-You-May-Have-Missed.mp3'.
+2026-11-13 23:06:38,087 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-12-AnnCoulter-UNSAFE-with-Ann-Coulter-Top-Stories-You-May-Have-Missed.mp3'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '42807980'
@@ -1295,25 +1193,25 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': '0445567e-df1c-11f1-a15b-001a7dda7115'
+    'x-ms-client-request-id': 'ca0f736e-dfe0-11f1-9e0d-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:38:10,822 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:06:50,509 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Content-MD5': 'REDACTED'
-    'Last-Modified': 'Fri, 13 Nov 2026 04:38:11 GMT'
-    'ETag': '"0x8DF413FEC1E4B47"'
+    'Last-Modified': 'Sat, 14 Nov 2026 04:06:51 GMT'
+    'ETag': '"0x8DF4204B61983B4"'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b81cf07-b01e-003e-0428-735fe0000000'
-    'x-ms-client-request-id': '0445567e-df1c-11f1-a15b-001a7dda7115'
+    'x-ms-request-id': '15c0aa5f-b01e-0011-76ed-73522b000000'
+    'x-ms-client-request-id': 'ca0f736e-dfe0-11f1-9e0d-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:38:10 GMT'
-2026-11-12 23:38:10,830 INFO __main__: Uploaded 'mp3s/2026-11-12-AnnCoulter-UNSAFE-with-Ann-Coulter-Top-Stories-You-May-Have-Missed.mp3'.
-2026-11-12 23:38:10,832 INFO __main__: Uploading 'mp3s/2026-11-12-CompoundCensoredOfficial-Tim-Pool-Gets-an-UNFILTERED-Take-on-America-s-Future-From-Gavin-McInnes-TimCastIRL-11-3-2026.mp3'.
-2026-11-12 23:38:10,855 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-12-CompoundCensoredOfficial-Tim-Pool-Gets-an-UNFILTERED-Take-on-America-s-Future-From-Gavin-McInnes-TimCastIRL-11-3-2026.mp3'
+    'Date': 'Sat, 14 Nov 2026 04:06:50 GMT'
+2026-11-13 23:06:50,518 INFO __main__: Uploaded 'mp3s/2026-11-12-AnnCoulter-UNSAFE-with-Ann-Coulter-Top-Stories-You-May-Have-Missed.mp3'.
+2026-11-13 23:06:50,519 INFO __main__: Uploading 'mp3s/2026-11-12-CompoundCensoredOfficial-Tim-Pool-Gets-an-UNFILTERED-Take-on-America-s-Future-From-Gavin-McInnes-TimCastIRL-11-3-2026.mp3'.
+2026-11-13 23:06:50,789 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-12-CompoundCensoredOfficial-Tim-Pool-Gets-an-UNFILTERED-Take-on-America-s-Future-From-Gavin-McInnes-TimCastIRL-11-3-2026.mp3'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '22602668'
@@ -1324,25 +1222,25 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': '07d3177c-df1c-11f1-a455-001a7dda7115'
+    'x-ms-client-request-id': 'd1a19cd2-dfe0-11f1-ad5c-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:38:13,758 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:06:56,725 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Content-MD5': 'REDACTED'
-    'Last-Modified': 'Fri, 13 Nov 2026 04:38:13 GMT'
-    'ETag': '"0x8DF413FEDDE67D3"'
+    'Last-Modified': 'Sat, 14 Nov 2026 04:06:57 GMT'
+    'ETag': '"0x8DF4204B9CE859D"'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b81e60b-b01e-003e-5d28-735fe0000000'
-    'x-ms-client-request-id': '07d3177c-df1c-11f1-a455-001a7dda7115'
+    'x-ms-request-id': '15c0d49d-b01e-0011-1ced-73522b000000'
+    'x-ms-client-request-id': 'd1a19cd2-dfe0-11f1-ad5c-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:38:13 GMT'
-2026-11-12 23:38:13,763 INFO __main__: Uploaded 'mp3s/2026-11-12-CompoundCensoredOfficial-Tim-Pool-Gets-an-UNFILTERED-Take-on-America-s-Future-From-Gavin-McInnes-TimCastIRL-11-3-2026.mp3'.
-2026-11-12 23:38:13,766 INFO __main__: Uploading 'mp3s/2026-11-12-nickjfuentes-Alex-Karp-Pivots-Back-to-the-Left.mp3'.
-2026-11-12 23:38:13,806 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-12-nickjfuentes-Alex-Karp-Pivots-Back-to-the-Left.mp3'
+    'Date': 'Sat, 14 Nov 2026 04:06:56 GMT'
+2026-11-13 23:06:56,731 INFO __main__: Uploaded 'mp3s/2026-11-12-CompoundCensoredOfficial-Tim-Pool-Gets-an-UNFILTERED-Take-on-America-s-Future-From-Gavin-McInnes-TimCastIRL-11-3-2026.mp3'.
+2026-11-13 23:06:56,734 INFO __main__: Uploading 'mp3s/2026-11-12-nickjfuentes-Alex-Karp-Pivots-Back-to-the-Left.mp3'.
+2026-11-13 23:06:57,189 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-12-nickjfuentes-Alex-Karp-Pivots-Back-to-the-Left.mp3'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '48791762'
@@ -1353,25 +1251,25 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': '0995659a-df1c-11f1-a8f7-001a7dda7115'
+    'x-ms-client-request-id': 'd57237bd-dfe0-11f1-9c12-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:38:20,234 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:07:10,298 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Content-MD5': 'REDACTED'
-    'Last-Modified': 'Fri, 13 Nov 2026 04:38:20 GMT'
-    'ETag': '"0x8DF413FF1BA7C69"'
+    'Last-Modified': 'Sat, 14 Nov 2026 04:07:11 GMT'
+    'ETag': '"0x8DF4204C1E5B88B"'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b81f17d-b01e-003e-5728-735fe0000000'
-    'x-ms-client-request-id': '0995659a-df1c-11f1-a8f7-001a7dda7115'
+    'x-ms-request-id': '15c0ebd9-b01e-0011-47ed-73522b000000'
+    'x-ms-client-request-id': 'd57237bd-dfe0-11f1-9c12-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:38:20 GMT'
-2026-11-12 23:38:20,244 INFO __main__: Uploaded 'mp3s/2026-11-12-nickjfuentes-Alex-Karp-Pivots-Back-to-the-Left.mp3'.
-2026-11-12 23:38:20,245 INFO __main__: Uploading 'mp3s/2026-11-12-TheBrancaShow-Is-the-War-Powers-Act-Constitutional-Massie-Bet-Hegseth-s-Job-on-It.mp3'.
-2026-11-12 23:38:20,254 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-12-TheBrancaShow-Is-the-War-Powers-Act-Constitutional-Massie-Bet-Hegseth-s-Job-on-It.mp3'
+    'Date': 'Sat, 14 Nov 2026 04:07:10 GMT'
+2026-11-13 23:07:10,308 INFO __main__: Uploaded 'mp3s/2026-11-12-nickjfuentes-Alex-Karp-Pivots-Back-to-the-Left.mp3'.
+2026-11-13 23:07:10,309 INFO __main__: Uploading 'mp3s/2026-11-12-TheBrancaShow-Is-the-War-Powers-Act-Constitutional-Massie-Bet-Hegseth-s-Job-on-It.mp3'.
+2026-11-13 23:07:10,402 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-12-TheBrancaShow-Is-the-War-Powers-Act-Constitutional-Massie-Bet-Hegseth-s-Job-on-It.mp3'
 Request method: 'PUT'
 Request headers:
     'Content-Length': '8665004'
@@ -1382,28 +1280,28 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': '0d6d3f02-df1c-11f1-a178-001a7dda7115'
+    'x-ms-client-request-id': 'dd525715-dfe0-11f1-998a-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:38:21,435 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:07:11,671 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Content-MD5': 'REDACTED'
-    'Last-Modified': 'Fri, 13 Nov 2026 04:38:21 GMT'
-    'ETag': '"0x8DF413FF271B9A8"'
+    'Last-Modified': 'Sat, 14 Nov 2026 04:07:12 GMT'
+    'ETag': '"0x8DF4204C2B71416"'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b820b01-b01e-003e-7528-735fe0000000'
-    'x-ms-client-request-id': '0d6d3f02-df1c-11f1-a178-001a7dda7115'
+    'x-ms-request-id': '15c11a8c-b01e-0011-35ed-73522b000000'
+    'x-ms-client-request-id': 'dd525715-dfe0-11f1-998a-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:38:21 GMT'
-2026-11-12 23:38:21,437 INFO __main__: Uploaded 'mp3s/2026-11-12-TheBrancaShow-Is-the-War-Powers-Act-Constitutional-Massie-Bet-Hegseth-s-Job-on-It.mp3'.
-2026-11-12 23:38:21,443 INFO __main__: Uploading 'img/podcast_cover.jpg'.
-2026-11-12 23:38:21,445 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/img/podcast_cover.jpg'
+    'Date': 'Sat, 14 Nov 2026 04:07:11 GMT'
+2026-11-13 23:07:11,674 INFO __main__: Uploaded 'mp3s/2026-11-12-TheBrancaShow-Is-the-War-Powers-Act-Constitutional-Massie-Bet-Hegseth-s-Job-on-It.mp3'.
+2026-11-13 23:07:11,680 INFO __main__: Uploading 'mp3s/2026-11-13-angrymortgage-The-Bridge-To-Nowhere-RON-ON-THE-ROAD-EP-1.mp3'.
+2026-11-13 23:07:11,689 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-13-angrymortgage-The-Bridge-To-Nowhere-RON-ON-THE-ROAD-EP-1.mp3'
 Request method: 'PUT'
 Request headers:
-    'Content-Length': '527263'
+    'Content-Length': '8017964'
     'x-ms-blob-type': 'REDACTED'
     'x-ms-blob-content-type': 'REDACTED'
     'x-ms-version': 'REDACTED'
@@ -1411,28 +1309,28 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': '0e2311fa-df1c-11f1-8515-001a7dda7115'
+    'x-ms-client-request-id': 'de16ac7e-dfe0-11f1-84bb-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:38:21,566 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:07:12,935 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Content-MD5': 'REDACTED'
-    'Last-Modified': 'Fri, 13 Nov 2026 04:38:21 GMT'
-    'ETag': '"0x8DF413FF2858CDD"'
+    'Last-Modified': 'Sat, 14 Nov 2026 04:07:13 GMT'
+    'ETag': '"0x8DF4204C377ED8D"'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b820ee9-b01e-003e-5b28-735fe0000000'
-    'x-ms-client-request-id': '0e2311fa-df1c-11f1-8515-001a7dda7115'
+    'x-ms-request-id': '15c11e55-b01e-0011-58ed-73522b000000'
+    'x-ms-client-request-id': 'de16ac7e-dfe0-11f1-84bb-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:38:21 GMT'
-2026-11-12 23:38:21,568 INFO __main__: Uploaded 'img/podcast_cover.jpg'.
-2026-11-12 23:38:21,574 INFO __main__: Uploading 'Rumble.xml'.
-2026-11-12 23:38:21,578 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/Rumble.xml'
+    'Date': 'Sat, 14 Nov 2026 04:07:12 GMT'
+2026-11-13 23:07:12,937 INFO __main__: Uploaded 'mp3s/2026-11-13-angrymortgage-The-Bridge-To-Nowhere-RON-ON-THE-ROAD-EP-1.mp3'.
+2026-11-13 23:07:12,942 INFO __main__: Uploading 'mp3s/2026-11-13-CompoundCensoredOfficial-This-Police-Sergeant-Thought-She-Could-Do-Whatever-She-Wanted-Cops-Robber.mp3'.
+2026-11-13 23:07:12,957 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-13-CompoundCensoredOfficial-This-Police-Sergeant-Thought-She-Could-Do-Whatever-She-Wanted-Cops-Robber.mp3'
 Request method: 'PUT'
 Request headers:
-    'Content-Length': '13882'
+    'Content-Length': '14691884'
     'x-ms-blob-type': 'REDACTED'
     'x-ms-blob-content-type': 'REDACTED'
     'x-ms-version': 'REDACTED'
@@ -1440,28 +1338,28 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': '0e375d88-df1c-11f1-b5f6-001a7dda7115'
+    'x-ms-client-request-id': 'ded82db0-dfe0-11f1-8af4-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:38:21,627 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:07:18,434 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Content-MD5': 'REDACTED'
-    'Last-Modified': 'Fri, 13 Nov 2026 04:38:21 GMT'
-    'ETag': '"0x8DF413FF28F2867"'
+    'Last-Modified': 'Sat, 14 Nov 2026 04:07:19 GMT'
+    'ETag': '"0x8DF4204C6BF0235"'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b820f6e-b01e-003e-5228-735fe0000000'
-    'x-ms-client-request-id': '0e375d88-df1c-11f1-b5f6-001a7dda7115'
+    'x-ms-request-id': '15c12362-b01e-0011-1bed-73522b000000'
+    'x-ms-client-request-id': 'ded82db0-dfe0-11f1-8af4-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:38:21 GMT'
-2026-11-12 23:38:21,628 INFO __main__: Uploaded 'Rumble.xml'.
-2026-11-12 23:38:21,634 INFO __main__: Uploading 'ScottAdams.xml'.
-2026-11-12 23:38:21,672 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/ScottAdams.xml'
+    'Date': 'Sat, 14 Nov 2026 04:07:18 GMT'
+2026-11-13 23:07:18,437 INFO __main__: Uploaded 'mp3s/2026-11-13-CompoundCensoredOfficial-This-Police-Sergeant-Thought-She-Could-Do-Whatever-She-Wanted-Cops-Robber.mp3'.
+2026-11-13 23:07:18,441 INFO __main__: Uploading 'img/podcast_cover.jpg'.
+2026-11-13 23:07:18,448 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/img/podcast_cover.jpg'
 Request method: 'PUT'
 Request headers:
-    'Content-Length': '11080'
+    'Content-Length': '530676'
     'x-ms-blob-type': 'REDACTED'
     'x-ms-blob-content-type': 'REDACTED'
     'x-ms-version': 'REDACTED'
@@ -1469,83 +1367,181 @@ Request headers:
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': '0e45aa94-df1c-11f1-bc69-001a7dda7115'
+    'x-ms-client-request-id': 'e21defc3-dfe0-11f1-9956-001a7dda7115'
     'Authorization': 'REDACTED'
 A body is sent with the request
-2026-11-12 23:38:21,719 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+2026-11-13 23:07:18,745 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
 Response headers:
     'Content-Length': '0'
     'Content-MD5': 'REDACTED'
-    'Last-Modified': 'Fri, 13 Nov 2026 04:38:21 GMT'
-    'ETag': '"0x8DF413FF29D5724"'
+    'Last-Modified': 'Sat, 14 Nov 2026 04:07:19 GMT'
+    'ETag': '"0x8DF4204C6EE9723"'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b820fd8-b01e-003e-3228-735fe0000000'
-    'x-ms-client-request-id': '0e45aa94-df1c-11f1-bc69-001a7dda7115'
+    'x-ms-request-id': '15c1373a-b01e-0011-72ed-73522b000000'
+    'x-ms-client-request-id': 'e21defc3-dfe0-11f1-9956-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-content-crc64': 'REDACTED'
     'x-ms-request-server-encrypted': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:38:21 GMT'
-2026-11-12 23:38:21,720 INFO __main__: Uploaded 'ScottAdams.xml'.
-2026-11-12 23:38:21,726 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s?restype=REDACTED&comp=REDACTED&prefix=REDACTED'
+    'Date': 'Sat, 14 Nov 2026 04:07:18 GMT'
+2026-11-13 23:07:18,746 INFO __main__: Uploaded 'img/podcast_cover.jpg'.
+2026-11-13 23:07:18,752 INFO __main__: Uploading 'Rumble.xml'.
+2026-11-13 23:07:18,758 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/Rumble.xml'
+Request method: 'PUT'
+Request headers:
+    'Content-Length': '12921'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-blob-content-type': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'e24d4cbc-dfe0-11f1-9a07-001a7dda7115'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+2026-11-13 23:07:18,803 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+Response headers:
+    'Content-Length': '0'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Sat, 14 Nov 2026 04:07:19 GMT'
+    'ETag': '"0x8DF4204C6F79698"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '15c13898-b01e-0011-2ded-73522b000000'
+    'x-ms-client-request-id': 'e24d4cbc-dfe0-11f1-9a07-001a7dda7115'
+    'x-ms-version': 'REDACTED'
+    'x-ms-content-crc64': 'REDACTED'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'Date': 'Sat, 14 Nov 2026 04:07:18 GMT'
+2026-11-13 23:07:18,804 INFO __main__: Uploaded 'Rumble.xml'.
+2026-11-13 23:07:18,810 INFO __main__: Uploading 'ScottAdams.xml'.
+2026-11-13 23:07:18,816 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/ScottAdams.xml'
+Request method: 'PUT'
+Request headers:
+    'Content-Length': '11085'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-blob-content-type': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'e2561871-dfe0-11f1-b995-001a7dda7115'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+2026-11-13 23:07:18,866 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 201
+Response headers:
+    'Content-Length': '0'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Sat, 14 Nov 2026 04:07:19 GMT'
+    'ETag': '"0x8DF4204C7013233"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '15c138d7-b01e-0011-69ed-73522b000000'
+    'x-ms-client-request-id': 'e2561871-dfe0-11f1-b995-001a7dda7115'
+    'x-ms-version': 'REDACTED'
+    'x-ms-content-crc64': 'REDACTED'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'Date': 'Sat, 14 Nov 2026 04:07:18 GMT'
+2026-11-13 23:07:18,867 INFO __main__: Uploaded 'ScottAdams.xml'.
+2026-11-13 23:07:18,874 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s?restype=REDACTED&comp=REDACTED&prefix=REDACTED'
 Request method: 'GET'
 Request headers:
     'x-ms-version': 'REDACTED'
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': '0e4dd921-df1c-11f1-9119-001a7dda7115'
+    'x-ms-client-request-id': 'e25ee705-dfe0-11f1-a7d2-001a7dda7115'
     'Authorization': 'REDACTED'
 No body was attached to the request
-2026-11-12 23:38:21,804 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 200
+2026-11-13 23:07:18,982 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 200
 Response headers:
     'Transfer-Encoding': 'chunked'
     'Content-Type': 'application/xml'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b821007-b01e-003e-5e28-735fe0000000'
-    'x-ms-client-request-id': '0e4dd921-df1c-11f1-9119-001a7dda7115'
+    'x-ms-request-id': '15c13922-b01e-0011-2ced-73522b000000'
+    'x-ms-client-request-id': 'e25ee705-dfe0-11f1-a7d2-001a7dda7115'
     'x-ms-version': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:38:21 GMT'
-2026-11-12 23:38:21,833 INFO __main__: Deleting stale MP3 blob 'mp3s/2026-11-04-CompoundCensoredOfficial-Is-Trump-s-Iran-Operation-Destroying-the-US-Dollar-Gavin-CLASHES-with-Nick-and-Raf-10-22-2026.mp3'.
-2026-11-12 23:38:21,835 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-04-CompoundCensoredOfficial-Is-Trump-s-Iran-Operation-Destroying-the-US-Dollar-Gavin-CLASHES-with-Nick-and-Raf-10-22-2026.mp3'
+    'Date': 'Sat, 14 Nov 2026 04:07:18 GMT'
+2026-11-13 23:07:19,024 INFO __main__: Deleting stale MP3 blob 'mp3s/2026-11-05-AnnCoulter-Ann-Coulter-on-The-Mark-Simone-Show-710-WOR-November-4-2026.mp3'.
+2026-11-13 23:07:19,026 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-05-AnnCoulter-Ann-Coulter-on-The-Mark-Simone-Show-710-WOR-November-4-2026.mp3'
 Request method: 'DELETE'
 Request headers:
     'x-ms-version': 'REDACTED'
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': '0e5e843b-df1c-11f1-a0d6-001a7dda7115'
+    'x-ms-client-request-id': 'e276258e-dfe0-11f1-a791-001a7dda7115'
     'Authorization': 'REDACTED'
 No body was attached to the request
-2026-11-12 23:38:21,877 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 202
+2026-11-13 23:07:19,071 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 202
 Response headers:
     'Content-Length': '0'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b821075-b01e-003e-4928-735fe0000000'
-    'x-ms-client-request-id': '0e5e843b-df1c-11f1-a0d6-001a7dda7115'
+    'x-ms-request-id': '15c139ea-b01e-0011-64ed-73522b000000'
+    'x-ms-client-request-id': 'e276258e-dfe0-11f1-a791-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-delete-type-permanent': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:38:21 GMT'
-2026-11-12 23:38:21,878 INFO __main__: Deleting stale MP3 blob 'mp3s/2026-11-04-angrymortgage-AI-is-taking-JOBS-Can-Canada-FIGHT-back.mp3'.
-2026-11-12 23:38:21,882 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-04-angrymortgage-AI-is-taking-JOBS-Can-Canada-FIGHT-back.mp3'
+    'Date': 'Sat, 14 Nov 2026 04:07:18 GMT'
+2026-11-13 23:07:19,072 INFO __main__: Deleting stale MP3 blob 'mp3s/2026-11-05-CompoundCensoredOfficial-Gavin-McInnes-Predicts-Two-Years-of-CHAOS-Under-Democrat-Control-w-Alex-Jones-and-Harrison-Smith.mp3'.
+2026-11-13 23:07:19,078 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-05-CompoundCensoredOfficial-Gavin-McInnes-Predicts-Two-Years-of-CHAOS-Under-Democrat-Control-w-Alex-Jones-and-Harrison-Smith.mp3'
 Request method: 'DELETE'
 Request headers:
     'x-ms-version': 'REDACTED'
     'Accept': 'application/xml'
     'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
     'x-ms-date': 'REDACTED'
-    'x-ms-client-request-id': '0e65bda9-df1c-11f1-875e-001a7dda7115'
+    'x-ms-client-request-id': 'e27e21cd-dfe0-11f1-915a-001a7dda7115'
     'Authorization': 'REDACTED'
 No body was attached to the request
-2026-11-12 23:38:21,926 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 202
+2026-11-13 23:07:19,123 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 202
 Response headers:
     'Content-Length': '0'
     'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
-    'x-ms-request-id': '4b8210b0-b01e-003e-7a28-735fe0000000'
-    'x-ms-client-request-id': '0e65bda9-df1c-11f1-875e-001a7dda7115'
+    'x-ms-request-id': '15c13a25-b01e-0011-1eed-73522b000000'
+    'x-ms-client-request-id': 'e27e21cd-dfe0-11f1-915a-001a7dda7115'
     'x-ms-version': 'REDACTED'
     'x-ms-delete-type-permanent': 'REDACTED'
-    'Date': 'Fri, 13 Nov 2026 04:38:21 GMT'
-2026-11-12 23:38:21,927 INFO __main__: Deleted 2 stale MP3 blob(s).
-2026-11-12 23:38:21,930 INFO __main__: Rumble feed URL: https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/Rumble.xml
-2026-11-12 23:38:21,935 INFO __main__: Scott Adams feed URL: https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/ScottAdams.xml
-===== Run ended 2026-11-12T23:38:21-05:00 =====
+    'Date': 'Sat, 14 Nov 2026 04:07:19 GMT'
+2026-11-13 23:07:19,124 INFO __main__: Deleting stale MP3 blob 'mp3s/2026-11-05-angrymortgage-When-Your-Profession-Gets-It-So-WRONG.mp3'.
+2026-11-13 23:07:19,131 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-05-angrymortgage-When-Your-Profession-Gets-It-So-WRONG.mp3'
+Request method: 'DELETE'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'e2863168-dfe0-11f1-97d6-001a7dda7115'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-11-13 23:07:19,181 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 202
+Response headers:
+    'Content-Length': '0'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '15c13a61-b01e-0011-51ed-73522b000000'
+    'x-ms-client-request-id': 'e2863168-dfe0-11f1-97d6-001a7dda7115'
+    'x-ms-version': 'REDACTED'
+    'x-ms-delete-type-permanent': 'REDACTED'
+    'Date': 'Sat, 14 Nov 2026 04:07:19 GMT'
+2026-11-13 23:07:19,182 INFO __main__: Deleting stale MP3 blob 'mp3s/2026-11-05-nickjfuentes-Blue-Tsunami-DESTROYS-MAGA-Here-s-What-Comes-Next.mp3'.
+2026-11-13 23:07:19,189 INFO azure.core.pipeline.policies.http_logging_policy: Request URL: 'https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/mp3s/2026-11-05-nickjfuentes-Blue-Tsunami-DESTROYS-MAGA-Here-s-What-Comes-Next.mp3'
+Request method: 'DELETE'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.31.0 Python/3.14.7 (Windows-10-10.0.19045-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'e28f085a-dfe0-11f1-9bd0-001a7dda7115'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-11-13 23:07:19,240 INFO azure.core.pipeline.policies.http_logging_policy: Response status: 202
+Response headers:
+    'Content-Length': '0'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '15c13aa4-b01e-0011-0ced-73522b000000'
+    'x-ms-client-request-id': 'e28f085a-dfe0-11f1-9bd0-001a7dda7115'
+    'x-ms-version': 'REDACTED'
+    'x-ms-delete-type-permanent': 'REDACTED'
+    'Date': 'Sat, 14 Nov 2026 04:07:19 GMT'
+2026-11-13 23:07:19,241 INFO __main__: Deleted 4 stale MP3 blob(s).
+2026-11-13 23:07:19,246 INFO __main__: Rumble feed URL: https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/Rumble.xml
+2026-11-13 23:07:19,251 INFO __main__: Scott Adams feed URL: https://podcasttrimmeraf20240207.blob.core.windows.net/podcastmp3s/ScottAdams.xml
+===== Run ended 2026-11-13T23:07:19-05:00 =====
