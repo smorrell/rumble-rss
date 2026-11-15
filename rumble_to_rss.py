@@ -433,13 +433,14 @@ def write_feed(metadata):
     items_container = channel
     feed_channels = {channel.url for channel in CHANNELS if not channel.paused}
     feed_entries = [
-        (video_id, item)
-        for video_id, item in metadata.items()
+        (metadata_key, item)
+        for metadata_key, item in metadata.items()
         if item.get("channel_url") in feed_channels
     ]
     feed_entries.sort(key=lambda entry: entry[1].get("upload_date") or "", reverse=True)
 
-    for video_id, item in feed_entries:
+    for metadata_key, item in feed_entries:
+        video_id = item.get("video_id") or metadata_key
         upload_date = item.get("upload_date")
         try:
             timestamp = item.get("timestamp")
@@ -571,10 +572,26 @@ def download_and_convert():
                         f"[{thread_name}] Skipping video without an ID: {video_url}."
                     )
                     return None
+                metadata_key = video_url
+                metadata_migrated = False
                 with metadata_lock:
-                    if info and info.get("id") in metadata:
-                        metadata_entry = metadata[info["id"]]
+                    legacy_entry = metadata.get(info["id"])
+                    if (
+                        metadata_key not in metadata
+                        and legacy_entry
+                        and legacy_entry.get("channel_url") == channel_url
+                    ):
+                        metadata[metadata_key] = metadata.pop(info["id"])
+                        metadata_migrated = True
+                    if metadata_key in metadata:
+                        metadata_entry = metadata[metadata_key]
                         metadata_changed = False
+                        if metadata_entry.get("video_url") != metadata_key:
+                            metadata_entry["video_url"] = metadata_key
+                            metadata_changed = True
+                        if metadata_entry.get("video_id") != info["id"]:
+                            metadata_entry["video_id"] = info["id"]
+                            metadata_changed = True
                         if metadata_entry.get("channel_url") != channel_url:
                             metadata_entry["channel_url"] = channel_url
                             metadata_changed = True
@@ -592,7 +609,7 @@ def download_and_convert():
                             else None
                         )
                         if local_path and os.path.isfile(local_path):
-                            if metadata_changed:
+                            if metadata_changed or metadata_migrated:
                                 with open(
                                     METADATA_PATH, "w", encoding="utf-8"
                                 ) as metadata_file:
@@ -645,6 +662,8 @@ def download_and_convert():
                 if existing_name:
                     output_name = existing_name
                     metadata_entry = {
+                        "video_id": info["id"],
+                        "video_url": metadata_key,
                         "title": info.get("title"),
                         "description": info.get("description"),
                         "upload_date": info.get("upload_date"),
@@ -654,7 +673,7 @@ def download_and_convert():
                         "channel_url": channel_url,
                     }
                     with metadata_lock:
-                        metadata[info["id"]] = metadata_entry
+                        metadata[metadata_key] = metadata_entry
                         with open(
                             METADATA_PATH, "w", encoding="utf-8"
                         ) as metadata_file:
@@ -687,6 +706,8 @@ def download_and_convert():
                     os.rename(source_path, output_path)
 
                 metadata_entry = {
+                    "video_id": info["id"],
+                    "video_url": metadata_key,
                     "title": info.get("title"),
                     "description": info.get("description"),
                     "upload_date": info.get("upload_date"),
@@ -697,7 +718,7 @@ def download_and_convert():
                 }
 
                 with metadata_lock:
-                    metadata[info["id"]] = metadata_entry
+                    metadata[metadata_key] = metadata_entry
                     with open(METADATA_PATH, "w", encoding="utf-8") as metadata_file:
                         json.dump(
                             metadata,
