@@ -58,6 +58,7 @@ MAX_VIDEO_AGE_DAYS = 7
 MAX_DOWNLOADS_PER_RUN = 25
 AUDIO_DIR = os.path.join(REPO_PATH, "mp3s")
 IMAGE_DIR = os.path.join(REPO_PATH, "img")
+THUMBNAIL_CACHE_PATH = os.path.join(IMAGE_DIR, "thumbnail_sources.json")
 METADATA_PATH = os.path.join(AUDIO_DIR, "video_metadata.json")
 RSS_FEED_PATH = os.path.join(REPO_PATH, "Rumble.xml")
 AZURE_STORAGE_ACCOUNT_NAME = os.environ.get(
@@ -174,27 +175,47 @@ def download_channel_images():
         print("No active channels; keeping the existing podcast cover.")
         return
     try:
+        with open(THUMBNAIL_CACHE_PATH, encoding="utf-8") as cache_file:
+            thumbnail_sources = json.load(cache_file)
+    except FileNotFoundError:
+        thumbnail_sources = {}
+    if not isinstance(thumbnail_sources, dict):
+        raise ValueError(f"Invalid thumbnail cache: {THUMBNAIL_CACHE_PATH}")
+
+    try:
         for channel in active_channels:
             show_name = channel_show_name(channel.url)
             thumbnail_url = channel_episode_thumbnail_url(channel.url)
-            request = Request(thumbnail_url, headers={"User-Agent": "Mozilla/5.0"})
-            with urlopen(request, timeout=30) as response:
-                thumbnail_data = response.read()
-
-            with Image.open(BytesIO(thumbnail_data)) as source:
-                thumbnail = ImageOps.contain(
-                    source.convert("RGB"),
-                    (540, 468),
-                    method=Image.Resampling.LANCZOS,
+            portrait_path = os.path.join(IMAGE_DIR, f"{show_name}.jpg")
+            if (
+                thumbnail_sources.get(channel.url) == thumbnail_url
+                and os.path.isfile(portrait_path)
+            ):
+                with Image.open(portrait_path) as source:
+                    portrait = source.convert("RGB")
+                print(f"Using cached latest episode thumbnail for {show_name}.")
+            else:
+                request = Request(
+                    thumbnail_url, headers={"User-Agent": "Mozilla/5.0"}
                 )
-            portrait = Image.new("RGB", (540, 540), "#172126")
-            portrait.paste(
-                thumbnail,
-                ((540 - thumbnail.width) // 2, (468 - thumbnail.height) // 2),
-            )
-            thumbnail.close()
+                with urlopen(request, timeout=30) as response:
+                    thumbnail_data = response.read()
+
+                with Image.open(BytesIO(thumbnail_data)) as source:
+                    thumbnail = ImageOps.contain(
+                        source.convert("RGB"),
+                        (540, 468),
+                        method=Image.Resampling.LANCZOS,
+                    )
+                portrait = Image.new("RGB", (540, 540), "#172126")
+                portrait.paste(
+                    thumbnail,
+                    ((540 - thumbnail.width) // 2, (468 - thumbnail.height) // 2),
+                )
+                thumbnail.close()
+                thumbnail_sources[channel.url] = thumbnail_url
+                print(f"Downloaded the latest episode thumbnail for {show_name}.")
             portraits.append((show_name, channel.image_label, portrait))
-            print(f"Downloaded the latest episode thumbnail for {show_name}.")
 
         cover = Image.new("RGB", (1800, 1800), "#263238")
         draw = ImageDraw.Draw(cover)
@@ -289,6 +310,12 @@ def download_channel_images():
                 os.path.join(IMAGE_DIR, f"{show_name}.jpg"),
             )
         os.replace(temporary_paths[-1], cover_path)
+        with tempfile.NamedTemporaryFile(
+            dir=IMAGE_DIR, suffix=".json", mode="w", encoding="utf-8", delete=False
+        ) as temporary_file:
+            temporary_paths.append(temporary_file.name)
+            json.dump(thumbnail_sources, temporary_file, ensure_ascii=False, indent=2)
+        os.replace(temporary_paths[-1], THUMBNAIL_CACHE_PATH)
         print(f"Updated podcast cover: {cover_path}")
     finally:
         for temporary_path in temporary_paths:
@@ -539,6 +566,11 @@ def download_and_convert():
             try:
                 print(f"[{thread_name}] Video URL: {video_url}")
                 info = ydl.extract_info(video_url, download=False)
+                if not info or not info.get("id"):
+                    print(
+                        f"[{thread_name}] Skipping video without an ID: {video_url}."
+                    )
+                    return None
                 with metadata_lock:
                     if info and info.get("id") in metadata:
                         metadata_entry = metadata[info["id"]]
@@ -553,16 +585,28 @@ def download_and_convert():
                         ):
                             metadata_entry["duration"] = duration
                             metadata_changed = True
-                        if metadata_changed:
-                            with open(METADATA_PATH, "w", encoding="utf-8") as metadata_file:
-                                json.dump(
-                                    metadata,
-                                    metadata_file,
-                                    ensure_ascii=False,
-                                    indent=2,
-                                )
-                        print(f"[{thread_name}] Skipping already downloaded video {video_url}.")
-                        return None
+                        filename = metadata_entry.get("filename")
+                        local_path = (
+                            os.path.join(AUDIO_DIR, os.path.basename(filename))
+                            if filename
+                            else None
+                        )
+                        if local_path and os.path.isfile(local_path):
+                            if metadata_changed:
+                                with open(
+                                    METADATA_PATH, "w", encoding="utf-8"
+                                ) as metadata_file:
+                                    json.dump(
+                                        metadata,
+                                        metadata_file,
+                                        ensure_ascii=False,
+                                        indent=2,
+                                    )
+                            print(
+                                f"[{thread_name}] Skipping already downloaded video "
+                                f"{video_url}."
+                            )
+                            return None
 
                     if not is_recent_video(info):
                         upload_date = info.get("upload_date") if info else None
@@ -580,6 +624,50 @@ def download_and_convert():
                             f"{channel.max_duration_minutes}-minute channel maximum."
                         )
                         return None
+
+                prepared_name = os.path.basename(ydl.prepare_filename(info))
+                source_stem = os.path.splitext(prepared_name)[0]
+                source_name = f"{source_stem}.mp3"
+                output_name = sanitize_mp3_filename(source_name)
+                existing_names = [output_name]
+                if source_name != output_name:
+                    existing_names.append(
+                        sanitize_mp3_filename(f"{source_stem}-{info['id']}.mp3")
+                    )
+                existing_name = next(
+                    (
+                        name
+                        for name in existing_names
+                        if os.path.isfile(os.path.join(AUDIO_DIR, name))
+                    ),
+                    None,
+                )
+                if existing_name:
+                    output_name = existing_name
+                    metadata_entry = {
+                        "title": info.get("title"),
+                        "description": info.get("description"),
+                        "upload_date": info.get("upload_date"),
+                        "timestamp": info.get("timestamp"),
+                        "duration": info.get("duration"),
+                        "filename": output_name,
+                        "channel_url": channel_url,
+                    }
+                    with metadata_lock:
+                        metadata[info["id"]] = metadata_entry
+                        with open(
+                            METADATA_PATH, "w", encoding="utf-8"
+                        ) as metadata_file:
+                            json.dump(
+                                metadata,
+                                metadata_file,
+                                ensure_ascii=False,
+                                indent=2,
+                            )
+                    print(
+                        f"[{thread_name}] Skipping existing local file {output_name}."
+                    )
+                    return None
 
                 info = ydl.extract_info(video_url, download=True)
                 if not info or not info.get("id"):

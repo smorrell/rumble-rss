@@ -1,3 +1,4 @@
+import hashlib
 import logging
 import os
 from pathlib import Path
@@ -25,6 +26,14 @@ ACCOUNT_NAME = os.environ.get(
     "AZURE_STORAGE_ACCOUNT_NAME", "podcasttrimmeraf20240207"
 )
 FEED_FILES = ("Rumble.xml", "ScottAdams.xml")
+
+
+def file_sha256(path):
+    digest = hashlib.sha256()
+    with path.open("rb") as file:
+        for chunk in iter(lambda: file.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
 
 
 def delete_stale_mp3_blobs(container, local_mp3_paths):
@@ -95,12 +104,29 @@ def main():
 
     def upload_file(path, blob_name, content_type):
         blob = container.get_blob_client(blob_name)
+        digest = file_sha256(path)
+        if blob.exists():
+            properties = blob.get_blob_properties()
+            remote_metadata = properties.metadata or {}
+            remote_digest = next(
+                (
+                    value
+                    for key, value in remote_metadata.items()
+                    if key.lower() == "sha256"
+                ),
+                None,
+            )
+            if remote_digest == digest:
+                logger.info("Skipping unchanged upload '%s'.", blob_name)
+                return
+
         logger.info("Uploading '%s'.", blob_name)
         with path.open("rb") as data:
             blob.upload_blob(
                 data,
                 overwrite=True,
                 content_settings=ContentSettings(content_type=content_type),
+                metadata={"sha256": digest},
             )
         logger.info("Uploaded '%s'.", blob_name)
 
