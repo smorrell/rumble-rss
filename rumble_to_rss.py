@@ -549,15 +549,23 @@ def write_feed(metadata):
     print(f"Wrote {len(feed_entries)} episode(s) to {RSS_FEED_PATH}.")
 
 
-def discover_channel_videos(channel_url, ydl):
-    """Find video URLs from a Rumble or YouTube channel."""
+def iter_channel_videos(channel_url, ydl):
+    """Yield video URLs from a Rumble or YouTube channel as they are found."""
     if "youtube.com/" in channel_url or "youtu.be/" in channel_url:
         channel_info = ydl.extract_info(channel_url, download=False)
-        return [
-            entry.get("webpage_url") or entry.get("url")
-            for entry in channel_info.get("entries", [])
-            if entry and (entry.get("webpage_url") or entry.get("url"))
-        ]
+        for entry in channel_info.get("entries", []):
+            if not entry:
+                continue
+            video_id = entry.get("id")
+            if video_id:
+                yield f"https://www.youtube.com/watch?v={quote(str(video_id))}"
+                continue
+            video_url = entry.get("webpage_url") or entry.get("url")
+            if video_url:
+                if not video_url.startswith(("http://", "https://")):
+                    video_url = f"https://www.youtube.com/watch?v={video_url}"
+                yield video_url
+        return
 
     video_pattern = re.compile(
         r"(?:https://rumble\.com)?(/v(?!ideos)[\w.-]+\.html)", re.IGNORECASE
@@ -589,7 +597,12 @@ def discover_channel_videos(channel_url, ydl):
         if page_number > 1 and not new_urls:
             break
 
-    return video_urls
+    yield from video_urls
+
+
+def discover_channel_videos(channel_url, ydl):
+    """Return all video URLs from a Rumble or YouTube channel."""
+    return list(iter_channel_videos(channel_url, ydl))
 
 def download_and_convert():
     """Downloads new videos from Rumble and YouTube, converts to MP3, and returns metadata."""
@@ -665,9 +678,7 @@ def download_and_convert():
         filtered_videos[video_url] = entry
         save_filtered_videos()
 
-    def fetch_and_convert(video_url, channel, metadata, metadata_lock):
-        channel_url = channel.url
-        thread_name = f"Thread-{__import__('threading').current_thread().ident}"
+    def cached_video_skip_reason(video_url, channel):
         with metadata_lock:
             metadata_entry = metadata.get(video_url)
             filename = metadata_entry.get("filename") if metadata_entry else None
@@ -677,21 +688,23 @@ def download_and_convert():
                 else None
             )
             if local_path and os.path.isfile(local_path):
-                print(
-                    f"[{thread_name}] Skipping already downloaded video {video_url}."
-                )
-                return None
+                return "already downloaded"
 
             cached_reason = video_filter_reason(filtered_videos.get(video_url), channel)
             if cached_reason:
-                print(
-                    f"[{thread_name}] Skipping previously filtered video "
-                    f"{video_url} ({cached_reason})."
-                )
-                return None
+                return f"previously filtered ({cached_reason})"
             if video_url in filtered_videos:
                 del filtered_videos[video_url]
                 save_filtered_videos()
+        return None
+
+    def fetch_and_convert(video_url, channel, metadata, metadata_lock):
+        channel_url = channel.url
+        thread_name = f"Thread-{__import__('threading').current_thread().ident}"
+        skip_reason = cached_video_skip_reason(video_url, channel)
+        if skip_reason:
+            print(f"[{thread_name}] Skipping {video_url} ({skip_reason}).")
+            return None
 
         with yt_dlp.YoutubeDL(build_ydl_options(channel_url)) as ydl:
             try:
@@ -892,18 +905,22 @@ def download_and_convert():
         if channel.paused:
             print(f"Skipping paused channel {channel.url}.")
             continue
+        channel_downloads = 0
         ydl = yt_dlp.YoutubeDL(build_ydl_options())
         try:
-            video_urls = discover_channel_videos(channel.url, ydl)
+            for video_url in iter_channel_videos(channel.url, ydl):
+                if channel_downloads >= MAX_DOWNLOADS_PER_RUN:
+                    break
+                skip_reason = cached_video_skip_reason(video_url, channel)
+                if skip_reason:
+                    print(
+                        f"Skipping {video_url} ({skip_reason}); continuing channel scan."
+                    )
+                    continue
+                pending_tasks.append((video_url, channel))
+                channel_downloads += 1
         finally:
             ydl.close()
-
-        channel_downloads = 0
-        for video_url in video_urls:
-            if channel_downloads >= MAX_DOWNLOADS_PER_RUN:
-                break
-            pending_tasks.append((video_url, channel))
-            channel_downloads += 1
 
     max_workers = 4
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
