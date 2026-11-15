@@ -56,10 +56,12 @@ with open(CHANNEL_CONFIG_PATH, encoding="utf-8") as channel_config_file:
 YOUTUBE_MAX_VIDEOS = 5
 MAX_VIDEO_AGE_DAYS = 7
 MAX_DOWNLOADS_PER_RUN = 25
+FILTER_RETRY_HOURS = 24
 AUDIO_DIR = os.path.join(REPO_PATH, "mp3s")
 IMAGE_DIR = os.path.join(REPO_PATH, "img")
 THUMBNAIL_CACHE_PATH = os.path.join(IMAGE_DIR, "thumbnail_sources.json")
 METADATA_PATH = os.path.join(AUDIO_DIR, "video_metadata.json")
+FILTERED_VIDEOS_PATH = os.path.join(AUDIO_DIR, "filtered_video_urls.json")
 RSS_FEED_PATH = os.path.join(REPO_PATH, "Rumble.xml")
 AZURE_STORAGE_ACCOUNT_NAME = os.environ.get(
     "AZURE_STORAGE_ACCOUNT_NAME", "podcasttrimmeraf20240207"
@@ -420,6 +422,39 @@ def is_recent_video(info):
     return video_date >= cutoff_date
 
 
+def video_filter_reason(info, channel):
+    """Return a reason when known video details still fail the current filters."""
+    if not isinstance(info, dict):
+        return None
+
+    retry_after = info.get("retry_after")
+    if retry_after:
+        try:
+            retry_after = datetime.fromisoformat(retry_after)
+        except (TypeError, ValueError):
+            retry_after = None
+        if retry_after and retry_after.tzinfo is None:
+            retry_after = retry_after.replace(tzinfo=timezone.utc)
+        if retry_after and datetime.now(timezone.utc) < retry_after:
+            return info.get("filter_reason", "previously filtered")
+
+    upload_date = info.get("upload_date") if info else None
+    if upload_date:
+        try:
+            video_date = datetime.strptime(upload_date, "%Y%m%d").date()
+        except ValueError:
+            video_date = None
+        if video_date and video_date < (
+            datetime.now().date() - timedelta(days=MAX_VIDEO_AGE_DAYS)
+        ):
+            return f"older than {MAX_VIDEO_AGE_DAYS} days"
+
+    duration = info.get("duration") if info else None
+    if duration is not None and duration >= channel.max_duration_minutes * 60:
+        return f"at least {channel.max_duration_minutes} minutes long"
+    return None
+
+
 def write_feed(metadata):
     """Write the generated podcast RSS feed for all enabled channels."""
     rss = ET.Element("rss", version="2.0")
@@ -560,14 +595,78 @@ def download_and_convert():
             )
         return opts
 
+    metadata = {}
+    if os.path.exists(METADATA_PATH):
+        with open(METADATA_PATH, encoding="utf-8") as metadata_file:
+            metadata = json.load(metadata_file)
+    remove_expired_downloads(metadata)
+    filtered_videos = {}
+    if os.path.exists(FILTERED_VIDEOS_PATH):
+        with open(FILTERED_VIDEOS_PATH, encoding="utf-8") as filtered_file:
+            filtered_videos = json.load(filtered_file)
+    if not isinstance(filtered_videos, dict):
+        raise ValueError(f"Invalid filtered-video cache: {FILTERED_VIDEOS_PATH}")
+    metadata_lock = __import__("threading").Lock()
+
+    def save_filtered_videos():
+        with open(FILTERED_VIDEOS_PATH, "w", encoding="utf-8") as filtered_file:
+            json.dump(filtered_videos, filtered_file, ensure_ascii=False, indent=2)
+
+    def remember_filtered_video(video_url, channel, info, reason, retry=False):
+        entry = {
+            "upload_date": info.get("upload_date") if info else None,
+            "duration": info.get("duration") if info else None,
+            "channel_url": channel.url,
+        }
+        if retry:
+            entry["filter_reason"] = reason
+            entry["retry_after"] = (
+                datetime.now(timezone.utc) + timedelta(hours=FILTER_RETRY_HOURS)
+            ).isoformat()
+        filtered_videos[video_url] = entry
+        save_filtered_videos()
+
     def fetch_and_convert(video_url, channel, metadata, metadata_lock):
         channel_url = channel.url
         thread_name = f"Thread-{__import__('threading').current_thread().ident}"
+        with metadata_lock:
+            metadata_entry = metadata.get(video_url)
+            filename = metadata_entry.get("filename") if metadata_entry else None
+            local_path = (
+                os.path.join(AUDIO_DIR, os.path.basename(filename))
+                if filename
+                else None
+            )
+            if local_path and os.path.isfile(local_path):
+                print(
+                    f"[{thread_name}] Skipping already downloaded video {video_url}."
+                )
+                return None
+
+            cached_reason = video_filter_reason(filtered_videos.get(video_url), channel)
+            if cached_reason:
+                print(
+                    f"[{thread_name}] Skipping previously filtered video "
+                    f"{video_url} ({cached_reason})."
+                )
+                return None
+            if video_url in filtered_videos:
+                del filtered_videos[video_url]
+                save_filtered_videos()
+
         with yt_dlp.YoutubeDL(build_ydl_options(channel_url)) as ydl:
             try:
                 print(f"[{thread_name}] Video URL: {video_url}")
                 info = ydl.extract_info(video_url, download=False)
                 if not info or not info.get("id"):
+                    with metadata_lock:
+                        remember_filtered_video(
+                            video_url,
+                            channel,
+                            info,
+                            "video metadata unavailable",
+                            retry=True,
+                        )
                     print(
                         f"[{thread_name}] Skipping video without an ID: {video_url}."
                     )
@@ -627,6 +726,14 @@ def download_and_convert():
 
                     if not is_recent_video(info):
                         upload_date = info.get("upload_date") if info else None
+                        filter_reason = video_filter_reason(info, channel)
+                        remember_filtered_video(
+                            video_url,
+                            channel,
+                            info,
+                            filter_reason or "upload date missing or invalid",
+                            retry=filter_reason is None,
+                        )
                         print(
                             f"[{thread_name}] Skipping old or undated video {video_url} "
                             f"(upload_date: {upload_date or 'unknown'})."
@@ -635,6 +742,13 @@ def download_and_convert():
 
                     duration = info.get("duration") if info else None
                     if duration is None or duration >= channel.max_duration_minutes * 60:
+                        remember_filtered_video(
+                            video_url,
+                            channel,
+                            info,
+                            "duration unavailable",
+                            retry=duration is None,
+                        )
                         print(
                             f"[{thread_name}] Skipping video {video_url}: duration is "
                             f"unknown or not less than the "
@@ -733,12 +847,6 @@ def download_and_convert():
 
     print("Checking Rumble for new videos...")
     entries = []
-    metadata = {}
-    if os.path.exists(METADATA_PATH):
-        with open(METADATA_PATH, encoding="utf-8") as metadata_file:
-            metadata = json.load(metadata_file)
-    remove_expired_downloads(metadata)
-    metadata_lock = __import__("threading").Lock()
 
     pending_tasks = []
     for channel in CHANNELS:
