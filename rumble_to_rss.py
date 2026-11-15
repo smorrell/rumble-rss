@@ -171,11 +171,20 @@ def download_channel_images():
     print("Refreshing channel portraits and podcast cover...")
     os.makedirs(IMAGE_DIR, exist_ok=True)
     portraits = []
+    portrait_temporary_paths = []
     temporary_paths = []
     active_channels = [channel for channel in CHANNELS if not channel.paused]
     if not active_channels:
         print("No active channels; keeping the existing podcast cover.")
         return
+    cover_path = os.path.join(IMAGE_DIR, "podcast_cover.jpg")
+
+    def image_is_fresh(path):
+        try:
+            return datetime.now().timestamp() - os.path.getmtime(path) < 24 * 60 * 60
+        except FileNotFoundError:
+            return False
+
     try:
         with open(THUMBNAIL_CACHE_PATH, encoding="utf-8") as cache_file:
             thumbnail_sources = json.load(cache_file)
@@ -184,40 +193,66 @@ def download_channel_images():
     if not isinstance(thumbnail_sources, dict):
         raise ValueError(f"Invalid thumbnail cache: {THUMBNAIL_CACHE_PATH}")
 
+    active_channel_urls = [channel.url for channel in active_channels]
+    if (
+        thumbnail_sources.get("_active_channels") == active_channel_urls
+        and image_is_fresh(cover_path)
+        and all(
+        image_is_fresh(
+            os.path.join(IMAGE_DIR, f"{channel_show_name(channel.url)}.jpg")
+        )
+        for channel in active_channels
+        )
+    ):
+        print("Channel images and podcast cover are less than 24 hours old.")
+        return
+
     try:
         for channel in active_channels:
             show_name = channel_show_name(channel.url)
-            thumbnail_url = channel_episode_thumbnail_url(channel.url)
             portrait_path = os.path.join(IMAGE_DIR, f"{show_name}.jpg")
-            if (
-                thumbnail_sources.get(channel.url) == thumbnail_url
-                and os.path.isfile(portrait_path)
-            ):
+            needs_write = False
+            if image_is_fresh(portrait_path):
                 with Image.open(portrait_path) as source:
                     portrait = source.convert("RGB")
-                print(f"Using cached latest episode thumbnail for {show_name}.")
+                print(f"Using recent channel image for {show_name}.")
             else:
-                request = Request(
-                    thumbnail_url, headers={"User-Agent": "Mozilla/5.0"}
-                )
-                with urlopen(request, timeout=30) as response:
-                    thumbnail_data = response.read()
-
-                with Image.open(BytesIO(thumbnail_data)) as source:
-                    thumbnail = ImageOps.contain(
-                        source.convert("RGB"),
-                        (540, 468),
-                        method=Image.Resampling.LANCZOS,
+                thumbnail_url = channel_episode_thumbnail_url(channel.url)
+                if (
+                    thumbnail_sources.get(channel.url) == thumbnail_url
+                    and os.path.isfile(portrait_path)
+                ):
+                    with Image.open(portrait_path) as source:
+                        portrait = source.convert("RGB")
+                    print(f"Using cached latest episode thumbnail for {show_name}.")
+                else:
+                    request = Request(
+                        thumbnail_url, headers={"User-Agent": "Mozilla/5.0"}
                     )
-                portrait = Image.new("RGB", (540, 540), "#172126")
-                portrait.paste(
-                    thumbnail,
-                    ((540 - thumbnail.width) // 2, (468 - thumbnail.height) // 2),
-                )
-                thumbnail.close()
-                thumbnail_sources[channel.url] = thumbnail_url
-                print(f"Downloaded the latest episode thumbnail for {show_name}.")
-            portraits.append((show_name, channel.image_label, portrait))
+                    with urlopen(request, timeout=30) as response:
+                        thumbnail_data = response.read()
+
+                    with Image.open(BytesIO(thumbnail_data)) as source:
+                        thumbnail = ImageOps.contain(
+                            source.convert("RGB"),
+                            (540, 468),
+                            method=Image.Resampling.LANCZOS,
+                        )
+                    portrait = Image.new("RGB", (540, 540), "#172126")
+                    portrait.paste(
+                        thumbnail,
+                        (
+                            (540 - thumbnail.width) // 2,
+                            (468 - thumbnail.height) // 2,
+                        ),
+                    )
+                    thumbnail.close()
+                    thumbnail_sources[channel.url] = thumbnail_url
+                    needs_write = True
+                    print(f"Downloaded the latest episode thumbnail for {show_name}.")
+            portraits.append(
+                (show_name, channel.image_label, portrait, needs_write)
+            )
 
         cover = Image.new("RGB", (1800, 1800), "#263238")
         draw = ImageDraw.Draw(cover)
@@ -263,7 +298,7 @@ def download_channel_images():
             "#CF7C42",
             "#497C78",
         )
-        for index, ((_, label, portrait), (x, y)) in enumerate(
+        for index, ((_, label, portrait, _), (x, y)) in enumerate(
             zip(portraits, positions)
         ):
             panel_color = panel_colors[index]
@@ -290,28 +325,32 @@ def download_channel_images():
             font=subtitle_font,
         )
 
-        for show_name, _, portrait in portraits:
+        for show_name, _, portrait, needs_write in portraits:
+            if not needs_write:
+                continue
             with tempfile.NamedTemporaryFile(
                 dir=IMAGE_DIR, suffix=".jpg", delete=False
             ) as temporary_file:
                 temporary_paths.append(temporary_file.name)
+                portrait_temporary_paths.append(
+                    (show_name, temporary_file.name)
+                )
             portrait.save(temporary_paths[-1], format="JPEG", quality=92)
 
-        cover_path = os.path.join(IMAGE_DIR, "podcast_cover.jpg")
         with tempfile.NamedTemporaryFile(
             dir=IMAGE_DIR, suffix=".jpg", delete=False
         ) as temporary_file:
             temporary_paths.append(temporary_file.name)
-        cover.save(temporary_paths[-1], format="JPEG", quality=92)
+            cover_temporary_path = temporary_file.name
+        cover.save(cover_temporary_path, format="JPEG", quality=92)
 
-        for (show_name, _, _), temporary_path in zip(
-            portraits, temporary_paths[:-1]
-        ):
+        for show_name, temporary_path in portrait_temporary_paths:
             os.replace(
                 temporary_path,
                 os.path.join(IMAGE_DIR, f"{show_name}.jpg"),
             )
-        os.replace(temporary_paths[-1], cover_path)
+        os.replace(cover_temporary_path, cover_path)
+        thumbnail_sources["_active_channels"] = active_channel_urls
         with tempfile.NamedTemporaryFile(
             dir=IMAGE_DIR, suffix=".json", mode="w", encoding="utf-8", delete=False
         ) as temporary_file:
@@ -323,7 +362,7 @@ def download_channel_images():
         for temporary_path in temporary_paths:
             if os.path.exists(temporary_path):
                 os.remove(temporary_path)
-        for _, _, portrait in portraits:
+        for _, _, portrait, _ in portraits:
             portrait.close()
         if "cover" in locals():
             cover.close()
