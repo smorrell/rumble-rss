@@ -257,5 +257,17 @@
     "channel_url": "https://rumble.com/c/nickjfuentes",
     "filter_reason": "duration unavailable",
     "retry_after": "2026-11-16T03:45:08.437642+00:00"
+  },
+  "https://www.youtube.com/watch?v=0VLxpNML2mE": {
+    "upload_date": "20261115",
+    "duration": 1490,
+    "channel_url": "https://www.youtube.com/@TheBrancaShow/videos"
+  },
+  "https://rumble.com/v7iery2-harley-morenstein-fired-from-h3-podcast-and-relaunch.html": {
+    "upload_date": "20261116",
+    "duration": null,
+    "channel_url": "https://rumble.com/c/AnnCoulter",
+    "filter_reason": "duration unavailable",
+    "retry_after": "2026-11-17T05:12:21.190163+00:00"
   }
 }

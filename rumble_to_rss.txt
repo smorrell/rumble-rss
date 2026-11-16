@@ -1,16 +1,30 @@
 
-===== Run started 2026-11-14T22:43:17-05:00 =====
+===== Run started 2026-11-16T00:09:33-05:00 =====
 Refreshing channel portraits and podcast cover...
-Channel images and podcast cover are less than 24 hours old.
+Downloaded the latest episode thumbnail for angrymortgage.
+Downloaded the latest episode thumbnail for TheBrancaShow.
+Using cached latest episode thumbnail for TheMooseOnTheLooseExtra.
+Downloaded the latest episode thumbnail for CompoundCensoredOfficial.
+Found 26 videos on channel page 1.
+Using cached latest episode thumbnail for AnnCoulter.
+Found 26 videos on channel page 1.
+Downloaded the latest episode thumbnail for nickjfuentes.
+Updated podcast cover: O:\smorrell\OneDrive\Desktop\rumble rss\img\podcast_cover.jpg
+Removed expired MP3: 2026-11-07-angrymortgage-Real-Estate-Keeps-Falling.mp3
+Removed expired MP3: 2026-11-07-CompoundCensoredOfficial-Gavin-McInnes-You-Can-Literally-Punch-a-Cop-in-the-Face-in-NYC-and-Get-Away-With-It.mp3
+Removed expired MP3: 2026-11-08-angrymortgage-My-Biggest-Challenge.mp3
+Removed expired MP3: 2026-11-08-angrymortgage-Immigration-Nation.mp3
+Removed expired MP3: 2026-11-08-TheBrancaShow-Chicago-Firefighter-Drops-RAGING-Suspect-Should-He-Be-Charged.mp3
+Removed expired MP3: 2026-11-08-CompoundCensoredOfficial-Shane-Gillis-LOSES-IT-Over-Video-of-a-Man-Knocking-Out-a-Teenage-Girl-w-Ian-Fidance-1-30-2019.mp3
+Removed 6 expired video metadata entries.
 Checking Rumble for new videos...
 Skipping https://www.youtube.com/watch?v=vYuft02R44g (already downloaded); continuing channel scan.
 Skipping https://www.youtube.com/watch?v=b27Z6QQ-btc (already downloaded); continuing channel scan.
 Skipping https://www.youtube.com/watch?v=lBjrJdSUKvc (already downloaded); continuing channel scan.
 Skipping https://www.youtube.com/watch?v=1pdmM4swyHw (already downloaded); continuing channel scan.
-Skipping https://www.youtube.com/watch?v=zifBbibSWIk (already downloaded); continuing channel scan.
 Skipping https://www.youtube.com/watch?v=B_09D9J2nOk (previously filtered (at least 17 minutes long)); continuing channel scan.
+Skipping https://www.youtube.com/watch?v=MBaaEzu8AB4 (already downloaded); continuing channel scan.
 Skipping https://www.youtube.com/watch?v=G-MPUFLHsUA (previously filtered (at least 17 minutes long)); continuing channel scan.
-Skipping https://www.youtube.com/watch?v=yQf1vOR0uDE (already downloaded); continuing channel scan.
 Skipping https://www.youtube.com/watch?v=dvkYoDPJd78 (previously filtered (older than 7 days)); continuing channel scan.
 Skipping https://www.youtube.com/watch?v=TS2J0deEK6s (previously filtered (older than 7 days)); continuing channel scan.
 Skipping https://www.youtube.com/watch?v=D3UWf-tD1k8 (previously filtered (older than 7 days)); continuing channel scan.
@@ -20,7 +34,6 @@ Skipping https://www.youtube.com/watch?v=-4gEPPzfZGQ (already downloaded); conti
 Skipping https://www.youtube.com/watch?v=-khPaEnRiYs (already downloaded); continuing channel scan.
 Skipping https://www.youtube.com/watch?v=uxkjohuYvjY (already downloaded); continuing channel scan.
 Skipping https://www.youtube.com/watch?v=pKzDCyqd7xs (already downloaded); continuing channel scan.
-Skipping https://www.youtube.com/watch?v=F4QJJv8_T44 (already downloaded); continuing channel scan.
 Found 26 videos on channel page 1.
 Skipping https://rumble.com/v7ht13y-unsafe-2026-midterm-elections-special.html (previously filtered (older than 7 days)); continuing channel scan.
 Skipping https://rumble.com/v7i8xmg-unsafe-with-ann-coulter-top-stories-you-may-have-missed.html (already downloaded); continuing channel scan.
@@ -46,6 +59,7 @@ Skipping https://rumble.com/v7f19le-top-five-stories-this-week-unsafe-live.html 
 Skipping https://rumble.com/v7ellqa-one-year-after-stabbing-of-iryna-zarutska-4-stories-this-week.html (previously filtered (older than 7 days)); continuing channel scan.
 Skipping https://rumble.com/v7eel5i-ann-coulter-on-the-mark-simone-show-710-wor-august-19-2026.html (previously filtered (older than 7 days)); continuing channel scan.
 Skipping https://rumble.com/v7eam5q-josh-hammer-on-ending-anchor-baby-citizenship-israel-and-civilization.html (previously filtered (older than 7 days)); continuing channel scan.
+Skipping https://rumble.com/v7fns6m-lofi-house-radio-lounge-music-to-vibechill-to.html (previously filtered (older than 7 days)); continuing channel scan.
 Found 26 videos on channel page 1.
 Skipping https://rumble.com/v7i8nku-alex-karp-pivots-back-to-the-left.html (already downloaded); continuing channel scan.
 Skipping https://rumble.com/v7i7th0-america-first-ep.-1778.html (previously filtered (at least 120 minutes long)); continuing channel scan.
@@ -70,15 +84,15 @@ Skipping https://rumble.com/v7hjgi0-america-first-ep.-1771.html (previously filt
 Skipping https://rumble.com/v7hili4-netanyahu-survives-israeli-elections.html (previously filtered (older than 7 days)); continuing channel scan.
 Skipping https://rumble.com/v7hhqsg-america-first-ep.-1770.html (previously filtered (older than 7 days)); continuing channel scan.
 Skipping https://rumble.com/v7hgvfo-netanyahus-desperate-attempt-to-stay-in-power.html (previously filtered (older than 7 days)); continuing channel scan.
-Skipping https://rumble.com/v7hfxlc-america-first-ep.-1769.html (previously filtered (older than 7 days)); continuing channel scan.
-[Thread-10876] Video URL: https://www.youtube.com/watch?v=YgVvCwSa3BI
-[Thread-31916] Video URL: https://rumble.com/v7ic520-devolution-power-hour-ep.-510-live-from-gart-14-in-st-pete-beach.html
-[Thread-6592] Video URL: https://www.youtube.com/watch?v=MBaaEzu8AB4
-[Thread-12332] Video URL: https://rumble.com/v7fns6m-lofi-house-radio-lounge-music-to-vibechill-to.html
-[Thread-12332] Skipping old or undated video https://rumble.com/v7fns6m-lofi-house-radio-lounge-music-to-vibechill-to.html (upload_date: 20260918).
-[Thread-31916] Skipping video https://rumble.com/v7ic520-devolution-power-hour-ep.-510-live-from-gart-14-in-st-pete-beach.html: duration is unknown or not less than the 90-minute channel maximum.
-[Thread-31916] Skipping https://rumble.com/v7fns6m-lofi-house-radio-lounge-music-to-vibechill-to.html (previously filtered (older than 7 days)).
-[Thread-12332] Video URL: https://rumble.com/v7ic520-devolution-power-hour-ep.-510-live-from-gart-14-in-st-pete-beach.html
-[Thread-12332] Skipping video https://rumble.com/v7ic520-devolution-power-hour-ep.-510-live-from-gart-14-in-st-pete-beach.html: duration is unknown or not less than the 120-minute channel maximum.
-Wrote 28 episode(s) to O:\smorrell\OneDrive\Desktop\rumble rss\Rumble.xml.
-===== Run ended 2026-11-14T22:45:37-05:00 =====
+Skipping https://rumble.com/v7fns6m-lofi-house-radio-lounge-music-to-vibechill-to.html (previously filtered (older than 7 days)); continuing channel scan.
+[Thread-15168] Video URL: https://www.youtube.com/watch?v=x_ePxjXHKEw[Thread-39592] Video URL: https://www.youtube.com/watch?v=z5AIvR3YbeQ
+
+[Thread-7796] Video URL: https://www.youtube.com/watch?v=RcQGnZTbno0
+[Thread-38060] Video URL: https://www.youtube.com/watch?v=0VLxpNML2mE
+[Thread-38060] Skipping video https://www.youtube.com/watch?v=0VLxpNML2mE: duration is unknown or not less than the 17-minute channel maximum.
+[Thread-38060] Video URL: https://rumble.com/v7iery2-harley-morenstein-fired-from-h3-podcast-and-relaunch.html
+[Thread-38060] Skipping video https://rumble.com/v7iery2-harley-morenstein-fired-from-h3-podcast-and-relaunch.html: duration is unknown or not less than the 90-minute channel maximum.
+[Thread-38060] Video URL: https://rumble.com/v7ieyrk-alex-jones-interviews-nick-fuentes-at-nxr-conference.html
+[Thread-39592] Skipping https://rumble.com/v7iery2-harley-morenstein-fired-from-h3-podcast-and-relaunch.html (previously filtered (duration unavailable)).
+Wrote 26 episode(s) to O:\smorrell\OneDrive\Desktop\rumble rss\Rumble.xml.
+===== Run ended 2026-11-16T00:13:02-05:00 =====
