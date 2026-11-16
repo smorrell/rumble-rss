@@ -25,6 +25,7 @@ The documents describe the 2026 annual DWGHA houseleague tournament, which will 
 
 ## Schedule and game access
 - Teams are told to review the tournament schedule on the association website: https://dwgha.com/
+- The team schedule is specifically available here: https://dwgha.com/Tournaments/2006/Teams/467/
 - Game codes are generated in the Ramp portal once the schedule is loaded, approximately one week before the tournament
 - Teams are instructed to download the Ramp Gamesheets App on a phone or device to access electronic game sheets, rosters, and player management
 - The app is free and available through the Google Play Store or Apple App Store
@@ -44,6 +45,15 @@ The documents describe the 2026 annual DWGHA houseleague tournament, which will 
 - Email forwarding the details also references Tournkey customer support:
   - support@tournkey.com
   - help.tournkey.com
+
+## Game time summary
+- The tournament runs from November 27-29, 2026.
+- Based on the current team schedule at https://dwgha.com/Tournaments/2006/Teams/467/, the listed game times for this team are:
+  - Friday, Nov 27, 2026: 12:00 PM vs Whitby Lightning at Ajax Community Centre (Pad 2)
+  - Friday, Nov 27, 2026: 7:00 PM vs Oakville Hornets Panthers at Ajax Community Centre (Pad 4)
+  - Saturday, Nov 28, 2026: 12:15 PM vs Clarington Flames at Ajax Community Centre (Pad 3)
+- No Sunday game is listed for this team on the schedule page reviewed.
+- The general tournament materials mention that teams should check the official schedule and game codes before the event, but they do not list exact times beyond the live team schedule.
 
 ## Key takeaways
 The documents collectively provide a broad operational overview for the tournament: they inform teams about the schedule, venues, game sheet platform, local logistics, and key staff contacts. The email is essentially a forwarding notice that directs coaches and managers to the attached welcome letter and tells them it will also be posted on the website with updated rules and schedule information.
