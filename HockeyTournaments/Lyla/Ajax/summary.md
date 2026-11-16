@@ -1,5 +1,14 @@
 # Summary of Documents in This Folder
 
+## Game time summary
+- The tournament runs from November 27-29, 2026.
+- Based on the current team schedule at https://dwgha.com/Tournaments/2006/Teams/467/, the listed game times for this team are:
+  - Friday, Nov 27, 2026: 12:00 PM vs Whitby Lightning at Ajax Community Centre (Pad 2)
+  - Friday, Nov 27, 2026: 7:00 PM vs Oakville Hornets Panthers at Ajax Community Centre (Pad 4)
+  - Saturday, Nov 28, 2026: 12:15 PM vs Clarington Flames at Ajax Community Centre (Pad 3)
+- No Sunday game is listed for this team on the schedule page reviewed.
+- The general tournament materials mention that teams should check the official schedule and game codes before the event, but they do not list exact times beyond the live team schedule.
+
 This folder contains two related documents for the 2026 Durham West Girls Hockey Association (DWGHA) House League Tournament:
 
 1. `2026 Durham West Houseleague Tournament Welcome Letter.docx.pdf`
