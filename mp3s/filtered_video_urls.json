@@ -269,5 +269,24 @@
     "channel_url": "https://rumble.com/c/AnnCoulter",
     "filter_reason": "duration unavailable",
     "retry_after": "2026-11-17T05:12:21.190163+00:00"
+  },
+  "https://www.youtube.com/watch?v=g_-qbEhJx2g": {
+    "upload_date": "20261116",
+    "duration": 611,
+    "channel_url": "https://www.youtube.com/@angrymortgage/videos"
+  },
+  "https://rumble.com/v7ifxp0-baseless-conspiracies-ep.-211.html": {
+    "upload_date": "20261116",
+    "duration": null,
+    "channel_url": "https://rumble.com/c/AnnCoulter",
+    "filter_reason": "duration unavailable",
+    "retry_after": "2026-11-18T04:43:56.370672+00:00"
+  },
+  "https://rumble.com/v7iggak-america-first-ep.-1779.html": {
+    "upload_date": "20261117",
+    "duration": null,
+    "channel_url": "https://rumble.com/c/nickjfuentes",
+    "filter_reason": "duration unavailable",
+    "retry_after": "2026-11-18T04:44:00.479114+00:00"
   }
 }
