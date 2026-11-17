@@ -67,5 +67,17 @@ The tournament runs from November 27-29, 2026. Based on the current team schedul
 - No Sunday game is listed for this team on the schedule page reviewed.
 - The general tournament materials mention that teams should check the official schedule and game codes before the event, but they do not list exact times beyond the live team schedule.
 
+## Tie-breakers for standings
+For U11/U13/U15/U18 round-robin standings, DWGHA uses these tie-breakers in order:
+1. Number of wins
+2. Winner between the tied teams when they played head-to-head (only if exactly two teams are tied)
+3. Percentage as calculated by: Goals For / (Goals For + Goals Against)
+4. Fewest goals against
+5. Fewest penalty minutes
+6. First goal scored in preliminary games
+7. Coin toss
+
+This is a tournament-specific standing rule and is an important part of how the round-robin is ranked.
+
 ## Key takeaways
 The documents collectively provide a broad operational overview for the tournament: they inform teams about the schedule, venues, game sheet platform, local logistics, and key staff contacts. The email is essentially a forwarding notice that directs coaches and managers to the attached welcome letter and tells them it will also be posted on the website with updated rules and schedule information.
