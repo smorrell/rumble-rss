@@ -1,5 +1,5 @@
 
-===== Run started 2026-11-16T23:41:55-05:00 =====
+===== Run started 2026-11-16T23:54:28-05:00 =====
 Refreshing channel portraits and podcast cover...
 Using recent channel image for angrymortgage.
 Using recent channel image for TheBrancaShow.
@@ -10,18 +10,20 @@ Using cached latest episode thumbnail for AnnCoulter.
 Using recent channel image for nickjfuentes.
 Updated podcast cover: O:\smorrell\OneDrive\Desktop\rumble rss\img\podcast_cover.jpg
 Checking Rumble for new videos...
+Skipping https://www.youtube.com/watch?v=g_-qbEhJx2g (previously filtered (at least 10 minutes long)); continuing channel scan.
 Skipping https://www.youtube.com/watch?v=z5AIvR3YbeQ (already downloaded); continuing channel scan.
 Skipping https://www.youtube.com/watch?v=vYuft02R44g (already downloaded); continuing channel scan.
 Skipping https://www.youtube.com/watch?v=b27Z6QQ-btc (already downloaded); continuing channel scan.
 Skipping https://www.youtube.com/watch?v=lBjrJdSUKvc (already downloaded); continuing channel scan.
+Skipping https://www.youtube.com/watch?v=8KvOeOYhGMQ (already downloaded); continuing channel scan.
+Skipping https://www.youtube.com/watch?v=DtdwYrtJCtg (already downloaded); continuing channel scan.
 Skipping https://www.youtube.com/watch?v=RcQGnZTbno0 (already downloaded); continuing channel scan.
-Skipping https://www.youtube.com/watch?v=0VLxpNML2mE (previously filtered (at least 17 minutes long)); continuing channel scan.
-Skipping https://www.youtube.com/watch?v=B_09D9J2nOk (previously filtered (at least 17 minutes long)); continuing channel scan.
 Skipping https://www.youtube.com/watch?v=dvkYoDPJd78 (previously filtered (older than 7 days)); continuing channel scan.
 Skipping https://www.youtube.com/watch?v=TS2J0deEK6s (previously filtered (older than 7 days)); continuing channel scan.
 Skipping https://www.youtube.com/watch?v=D3UWf-tD1k8 (previously filtered (older than 7 days)); continuing channel scan.
 Skipping https://www.youtube.com/watch?v=2P1fmIFNTM0 (previously filtered (older than 7 days)); continuing channel scan.
 Skipping https://www.youtube.com/watch?v=qyOpNkSGPr8 (previously filtered (older than 7 days)); continuing channel scan.
+Skipping https://www.youtube.com/watch?v=73r5Us1MG3A (already downloaded); continuing channel scan.
 Skipping https://www.youtube.com/watch?v=x_ePxjXHKEw (already downloaded); continuing channel scan.
 Skipping https://www.youtube.com/watch?v=-4gEPPzfZGQ (already downloaded); continuing channel scan.
 Skipping https://www.youtube.com/watch?v=-khPaEnRiYs (already downloaded); continuing channel scan.
@@ -51,8 +53,11 @@ Skipping https://rumble.com/v7f19le-top-five-stories-this-week-unsafe-live.html 
 Skipping https://rumble.com/v7ellqa-one-year-after-stabbing-of-iryna-zarutska-4-stories-this-week.html (previously filtered (older than 7 days)); continuing channel scan.
 Skipping https://rumble.com/v7eel5i-ann-coulter-on-the-mark-simone-show-710-wor-august-19-2026.html (previously filtered (older than 7 days)); continuing channel scan.
 Skipping https://rumble.com/v7eam5q-josh-hammer-on-ending-anchor-baby-citizenship-israel-and-civilization.html (previously filtered (older than 7 days)); continuing channel scan.
+Skipping https://rumble.com/v7ifxp0-baseless-conspiracies-ep.-211.html (previously filtered (duration unavailable)); continuing channel scan.
 Skipping https://rumble.com/v7fns6m-lofi-house-radio-lounge-music-to-vibechill-to.html (previously filtered (older than 7 days)); continuing channel scan.
 Found 26 videos on channel page 1.
+Skipping https://rumble.com/v7iggak-america-first-ep.-1779.html (previously filtered (duration unavailable)); continuing channel scan.
+Skipping https://rumble.com/v7iey3o-assemble-the-army.html (already downloaded); continuing channel scan.
 Skipping https://rumble.com/v7ieyrk-alex-jones-interviews-nick-fuentes-at-nxr-conference.html (already downloaded); continuing channel scan.
 Skipping https://rumble.com/v7i8nku-alex-karp-pivots-back-to-the-left.html (already downloaded); continuing channel scan.
 Skipping https://rumble.com/v7i7th0-america-first-ep.-1778.html (previously filtered (at least 120 minutes long)); continuing channel scan.
@@ -75,17 +80,9 @@ Skipping https://rumble.com/v7hl510-america-first-ep.-1772.html (previously filt
 Skipping https://rumble.com/v7hjxq6-leftist-hackers-dox-ice-agents.html (previously filtered (older than 7 days)); continuing channel scan.
 Skipping https://rumble.com/v7hjgi0-america-first-ep.-1771.html (previously filtered (older than 7 days)); continuing channel scan.
 Skipping https://rumble.com/v7hili4-netanyahu-survives-israeli-elections.html (previously filtered (older than 7 days)); continuing channel scan.
+Skipping https://rumble.com/v7ifxp0-baseless-conspiracies-ep.-211.html (previously filtered (duration unavailable)); continuing channel scan.
 Skipping https://rumble.com/v7fns6m-lofi-house-radio-lounge-music-to-vibechill-to.html (previously filtered (older than 7 days)); continuing channel scan.
-[Thread-41580] Video URL: https://www.youtube.com/watch?v=g_-qbEhJx2g
-[Thread-43368] Video URL: https://www.youtube.com/watch?v=DtdwYrtJCtg
-[Thread-43580] Video URL: https://www.youtube.com/watch?v=8KvOeOYhGMQ
-[Thread-27452] Video URL: https://www.youtube.com/watch?v=73r5Us1MG3A
-[Thread-41580] Skipping video https://www.youtube.com/watch?v=g_-qbEhJx2g: duration is unknown or not less than the 10-minute channel maximum.
-[Thread-41580] Video URL: https://rumble.com/v7ifxp0-baseless-conspiracies-ep.-211.html
-[Thread-41580] Skipping video https://rumble.com/v7ifxp0-baseless-conspiracies-ep.-211.html: duration is unknown or not less than the 90-minute channel maximum.
-[Thread-41580] Video URL: https://rumble.com/v7iggak-america-first-ep.-1779.html
-[Thread-41580] Skipping video https://rumble.com/v7iggak-america-first-ep.-1779.html: duration is unknown or not less than the 120-minute channel maximum.
-[Thread-41580] Video URL: https://rumble.com/v7iey3o-assemble-the-army.html
-[Thread-43368] Skipping https://rumble.com/v7ifxp0-baseless-conspiracies-ep.-211.html (previously filtered (duration unavailable)).
-Wrote 30 episode(s) to O:\smorrell\OneDrive\Desktop\rumble rss\Rumble.xml.
-===== Run ended 2026-11-16T23:45:45-05:00 =====
+[Thread-38568] Video URL: https://www.youtube.com/watch?v=B_09D9J2nOk[Thread-24940] Video URL: https://www.youtube.com/watch?v=0VLxpNML2mE
+
+Wrote 32 episode(s) to O:\smorrell\OneDrive\Desktop\rumble rss\Rumble.xml.
+===== Run ended 2026-11-16T23:57:06-05:00 =====
