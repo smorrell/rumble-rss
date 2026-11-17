@@ -278,5 +278,48 @@
     "channel_url": "https://rumble.com/c/nickjfuentes",
     "filter_reason": "duration unavailable",
     "retry_after": "2026-11-18T04:44:00.479114+00:00"
+  },
+  "https://www.youtube.com/watch?v=v6AoBfwbmow": {
+    "upload_date": "20261117",
+    "duration": 3574,
+    "channel_url": "https://www.youtube.com/@angrymortgage/videos"
+  },
+  "https://rumble.com/v7ihvb8-buckley-carlson-on-trumps-great-betrayal-israels-control-of-america-and-cha.html": {
+    "upload_date": "20261117",
+    "duration": null,
+    "channel_url": "https://rumble.com/c/AnnCoulter",
+    "filter_reason": "duration unavailable",
+    "retry_after": "2026-11-18T22:06:01.701390+00:00"
+  },
+  "https://rumble.com/v7ihpak-alex-jones-classified-nsa-network-is-down-authorities-deny-links-to-faa-ban.html": {
+    "upload_date": "20261117",
+    "duration": null,
+    "channel_url": "https://rumble.com/c/AnnCoulter",
+    "filter_reason": "duration unavailable",
+    "retry_after": "2026-11-18T22:06:04.201947+00:00"
+  },
+  "https://rumble.com/v6m1ds9-warroom-live.html": {
+    "upload_date": "20250217",
+    "duration": null,
+    "channel_url": "https://rumble.com/c/AnnCoulter"
+  },
+  "https://rumble.com/v7ihg8g-nvidia-earnings-call-live.html": {
+    "upload_date": "20261117",
+    "duration": null,
+    "channel_url": "https://rumble.com/c/AnnCoulter",
+    "filter_reason": "duration unavailable",
+    "retry_after": "2026-11-18T22:06:08.144289+00:00"
+  },
+  "https://rumble.com/v7ihtii-renegades-vs-devils-jai-alai-season-x-in-miami.html": {
+    "upload_date": "20261117",
+    "duration": null,
+    "channel_url": "https://rumble.com/c/AnnCoulter",
+    "filter_reason": "duration unavailable",
+    "retry_after": "2026-11-18T22:06:09.621384+00:00"
+  },
+  "https://rumble.com/v7i2s8w-i-was-right-about-everything.html": {
+    "upload_date": "20261109",
+    "duration": 6125,
+    "channel_url": "https://rumble.com/c/nickjfuentes"
   }
 }

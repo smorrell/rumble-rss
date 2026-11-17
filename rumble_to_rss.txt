@@ -1,20 +1,24 @@
 
-===== Run started 2026-11-16T23:54:28-05:00 =====
+===== Run started 2026-11-17T17:03:27-05:00 =====
 Refreshing channel portraits and podcast cover...
-Using recent channel image for angrymortgage.
-Using recent channel image for TheBrancaShow.
+Downloaded the latest episode thumbnail for angrymortgage.
+Downloaded the latest episode thumbnail for TheBrancaShow.
 Using cached latest episode thumbnail for TheMooseOnTheLooseExtra.
-Using recent channel image for CompoundCensoredOfficial.
-Found 26 videos on channel page 1.
+Downloaded the latest episode thumbnail for CompoundCensoredOfficial.
+Found 30 videos on channel page 1.
 Using cached latest episode thumbnail for AnnCoulter.
-Using recent channel image for nickjfuentes.
+Found 30 videos on channel page 1.
+Downloaded the latest episode thumbnail for nickjfuentes.
 Updated podcast cover: O:\smorrell\OneDrive\Desktop\rumble rss\img\podcast_cover.jpg
+Removed expired MP3: 2026-11-09-CompoundCensoredOfficial-Shane-Gillis-and-Dave-Landau-Talk-Drugs-Reddit-and-Growing-Up-Dysfunctional-2-27-2019.mp3
+Removed expired MP3: 2026-11-09-angrymortgage-Good-Bad-Federal-Budget.mp3
+Removed expired MP3: 2026-11-09-nickjfuentes-I-WAS-RIGHT-ABOUT-EVERYTHING.mp3
+Removed 3 expired video metadata entries.
 Checking Rumble for new videos...
 Skipping https://www.youtube.com/watch?v=g_-qbEhJx2g (previously filtered (at least 10 minutes long)); continuing channel scan.
 Skipping https://www.youtube.com/watch?v=z5AIvR3YbeQ (already downloaded); continuing channel scan.
 Skipping https://www.youtube.com/watch?v=vYuft02R44g (already downloaded); continuing channel scan.
 Skipping https://www.youtube.com/watch?v=b27Z6QQ-btc (already downloaded); continuing channel scan.
-Skipping https://www.youtube.com/watch?v=lBjrJdSUKvc (already downloaded); continuing channel scan.
 Skipping https://www.youtube.com/watch?v=8KvOeOYhGMQ (already downloaded); continuing channel scan.
 Skipping https://www.youtube.com/watch?v=DtdwYrtJCtg (already downloaded); continuing channel scan.
 Skipping https://www.youtube.com/watch?v=RcQGnZTbno0 (already downloaded); continuing channel scan.
@@ -27,8 +31,7 @@ Skipping https://www.youtube.com/watch?v=73r5Us1MG3A (already downloaded); conti
 Skipping https://www.youtube.com/watch?v=x_ePxjXHKEw (already downloaded); continuing channel scan.
 Skipping https://www.youtube.com/watch?v=-4gEPPzfZGQ (already downloaded); continuing channel scan.
 Skipping https://www.youtube.com/watch?v=-khPaEnRiYs (already downloaded); continuing channel scan.
-Skipping https://www.youtube.com/watch?v=uxkjohuYvjY (already downloaded); continuing channel scan.
-Found 26 videos on channel page 1.
+Found 30 videos on channel page 1.
 Skipping https://rumble.com/v7ht13y-unsafe-2026-midterm-elections-special.html (previously filtered (older than 7 days)); continuing channel scan.
 Skipping https://rumble.com/v7i8xmg-unsafe-with-ann-coulter-top-stories-you-may-have-missed.html (already downloaded); continuing channel scan.
 Skipping https://rumble.com/v7i8zcs-ann-coulter-on-the-mark-simone-show-710-wor-november-11-2026.html (already downloaded); continuing channel scan.
@@ -53,9 +56,8 @@ Skipping https://rumble.com/v7f19le-top-five-stories-this-week-unsafe-live.html 
 Skipping https://rumble.com/v7ellqa-one-year-after-stabbing-of-iryna-zarutska-4-stories-this-week.html (previously filtered (older than 7 days)); continuing channel scan.
 Skipping https://rumble.com/v7eel5i-ann-coulter-on-the-mark-simone-show-710-wor-august-19-2026.html (previously filtered (older than 7 days)); continuing channel scan.
 Skipping https://rumble.com/v7eam5q-josh-hammer-on-ending-anchor-baby-citizenship-israel-and-civilization.html (previously filtered (older than 7 days)); continuing channel scan.
-Skipping https://rumble.com/v7ifxp0-baseless-conspiracies-ep.-211.html (previously filtered (duration unavailable)); continuing channel scan.
 Skipping https://rumble.com/v7fns6m-lofi-house-radio-lounge-music-to-vibechill-to.html (previously filtered (older than 7 days)); continuing channel scan.
-Found 26 videos on channel page 1.
+Found 30 videos on channel page 1.
 Skipping https://rumble.com/v7iggak-america-first-ep.-1779.html (previously filtered (duration unavailable)); continuing channel scan.
 Skipping https://rumble.com/v7iey3o-assemble-the-army.html (already downloaded); continuing channel scan.
 Skipping https://rumble.com/v7ieyrk-alex-jones-interviews-nick-fuentes-at-nxr-conference.html (already downloaded); continuing channel scan.
@@ -66,7 +68,6 @@ Skipping https://rumble.com/v7i60uw-america-first-ep.-1777.html (previously filt
 Skipping https://rumble.com/v7i5j76-nick-fuentes-on-the-alex-jones-show.html (already downloaded); continuing channel scan.
 Skipping https://rumble.com/v7i57iq-trump-cucks-on-deportations-embraces-amnesty.html (already downloaded); continuing channel scan.
 Skipping https://rumble.com/v7i48ms-america-first-ep.-1776.html (previously filtered (at least 120 minutes long)); continuing channel scan.
-Skipping https://rumble.com/v7i2s8w-i-was-right-about-everything.html (already downloaded); continuing channel scan.
 Skipping https://rumble.com/v7hy2mi-trump-blames-voters-for-crushing-defeat.html (previously filtered (older than 7 days)); continuing channel scan.
 Skipping https://rumble.com/v7hxk2w-america-first-ep.-1775.html (previously filtered (older than 7 days)); continuing channel scan.
 Skipping https://rumble.com/v7hw9zc-blue-tsunami-wipes-out-the-gop.html (previously filtered (older than 7 days)); continuing channel scan.
@@ -79,10 +80,29 @@ Skipping https://rumble.com/v7hm1ci-governments-tell-citizens-to-prepare-for-dis
 Skipping https://rumble.com/v7hl510-america-first-ep.-1772.html (previously filtered (older than 7 days)); continuing channel scan.
 Skipping https://rumble.com/v7hjxq6-leftist-hackers-dox-ice-agents.html (previously filtered (older than 7 days)); continuing channel scan.
 Skipping https://rumble.com/v7hjgi0-america-first-ep.-1771.html (previously filtered (older than 7 days)); continuing channel scan.
-Skipping https://rumble.com/v7hili4-netanyahu-survives-israeli-elections.html (previously filtered (older than 7 days)); continuing channel scan.
-Skipping https://rumble.com/v7ifxp0-baseless-conspiracies-ep.-211.html (previously filtered (duration unavailable)); continuing channel scan.
 Skipping https://rumble.com/v7fns6m-lofi-house-radio-lounge-music-to-vibechill-to.html (previously filtered (older than 7 days)); continuing channel scan.
-[Thread-38568] Video URL: https://www.youtube.com/watch?v=B_09D9J2nOk[Thread-24940] Video URL: https://www.youtube.com/watch?v=0VLxpNML2mE
-
-Wrote 32 episode(s) to O:\smorrell\OneDrive\Desktop\rumble rss\Rumble.xml.
-===== Run ended 2026-11-16T23:57:06-05:00 =====
+[Thread-47876] Video URL: https://www.youtube.com/watch?v=v6AoBfwbmow
+[Thread-47952] Video URL: https://www.youtube.com/watch?v=ilteoJsasTs
+[Thread-7104] Video URL: https://www.youtube.com/watch?v=hicS5__T5H8
+[Thread-48576] Video URL: https://www.youtube.com/watch?v=-qCXn-vSxI4
+[Thread-47876] Skipping video https://www.youtube.com/watch?v=v6AoBfwbmow: duration is unknown or not less than the 10-minute channel maximum.
+[Thread-47876] Video URL: https://rumble.com/v7ihvb8-buckley-carlson-on-trumps-great-betrayal-israels-control-of-america-and-cha.html
+[Thread-47876] Skipping video https://rumble.com/v7ihvb8-buckley-carlson-on-trumps-great-betrayal-israels-control-of-america-and-cha.html: duration is unknown or not less than the 90-minute channel maximum.
+[Thread-47876] Video URL: https://rumble.com/v7ihpak-alex-jones-classified-nsa-network-is-down-authorities-deny-links-to-faa-ban.html
+[Thread-47876] Skipping video https://rumble.com/v7ihpak-alex-jones-classified-nsa-network-is-down-authorities-deny-links-to-faa-ban.html: duration is unknown or not less than the 90-minute channel maximum.
+[Thread-47876] Video URL: https://rumble.com/v6m1ds9-warroom-live.html
+[Thread-47876] Skipping old or undated video https://rumble.com/v6m1ds9-warroom-live.html (upload_date: 20250217).
+[Thread-47876] Video URL: https://rumble.com/v7ihg8g-nvidia-earnings-call-live.html
+[Thread-47876] Skipping video https://rumble.com/v7ihg8g-nvidia-earnings-call-live.html: duration is unknown or not less than the 90-minute channel maximum.
+[Thread-47876] Video URL: https://rumble.com/v7ihtii-renegades-vs-devils-jai-alai-season-x-in-miami.html
+[Thread-47876] Skipping video https://rumble.com/v7ihtii-renegades-vs-devils-jai-alai-season-x-in-miami.html: duration is unknown or not less than the 90-minute channel maximum.
+[Thread-47876] Video URL: https://rumble.com/v7ihdlu-iran-launches-cyberattack-against-america.html
+[Thread-47952] Video URL: https://rumble.com/v7i2s8w-i-was-right-about-everything.html
+[Thread-47952] Skipping old or undated video https://rumble.com/v7i2s8w-i-was-right-about-everything.html (upload_date: 20261109).
+[Thread-47952] Skipping https://rumble.com/v7ihvb8-buckley-carlson-on-trumps-great-betrayal-israels-control-of-america-and-cha.html (previously filtered (duration unavailable)).
+[Thread-47952] Skipping https://rumble.com/v7ihpak-alex-jones-classified-nsa-network-is-down-authorities-deny-links-to-faa-ban.html (previously filtered (duration unavailable)).
+[Thread-47952] Skipping https://rumble.com/v6m1ds9-warroom-live.html (previously filtered (older than 7 days)).
+[Thread-47952] Skipping https://rumble.com/v7ihg8g-nvidia-earnings-call-live.html (previously filtered (duration unavailable)).
+[Thread-47952] Skipping https://rumble.com/v7ihtii-renegades-vs-devils-jai-alai-season-x-in-miami.html (previously filtered (duration unavailable)).
+Wrote 33 episode(s) to O:\smorrell\OneDrive\Desktop\rumble rss\Rumble.xml.
+===== Run ended 2026-11-17T17:06:38-05:00 =====
