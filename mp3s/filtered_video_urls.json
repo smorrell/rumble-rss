@@ -272,13 +272,6 @@
     "filter_reason": "duration unavailable",
     "retry_after": "2026-11-18T04:43:56.370672+00:00"
   },
-  "https://rumble.com/v7iggak-america-first-ep.-1779.html": {
-    "upload_date": "20261117",
-    "duration": null,
-    "channel_url": "https://rumble.com/c/nickjfuentes",
-    "filter_reason": "duration unavailable",
-    "retry_after": "2026-11-18T04:44:00.479114+00:00"
-  },
   "https://www.youtube.com/watch?v=v6AoBfwbmow": {
     "upload_date": "20261117",
     "duration": 3574,
@@ -320,6 +313,57 @@
   "https://rumble.com/v7i2s8w-i-was-right-about-everything.html": {
     "upload_date": "20261109",
     "duration": 6125,
+    "channel_url": "https://rumble.com/c/nickjfuentes"
+  },
+  "https://rumble.com/v7il7wc-abc-fired-roseanne-so-she-paid-her-own-money-to-make-new-sitcom-meemaw.html": {
+    "upload_date": "20261119",
+    "duration": null,
+    "channel_url": "https://rumble.com/c/AnnCoulter",
+    "filter_reason": "duration unavailable",
+    "retry_after": "2026-11-20T22:31:27.715799+00:00"
+  },
+  "https://rumble.com/v7ilf2s-live-strategy-mstr-q3-2026-investor-q-and-a-feat.-michael-saylor-phong-le-a.html": {
+    "upload_date": "20261119",
+    "duration": null,
+    "channel_url": "https://rumble.com/c/AnnCoulter",
+    "filter_reason": "duration unavailable",
+    "retry_after": "2026-11-20T22:31:33.490705+00:00"
+  },
+  "https://rumble.com/v7ilel4-warriors-vs-fireballs-jai-alai-season-x-in-miami.html": {
+    "upload_date": "20261119",
+    "duration": null,
+    "channel_url": "https://rumble.com/c/AnnCoulter",
+    "filter_reason": "duration unavailable",
+    "retry_after": "2026-11-20T22:31:35.220241+00:00"
+  },
+  "https://rumble.com/v7ik7j0-gta-vi.html": {
+    "upload_date": "20261119",
+    "duration": 26147,
+    "channel_url": "https://rumble.com/c/nickjfuentes"
+  },
+  "https://rumble.com/v7iial2-america-first-ep.-1780.html": {
+    "upload_date": "20261118",
+    "duration": 18298,
+    "channel_url": "https://rumble.com/c/nickjfuentes"
+  },
+  "https://rumble.com/v7iggak-america-first-ep.-1779.html": {
+    "upload_date": "20261117",
+    "duration": 20542,
+    "channel_url": "https://rumble.com/c/nickjfuentes"
+  },
+  "https://rumble.com/v7i6kdm-pete-hegseth-survives-impeachment-vote.html": {
+    "upload_date": "20261111",
+    "duration": 2401,
+    "channel_url": "https://rumble.com/c/nickjfuentes"
+  },
+  "https://rumble.com/v7i5j76-nick-fuentes-on-the-alex-jones-show.html": {
+    "upload_date": "20261110",
+    "duration": 4023,
+    "channel_url": "https://rumble.com/c/nickjfuentes"
+  },
+  "https://rumble.com/v7i57iq-trump-cucks-on-deportations-embraces-amnesty.html": {
+    "upload_date": "20261110",
+    "duration": 3575,
     "channel_url": "https://rumble.com/c/nickjfuentes"
   }
 }
