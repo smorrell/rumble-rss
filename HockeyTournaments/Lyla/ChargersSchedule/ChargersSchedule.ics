@@ -53,4 +53,182 @@ LOCATION:Tomken Twin Arena\, 7535 Tomken Road\, Mississauga\, ON
 DESCRIPTION:Scheduled games:\n9:15 AM (opponent blank in scanned schedule)\n12:15 PM (opponent blank in scanned schedule).\nDeparture from school: 8:00 AM.\nExpected return: 3:00 PM.\nMode of transportation: Personal Vehicle.
 TRANSP:OPAQUE
 END:VEVENT
+BEGIN:VEVENT
+UID:ds-20261121-practice@chargers-schedule
+DTSTAMP:20261120T154500Z
+DTSTART;TZID=America/Toronto:20261121T090000
+DTEND;TZID=America/Toronto:20261121T103000
+SUMMARY:U15 DS practice
+LOCATION:Maple Grove Arena
+DESCRIPTION:Schedule from U15 DS team email. Schedule may change.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:ds-20261124-meeting@chargers-schedule
+DTSTAMP:20261120T154500Z
+DTSTART;TZID=America/Toronto:20261124T183000
+DTEND;TZID=America/Toronto:20261124T193000
+SUMMARY:U15 DS jersey fitting and team meeting
+LOCATION:MGHL clubhouse (upstairs at Iceland)
+DESCRIPTION:Team meeting and jersey fitting\, 6:30-7:30 PM.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:ds-20261128-practice@chargers-schedule
+DTSTAMP:20261120T154500Z
+DTSTART;TZID=America/Toronto:20261128T194500
+DTEND;TZID=America/Toronto:20261128T211500
+SUMMARY:U15 DS practice
+LOCATION:Iceland rink 3
+DESCRIPTION:Schedule from U15 DS team email. Schedule may change.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:ds-20261205-practice@chargers-schedule
+DTSTAMP:20261120T154500Z
+DTSTART;TZID=America/Toronto:20261205T161500
+DTEND;TZID=America/Toronto:20261205T171500
+SUMMARY:U15 DS practice
+LOCATION:Meadowvale 4
+DESCRIPTION:Schedule from U15 DS team email. Schedule may change.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:ds-20261212-game@chargers-schedule
+DTSTAMP:20261120T154500Z
+DTSTART;TZID=America/Toronto:20261212T153000
+DTEND;TZID=America/Toronto:20261212T163000
+SUMMARY:U15 DS game vs Etobicoke
+LOCATION:Meadowvale 2
+DESCRIPTION:Schedule from U15 DS team email. Schedule may change.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:ds-20270102-practice@chargers-schedule
+DTSTAMP:20261120T154500Z
+DTSTART;TZID=America/Toronto:20270102T141500
+DTEND;TZID=America/Toronto:20270102T154500
+SUMMARY:U15 DS practice
+LOCATION:Tomken 2
+DESCRIPTION:Schedule from U15 DS team email. Schedule may change.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:ds-20270116-game@chargers-schedule
+DTSTAMP:20261120T154500Z
+DTSTART;TZID=America/Toronto:20270116T091500
+DTEND;TZID=America/Toronto:20270116T101000
+SUMMARY:U15 DS game vs Etobicoke
+LOCATION:Ford
+DESCRIPTION:Schedule from U15 DS team email. Schedule may change.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:ds-20270123-practice@chargers-schedule
+DTSTAMP:20261120T154500Z
+DTSTART;TZID=America/Toronto:20270123T171500
+DTEND;TZID=America/Toronto:20270123T181500
+SUMMARY:U15 DS practice
+LOCATION:Tomken 2
+DESCRIPTION:Schedule from U15 DS team email. Schedule may change.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:ds-20270213-practice@chargers-schedule
+DTSTAMP:20261120T154500Z
+DTSTART;TZID=America/Toronto:20270213T131500
+DTEND;TZID=America/Toronto:20270213T141500
+SUMMARY:U15 DS practice
+LOCATION:Tomken 2
+DESCRIPTION:Schedule from U15 DS team email. Schedule may change.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:ds-20270220-practice@chargers-schedule
+DTSTAMP:20261120T154500Z
+DTSTART;TZID=America/Toronto:20270220T171500
+DTEND;TZID=America/Toronto:20270220T181500
+SUMMARY:U15 DS practice
+LOCATION:Tomken 2
+DESCRIPTION:Schedule from U15 DS team email. Schedule may change.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:ds-20270227-practice@chargers-schedule
+DTSTAMP:20261120T154500Z
+DTSTART;TZID=America/Toronto:20270227T171500
+DTEND;TZID=America/Toronto:20270227T181500
+SUMMARY:U15 DS practice
+LOCATION:Tomken 2
+DESCRIPTION:Schedule from U15 DS team email. Schedule may change.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:ds-20270306-practice@chargers-schedule
+DTSTAMP:20261120T154500Z
+DTSTART;TZID=America/Toronto:20270306T171500
+DTEND;TZID=America/Toronto:20270306T181500
+SUMMARY:U15 DS practice
+LOCATION:Tomken 2
+DESCRIPTION:Schedule from U15 DS team email. Schedule may change.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:ds-20270313-practice@chargers-schedule
+DTSTAMP:20261120T154500Z
+DTSTART;TZID=America/Toronto:20270313T171500
+DTEND;TZID=America/Toronto:20270313T181500
+SUMMARY:U15 DS practice
+LOCATION:Tomken 2
+DESCRIPTION:Schedule from U15 DS team email. Schedule may change.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:ds-20270105-practice-window@chargers-schedule
+DTSTAMP:20261120T154500Z
+DTSTART;VALUE=DATE:20270105
+DTEND;VALUE=DATE:20270108
+SUMMARY:U15 DS practice - tentative window
+DESCRIPTION:Email says one practice is TBD sometime Jan 5-7\; exact date\, time\, and venue are not provided. This is a planning window\, not a confirmed practice.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:ds-20270108-scarborough-tournament@chargers-schedule
+DTSTAMP:20261120T154500Z
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270111
+SUMMARY:U15 DS Scarborough tournament
+LOCATION:Scarborough\, ON
+DESCRIPTION:Tournament dates listed as Jan 8-10\, 2027\; game schedule and venue details not provided.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:ds-20270130-ice-tbd@chargers-schedule
+DTSTAMP:20261120T154500Z
+DTSTART;VALUE=DATE:20270130
+DTEND;VALUE=DATE:20270131
+SUMMARY:U15 DS event - details TBD
+LOCATION:Iceland 1
+DESCRIPTION:The email lists Iceland 1 on Jan 30\, but event type and start/end times are unspecified.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:ds-20270321-practice-window@chargers-schedule
+DTSTAMP:20261120T154500Z
+DTSTART;VALUE=DATE:20270321
+DTEND;VALUE=DATE:20270327
+SUMMARY:U15 DS practices - tentative window
+DESCRIPTION:Email says two practices are TBD sometime Mar 21-26\; exact dates\, times\, and venues are not provided. This is a planning window\, not confirmed daily practices.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:ds-20270325-brampton-tournament@chargers-schedule
+DTSTAMP:20261120T154500Z
+DTSTART;VALUE=DATE:20270325
+DTEND;VALUE=DATE:20270331
+SUMMARY:U15 DS Brampton tournament - dates to confirm
+LOCATION:Brampton\, ON
+DESCRIPTION:Email has conflicting dates: introductory text says Mar 25-28\, while the schedule table says Mar 28-30. Placeholder spans both date ranges\; confirm the official tournament dates.
+TRANSP:OPAQUE
+END:VEVENT
 END:VCALENDAR
