@@ -22,6 +22,20 @@
     </ns1:category>
     <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/3012323/3012323-1578935161711-71f93031bbe53.jpg" />
     <item>
+      <title>Classic Episode 1933 Scott Adams: Twitter Brings Back Trump And Lots Of Stories From The Simulation</title>
+      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1933-Scott-Adams-Twitter-Brings-Back-Trump-And-Lots-Of-Stories-From-The-Simulation-e1r23lf</link>
+      <guid isPermaLink="false">024bdad0-9ccf-4aef-812c-f7620ed7d564</guid>
+      <dc:creator>Scott Adams</dc:creator>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+      <enclosure url="https://traffic.megaphone.fm/APO5378665913.mp3" length="62960117" type="audio/mpeg" />
+      <ns1:explicit>false</ns1:explicit>
+      <ns1:duration>01:05:34</ns1:duration>
+      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1668963806347-7e5cbc50cb946.jpg" />
+      <ns1:season>46</ns1:season>
+      <ns1:episode>1933</ns1:episode>
+      <ns1:episodeType>full</ns1:episodeType>
+    </item>
+    <item>
       <title>Classic Episode 1932 Scott Adams: The News Is All Fun Today. Find Out What Twitter Is Up To And Lots More</title>
       <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1932-Scott-Adams-The-News-Is-All-Fun-Today--Find-Out-What-Twitter-Is-Up-To-And-Lots-More-e1r15k3</link>
       <guid isPermaLink="false">1fa540fc-f155-4168-bedb-017fe18c9496</guid>
@@ -145,20 +159,6 @@
       <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1668188256425-0ed9d0dcc6693.jpg" />
       <ns1:season>46</ns1:season>
       <ns1:episode>1924</ns1:episode>
-      <ns1:episodeType>full</ns1:episodeType>
-    </item>
-    <item>
-      <title>Classic Episode 1923 Scott Adams: TikTok Determined Election Outcome. I'll Put A Stake in Its Heart Today</title>
-      <link>https://podcasters.spotify.com/pod/show/scott-adams00/episodes/Episode-1923-Scott-Adams-TikTok-Determined-Election-Outcome--Ill-Put-A-Stake-in-Its-Heart-Today-e1qiba6</link>
-      <guid isPermaLink="false">462ec4ae-ae80-4a13-82dc-f2e27301fdca</guid>
-      <dc:creator>Scott Adams</dc:creator>
-      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
-      <enclosure url="https://traffic.megaphone.fm/APO2540171512.mp3" length="56080927" type="audio/mpeg" />
-      <ns1:explicit>false</ns1:explicit>
-      <ns1:duration>00:58:25</ns1:duration>
-      <ns1:image href="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_episode/3012323/3012323-1668101751262-6fcc010134ff3.jpg" />
-      <ns1:season>46</ns1:season>
-      <ns1:episode>1923</ns1:episode>
       <ns1:episodeType>full</ns1:episodeType>
     </item>
   </channel>

@@ -365,5 +365,44 @@
     "upload_date": "20261110",
     "duration": 3575,
     "channel_url": "https://rumble.com/c/nickjfuentes"
+  },
+  "https://rumble.com/v7i8xmg-unsafe-with-ann-coulter-top-stories-you-may-have-missed.html": {
+    "upload_date": "20261112",
+    "duration": 2675,
+    "channel_url": "https://rumble.com/c/AnnCoulter"
+  },
+  "https://rumble.com/v7i8zcs-ann-coulter-on-the-mark-simone-show-710-wor-november-11-2026.html": {
+    "upload_date": "20261112",
+    "duration": 597,
+    "channel_url": "https://rumble.com/c/AnnCoulter"
+  },
+  "https://rumble.com/v7imlb2-all-maga-gets-put-on-notice-head-of-cyber-steps-down-ask-us-anything.html": {
+    "upload_date": "20261120",
+    "duration": null,
+    "channel_url": "https://rumble.com/c/AnnCoulter",
+    "filter_reason": "duration unavailable",
+    "retry_after": "2026-11-21T14:07:51.573803+00:00"
+  },
+  "https://rumble.com/v76vw4i-free-people-radio-with-royce-white.html": {
+    "upload_date": "20260309",
+    "duration": null,
+    "channel_url": "https://rumble.com/c/AnnCoulter"
+  },
+  "https://rumble.com/v7im4h2-stock-market-open-live-day-trading-w-mk-nov.-20th.html": {
+    "upload_date": "20261120",
+    "duration": null,
+    "channel_url": "https://rumble.com/c/AnnCoulter",
+    "filter_reason": "duration unavailable",
+    "retry_after": "2026-11-21T14:07:53.206385+00:00"
+  },
+  "https://rumble.com/v7ilw5a-america-first-ep.-1781.html": {
+    "upload_date": "20261120",
+    "duration": 16945,
+    "channel_url": "https://rumble.com/c/nickjfuentes"
+  },
+  "https://rumble.com/v7i8nku-alex-karp-pivots-back-to-the-left.html": {
+    "upload_date": "20261112",
+    "duration": 3049,
+    "channel_url": "https://rumble.com/c/nickjfuentes"
   }
 }
