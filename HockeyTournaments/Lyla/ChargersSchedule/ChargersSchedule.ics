@@ -14,46 +14,6 @@ DESCRIPTION:Practice 3:00 PM - 4:30 PM.\nDeparture from school: 2:30 PM.\nExpect
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:chargers-20261126T150000-2@charger-schedule
-DTSTAMP:20261120T104116Z
-DTSTART;TZID=America/Toronto:20261126T150000
-DTEND;TZID=America/Toronto:20261126T170000
-SUMMARY:Clarkson Community Centre exhibition game
-LOCATION:Clarkson Community Centre\, 2475 Truscott Drive\, Mississauga\, ON L5J 2B5
-DESCRIPTION:Exhibition game vs. Mentor at 3:00 PM.\nDeparture from school: 3:00 PM.\nExpected return: 5:00 PM.\nMode of transportation: Personal Vehicle.
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:chargers-20261203T074500-3@charger-schedule
-DTSTAMP:20261120T104116Z
-DTSTART;TZID=America/Toronto:20261203T074500
-DTEND;TZID=America/Toronto:20261203T140000
-SUMMARY:Susan Fennell Arena games
-LOCATION:Susan Fennell Sportsplex\, 500 Ray Lawson Boulevard\, Brampton\, ON
-DESCRIPTION:Scheduled games:\n9:00 AM vs. Cawthra\n11:00 AM vs. Woodlands.\nDeparture from school: 7:45 AM.\nExpected return: 2:00 PM.\nMode of transportation: Personal Vehicle.
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:chargers-20261216T074500-4@charger-schedule
-DTSTAMP:20261120T104116Z
-DTSTART;TZID=America/Toronto:20261216T074500
-DTEND;TZID=America/Toronto:20261216T150000
-SUMMARY:Tomken Arena games
-LOCATION:Tomken Twin Arena\, 4495 Tomken Road\, Mississauga\, ON L4W 1J9
-DESCRIPTION:Scheduled games:\n9:00 AM vs. Philip Pocock\n1:00 PM vs. St. Francis Xavier.\nDeparture from school: 7:45 AM.\nExpected return: 3:00 PM.\nMode of transportation: Personal Vehicle.
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:chargers-20270105T080000-5@charger-schedule
-DTSTAMP:20261120T104116Z
-DTSTART;TZID=America/Toronto:20270105T080000
-DTEND;TZID=America/Toronto:20270105T150000
-SUMMARY:Tomken Arena games
-LOCATION:Tomken Twin Arena\, 4495 Tomken Road\, Mississauga\, ON L4W 1J9
-DESCRIPTION:Scheduled games:\n9:15 AM (opponent blank in scanned schedule)\n12:15 PM (opponent blank in scanned schedule).\nDeparture from school: 8:00 AM.\nExpected return: 3:00 PM.\nMode of transportation: Personal Vehicle.
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
 UID:ds-20261121-practice@chargers-schedule
 DTSTAMP:20261120T154500Z
 DTSTART;TZID=America/Toronto:20261121T090000
@@ -74,6 +34,16 @@ DESCRIPTION:Team meeting and jersey fitting\, 6:30-7:30 PM.
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
+UID:chargers-20261126T150000-2@charger-schedule
+DTSTAMP:20261120T104116Z
+DTSTART;TZID=America/Toronto:20261126T150000
+DTEND;TZID=America/Toronto:20261126T170000
+SUMMARY:Clarkson Community Centre exhibition game
+LOCATION:Clarkson Community Centre\, 2475 Truscott Drive\, Mississauga\, ON L5J 2B5
+DESCRIPTION:Exhibition game vs. Mentor at 3:00 PM.\nDeparture from school: 3:00 PM.\nExpected return: 5:00 PM.\nMode of transportation: Personal Vehicle.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
 UID:ds-20261128-practice@chargers-schedule
 DTSTAMP:20261120T154500Z
 DTSTART;TZID=America/Toronto:20261128T194500
@@ -81,6 +51,16 @@ DTEND;TZID=America/Toronto:20261128T211500
 SUMMARY:U15 DS practice
 LOCATION:Iceland Arena\, Rink 3\, 705 Matheson Blvd E\, Mississauga\, ON L4Z 3X9
 DESCRIPTION:Schedule from U15 DS team email. Schedule may change.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:chargers-20261203T074500-3@charger-schedule
+DTSTAMP:20261120T104116Z
+DTSTART;TZID=America/Toronto:20261203T074500
+DTEND;TZID=America/Toronto:20261203T140000
+SUMMARY:Susan Fennell Arena games
+LOCATION:Susan Fennell Sportsplex\, 500 Ray Lawson Boulevard\, Brampton\, ON
+DESCRIPTION:Scheduled games:\n9:00 AM vs. Cawthra\n11:00 AM vs. Woodlands.\nDeparture from school: 7:45 AM.\nExpected return: 2:00 PM.\nMode of transportation: Personal Vehicle.
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
@@ -104,6 +84,16 @@ DESCRIPTION:Schedule from U15 DS team email. Schedule may change.
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
+UID:chargers-20261216T074500-4@charger-schedule
+DTSTAMP:20261120T104116Z
+DTSTART;TZID=America/Toronto:20261216T074500
+DTEND;TZID=America/Toronto:20261216T150000
+SUMMARY:Tomken Arena games
+LOCATION:Tomken Twin Arena\, 4495 Tomken Road\, Mississauga\, ON L4W 1J9
+DESCRIPTION:Scheduled games:\n9:00 AM vs. Philip Pocock\n1:00 PM vs. St. Francis Xavier.\nDeparture from school: 7:45 AM.\nExpected return: 3:00 PM.\nMode of transportation: Personal Vehicle.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
 UID:ds-20270102-practice@chargers-schedule
 DTSTAMP:20261120T154500Z
 DTSTART;TZID=America/Toronto:20270102T141500
@@ -111,6 +101,35 @@ DTEND;TZID=America/Toronto:20270102T154500
 SUMMARY:U15 DS practice
 LOCATION:Tomken Twin Arena\, 4495 Tomken Road\, Mississauga\, ON L4W 1J9
 DESCRIPTION:Schedule from U15 DS team email. Schedule may change.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:ds-20270105-practice-window@chargers-schedule
+DTSTAMP:20261120T154500Z
+DTSTART;VALUE=DATE:20270105
+DTEND;VALUE=DATE:20270108
+SUMMARY:U15 DS practice - tentative window
+DESCRIPTION:Email says one practice is TBD sometime Jan 5-7\; exact date\, time\, and venue are not provided. This is a planning window\, not a confirmed practice.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:chargers-20270105T080000-5@charger-schedule
+DTSTAMP:20261120T104116Z
+DTSTART;TZID=America/Toronto:20270105T080000
+DTEND;TZID=America/Toronto:20270105T150000
+SUMMARY:Tomken Arena games
+LOCATION:Tomken Twin Arena\, 4495 Tomken Road\, Mississauga\, ON L4W 1J9
+DESCRIPTION:Scheduled games:\n9:15 AM (opponent blank in scanned schedule)\n12:15 PM (opponent blank in scanned schedule).\nDeparture from school: 8:00 AM.\nExpected return: 3:00 PM.\nMode of transportation: Personal Vehicle.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:ds-20270108-scarborough-tournament@chargers-schedule
+DTSTAMP:20261120T154500Z
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270111
+SUMMARY:U15 DS Scarborough tournament
+LOCATION:Scarborough\, ON
+DESCRIPTION:Tournament dates listed as Jan 8-10\, 2027\; game schedule and venue details not provided.
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
@@ -131,6 +150,16 @@ DTEND;TZID=America/Toronto:20270123T181500
 SUMMARY:U15 DS practice
 LOCATION:Tomken Twin Arena\, 4495 Tomken Road\, Mississauga\, ON L4W 1J9
 DESCRIPTION:Schedule from U15 DS team email. Schedule may change.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:ds-20270130-ice-tbd@chargers-schedule
+DTSTAMP:20261120T154500Z
+DTSTART;VALUE=DATE:20270130
+DTEND;VALUE=DATE:20270131
+SUMMARY:U15 DS event - details TBD
+LOCATION:Iceland Arena\, Rink 1\, 705 Matheson Blvd E\, Mississauga\, ON L4Z 3X9
+DESCRIPTION:The email lists Iceland 1 on Jan 30\, but event type and start/end times are unspecified.
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
@@ -181,35 +210,6 @@ DTEND;TZID=America/Toronto:20270313T181500
 SUMMARY:U15 DS practice
 LOCATION:Tomken Twin Arena\, 4495 Tomken Road\, Mississauga\, ON L4W 1J9
 DESCRIPTION:Schedule from U15 DS team email. Schedule may change.
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:ds-20270105-practice-window@chargers-schedule
-DTSTAMP:20261120T154500Z
-DTSTART;VALUE=DATE:20270105
-DTEND;VALUE=DATE:20270108
-SUMMARY:U15 DS practice - tentative window
-DESCRIPTION:Email says one practice is TBD sometime Jan 5-7\; exact date\, time\, and venue are not provided. This is a planning window\, not a confirmed practice.
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:ds-20270108-scarborough-tournament@chargers-schedule
-DTSTAMP:20261120T154500Z
-DTSTART;VALUE=DATE:20270108
-DTEND;VALUE=DATE:20270111
-SUMMARY:U15 DS Scarborough tournament
-LOCATION:Scarborough\, ON
-DESCRIPTION:Tournament dates listed as Jan 8-10\, 2027\; game schedule and venue details not provided.
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:ds-20270130-ice-tbd@chargers-schedule
-DTSTAMP:20261120T154500Z
-DTSTART;VALUE=DATE:20270130
-DTEND;VALUE=DATE:20270131
-SUMMARY:U15 DS event - details TBD
-LOCATION:Iceland Arena\, Rink 1\, 705 Matheson Blvd E\, Mississauga\, ON L4Z 3X9
-DESCRIPTION:The email lists Iceland 1 on Jan 30\, but event type and start/end times are unspecified.
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
