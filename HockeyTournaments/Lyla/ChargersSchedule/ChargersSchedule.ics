@@ -1,0 +1,56 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Copilot//Chargers Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:chargers-20261119T143000-1@charger-schedule
+DTSTAMP:20261120T104116Z
+DTSTART;TZID=America/Toronto:20261119T143000
+DTEND;TZID=America/Toronto:20261119T170000
+SUMMARY:Clarkson Community Centre practice
+LOCATION:Clarkson Community Centre
+DESCRIPTION:Practice 3:00 PM - 4:30 PM.\nDeparture from school: 2:30 PM.\nExpected return: 5:00 PM.\nMode of transportation: Personal Vehicle.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:chargers-20261126T150000-2@charger-schedule
+DTSTAMP:20261120T104116Z
+DTSTART;TZID=America/Toronto:20261126T150000
+DTEND;TZID=America/Toronto:20261126T170000
+SUMMARY:Clarkson Community Centre exhibition game
+LOCATION:Clarkson Community Centre
+DESCRIPTION:Exhibition game vs. Mentor at 3:00 PM.\nDeparture from school: 3:00 PM.\nExpected return: 5:00 PM.\nMode of transportation: Personal Vehicle.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:chargers-20261203T074500-3@charger-schedule
+DTSTAMP:20261120T104116Z
+DTSTART;TZID=America/Toronto:20261203T074500
+DTEND;TZID=America/Toronto:20261203T140000
+SUMMARY:Susan Fennell Arena games
+LOCATION:Susan Fennell Arena
+DESCRIPTION:Scheduled games:\n9:00 AM vs. Cawthra\n11:00 AM vs. Woodlands.\nDeparture from school: 7:45 AM.\nExpected return: 2:00 PM.\nMode of transportation: Personal Vehicle.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:chargers-20261216T074500-4@charger-schedule
+DTSTAMP:20261120T104116Z
+DTSTART;TZID=America/Toronto:20261216T074500
+DTEND;TZID=America/Toronto:20261216T150000
+SUMMARY:Tomken Arena games
+LOCATION:Tomken Arena
+DESCRIPTION:Scheduled games:\n9:00 AM vs. Philip Pocock\n1:00 PM vs. St. Francis Xavier.\nDeparture from school: 7:45 AM.\nExpected return: 3:00 PM.\nMode of transportation: Personal Vehicle.
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:chargers-20270105T080000-5@charger-schedule
+DTSTAMP:20261120T104116Z
+DTSTART;TZID=America/Toronto:20270105T080000
+DTEND;TZID=America/Toronto:20270105T150000
+SUMMARY:Tomken Arena games
+LOCATION:Tomken Arena
+DESCRIPTION:Scheduled games:\n9:15 AM (opponent blank in scanned schedule)\n12:15 PM (opponent blank in scanned schedule).\nDeparture from school: 8:00 AM.\nExpected return: 3:00 PM.\nMode of transportation: Personal Vehicle.
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
