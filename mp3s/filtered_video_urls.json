@@ -404,5 +404,12 @@
     "upload_date": "20261112",
     "duration": 3049,
     "channel_url": "https://rumble.com/c/nickjfuentes"
+  },
+  "https://rumble.com/v7in61w-onlylands-ep.-81.html": {
+    "upload_date": "20261120",
+    "duration": null,
+    "channel_url": "https://rumble.com/c/AnnCoulter",
+    "filter_reason": "duration unavailable",
+    "retry_after": "2026-11-22T04:17:13.693989+00:00"
   }
 }
