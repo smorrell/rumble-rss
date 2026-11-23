@@ -10,6 +10,13 @@
 
 Check the rules and schedule pages regularly for updates before and during the tournament. Games may start up to 15 minutes early.
 
+## Team travel and logistics
+
+- The team planned to stay in Woodstock, about 25 minutes from Tillsonburg. A team function at the hotel was planned for Friday or Saturday; the email did not specify a time.
+- **Hotel reservation confirmed:** Holiday Inn Express & Suites, 510 Norwich Avenue, Woodstock, ON N4S 3W5.
+- The reservation is for one 2 Queen Extended Suite, arriving **December 3, 2026** and departing **December 6, 2026**. Hotel check-in is 3:00 p.m.; check-out is 11:00 a.m.
+- The earlier team hotel booking deadline was November 10, 2026.
+
 ## Lorne Park Clarkson Wild schedule (U18, Pool A)
 
 | Date | Time | Game | Arena | Address |
@@ -31,8 +38,9 @@ For Friday morning, the drive from **Clarkson Community Centre (2475 Truscott Dr
 - The tournament rules require **mouthguards and neck guards for all players**. Bring both for every game.
 - The home team wears white jerseys. If the team has only one jersey set, the tournament director should be notified.
 - A team may have up to 20 players and 5 bench staff. Everyone must be on the approved team roster.
-- Coaches or team representatives must enter the roster in Gamesheet and add jersey numbers and AP players once the tournament invitation codes are sent.
+- GameSheet invitation codes have been sent to the registered team contact. Coaches or team representatives must load the roster, remove released players, designate AP players, and add jersey numbers and goalies by **Friday, November 27, 2026**.
 - All bench staff must check in at the Tournament Office before each game to sign in on the iPads.
+- The tournament has a strict no-fighting rule: intent-to-injure and fighting penalties result in expulsion from the game and the remainder of the tournament.
 
 ## At the arena
 

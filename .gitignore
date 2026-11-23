@@ -6,3 +6,5 @@ odata-http-*.jsonl
 odata-http-*.log
 *.jpg
 /img/
+*.msg
+*.pdf
