@@ -10,12 +10,20 @@
 
 Check the rules and schedule pages regularly for updates before and during the tournament. Games may start up to 15 minutes early.
 
+## Uncertainties
+
+- A team function at the hotel is planned for Friday or Saturday, but the time has not been announced.
+- Grandpa Rod will drive Lyla to school on Friday, December 4, and pick her up at Clarkson at 2:20 p.m. Whether he will stay at the house after drop-off or return home before pickup is undecided. Friday care for Molly is also to be coordinated; she needs an outdoor potty break and, ideally, a walk.
+- The Sunday semifinal and final entries in the schedule are conditional placeholders, not confirmed Lorne Park game assignments. Participation depends on qualification and seeding; check the official schedule after results are determined.
+- The emails say the team must complete the GameSheet roster setup by Friday, November 27, 2026, but do not confirm whether it has been completed.
+
 ## Team travel and logistics
 
-- The team planned to stay in Woodstock, about 25 minutes from Tillsonburg. A team function at the hotel was planned for Friday or Saturday; the email did not specify a time.
+- The team planned to stay in Woodstock, about 25 minutes from Tillsonburg.
 - **Hotel reservation confirmed:** Holiday Inn Express & Suites, 510 Norwich Avenue, Woodstock, ON N4S 3W5.
 - The reservation is for one 2 Queen Extended Suite, arriving **December 3, 2026** and departing **December 6, 2026**. Hotel check-in is 3:00 p.m.; check-out is 11:00 a.m.
 - The earlier team hotel booking deadline was November 10, 2026.
+- **Family plan:** Grandpa Rod will come for dinner and stay overnight Thursday, December 3. He will drive Lyla to school Friday morning and pick her up at Clarkson at 2:20 p.m.
 
 ## Lorne Park Clarkson Wild schedule (U18, Pool A)
 
@@ -28,8 +36,6 @@ Check the rules and schedule pages regularly for updates before and during the t
 | SUN, DEC 06 | 11:00 a.m. (if necessary) | U18 semifinal: Pool B seed 2 vs. Pool A seed 1 | Tillsonburg Arena (Memorial) | [45 Hardy Ave., Tillsonburg, ON](https://maps.google.com/?q=45+Hardy+Ave,+Tillsonburg,+ON) |
 | SUN, DEC 06 | 12:30 p.m. (if necessary) | U18 semifinal: Pool A seed 2 vs. Pool B seed 1 | Tillsonburg Arena (Memorial) | [45 Hardy Ave., Tillsonburg, ON](https://maps.google.com/?q=45+Hardy+Ave,+Tillsonburg,+ON) |
 | SUN, DEC 06 | 4:00 p.m. (if necessary) | U18 championship final | Tillsonburg Arena (Memorial) | [45 Hardy Ave., Tillsonburg, ON](https://maps.google.com/?q=45+Hardy+Ave,+Tillsonburg,+ON) |
-
-The playoff slots are placeholders, not confirmed Lorne Park game assignments; semifinal participation and time depend on qualification and seeding, and the final applies only if the team advances. Check the official schedule after results are determined.
 
 For Friday morning, the drive from **Clarkson Community Centre (2475 Truscott Drive)** to **Colin Campbell Arena (45 Hardy Ave.)** is roughly **1 hour 45 minutes to 2 hours or more**, depending on traffic. Because games may start up to 15 minutes early, aim to arrive by **8:15 a.m.** Leave around **6:00 a.m.** to allow extra time, and recheck live directions and traffic before departing.
 
