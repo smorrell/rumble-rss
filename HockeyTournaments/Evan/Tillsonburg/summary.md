@@ -16,6 +16,7 @@ Check the rules and schedule pages regularly for updates before and during the t
 - Grandpa Rod will drive Lyla to school on Friday, December 4, and pick her up at Clarkson at 2:20 p.m. Whether he will stay at the house after drop-off or return home before pickup is undecided. Friday care for Molly is also to be coordinated; she needs an outdoor potty break and, ideally, a walk.
 - The Sunday semifinal and final entries in the schedule are conditional placeholders, not confirmed Lorne Park game assignments. Participation depends on qualification and seeding; check the official schedule after results are determined.
 - The emails say the team must complete the GameSheet roster setup by Friday, November 27, 2026, but do not confirm whether it has been completed.
+- Hotel check-out is 11:00 a.m. Sunday, which overlaps the possible 11:00 a.m. semifinal; plan for check-out before the game or confirm other arrangements with the hotel.
 
 ## Team travel and logistics
 
@@ -24,6 +25,17 @@ Check the rules and schedule pages regularly for updates before and during the t
 - The reservation is for one 2 Queen Extended Suite, arriving **December 3, 2026** and departing **December 6, 2026**. Hotel check-in is 3:00 p.m.; check-out is 11:00 a.m.
 - The earlier team hotel booking deadline was November 10, 2026.
 - **Family plan:** Grandpa Rod will come for dinner and stay overnight Thursday, December 3. He will drive Lyla to school Friday morning and pick her up at Clarkson at 2:20 p.m.
+
+## Timeline and driving plan
+
+Drive times are approximate planning estimates, not live traffic predictions. The hotel is about 25 minutes from the Tillsonburg arenas; allow extra time and check traffic before leaving. Tournament games may start up to 15 minutes early.
+
+| Day | Plan |
+|---|---|
+| **Thu, Dec 3** | Scott and Evan drive from home (1416 Marshwood Place, Mississauga) to Holiday Inn Express & Suites, 510 Norwich Avenue, Woodstock. Allow about **1 hr 30 min–1 hr 45 min** for the drive. Hotel check-in begins at **3:00 p.m.** Rod and Lyla are not attending the games. |
+| **Fri, Dec 4** | Scott and Evan drive from the hotel to Tillsonburg Arena, 45 Hardy Ave.; allow about **25 min**. For the **9:30 a.m.** game, leave around **8:00 a.m.** to target arrival by 8:30. For the **3:30 p.m.** game, leave the hotel around **2:30 p.m.** to target arrival by 3:00. Rod will handle Lyla’s school drop-off and 2:20 p.m. pickup in Clarkson. |
+| **Sat, Dec 5** | For the **12:00 p.m.** game, leave the hotel around **10:45 a.m.** to target arrival by 11:15. The **3:45 p.m.** game is at the same arena address; plan to stay at the rink between games. |
+| **Sun, Dec 6** | If assigned the **11:00 a.m.** semifinal, leave around **9:45 a.m.**; if assigned the **12:30 p.m.** semifinal, leave around **11:15 a.m.** If the team advances to the **4:00 p.m.** final, leave the hotel around **2:45 p.m.** These are conditional games; confirm the bracket and account for the 11:00 a.m. hotel checkout. |
 
 ## Lorne Park Clarkson Wild schedule (U18, Pool A)
 
@@ -36,8 +48,6 @@ Check the rules and schedule pages regularly for updates before and during the t
 | SUN, DEC 06 | 11:00 a.m. (if necessary) | U18 semifinal: Pool B seed 2 vs. Pool A seed 1 | Tillsonburg Arena (Memorial) | [45 Hardy Ave., Tillsonburg, ON](https://maps.google.com/?q=45+Hardy+Ave,+Tillsonburg,+ON) |
 | SUN, DEC 06 | 12:30 p.m. (if necessary) | U18 semifinal: Pool A seed 2 vs. Pool B seed 1 | Tillsonburg Arena (Memorial) | [45 Hardy Ave., Tillsonburg, ON](https://maps.google.com/?q=45+Hardy+Ave,+Tillsonburg,+ON) |
 | SUN, DEC 06 | 4:00 p.m. (if necessary) | U18 championship final | Tillsonburg Arena (Memorial) | [45 Hardy Ave., Tillsonburg, ON](https://maps.google.com/?q=45+Hardy+Ave,+Tillsonburg,+ON) |
-
-For Friday morning, the drive from **Clarkson Community Centre (2475 Truscott Drive)** to **Colin Campbell Arena (45 Hardy Ave.)** is roughly **1 hour 45 minutes to 2 hours or more**, depending on traffic. Because games may start up to 15 minutes early, aim to arrive by **8:15 a.m.** Leave around **6:00 a.m.** to allow extra time, and recheck live directions and traffic before departing.
 
 ## Player and team requirements
 
