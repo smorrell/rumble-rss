@@ -85,3 +85,13 @@ Check the rules and schedule pages regularly for updates before and during the t
 Tournament questions: [tournaments@tmhi.org](mailto:tournaments@tmhi.org)
 
 For the detailed Q&A and source notes, see [qa.md](qa.md).
+
+## Facts
+
+- The tournament is December 4–6, 2026, in Tillsonburg, and each team plays four round-robin games.
+- The scheduled Lorne Park Clarkson Wild round-robin games are listed above; both arenas are at **45 Hardy Ave., Tillsonburg**.
+- The team reservation is at Holiday Inn Express & Suites, **510 Norwich Avenue, Woodstock**, for December 3–6. Check-in is at 3:00 p.m. and checkout is at 11:00 a.m.
+- The hotel-to-rink drive is **about 25 minutes as a planning estimate**; actual time depends on traffic.
+- Scott and Evan are going to the games; Rod and Lyla are not.
+- Thursday dinner is planned for everyone at home, after which Scott and Evan leave for Woodstock at about 6:00 p.m. Rod stays overnight with Lyla.
+- Rod and Lyla plan to leave for school at 7:45 a.m. Friday, and Rod plans to pick Lyla up at Clarkson at 2:20 p.m. The school’s actual dismissal time has not been independently confirmed.
