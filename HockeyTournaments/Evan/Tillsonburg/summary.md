@@ -30,12 +30,25 @@ Check the rules and schedule pages regularly for updates before and during the t
 
 Drive times are approximate planning estimates, not live traffic predictions. The hotel is about 25 minutes from the Tillsonburg arenas; allow extra time and check traffic before leaving. Tournament games may start up to 15 minutes early.
 
-| Day | Plan |
-|---|---|
-| **Thu, Dec 3** | Scott and Evan drive from home (1416 Marshwood Place, Mississauga) to Holiday Inn Express & Suites, 510 Norwich Avenue, Woodstock. Allow about **1 hr 30 min–1 hr 45 min** for the drive. Hotel check-in begins at **3:00 p.m.** Rod and Lyla are not attending the games. |
-| **Fri, Dec 4** | Scott and Evan drive from the hotel to Tillsonburg Arena, 45 Hardy Ave.; allow about **25 min**. For the **9:30 a.m.** game, leave around **8:00 a.m.** to target arrival by 8:30. For the **3:30 p.m.** game, leave the hotel around **2:30 p.m.** to target arrival by 3:00. Rod will handle Lyla’s school drop-off and 2:20 p.m. pickup in Clarkson. |
-| **Sat, Dec 5** | For the **12:00 p.m.** game, leave the hotel around **10:45 a.m.** to target arrival by 11:15. The **3:45 p.m.** game is at the same arena address; plan to stay at the rink between games. |
-| **Sun, Dec 6** | If assigned the **11:00 a.m.** semifinal, leave around **9:45 a.m.**; if assigned the **12:30 p.m.** semifinal, leave around **11:15 a.m.** If the team advances to the **4:00 p.m.** final, leave the hotel around **2:45 p.m.** These are conditional games; confirm the bracket and account for the 11:00 a.m. hotel checkout. |
+| Date | Time | Who | What | Where |
+|---|---|---|---|---|
+| Thu, Dec 3 | TBD; allow 1 hr 30 min–1 hr 45 min driving | Scott and Evan | Drive from home to hotel; check-in begins at 3:00 p.m. | From 1416 Marshwood Place, Mississauga to Holiday Inn Express & Suites, 510 Norwich Avenue, Woodstock |
+| Thu, Dec 3 | Evening; time TBD | Rod and Lyla | Dinner; Rod stays overnight | Home |
+| Fri, Dec 4 | Morning; time TBD | Rod and Lyla | Rod drives Lyla to school | Clarkson |
+| Fri, Dec 4 | 7:45 a.m. departure; arrive about 8:15 a.m. | Scott and Evan | Drive to and arrive for 9:30 a.m. game; allow about 25 minutes from hotel | Holiday Inn Express & Suites to Tillsonburg Arena, 45 Hardy Ave., Tillsonburg |
+| Fri, Dec 4 | 9:30 a.m. | Scott and Evan | Game vs. Lucan Irish White (Colin Campbell) | Tillsonburg Arena, 45 Hardy Ave., Tillsonburg |
+| Fri, Dec 4 | 2:20 p.m. | Rod and Lyla | Rod picks Lyla up | Clarkson |
+| Fri, Dec 4 | 3:30 p.m. | Scott and Evan | Game vs. Tillsonburg Tornadoes (Memorial) | Tillsonburg Arena, 45 Hardy Ave., Tillsonburg |
+| Sat, Dec 5 | 10:45 a.m. departure; arrive about 11:15 a.m. | Scott and Evan | Drive to and arrive for 12:00 p.m. game; plan to stay at the rink between games | Holiday Inn Express & Suites to Tillsonburg Arena, 45 Hardy Ave., Tillsonburg |
+| Sat, Dec 5 | 12:00 p.m. | Scott and Evan | Game vs. Ingersoll Express LL3 (Colin Campbell) | Tillsonburg Arena, 45 Hardy Ave., Tillsonburg |
+| Sat, Dec 5 | 3:45 p.m. | Scott and Evan | Game vs. Mid Huron Huskies LL2 (Colin Campbell) | Tillsonburg Arena, 45 Hardy Ave., Tillsonburg |
+| Sun, Dec 6 | About 9:05 a.m. departure if assigned | Scott and Evan | Drive to possible 11:00 a.m. semifinal, allowing arrival before a game that may start 15 minutes early | Holiday Inn Express & Suites to Tillsonburg Arena, 45 Hardy Ave., Tillsonburg |
+| Sun, Dec 6 | 11:00 a.m. (if assigned) | Scott and Evan | Possible U18 semifinal | Tillsonburg Arena (Memorial), 45 Hardy Ave., Tillsonburg |
+| Sun, Dec 6 | 11:00 a.m. | Scott and Evan | Hotel checkout; coordinate with hotel if playing the possible 11:00 a.m. semifinal | Holiday Inn Express & Suites, 510 Norwich Avenue, Woodstock |
+| Sun, Dec 6 | About 10:35 a.m. departure if assigned the 12:30 p.m. semifinal | Scott and Evan | Drive to possible semifinal, allowing arrival before a game that may start 15 minutes early | Holiday Inn Express & Suites to Tillsonburg Arena, 45 Hardy Ave., Tillsonburg |
+| Sun, Dec 6 | 12:30 p.m. (if assigned) | Scott and Evan | Possible U18 semifinal | Tillsonburg Arena (Memorial), 45 Hardy Ave., Tillsonburg |
+| Sun, Dec 6 | About 3:05 p.m. departure if team advances | Scott and Evan | Drive to possible final, allowing arrival before a game that may start 15 minutes early | Holiday Inn Express & Suites to Tillsonburg Arena, 45 Hardy Ave., Tillsonburg |
+| Sun, Dec 6 | 4:00 p.m. (if team advances) | Scott and Evan | Possible U18 championship final | Tillsonburg Arena (Memorial), 45 Hardy Ave., Tillsonburg |
 
 ## Lorne Park Clarkson Wild schedule (U18, Pool A)
 
