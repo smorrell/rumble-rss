@@ -32,9 +32,9 @@ Drive times are approximate planning estimates, not live traffic predictions. Th
 
 | Date | Time | Who | What | Where |
 |---|---|---|---|---|
-| Thu, Dec 3 | TBD; allow 1 hr 30 min–1 hr 45 min driving | Scott and Evan | Drive from home to hotel; check-in begins at 3:00 p.m. | From 1416 Marshwood Place, Mississauga to Holiday Inn Express & Suites, 510 Norwich Avenue, Woodstock |
-| Thu, Dec 3 | Evening; time TBD | Rod and Lyla | Dinner; Rod stays overnight | Home |
-| Fri, Dec 4 | Morning; time TBD | Rod and Lyla | Rod drives Lyla to school | Clarkson |
+| Thu, Dec 3 | Dinner; time TBD | Scott, Evan, Rod, and Lyla | Eat dinner together; Rod stays overnight with Lyla | Home, 1416 Marshwood Place, Mississauga |
+| Thu, Dec 3 | About 6:00 p.m.; allow 1 hr 30 min–1 hr 45 min driving | Scott and Evan | Drive to Woodstock after dinner; hotel check-in begins at 3:00 p.m. | From 1416 Marshwood Place, Mississauga to Holiday Inn Express & Suites, 510 Norwich Avenue, Woodstock |
+| Fri, Dec 4 | 7:45 a.m. | Rod and Lyla | Leave for school | From home, 1416 Marshwood Place, Mississauga |
 | Fri, Dec 4 | 7:45 a.m. departure; arrive about 8:15 a.m. | Scott and Evan | Drive to and arrive for 9:30 a.m. game; allow about 25 minutes from hotel | Holiday Inn Express & Suites to Tillsonburg Arena, 45 Hardy Ave., Tillsonburg |
 | Fri, Dec 4 | 9:30 a.m. | Scott and Evan | Game vs. Lucan Irish White (Colin Campbell) | Tillsonburg Arena, 45 Hardy Ave., Tillsonburg |
 | Fri, Dec 4 | 2:20 p.m. | Rod and Lyla | Rod picks Lyla up | Clarkson |
