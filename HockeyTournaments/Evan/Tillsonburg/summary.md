@@ -11,7 +11,7 @@ Drive times are approximate planning estimates, not live traffic predictions. Sc
 | Fri, Dec 4 | 7:45–8:15 a.m.* | Rod and Lyla | Drive to school | From home, 1416 Marshwood Place, Mississauga; school in Clarkson |
 | Fri, Dec 4 | 8:20–8:45 a.m.* | Scott and Evan | Drive from hotel to arena; arrive 45 minutes before the game | Holiday Inn Express & Suites to Tillsonburg Arena, 45 Hardy Ave., Tillsonburg |
 | Fri, Dec 4 | 9:30–10:30 a.m.* | Scott and Evan | Game vs. Lucan Irish White (Colin Campbell); may start up to 15 minutes early | Tillsonburg Arena, 45 Hardy Ave., Tillsonburg |
-| Fri, Dec 4 | 2:20–2:35 p.m.* | Rod and Lyla | Rod picks Lyla up | Clarkson |
+| Fri, Dec 4 | 2:21–2:35 p.m.* | Rod and Lyla | Rod picks Lyla up after dismissal | Clarkson Secondary School |
 | Fri, Dec 4 | 2:45–3:30 p.m.* | Scott and Evan | Be at the rink 45 minutes before the game | Tillsonburg Arena, 45 Hardy Ave., Tillsonburg |
 | Fri, Dec 4 | 3:30–4:30 p.m.* | Scott and Evan | Game vs. Tillsonburg Tornadoes (Memorial); may start up to 15 minutes early | Tillsonburg Arena, 45 Hardy Ave., Tillsonburg |
 | Sat, Dec 5 | 10:50–11:15 a.m.* | Scott and Evan | Drive from hotel to arena; arrive 45 minutes before the game and stay at rink between games | Holiday Inn Express & Suites to Tillsonburg Arena, 45 Hardy Ave., Tillsonburg |
@@ -40,7 +40,7 @@ Check the rules and schedule pages regularly for updates before and during the t
 ## Uncertainties
 
 - A team function at the hotel is planned for Friday or Saturday, but the time has not been announced.
-- Grandpa Rod will drive Lyla to school on Friday, December 4, and pick her up at Clarkson at 2:20 p.m. Whether he will stay at the house after drop-off or return home before pickup is undecided. Friday care for Molly is also to be coordinated; she needs an outdoor potty break and, ideally, a walk.
+- Grandpa Rod will drive Lyla to school on Friday, December 4, and pick her up after the 2:21 p.m. dismissal. Whether he will stay at the house after drop-off or return home before pickup is undecided. Friday care for Molly is also to be coordinated; she needs an outdoor potty break and, ideally, a walk.
 - The Sunday semifinal and final entries in the schedule are conditional placeholders, not confirmed Lorne Park game assignments. Participation depends on qualification and seeding; check the official schedule after results are determined.
 - The emails say the team must complete the GameSheet roster setup by Friday, November 27, 2026, but do not confirm whether it has been completed.
 - Hotel check-out is 11:00 a.m. Sunday, which overlaps the possible 11:00 a.m. semifinal; plan for check-out before the game or confirm other arrangements with the hotel.
@@ -51,7 +51,7 @@ Check the rules and schedule pages regularly for updates before and during the t
 - **Hotel reservation confirmed:** Holiday Inn Express & Suites, 510 Norwich Avenue, Woodstock, ON N4S 3W5.
 - The reservation is for one 2 Queen Extended Suite, arriving **December 3, 2026** and departing **December 6, 2026**. Hotel check-in is 3:00 p.m.; check-out is 11:00 a.m.
 - The earlier team hotel booking deadline was November 10, 2026.
-- **Family plan:** Grandpa Rod will come for dinner and stay overnight Thursday, December 3. He will drive Lyla to school Friday morning and pick her up at Clarkson at 2:20 p.m.
+- **Family plan:** Grandpa Rod will come for dinner and stay overnight Thursday, December 3. He will drive Lyla to school Friday morning and pick her up after the 2:21 p.m. dismissal.
 
 ## Lorne Park Clarkson Wild schedule (U18, Pool A)
 
@@ -94,4 +94,4 @@ For the detailed Q&A and source notes, see [qa.md](qa.md).
 - The hotel-to-rink drive is **about 25 minutes as a planning estimate**; actual time depends on traffic.
 - Scott and Evan are going to the games; Rod and Lyla are not.
 - Thursday dinner is planned for everyone at home, after which Scott and Evan leave for Woodstock at about 6:00 p.m. Rod stays overnight with Lyla.
-- Rod and Lyla plan to leave for school at 7:45 a.m. Friday, and Rod plans to pick Lyla up at Clarkson at 2:20 p.m. The school’s actual dismissal time has not been independently confirmed.
+- Clarkson Secondary School dismisses at 2:21 p.m. Rod plans to pick Lyla up after school; whether Rod returns home or stays at the house after the morning drop-off is undecided.

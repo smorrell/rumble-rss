@@ -411,5 +411,27 @@
     "channel_url": "https://rumble.com/c/AnnCoulter",
     "filter_reason": "duration unavailable",
     "retry_after": "2026-11-22T04:17:13.693989+00:00"
+  },
+  "https://www.youtube.com/watch?v=1S-RHrdY5mI": {
+    "upload_date": "20261122",
+    "duration": 710,
+    "channel_url": "https://www.youtube.com/@angrymortgage/videos"
+  },
+  "https://rumble.com/v7it50a-america-first-ep.-1782.html": {
+    "upload_date": "20261124",
+    "duration": null,
+    "channel_url": "https://rumble.com/c/nickjfuentes",
+    "filter_reason": "duration unavailable",
+    "retry_after": "2026-11-25T05:18:24.840686+00:00"
+  },
+  "https://rumble.com/v7iey3o-assemble-the-army.html": {
+    "upload_date": "20261116",
+    "duration": 6406,
+    "channel_url": "https://rumble.com/c/nickjfuentes"
+  },
+  "https://rumble.com/v7ieyrk-alex-jones-interviews-nick-fuentes-at-nxr-conference.html": {
+    "upload_date": "20261116",
+    "duration": 1534,
+    "channel_url": "https://rumble.com/c/nickjfuentes"
   }
 }
