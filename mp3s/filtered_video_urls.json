@@ -433,5 +433,17 @@
     "upload_date": "20261116",
     "duration": 1534,
     "channel_url": "https://rumble.com/c/nickjfuentes"
+  },
+  "https://www.youtube.com/watch?v=oqLCF9bVHwg": {
+    "upload_date": "20261124",
+    "duration": 2904,
+    "channel_url": "https://www.youtube.com/@angrymortgage/videos"
+  },
+  "https://rumble.com/v7iv4om-america-first-ep.-1783.html": {
+    "upload_date": "20261125",
+    "duration": null,
+    "channel_url": "https://rumble.com/c/nickjfuentes",
+    "filter_reason": "duration unavailable",
+    "retry_after": "2026-11-26T04:21:27.706551+00:00"
   }
 }
