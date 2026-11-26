@@ -417,13 +417,6 @@
     "duration": 710,
     "channel_url": "https://www.youtube.com/@angrymortgage/videos"
   },
-  "https://rumble.com/v7it50a-america-first-ep.-1782.html": {
-    "upload_date": "20261124",
-    "duration": null,
-    "channel_url": "https://rumble.com/c/nickjfuentes",
-    "filter_reason": "duration unavailable",
-    "retry_after": "2026-11-25T05:18:24.840686+00:00"
-  },
   "https://rumble.com/v7iey3o-assemble-the-army.html": {
     "upload_date": "20261116",
     "duration": 6406,
@@ -439,11 +432,36 @@
     "duration": 2904,
     "channel_url": "https://www.youtube.com/@angrymortgage/videos"
   },
-  "https://rumble.com/v7iv4om-america-first-ep.-1783.html": {
-    "upload_date": "20261125",
+  "https://rumble.com/v7ijumm-ann-coulter-on-the-mark-simone-show-710-wor-november-18-2026.html": {
+    "upload_date": "20261118",
+    "duration": 692,
+    "channel_url": "https://rumble.com/c/AnnCoulter"
+  },
+  "https://rumble.com/v7ixc3q-america-first-ep.-1784.html": {
+    "upload_date": "20261126",
     "duration": null,
     "channel_url": "https://rumble.com/c/nickjfuentes",
     "filter_reason": "duration unavailable",
-    "retry_after": "2026-11-26T04:21:27.706551+00:00"
+    "retry_after": "2026-11-27T05:07:51.357826+00:00"
+  },
+  "https://rumble.com/v7iv4om-america-first-ep.-1783.html": {
+    "upload_date": "20261125",
+    "duration": 11269,
+    "channel_url": "https://rumble.com/c/nickjfuentes"
+  },
+  "https://rumble.com/v7it50a-america-first-ep.-1782.html": {
+    "upload_date": "20261124",
+    "duration": 13568,
+    "channel_url": "https://rumble.com/c/nickjfuentes"
+  },
+  "https://rumble.com/v7ij4u0-something-is-very-wrong-with-these-cyberattacks.html": {
+    "upload_date": "20261118",
+    "duration": 1184,
+    "channel_url": "https://rumble.com/c/nickjfuentes"
+  },
+  "https://rumble.com/v7ihdlu-iran-launches-cyberattack-against-america.html": {
+    "upload_date": "20261117",
+    "duration": 1178,
+    "channel_url": "https://rumble.com/c/nickjfuentes"
   }
 }
