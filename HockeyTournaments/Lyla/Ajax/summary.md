@@ -3,9 +3,9 @@
 ## Game time summary
 - The tournament runs from November 27-29, 2026.
 - Based on the current team schedule at https://dwgha.com/Tournaments/2006/Teams/467/, the listed game times for this team are:
-  - Friday, Nov 27, 2026: 12:00 PM vs Whitby Lightning at Ajax Community Centre (Pad 2)
-  - Friday, Nov 27, 2026: 7:00 PM vs Oakville Hornets Panthers at Ajax Community Centre (Pad 4)
-  - Saturday, Nov 28, 2026: 12:15 PM vs Clarington Flames at Ajax Community Centre (Pad 3)
+  - Friday, Nov 27, 2026: 12:00 PM vs Whitby Lightning at Ajax Community Centre (Pad 2) - Mississauga Navy Sharks won 2-1
+  - Friday, Nov 27, 2026: 7:00 PM vs Oakville Hornets Panthers at Ajax Community Centre (Pad 4) - Mississauga Navy Sharks lost 0-3
+  - Saturday, Nov 28, 2026: 12:15 PM vs Clarington Flames at Ajax Community Centre (Pad 3) - result not posted
 - No Sunday game is listed for this team on the schedule page reviewed.
 - The general tournament materials mention that teams should check the official schedule and game codes before the event, but they do not list exact times beyond the live team schedule.
 
@@ -58,11 +58,11 @@ The documents describe the 2026 annual DWGHA houseleague tournament, which will 
 ## Game time summary
 The tournament runs from November 27-29, 2026. Based on the current team schedule at https://dwgha.com/Tournaments/2006/Teams/467/, the listed game times for this team are:
 
-| Date | Time | Opponent | Venue |
-|---|---|---|---|
-| Friday, Nov 27, 2026 | 12:00 PM | Whitby Lightning | Ajax Community Centre (Pad 2) |
-| Friday, Nov 27, 2026 | 7:00 PM | Oakville Hornets Panthers | Ajax Community Centre (Pad 4) |
-| Saturday, Nov 28, 2026 | 12:15 PM | Clarington Flames | Ajax Community Centre (Pad 3) |
+| Date | Time | Opponent | Venue | Result |
+|---|---|---|---|---|
+| Friday, Nov 27, 2026 | 12:00 PM | Whitby Lightning | Ajax Community Centre (Pad 2) | Mississauga Navy Sharks won 2-1 |
+| Friday, Nov 27, 2026 | 7:00 PM | Oakville Hornets Panthers | Ajax Community Centre (Pad 4) | Mississauga Navy Sharks lost 0-3 |
+| Saturday, Nov 28, 2026 | 12:15 PM | Clarington Flames | Ajax Community Centre (Pad 3) | Result not posted |
 
 - No Sunday game is listed for this team on the schedule page reviewed.
 - The general tournament materials mention that teams should check the official schedule and game codes before the event, but they do not list exact times beyond the live team schedule.

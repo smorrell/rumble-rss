@@ -437,13 +437,6 @@
     "duration": 692,
     "channel_url": "https://rumble.com/c/AnnCoulter"
   },
-  "https://rumble.com/v7ixc3q-america-first-ep.-1784.html": {
-    "upload_date": "20261126",
-    "duration": null,
-    "channel_url": "https://rumble.com/c/nickjfuentes",
-    "filter_reason": "duration unavailable",
-    "retry_after": "2026-11-27T05:07:51.357826+00:00"
-  },
   "https://rumble.com/v7iv4om-america-first-ep.-1783.html": {
     "upload_date": "20261125",
     "duration": 11269,
@@ -468,5 +461,25 @@
     "upload_date": "20261126",
     "duration": 2328,
     "channel_url": "https://www.youtube.com/@angrymortgage/videos"
+  },
+  "https://rumble.com/v7in2ku-unsafe-with-ann-coulter-top-stories-you-may-have-missed.html": {
+    "upload_date": "20261120",
+    "duration": 2597,
+    "channel_url": "https://rumble.com/c/AnnCoulter"
+  },
+  "https://rumble.com/v7ixc3q-america-first-ep.-1784.html": {
+    "upload_date": "20261126",
+    "duration": 12699,
+    "channel_url": "https://rumble.com/c/nickjfuentes"
+  },
+  "https://rumble.com/v7in9h0-nick-fuentes-on-the-alex-jones-show.html": {
+    "upload_date": "20261120",
+    "duration": 2939,
+    "channel_url": "https://rumble.com/c/nickjfuentes"
+  },
+  "https://rumble.com/v7imnvg-the-cyber-chief-being-replaced-is-no-coincidence.html": {
+    "upload_date": "20261120",
+    "duration": 2069,
+    "channel_url": "https://rumble.com/c/nickjfuentes"
   }
 }
